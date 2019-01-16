@@ -1,0 +1,50 @@
+{
+	"extends": ["./base.tslint.json"],
+	"rules": {
+		"tinkoff-condition-breaks": {
+			"options": {
+				"maxWidth": 60
+			}
+		},
+		"comment-format": [true, "check-space"],
+		"indent": [true, "spaces"],
+		"max-line-length": [true, 120],
+		"no-trailing-whitespace": true,
+		"one-line": [
+			true,
+			"check-open-brace",
+			"check-catch",
+			"check-else",
+			"check-finally",
+			"check-whitespace"
+		],
+		"quotemark": [true, "single"],
+		"semicolon": true,
+		"typedef-whitespace": [
+			true,
+			{
+				"call-signature": "nospace",
+				"index-signature": "nospace",
+				"parameter": "nospace",
+				"property-declaration": "nospace",
+				"variable-declaration": "nospace"
+			},
+			{
+				"call-signature": "space",
+				"index-signature": "space",
+				"parameter": "space",
+				"property-declaration": "space",
+				"variable-declaration": "space"
+			}
+		],
+		"whitespace": [
+			true,
+			"check-branch",
+			"check-decl",
+			"check-operator",
+			"check-separator",
+			"check-type",
+			"check-preblock"
+		]
+	}
+}

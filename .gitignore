@@ -1,0 +1,7 @@
+# IDE
+.idea
+.vscode
+
+# Other
+node_modules
+tslint/rules

@@ -1,0 +1,19 @@
+if (_.noop()) {
+    _.noop()
+}
+
+// single line comment
+if (_.noop()) {
+    _.noop()
+}
+
+if (_.noop()) {
+    _.noop()
+}
+
+/**
+ * Multiline comment
+ */
+if (_.noop()) {
+    _.noop()
+}

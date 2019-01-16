@@ -1,0 +1,479 @@
+
+// Right cases
+
+class rightCases {
+   public static a = 'someString';
+   @Input() a = 5;
+   @Output() a = 5;
+   public a: number = 5;
+   protected static a: string;
+   protected a: number = 5;
+   private static a = 5;
+   private a: number = 5;
+}
+
+class rightCases {
+   public static a: string;
+   @Input() a = 'someString';
+   @Output() a;
+   public a = 'someString';
+   protected static a = 'someString';
+   protected a: string;
+   private static a;
+   private a;
+}
+
+class rightCases {
+   static a;
+   @Input() a: number = 5;
+   @Output() a: number = 5;
+   public a;
+   protected static a: number = 5;
+   protected a = 5;
+   private static a = 'someString';
+   private a = 'someString';
+}
+
+// Wrong cases
+
+// Wrong cases for public-static-fields
+class failures {
+   @Input() a = 'someString';
+   static a = 5;
+   ~~~~~~         [0]
+
+   @Output() a: string;
+   public static a: string;
+   ~~~~~~~~~~~~~         [1]
+
+   public a = 'someString';
+   public static a = 'someString';
+   ~~~~~~~~~~~~~         [2]
+
+   protected static a = 'someString';
+   public static a;
+   ~~~~~~~~~~~~~         [3]
+
+   protected a = 5;
+   static a: string;
+   ~~~~~~         [4]
+
+   private static a = 'someString';
+   static a: string;
+   ~~~~~~         [5]
+
+   private a: number = 5;
+   public static a;
+   ~~~~~~~~~~~~~         [6]
+
+}
+
+class failures {
+   @Input() a: string;
+   public static a = 'someString';
+   ~~~~~~~~~~~~~         [0]
+
+   @Output() a: string;
+   public static a = 'someString';
+   ~~~~~~~~~~~~~         [1]
+
+   a: number = 5;
+   static a: string;
+   ~~~~~~         [2]
+
+   protected static a: string;
+   public static a: string;
+   ~~~~~~~~~~~~~         [3]
+
+   protected a: string;
+   public static a;
+   ~~~~~~~~~~~~~         [4]
+
+   private static a: number = 5;
+   static a: string;
+   ~~~~~~         [5]
+
+   private a: number = 5;
+   static a: number = 5;
+   ~~~~~~         [6]
+
+}
+
+class failures {
+   @Input() a: number = 5;
+   static a: number = 5;
+   ~~~~~~         [0]
+
+   @Output() a = 5;
+   public static a;
+   ~~~~~~~~~~~~~         [1]
+
+   public a = 'someString';
+   static a: number = 5;
+   ~~~~~~         [2]
+
+   protected static a = 5;
+   static a: number = 5;
+   ~~~~~~         [3]
+
+   protected a;
+   public static a;
+   ~~~~~~~~~~~~~         [4]
+
+   private static a: string;
+   public static a: number = 5;
+   ~~~~~~~~~~~~~         [5]
+
+   private a: string;
+   static a: string;
+   ~~~~~~         [6]
+
+}
+
+// Wrong cases for @Input-fields
+class failures {
+   @Output() a = 'someString';
+   @Input() a = 'someString';
+   ~~~~~~         [7]
+
+   a: number = 5;
+   @Input() a = 'someString';
+   ~~~~~~         [8]
+
+   protected static a = 'someString';
+   @Input() a = 'someString';
+   ~~~~~~         [9]
+
+   protected a = 5;
+   @Input() a = 'someString';
+   ~~~~~~         [10]
+
+   private static a: number = 5;
+   @Input() a = 5;
+   ~~~~~~         [11]
+
+   private a: string;
+   @Input() a: number = 5;
+   ~~~~~~         [12]
+
+}
+
+class failures {
+   @Output() a = 'someString';
+   @Input() a;
+   ~~~~~~         [7]
+
+   public a = 5;
+
+   /* big
+      comment
+   */
+
+   @Input() a: string;
+   ~~~~~~         [8]
+
+   protected static a = 5;
+   @Input() a = 'someString';
+   ~~~~~~         [9]
+
+   protected a: string;
+   @Input() a: number = 5;
+   ~~~~~~         [10]
+
+   private static a;
+   @Input() a;
+   ~~~~~~         [11]
+
+   private a = 'someString';
+   @Input() a;
+   ~~~~~~         [12]
+
+}
+
+class failures {
+   @Output() a: number = 5;
+   @Input() a: number = 5;
+   ~~~~~~         [7]
+
+   a;
+   @Input() a = 'someString';
+   ~~~~~~         [8]
+
+   protected static a;
+   @Input() a: number = 5;
+   ~~~~~~         [9]
+
+   protected a: string;
+   @Input() a: number = 5;
+   ~~~~~~         [10]
+
+   private static a: string;
+   @Input() a: number = 5;
+   ~~~~~~         [11]
+
+   private a: number = 5;
+   @Input() a: string;
+   ~~~~~~         [12]
+
+}
+
+// Wrong cases for @Output-fields
+class failures {
+   a;
+   @Output() a: number = 5;
+   ~~~~~~~         [13]
+
+   protected static a = 'someString';
+   @Output() a = 'someString';
+   ~~~~~~~         [14]
+
+   protected a = 5;
+   @Output() a: number = 5;
+   ~~~~~~~         [15]
+
+   private static a: string;
+   @Output() a = 'someString';
+   ~~~~~~~         [16]
+
+   private a: string;
+   @Output() a;
+   ~~~~~~~         [17]
+
+}
+
+class failures {
+   a: number = 5;
+   @Output() a = 5;
+   ~~~~~~~         [13]
+
+   protected static a;
+   @Output() a = 'someString';
+   ~~~~~~~         [14]
+
+   protected a: string;
+   @Output() a = 5;
+   ~~~~~~~         [15]
+
+   private static a = 'someString';
+   @Output() a: number = 5;
+   ~~~~~~~         [16]
+
+   private a;
+   @Output() a: string;
+   ~~~~~~~         [17]
+
+}
+
+class failures {
+   public a: string;
+   @Output() a = 'someString';
+   ~~~~~~~         [13]
+
+   protected static a: number = 5;
+   @Output() a;
+   ~~~~~~~         [14]
+
+   protected a = 5;
+   @Output() a = (t: number) => {;
+   ~~~~~~~         [15]
+        arrow-func;
+   }
+
+   private static a = 5;
+   @Output() a = 5;
+   ~~~~~~~         [16]
+
+   private a: string;
+   @Output() a = 5;
+   ~~~~~~~         [17]
+
+}
+
+// Wrong cases for public-instance-fields
+class failures {
+   protected static a: string;
+   a: string;
+   ~         [18]
+
+   protected a: number = 5;
+   a = 5;
+   ~         [19]
+
+   private static a: string;
+   public a = 'someString';
+   ~~~~~~         [20]
+
+   private a: number = 5;
+   a: string;
+   ~         [21]
+
+}
+
+class failures {
+   protected static a = 5;
+   public a = 5;
+   ~~~~~~         [18]
+
+   protected a;
+   public a;
+   ~~~~~~         [19]
+
+   private static a = 'someString';
+   public a = 5;
+   ~~~~~~         [20]
+
+   private a: string;
+   a;
+   ~         [21]
+
+}
+
+class failures {
+   protected static a;
+   public a = 5;
+   ~~~~~~         [18]
+
+   protected a: string;
+   a = 'someString';
+   ~         [19]
+
+   private static a: number = 5;
+   a = 'someString';
+   ~         [20]
+
+   private a;
+   a: number = 5;
+   ~         [21]
+
+}
+
+// Wrong cases for protected-static-fields
+class failures {
+   protected a = 5;
+   protected static a = 5;
+   ~~~~~~~~~~~~~~~~         [22]
+
+   private static a = 'someString';
+   protected static a;
+   ~~~~~~~~~~~~~~~~         [23]
+
+   private a: string;
+   protected static a = 5;
+   ~~~~~~~~~~~~~~~~         [24]
+
+}
+
+class failures {
+   protected a = 'someString';
+   protected static a = 5;
+   ~~~~~~~~~~~~~~~~         [22]
+
+   private static a = 'someString';
+   protected static a;
+   ~~~~~~~~~~~~~~~~         [23]
+
+   private a;
+   protected static a: string;
+   ~~~~~~~~~~~~~~~~         [24]
+
+}
+
+class failures {
+   protected a: string;
+   protected static a = 5;
+   ~~~~~~~~~~~~~~~~         [22]
+
+   private static a;
+   protected static a = 5;
+   ~~~~~~~~~~~~~~~~         [23]
+
+   private a = 5;
+   protected static a: number = 5;
+   ~~~~~~~~~~~~~~~~         [24]
+
+}
+
+// Wrong cases for protected-instance-fields
+class failures {
+   private static a;
+   protected a;
+   ~~~~~~~~~         [25]
+
+   private a: string;
+   protected a = 'someString';
+   ~~~~~~~~~         [26]
+
+}
+
+class failures {
+   private static a = 'someString';
+   protected a = 'someString';
+   ~~~~~~~~~         [25]
+
+   private a;
+   protected a: string;
+   ~~~~~~~~~         [26]
+
+}
+
+class failures {
+   private static a = 'someString';
+   protected a;
+   ~~~~~~~~~         [25]
+
+   private a: string;
+   protected a;
+   ~~~~~~~~~         [26]
+
+}
+
+// Wrong cases for private-static-fields
+class failures {
+   private a: string;
+   private static a = 5;
+   ~~~~~~~~~~~~~~         [27]
+
+}
+
+class failures {
+   private a = 'someString';
+   private static a = 'someString';
+   ~~~~~~~~~~~~~~         [27]
+
+}
+
+class failures {
+   private a: string;
+   private static a: number = 5;
+   ~~~~~~~~~~~~~~         [27]
+
+}
+
+[0]: PUBLIC STATIC property must be before @Input
+[1]: PUBLIC STATIC property must be before @Output
+[2]: PUBLIC STATIC property must be before PUBLIC INSTANCE property
+[3]: PUBLIC STATIC property must be before PROTECTED STATIC property
+[4]: PUBLIC STATIC property must be before PROTECTED INSTANCE property
+[5]: PUBLIC STATIC property must be before PRIVATE STATIC property
+[6]: PUBLIC STATIC property must be before PRIVATE INSTANCE property
+[7]: @Input must be before @Output
+[8]: @Input must be before PUBLIC INSTANCE property
+[9]: @Input must be before PROTECTED STATIC property
+[10]: @Input must be before PROTECTED INSTANCE property
+[11]: @Input must be before PRIVATE STATIC property
+[12]: @Input must be before PRIVATE INSTANCE property
+[13]: @Output must be before PUBLIC INSTANCE property
+[14]: @Output must be before PROTECTED STATIC property
+[15]: @Output must be before PROTECTED INSTANCE property
+[16]: @Output must be before PRIVATE STATIC property
+[17]: @Output must be before PRIVATE INSTANCE property
+[18]: PUBLIC INSTANCE property must be before PROTECTED STATIC property
+[19]: PUBLIC INSTANCE property must be before PROTECTED INSTANCE property
+[20]: PUBLIC INSTANCE property must be before PRIVATE STATIC property
+[21]: PUBLIC INSTANCE property must be before PRIVATE INSTANCE property
+[22]: PROTECTED STATIC property must be before PROTECTED INSTANCE property
+[23]: PROTECTED STATIC property must be before PRIVATE STATIC property
+[24]: PROTECTED STATIC property must be before PRIVATE INSTANCE property
+[25]: PROTECTED INSTANCE property must be before PRIVATE STATIC property
+[26]: PROTECTED INSTANCE property must be before PRIVATE INSTANCE property
+[27]: PRIVATE STATIC property must be before PRIVATE INSTANCE property

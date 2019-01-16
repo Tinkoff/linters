@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"outDir": "./tslint/rules",
+		"module": "commonjs",
+		"target": "es5",
+		"noImplicitAny": false,
+		"sourceMap": false,
+		"lib": ["es2015"]
+	},
+	"files": [
+		"./src/tinkoffAngularMemberOrderingRule.ts",
+		"./src/tinkoffMethodReturnTypeRule.ts",
+		"./src/tinkoffConditionBreaksRule.ts",
+		"./src/tinkoffNewLineAfterVariableDeclarationRule.ts",
+		"./src/tinkoffNewLineAroundControlStatementRule.ts"
+	]
+}
