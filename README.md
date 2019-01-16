@@ -1,4 +1,4 @@
-# Tinkoff Linter Configuration
+# Tinkoff Linter Configuration [![Build](https://travis-ci.org/TinkoffCreditSystems/linters.svg?branch=master)](https://travis-ci.org/TinkoffCreditSystems/linters)
 
 This repository contains configuration files for the linters we use in Tinkoff. It includes:
 
