@@ -1,6 +1,6 @@
 {
 	"name": "@tinkoff/linters",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Linter configs and custom TSLint rules of Tinkoff",
 	"license": "Apache-2.0",
 	"scripts": {
