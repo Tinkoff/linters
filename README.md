@@ -8,6 +8,10 @@ This repository contains configuration files for the linters we use in Tinkoff. 
 
 ## Install
 
+```
+$ npm install @tinkoff/linters --save-dev
+```
+
 You don't need to install `tslint` and `stylelint`, they are added as dependencies of `@tinkoff/linters` and will be installed automatically.
 
 ## How to use
