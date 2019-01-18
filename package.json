@@ -24,13 +24,17 @@
 		"name": "Tinkoff Team",
 		"email": "frontend@tinkoff.ru"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TinkoffCreditSystems/linters.git"
+	},
 	"dependencies": {
 		"rxjs-tslint": "0.1.5",
 		"rxjs-tslint-rules": "4.4.2",
-		"stylelint": "8.4.0",
-		"stylelint-config-prettier": "^4.0.0",
-		"stylelint-config-standard": "17.0.0",
-		"stylelint-order": "0.7.0",
+		"stylelint": "9.10.0",
+		"stylelint-config-prettier": "4.0.0",
+		"stylelint-config-standard": "18.2.0",
+		"stylelint-order": "2.0.0",
 		"tslint": "^5.7.0",
 		"tslint-eslint-rules": "5.1.0",
 		"tslint-microsoft-contrib": "5.0.3"
