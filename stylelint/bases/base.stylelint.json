@@ -21,6 +21,7 @@
 				"ignore": ["non-comments"]
 			}
 		],
+		"no-descending-specificity": null,
 		"no-duplicate-selectors": true,
 		"number-leading-zero": "never",
 		"rule-empty-line-before": [
