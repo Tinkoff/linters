@@ -13,14 +13,14 @@ export class Rule extends Rules.AbstractRule {
         options: {},
         optionExamples: [],
         type: 'style',
-        typescriptOnly: false
+        typescriptOnly: false,
     };
 
     apply(sourceFile: ts.SourceFile): RuleFailure[] {
         const walker = new TinkoffNewLineAfterVariableDeclarationWalker(
             sourceFile,
             this.ruleName,
-            undefined
+            undefined,
         );
 
         return this.applyWithWalker(walker);

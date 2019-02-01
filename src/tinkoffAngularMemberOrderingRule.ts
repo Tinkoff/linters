@@ -20,8 +20,8 @@ export class Rule extends Rules.AbstractRule {
                 'protected-static',
                 'protected-instance',
                 'private-static',
-                'private-instance'
-            ]
+                'private-instance',
+            ],
         },
         optionExamples: [
             'public-static',
@@ -31,10 +31,10 @@ export class Rule extends Rules.AbstractRule {
             '@Output',
             'public-instance',
             'protected-instance',
-            'private-instance'
+            'private-instance',
         ],
         type: 'style',
-        typescriptOnly: false
+        typescriptOnly: false,
     };
 
     apply(sourceFile: ts.SourceFile): RuleFailure[] {
@@ -43,7 +43,7 @@ export class Rule extends Rules.AbstractRule {
         const walker = new TinkoffAngularMemberOrderingWalker(
             sourceFile,
             this.ruleName,
-            undefined
+            undefined,
         );
 
         return this.applyWithWalker(walker);
@@ -69,10 +69,10 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
 
     protected getFailureString(
         nextNode: NodeDeclaration,
-        prevNode: NodeDeclaration
+        prevNode: NodeDeclaration,
     ): string {
         return `${this.getNodeType(nextNode)} must be before ${this.getNodeType(
-            prevNode
+            prevNode,
         )}`;
     }
 
@@ -118,7 +118,7 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
 
     protected wrongWithAccessor(
         node: NodeDeclaration,
-        prevNode: NodeDeclaration
+        prevNode: NodeDeclaration,
     ): boolean {
         return (
             this.isInputAfterAccessor(node, prevNode) ||
@@ -128,7 +128,7 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
 
     private isInputAfterAccessor(
         node: NodeDeclaration,
-        prevNode: NodeDeclaration
+        prevNode: NodeDeclaration,
     ): boolean {
         const isNodeInput = this.isInput(node);
         const isNodeAccessor = this.isInputAccessor(node);
@@ -139,7 +139,7 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
 
     private isOutputAfterAccessor(
         node: NodeDeclaration,
-        prevNode: NodeDeclaration
+        prevNode: NodeDeclaration,
     ): boolean {
         const isNodeOutput = this.isOutput(node);
         const isNodeAccessor = this.isOutputAccessor(node);
@@ -203,7 +203,7 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
         const nodeIsOutput = this.isOutput(node);
         const prevNodeIsInput = this.isInput(prevNode);
         const nodeStartsWithPrevNode = this.getNodeName(node).startsWith(
-            this.getNodeName(prevNode)
+            this.getNodeName(prevNode),
         );
         const nodeEndsWithChange = this.getNodeName(node).endsWith('Change');
 

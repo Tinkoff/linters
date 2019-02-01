@@ -23,7 +23,7 @@ function getWhitespace(sourceFile: ts.SourceFile, fromLine: number): string {
         ts.ScriptTarget.ES5,
         false,
         ts.LanguageVariant.Standard,
-        sourceFile.text
+        sourceFile.text,
     );
 
     whitespaceScanner.setTextPos(sourceFile.getLineStarts()[fromLine]);
@@ -72,7 +72,7 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
             for (let i = comments.length - 1; i >= 0; --i) {
                 const endLine = ts.getLineAndCharacterOfPosition(
                     this.sourceFile,
-                    comments[i].end
+                    comments[i].end,
                 ).line;
 
                 if (endLine < line - 1) {
@@ -91,13 +91,13 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
             const replacement = new Replacement(
                 prev.getEnd(),
                 start - prev.getEnd(),
-                `\n\n${whitespace}`
+                `\n\n${whitespace}`,
             );
 
             this.addFailureAtNode(
                 node.getFirstToken(),
                 this.getFailureString(),
-                replacement
+                replacement,
             );
         }
     }
@@ -122,7 +122,7 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
             for (let i = comments.length - 1; i >= 0; --i) {
                 const startLine = ts.getLineAndCharacterOfPosition(
                     this.sourceFile,
-                    comments[i].pos
+                    comments[i].pos,
                 ).line;
 
                 if (startLine === line && comments[i].end < next.getStart()) {
@@ -143,7 +143,7 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
             this.addFailureAtNode(
                 node.getLastToken(),
                 this.getFailureString(),
-                replacement
+                replacement,
             );
         }
     }
@@ -166,36 +166,36 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
 export const defaultMemberData = {
     'public-static': {
         rank: 0,
-        text: 'PUBLIC STATIC property'
+        text: 'PUBLIC STATIC property',
     },
     'protected-static': {
         rank: 1,
-        text: 'PROTECTED STATIC property'
+        text: 'PROTECTED STATIC property',
     },
     'private-static': {
         rank: 2,
-        text: 'PRIVATE STATIC property'
+        text: 'PRIVATE STATIC property',
     },
     '@Input': {
         rank: 3,
-        text: '@Input'
+        text: '@Input',
     },
     '@Output': {
         rank: 4,
-        text: '@Output'
+        text: '@Output',
     },
     'public-instance': {
         rank: 5,
-        text: 'PUBLIC INSTANCE property'
+        text: 'PUBLIC INSTANCE property',
     },
     'protected-instance': {
         rank: 6,
-        text: 'PROTECTED INSTANCE property'
+        text: 'PROTECTED INSTANCE property',
     },
     'private-instance': {
         rank: 7,
-        text: 'PRIVATE INSTANCE property'
-    }
+        text: 'PRIVATE INSTANCE property',
+    },
 };
 
 type NodeDeclaration =
@@ -217,13 +217,13 @@ export abstract class AngularMemberOrderingWalker extends AbstractWalker<IOption
             this.addFailureAt(
                 node.getStart(),
                 this.nodeWidth(node),
-                this.getFailureString(node, this.lastPropertyDeclaration)
+                this.getFailureString(node, this.lastPropertyDeclaration),
             );
         } else if (this.wrongWithAccessor(node, this.lastPropertyDeclaration)) {
             this.addFailureAt(
                 this.lastPropertyDeclaration.getStart(),
                 this.nodeWidth(this.lastPropertyDeclaration),
-                this.getFailureStringForAccessor(this.lastPropertyDeclaration)
+                this.getFailureStringForAccessor(this.lastPropertyDeclaration),
             );
         }
 
@@ -248,18 +248,18 @@ export abstract class AngularMemberOrderingWalker extends AbstractWalker<IOption
 
     protected abstract getFailureString(
         nextNode: NodeDeclaration,
-        prevNode: NodeDeclaration
+        prevNode: NodeDeclaration,
     ): string;
     protected abstract getFailureStringForAccessor(node: NodeDeclaration): string;
     protected abstract hasMatch(node: ts.Node): boolean;
     protected abstract isRightOrder(
         node: NodeDeclaration,
-        prevNode: NodeDeclaration
+        prevNode: NodeDeclaration,
     ): boolean;
     protected abstract isClass(node: ts.Node): boolean;
     protected abstract nodeWidth(node: NodeDeclaration): number;
     protected abstract wrongWithAccessor(
         node: NodeDeclaration,
-        prevNode: NodeDeclaration
+        prevNode: NodeDeclaration,
     ): boolean;
 }
