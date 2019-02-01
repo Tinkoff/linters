@@ -10,7 +10,7 @@ export function getLeadingWhitespace(node: ts.Node, sourceFile: ts.SourceFile): 
 
 export function getTrailingWhitespace(
     node: ts.Statement,
-    sourceFile: ts.SourceFile
+    sourceFile: ts.SourceFile,
 ): string {
     const next = getNextStatement(node);
     const fromLine = ts.getLineAndCharacterOfPosition(sourceFile, next.getStart()).line;
