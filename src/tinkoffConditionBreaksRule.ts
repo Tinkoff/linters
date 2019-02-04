@@ -112,16 +112,16 @@ class ConditionalBreaksWalker extends Lint.RuleWalker {
     private static getFixes(node: ts.ConditionalExpression): Replacement[] {
         const lineAndChar = ts.getLineAndCharacterOfPosition(
             node.getSourceFile(),
-            node.getStart()
+            node.getStart(),
         );
         const lineStartPosition = ts.getPositionOfLineAndCharacter(
             node.getSourceFile(),
             lineAndChar.line,
-            0
+            0,
         );
         const whitespaces = ConditionalBreaksWalker.getWhitespaces(
             node.getSourceFile().text,
-            lineStartPosition
+            lineStartPosition,
         );
 
         return [
@@ -130,23 +130,23 @@ class ConditionalBreaksWalker extends Lint.RuleWalker {
                 node.questionToken.getFullWidth(),
                 node.questionToken
                     .getFullText()
-                    .replace(/\s*\?/, '\n' + whitespaces + '?')
+                    .replace(/\s*\?/, '\n' + whitespaces + '?'),
             ),
             new Replacement(
                 node.colonToken.getFullStart(),
                 node.colonToken.getFullWidth(),
-                node.colonToken.getFullText().replace(/\s*:/, '\n' + whitespaces + ':')
+                node.colonToken.getFullText().replace(/\s*:/, '\n' + whitespaces + ':'),
             ),
             new Replacement(
                 node.whenTrue.getFullStart(),
                 node.whenTrue.getFullWidth(),
-                node.whenTrue.getFullText().replace(/^\s*/, ' ')
+                node.whenTrue.getFullText().replace(/^\s*/, ' '),
             ),
             new Replacement(
                 node.whenFalse.getFullStart(),
                 node.whenFalse.getFullWidth(),
-                node.whenFalse.getFullText().replace(/^\s*/, ' ')
-            )
+                node.whenFalse.getFullText().replace(/^\s*/, ' '),
+            ),
         ];
     }
 

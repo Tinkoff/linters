@@ -14,14 +14,14 @@ export class Rule extends Lint.Rules.AbstractRule {
         options: {},
         optionExamples: [],
         type: 'style',
-        typescriptOnly: false
+        typescriptOnly: false,
     };
 
     apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
         const walker = new NewlineAroundControlStatementWalker(
             sourceFile,
             this.ruleName,
-            undefined
+            undefined,
         );
 
         return this.applyWithWalker(walker);

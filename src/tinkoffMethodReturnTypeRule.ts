@@ -27,7 +27,7 @@ class TinkoffMethodReturnTypeWalker extends Lint.RuleWalker {
             this.addFailureAt(
                 this.findClosingBracket(methodNode).getEnd(),
                 1,
-                Rule.FAILURE_STRING
+                Rule.FAILURE_STRING,
             );
         }
     }
