@@ -11,7 +11,7 @@ module.exports = {
 		{
 			files: '*.js',
 			options: {
-				parser: 'babylon'
+				parser: 'babel'
 			}
 		},
 		{
