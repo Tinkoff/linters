@@ -76,7 +76,7 @@ We arrange members of Angular components in the following order:
 
 When a ternary operator contains complex expressions, it becomes difficult to read and understand. In that case we divide it into several lines.
 
-```
+```ts
 // bad
 const defaultQuestionnaire = this.isCompany || this.accountIsBlocked ? defaultQuestionnaireCompany && 'super text' : defaultQuestionnaireIp;
 
@@ -94,7 +94,7 @@ const result = isShown ? [] : null;
 If a function or a method returns result, we must specify its type.
 The only exception is the arrow functions. For them it is not necessary.
 
-```
+```ts
 class User {
     constructor(name: string, age: number) {
     }
@@ -133,7 +133,7 @@ const doSomething = () => {
 We separate variable declarations from the previous and subsequent code with an empty string.
 But we do not add an empty line before the first variable inside the block.
 
-```
+```ts
 // bad
 const a = 1;
 let b = 2;
@@ -157,7 +157,7 @@ function getStatus() {
 Also we separate control statements (for, if, return, etc) from the previous and subsequent code with an empty string.
 But we do not add an empty line before the first variable inside the block.
 
-```
+```ts
 function doSomething(count: number): number {
     if (age > 30) {
     }
