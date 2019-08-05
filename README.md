@@ -1,4 +1,4 @@
-# Tinkoff Linter Configuration [![Build](https://travis-ci.org/TinkoffCreditSystems/linters.svg?branch=master)](https://travis-ci.org/TinkoffCreditSystems/linters)
+# Tinkoff Linter Configuration [![Build](https://travis-ci.org/TinkoffCreditSystems/linters.svg?branch=master)](https://travis-ci.org/TinkoffCreditSystems/linters) [![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters)
 
 This repository contains configuration files for the linters we use in Tinkoff. It includes:
 
@@ -167,6 +167,14 @@ function doSomething(count: number): number {
 
     return {name, age};
 }
+```
+
+## Badge
+
+Show that you use `@tinkoff/linters` in your project [![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters)
+
+```md
+[![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters)
 ```
 
 ## Development
