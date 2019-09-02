@@ -6,9 +6,7 @@ const INDENT = '    ';
 
 export class Rule extends Lint.Rules.AbstractRule {
     static FAILURE_STRING = 'Expected new line between parts of ternary expression';
-    static WONT_FIX_FAILURE_STRING = `${
-        Rule.FAILURE_STRING
-    } (cannot be auto-fixed because of nesting)`;
+    static WONT_FIX_FAILURE_STRING = `${Rule.FAILURE_STRING} (cannot be auto-fixed because of nesting)`;
 
     apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
         const walker = new ConditionalBreaksWalker(sourceFile, this.getOptions());

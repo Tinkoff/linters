@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/TinkoffCreditSystems/linters/compare/v0.3.0...v0.4.0) (2019-09-02)
+
+### Features
+
+* bump dependencies ([940af6a](https://github.com/TinkoffCreditSystems/linters/pull/11/commits/940af6a))
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/TinkoffCreditSystems/linters/compare/v0.2.0...v0.3.0) (2019-02-04)
 
