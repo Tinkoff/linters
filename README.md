@@ -36,7 +36,8 @@ Example of `tslint.json` file in your project:
 {
 	"extends": [
 		"@tinkoff/linters/tslint/bases/prettier.tslint.json",
-		"@tinkoff/linters/tslint/mixins/rxjs5.5.tslint.json"
+		"@tinkoff/linters/tslint/mixins/rxjs5.5.tslint.json", // For RxJs 5.5
+		"@tinkoff/linters/tslint/mixins/rxjs6.tslint.json" // For RxJS 6+
 	]
 }
 ```
