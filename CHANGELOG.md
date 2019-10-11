@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/TinkoffCreditSystems/linters/compare/v0.4.0...v0.5.0) (2019-10-11)
+
+### Features
+
+* add RxJs 6+ rules ([120e45c](https://github.com/TinkoffCreditSystems/linters/pull/14/commits/120e45c))
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/TinkoffCreditSystems/linters/compare/v0.3.0...v0.4.0) (2019-09-02)
 
