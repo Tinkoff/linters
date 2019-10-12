@@ -1,4 +1,4 @@
-# Tinkoff Linter Configuration [![Build](https://img.shields.io/travis/TinkoffCreditSystems/linters)](https://travis-ci.org/TinkoffCreditSystems/linters) [![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters) [![npm version](https://img.shields.io/npm/v/@tinkoff/linters)](https://www.npmjs.com/package/@tinkoff/linters)
+# Tinkoff Linter Configuration [![Build](https://img.shields.io/travis/TinkoffCreditSystems/linters/master)](https://travis-ci.org/TinkoffCreditSystems/linters) [![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters) [![npm version](https://img.shields.io/npm/v/@tinkoff/linters)](https://www.npmjs.com/package/@tinkoff/linters)
 
 This repository contains configuration files for the linters we use in Tinkoff. It includes:
 
