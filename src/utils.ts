@@ -164,37 +164,61 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
 // Angular member ordering rule
 
 export const defaultMemberData = {
-    'public-static': {
+    'public-static-field': {
         rank: 0,
         text: 'PUBLIC STATIC property',
     },
-    'protected-static': {
+    'protected-static-field': {
         rank: 1,
         text: 'PROTECTED STATIC property',
     },
-    'private-static': {
+    'private-static-field': {
         rank: 2,
         text: 'PRIVATE STATIC property',
     },
-    '@Input': {
+    'public-static-method': {
         rank: 3,
+        text: 'PUBLIC STATIC METHOD',
+    },
+    'protected-static-method': {
+        rank: 4,
+        text: 'PROTECTED STATIC METHOD',
+    },
+    'private-static-method': {
+        rank: 5,
+        text: 'PRIVATE STATIC METHOD',
+    },
+    '@Input': {
+        rank: 6,
         text: '@Input',
     },
     '@Output': {
-        rank: 4,
+        rank: 7,
         text: '@Output',
     },
-    'public-instance': {
-        rank: 5,
+    'public-instance-field': {
+        rank: 8,
         text: 'PUBLIC INSTANCE property',
     },
-    'protected-instance': {
-        rank: 6,
+    'protected-instance-field': {
+        rank: 9,
         text: 'PROTECTED INSTANCE property',
     },
-    'private-instance': {
-        rank: 7,
+    'private-instance-field': {
+        rank: 10,
         text: 'PRIVATE INSTANCE property',
+    },
+    'public-instance-method': {
+        rank: 11,
+        text: 'PUBLIC INSTANCE METHOD',
+    },
+    'protected-instance-method': {
+        rank: 12,
+        text: 'PROTECTED INSTANCE METHOD',
+    },
+    'private-instance-method': {
+        rank: 13,
+        text: 'PRIVATE INSTANCE METHOD',
     },
 };
 
