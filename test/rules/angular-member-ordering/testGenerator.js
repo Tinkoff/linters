@@ -21,6 +21,12 @@ const order = [
     'public-static-field',
     '@Input',
     '@Output',
+    'public-getter',
+    'public-setter',
+    'protected-getter',
+    'protected-setter',
+    'private-getter',
+    'private-setter',
     'public-instance-method',
     'public-static-method',
     'protected-instance-method',
@@ -29,29 +35,29 @@ const order = [
     'private-static-method',
 ];
 const defaultMemberData = {
-    'private-instance-field': {
+    'public-static-field': {
         rank: 0,
-        text: 'PRIVATE INSTANCE property',
-    },
-    'private-static-field': {
-        rank: 1,
-        text: 'PRIVATE STATIC property',
+        text: 'PUBLIC STATIC property',
     },
     'protected-static-field': {
-        rank: 2,
+        rank: 1,
         text: 'PROTECTED STATIC property',
     },
-    'protected-instance-field': {
+    'private-static-field': {
+        rank: 2,
+        text: 'PRIVATE STATIC property',
+    },
+    'public-static-method': {
         rank: 3,
-        text: 'PROTECTED INSTANCE property',
+        text: 'PUBLIC STATIC METHOD',
     },
-    'public-instance-field': {
+    'protected-static-method': {
         rank: 4,
-        text: 'PUBLIC INSTANCE property',
+        text: 'PROTECTED STATIC METHOD',
     },
-    'public-static-field': {
+    'private-static-method': {
         rank: 5,
-        text: 'PUBLIC STATIC property',
+        text: 'PRIVATE STATIC METHOD',
     },
     '@Input': {
         rank: 6,
@@ -61,29 +67,53 @@ const defaultMemberData = {
         rank: 7,
         text: '@Output',
     },
-    'public-instance-method': {
+    'public-getter': {
         rank: 8,
+        text: 'PUBLIC GETTER',
+    },
+    'public-setter': {
+        rank: 9,
+        text: 'PUBLIC SETTER',
+    },
+    'protected-getter': {
+        rank: 10,
+        text: 'PROTECTED GETTER',
+    },
+    'protected-setter': {
+        rank: 11,
+        text: 'PROTECTED SETTER',
+    },
+    'private-getter': {
+        rank: 12,
+        text: 'PRIVATE GETTER',
+    },
+    'private-setter': {
+        rank: 13,
+        text: 'PRIVATE SETTER',
+    },
+    'public-instance-field': {
+        rank: 14,
+        text: 'PUBLIC INSTANCE property',
+    },
+    'protected-instance-field': {
+        rank: 15,
+        text: 'PROTECTED INSTANCE property',
+    },
+    'private-instance-field': {
+        rank: 16,
+        text: 'PRIVATE INSTANCE property',
+    },
+    'public-instance-method': {
+        rank: 17,
         text: 'PUBLIC INSTANCE METHOD',
     },
-    'public-static-method': {
-        rank: 9,
-        text: 'PUBLIC STATIC METHOD',
-    },
     'protected-instance-method': {
-        rank: 10,
+        rank: 18,
         text: 'PROTECTED INSTANCE METHOD',
     },
-    'protected-static-method': {
-        rank: 11,
-        text: 'PROTECTED STATIC METHOD',
-    },
     'private-instance-method': {
-        rank: 12,
+        rank: 19,
         text: 'PRIVATE INSTANCE METHOD',
-    },
-    'private-static-method': {
-        rank: 13,
-        text: 'PRIVATE STATIC METHOD',
     },
 };
 
@@ -107,6 +137,14 @@ function getRandomVariable() {
 
 function getRandomMethod() {
     return methods[Math.floor(Math.random() * methods.length)];
+}
+
+function getGetter() {
+    return 'get some() {return 1}';
+}
+
+function getSetter() {
+    return 'set some() {return 2}';
 }
 
 const errors = {};
@@ -178,6 +216,7 @@ function parseField(index) {
             fieldType = fieldTypeArr.join(' ');
         }
     }
+
     return fieldType;
 }
 
@@ -185,7 +224,7 @@ function makeField(type) {
     if (!type) {
         return getRandomVariable() + '\n';
     }
-    if (type.endsWith('method')) {
+    if (type.endsWith('method') || type.endsWith('getter') || type.endsWith('setter')) {
         return (type.slice(0, -7) + ' ' + getRandomMethod()).trim() + '\n';
     }
 
@@ -220,7 +259,6 @@ function makeFailure(firstIndex, secondIndex) {
     const secondField = makeField(secondFieldType);
 
     const repeatFailure = getRepeatedFailures(firstFieldType);
-
     fs.appendFileSync(file, tab + secondField);
     fs.appendFileSync(file, tab + firstField);
     fs.appendFileSync(
@@ -243,11 +281,15 @@ function getRepeatedFailures(fieldType) {
     }
 
     if (fieldType.endsWith('field')) {
-        return failure.repeat(fieldType.length - 6);
+        return failure.repeat(fieldType.length - 6 || 1);
     }
 
     if (fieldType.endsWith('method')) {
-        return failure.repeat(fieldType - 7);
+        return failure.repeat(fieldType.length - 7 || 1);
+    }
+
+    if (fieldType.endsWith('setter') || fieldType.endsWith('getter')) {
+        return failure.repeat(fieldType.length - 7 > 0 ? fieldType.length - 7 : 3);
     }
 
     return failure.repeat(fieldType.length || 1);

@@ -196,28 +196,52 @@ export const defaultMemberData = {
         rank: 7,
         text: '@Output',
     },
-    'public-instance-field': {
+    'public-getter': {
         rank: 8,
+        text: 'PUBLIC GETTER',
+    },
+    'public-setter': {
+        rank: 9,
+        text: 'PUBLIC SETTER',
+    },
+    'protected-getter': {
+        rank: 10,
+        text: 'PROTECTED GETTER',
+    },
+    'protected-setter': {
+        rank: 11,
+        text: 'PROTECTED SETTER',
+    },
+    'private-getter': {
+        rank: 12,
+        text: 'PRIVATE GETTER',
+    },
+    'private-setter': {
+        rank: 13,
+        text: 'PRIVATE SETTER',
+    },
+    'public-instance-field': {
+        rank: 14,
         text: 'PUBLIC INSTANCE property',
     },
     'protected-instance-field': {
-        rank: 9,
+        rank: 15,
         text: 'PROTECTED INSTANCE property',
     },
     'private-instance-field': {
-        rank: 10,
+        rank: 16,
         text: 'PRIVATE INSTANCE property',
     },
     'public-instance-method': {
-        rank: 11,
+        rank: 17,
         text: 'PUBLIC INSTANCE METHOD',
     },
     'protected-instance-method': {
-        rank: 12,
+        rank: 18,
         text: 'PROTECTED INSTANCE METHOD',
     },
     'private-instance-method': {
-        rank: 13,
+        rank: 19,
         text: 'PRIVATE INSTANCE METHOD',
     },
 };

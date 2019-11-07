@@ -21,6 +21,12 @@ export class Rule extends Rules.AbstractRule {
                 'public-static-field',
                 '@Input',
                 '@Output',
+                'public-getter',
+                'public-setter',
+                'protected-getter',
+                'protected-setter',
+                'private-getter',
+                'private-setter',
                 'public-instance-method',
                 'public-static-method',
                 'protected-instance-method',
@@ -38,6 +44,12 @@ export class Rule extends Rules.AbstractRule {
             'public-static-field',
             '@Input',
             '@Output',
+            'public-getter',
+            'public-setter',
+            'protected-getter',
+            'protected-setter',
+            'private-getter',
+            'private-setter',
             'public-instance-method',
             'public-static-method',
             'protected-instance-method',
@@ -102,7 +114,9 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
             node.kind === ts.SyntaxKind.PropertyDeclaration ||
             node.kind === ts.SyntaxKind.MethodDeclaration ||
             this.isInputAccessor(node) ||
-            this.isOutputAccessor(node)
+            this.isOutputAccessor(node) ||
+            this.isGetAccessor(node) ||
+            this.isSetAccessor(node)
         );
     }
 
@@ -204,6 +218,18 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
             nodeName = 'public';
         }
 
+        if (this.isGetAccessor(node)) {
+            nodeName += '-getter';
+
+            return Rule.memberData[nodeName][field];
+        }
+
+        if (this.isSetAccessor(node)) {
+            nodeName += '-setter';
+
+            return Rule.memberData[nodeName][field];
+        }
+
         if (this.isIncludedModifier(node, ts.SyntaxKind.StaticKeyword)) {
             nodeName += '-static';
         } else {
@@ -260,9 +286,14 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
     }
 
     private isAccessor(node: ts.Node | NodeDeclaration): boolean {
-        return (
-            node.kind === ts.SyntaxKind.SetAccessor ||
-            node.kind === ts.SyntaxKind.GetAccessor
-        );
+        return this.isGetAccessor(node) || this.isSetAccessor(node);
+    }
+
+    private isGetAccessor(node: ts.Node): boolean {
+        return node.kind === ts.SyntaxKind.GetAccessor;
+    }
+
+    private isSetAccessor(node: ts.Node): boolean {
+        return node.kind === ts.SyntaxKind.SetAccessor;
     }
 }
