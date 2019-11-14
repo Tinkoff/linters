@@ -13,25 +13,49 @@ export class Rule extends Rules.AbstractRule {
         optionsDescription: '',
         options: {
             order: [
-                'public-static',
+                'private-instance-field',
+                'private-static-field',
+                'protected-static-field',
+                'protected-instance-field',
+                'public-instance-field',
+                'public-static-field',
                 '@Input',
                 '@Output',
-                'public-instance',
-                'protected-static',
-                'protected-instance',
-                'private-static',
-                'private-instance',
+                'public-getter',
+                'public-setter',
+                'protected-getter',
+                'protected-setter',
+                'private-getter',
+                'private-setter',
+                'public-instance-method',
+                'public-static-method',
+                'protected-instance-method',
+                'protected-static-method',
+                'private-instance-method',
+                'private-static-method',
             ],
         },
         optionExamples: [
-            'public-static',
-            'protected-static',
-            'private-static',
+            'private-instance-field',
+            'private-static-field',
+            'protected-static-field',
+            'protected-instance-field',
+            'public-instance-field',
+            'public-static-field',
             '@Input',
             '@Output',
-            'public-instance',
-            'protected-instance',
-            'private-instance',
+            'public-getter',
+            'public-setter',
+            'protected-getter',
+            'protected-setter',
+            'private-getter',
+            'private-setter',
+            'public-instance-method',
+            'public-static-method',
+            'protected-instance-method',
+            'protected-static-method',
+            'private-instance-method',
+            'private-static-method',
         ],
         type: 'style',
         typescriptOnly: false,
@@ -62,7 +86,8 @@ export class Rule extends Rules.AbstractRule {
 type NodeDeclaration =
     | ts.PropertyDeclaration
     | ts.SetAccessorDeclaration
-    | ts.GetAccessorDeclaration;
+    | ts.GetAccessorDeclaration
+    | ts.MethodDeclaration;
 
 class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
     private bindingWasAppeared = false;
@@ -87,8 +112,11 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
     protected hasMatch(node: ts.Node): boolean {
         return (
             node.kind === ts.SyntaxKind.PropertyDeclaration ||
+            node.kind === ts.SyntaxKind.MethodDeclaration ||
             this.isInputAccessor(node) ||
-            this.isOutputAccessor(node)
+            this.isOutputAccessor(node) ||
+            this.isGetAccessor(node) ||
+            this.isSetAccessor(node)
         );
     }
 
@@ -126,6 +154,21 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
         );
     }
 
+    protected nodeWidth(node: NodeDeclaration): number {
+        const input = '@Input';
+        const output = '@Output';
+
+        if (this.isInput(node)) {
+            return input.length;
+        }
+
+        if (this.isOutput(node)) {
+            return output.length;
+        }
+
+        return node.getChildAt(0).getWidth();
+    }
+
     private isInputAfterAccessor(
         node: NodeDeclaration,
         prevNode: NodeDeclaration,
@@ -146,21 +189,6 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
         const isPrevNodeNodeOutputAccessor = this.isOutputAccessor(prevNode);
 
         return isNodeOutput && !isNodeAccessor && isPrevNodeNodeOutputAccessor;
-    }
-
-    protected nodeWidth(node: NodeDeclaration): number {
-        const input = '@Input';
-        const output = '@Output';
-
-        if (this.isInput(node)) {
-            return input.length;
-        }
-
-        if (this.isOutput(node)) {
-            return output.length;
-        }
-
-        return node.getChildAt(0).getWidth();
     }
 
     private getNodeType(node: NodeDeclaration): string {
@@ -190,10 +218,28 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
             nodeName = 'public';
         }
 
+        if (this.isGetAccessor(node)) {
+            nodeName += '-getter';
+
+            return Rule.memberData[nodeName][field];
+        }
+
+        if (this.isSetAccessor(node)) {
+            nodeName += '-setter';
+
+            return Rule.memberData[nodeName][field];
+        }
+
         if (this.isIncludedModifier(node, ts.SyntaxKind.StaticKeyword)) {
             nodeName += '-static';
         } else {
             nodeName += '-instance';
+        }
+
+        if (node.kind === ts.SyntaxKind.MethodDeclaration) {
+            nodeName += '-method';
+        } else {
+            nodeName += '-field';
         }
 
         return Rule.memberData[nodeName][field];
@@ -240,9 +286,14 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
     }
 
     private isAccessor(node: ts.Node | NodeDeclaration): boolean {
-        return (
-            node.kind === ts.SyntaxKind.SetAccessor ||
-            node.kind === ts.SyntaxKind.GetAccessor
-        );
+        return this.isGetAccessor(node) || this.isSetAccessor(node);
+    }
+
+    private isGetAccessor(node: ts.Node): boolean {
+        return node.kind === ts.SyntaxKind.GetAccessor;
+    }
+
+    private isSetAccessor(node: ts.Node): boolean {
+        return node.kind === ts.SyntaxKind.SetAccessor;
     }
 }

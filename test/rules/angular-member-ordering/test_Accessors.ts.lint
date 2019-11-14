@@ -1,6 +1,7 @@
 // Right cases
 
 class rightCases {
+    protected a;
     static a = 4;
     public static a: boolean;
     @Input() a;
@@ -39,7 +40,6 @@ class rightCases {
         return 'all right!';
     }
 
-    protected a;
 }
 
 // Wrong cases
@@ -61,13 +61,13 @@ class failure {
 
     @Input() middleName: string;
 
-    someVal: number
-
     @Input()
-    ~~~~~~      [3]
     set lastName(value: string) {
         this.callLongMethod(value);
     }
+
+    someVal: number
+    ~~~~~~~      [15]
 }
 
 class failure {
@@ -207,3 +207,4 @@ class failure {
 [12]: @Output must be before PRIVATE INSTANCE property
 [13]: @Input get/set accessor must be at the end of input's declarations
 [14]: @Output get/set accessor must be at the end of output's declarations
+[15]: PUBLIC INSTANCE property must be before @Input

@@ -81,13 +81,6 @@ class ConditionalBreaksWalker extends Lint.RuleWalker {
         return node.getChildren().some(ConditionalBreaksWalker.checkChildren);
     }
 
-    private static checkChildren(node: ts.Node): boolean {
-        return (
-            node.kind === ts.SyntaxKind.ConditionalExpression ||
-            node.getChildren().some(ConditionalBreaksWalker.checkChildren)
-        );
-    }
-
     private getLineNumber(position: number): number {
         return ts.getLineAndCharacterOfPosition(this.getSourceFile(), position).line;
     }
@@ -104,6 +97,13 @@ class ConditionalBreaksWalker extends Lint.RuleWalker {
             node.whenTrue.getFullWidth() +
             node.colonToken.getFullWidth() +
             node.whenFalse.getFullWidth()
+        );
+    }
+
+    private static checkChildren(node: ts.Node): boolean {
+        return (
+            node.kind === ts.SyntaxKind.ConditionalExpression ||
+            node.getChildren().some(ConditionalBreaksWalker.checkChildren)
         );
     }
 

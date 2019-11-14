@@ -164,37 +164,85 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
 // Angular member ordering rule
 
 export const defaultMemberData = {
-    'public-static': {
+    'public-static-field': {
         rank: 0,
         text: 'PUBLIC STATIC property',
     },
-    'protected-static': {
+    'protected-static-field': {
         rank: 1,
         text: 'PROTECTED STATIC property',
     },
-    'private-static': {
+    'private-static-field': {
         rank: 2,
         text: 'PRIVATE STATIC property',
     },
-    '@Input': {
+    'public-static-method': {
         rank: 3,
+        text: 'PUBLIC STATIC METHOD',
+    },
+    'protected-static-method': {
+        rank: 4,
+        text: 'PROTECTED STATIC METHOD',
+    },
+    'private-static-method': {
+        rank: 5,
+        text: 'PRIVATE STATIC METHOD',
+    },
+    '@Input': {
+        rank: 6,
         text: '@Input',
     },
     '@Output': {
-        rank: 4,
+        rank: 7,
         text: '@Output',
     },
-    'public-instance': {
-        rank: 5,
+    'public-getter': {
+        rank: 8,
+        text: 'PUBLIC GETTER',
+    },
+    'public-setter': {
+        rank: 9,
+        text: 'PUBLIC SETTER',
+    },
+    'protected-getter': {
+        rank: 10,
+        text: 'PROTECTED GETTER',
+    },
+    'protected-setter': {
+        rank: 11,
+        text: 'PROTECTED SETTER',
+    },
+    'private-getter': {
+        rank: 12,
+        text: 'PRIVATE GETTER',
+    },
+    'private-setter': {
+        rank: 13,
+        text: 'PRIVATE SETTER',
+    },
+    'public-instance-field': {
+        rank: 14,
         text: 'PUBLIC INSTANCE property',
     },
-    'protected-instance': {
-        rank: 6,
+    'protected-instance-field': {
+        rank: 15,
         text: 'PROTECTED INSTANCE property',
     },
-    'private-instance': {
-        rank: 7,
+    'private-instance-field': {
+        rank: 16,
         text: 'PRIVATE INSTANCE property',
+    },
+    'public-instance-method': {
+        rank: 17,
+        text: 'PUBLIC INSTANCE METHOD',
+    },
+    'protected-instance-method': {
+        rank: 18,
+        text: 'PROTECTED INSTANCE METHOD',
+    },
+    'private-instance-method': {
+        rank: 19,
+        text: 'PRIVATE INSTANCE METHOD',
     },
 };
 
