@@ -3,9 +3,15 @@
 // Right cases
 
 class rightCases {
-    static a;
+    protected a;
+
+    readonly a;
+    
+    a;
 
     public static a;
+
+    static a;
 
     @Input('onselect') a;
 
@@ -26,12 +32,6 @@ class rightCases {
     @Input() readonly thirdInput;
 
     @Output() thirdInputChange;
-
-    readonly a;
-
-    a;
-
-    protected a;
 }
 
 // Wrong cases
