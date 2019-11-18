@@ -55,12 +55,5 @@
 		"hooks": {
 			"pre-commit": "npm run lint"
 		}
-	},
-	"files": [
-		"/prettier",
-		"/stylelint",
-		"/tslint",
-		"LICENSE",
-		"README.md"
-	]
+	}
 }

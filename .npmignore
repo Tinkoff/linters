@@ -1,0 +1,5 @@
+*
+!eslint/**/*
+!prettier/**/*
+!stylelint/**/*
+!tslint/**/*
