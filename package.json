@@ -50,10 +50,5 @@
 		"tsutils": "^3.17.1",
 		"typescript": "~3.2.2",
 		"watch": "1.0.2"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "npm run lint"
-		}
 	}
 }
