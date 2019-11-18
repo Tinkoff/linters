@@ -12,7 +12,7 @@
         "ban": [true, "fit", "fdescribe"],
         "class-name": true,
         "curly": true,
-        "eofline": false,
+        "eofline": true,
         "forin": true,
         "interface-name": [true, "never-prefix"],
         "jsdoc-format": true,
