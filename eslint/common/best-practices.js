@@ -41,7 +41,7 @@ module.exports = {
         'no-unused-expressions': 'error',
         'no-var': 'error',
         'prefer-const': ['error', {destructuring: 'any'}],
-        eqeqeq: ['error', 'always'],
+        eqeqeq: 'error',
         'use-isnan': ['error', {enforceForSwitchCase: true, enforceForIndexOf: true}],
         'no-empty-function': [
             breaking({since: 2}), // Was'nt fully worked on tslint
