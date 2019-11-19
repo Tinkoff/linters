@@ -1,7 +1,19 @@
+const breaking = require('../utils/breaking');
+
 module.exports = {
     rules: {
         curly: 'error',
         'new-parens': 'error',
+        'max-len': [
+            'error',
+            {
+                code: 90,
+                ignoreTrailingComments: true,
+                ignoreUrls: true,
+                ignoreRegExpLiterals: true,
+                ignoreStrings: true,
+            },
+        ],
         // @typescript-eslint/indent: [
         //     'error',
         //     4,
@@ -14,16 +26,6 @@ module.exports = {
         //         }
         //     }
         // ],
-        'max-len': [
-            'error',
-            {
-                code: 90,
-                ignoreTrailingComments: true,
-                ignoreUrls: true,
-                ignoreRegExpLiterals: true,
-                ignoreStrings: true,
-            },
-        ],
         indent: [
             'error',
             4,
@@ -37,7 +39,6 @@ module.exports = {
                 ArrayExpression: 1,
                 ObjectExpression: 1,
                 ImportDeclaration: 1,
-                // TODO flatTernaryExpressions: ?
                 FunctionDeclaration: {
                     parameters: 1,
                 },
@@ -55,10 +56,10 @@ module.exports = {
         ],
         'arrow-body-style': ['error', 'as-needed'],
         'arrow-parens': ['error', 'as-needed'],
-        'eol-last': 'error', // DEMO conflict resolved
-        'linebreak-style': ['error', 'unix'], // DEMO improvment
+        'eol-last': 'error',
+        'linebreak-style': ['error', 'unix'],
         'valid-jsdoc': 'off', // valid-jsdoc was deprecated prior to eslint-plugin-jsdoc
-        // 'dot-notation': 'error', // TODO DEMO enable, wasnt worked before
+        'dot-notation': breaking({since: 2}),
         'quote-props': ['error', 'as-needed', {keywords: true}],
         'no-multiple-empty-lines': ['error', {max: 2}],
         'one-var': ['error', 'never'],

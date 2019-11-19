@@ -13,6 +13,13 @@ module.exports = {
     ]
 }
 ```
+```js
+// .prettier.config.js
+module.exports = {
+	...require('@tinkoff/linters/prettier/prettier.config')
+};
+
+```
 
 npm script:
 ```sh
@@ -20,7 +27,11 @@ npm script:
     "lint:es:ci": "eslint \"src/**/*.ts\"",
 ```
 
-### (alternatively) External prettier
+<details>
+    <summary>
+        <h3>(alternatively) External prettier</h3>
+    </summary>
+
 ```js
 // .eslintrc.js
 module.exports = {
@@ -29,7 +40,6 @@ module.exports = {
     ]
 }
 ```
-
 ```js
 // .prettier.config.js
 module.exports = {
@@ -46,6 +56,8 @@ npm script:
     "lint:es:ci": "eslint \"src/**/*.ts\"",
 prettier --write && eslint --fix
 ```
+
+</details>
 
 ### In case if you are using Yarn or pnpm
 You need to install [move-bin](https://github.com/kupibilet-frontend/move-binaries-to-bin) to make your eslint/prettier/stylelint binaries work

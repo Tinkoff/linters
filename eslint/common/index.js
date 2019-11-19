@@ -1,6 +1,6 @@
 module.exports = {
     env: {
-        browser: true, // TODO DEMO is all of this must be enabled?
+        browser: true,
         node: true,
         jest: true,
         jasmine: true,

@@ -1,3 +1,5 @@
+const breaking = require('../utils/breaking');
+
 module.exports = {
     rules: {
         'no-restricted-globals': [
@@ -14,15 +16,21 @@ module.exports = {
                 name: 'fit',
                 message: 'Do not commit fit. Use it() instead.',
             },
-        ], // DEMO improvement
+        ],
         'no-eval': 'error',
-        'no-new-func': 'error', // DEMO improvement
-        'no-implied-eval': 'error', // DEMO improvement
-        'no-prototype-builtins': 'off', // TODO was not used before but is very useful
-        'no-extra-boolean-cast': 'off', // TODO was not used before but is very useful
-        'no-useless-escape': 'off', // TODO was not used before but is very useful
-        'guard-for-in': 'error',
-        'no-labels': ['error', {allowLoop: true, allowSwitch: true}], // TODO its better to not allow labels anywhere
+        'no-new-func': 'error',
+        'no-implied-eval': 'error',
+        'no-prototype-builtins': breaking({since: 2, before: 'off', after: 'warn'}),
+        'no-extra-boolean-cast': breaking({since: 2, before: 'off', after: 'warn'}),
+        'no-useless-escape': breaking({since: 2, before: 'off', after: 'warn'}),
+        'guard-for-in': breaking({since: 2}), // Was'nt fully worked on tslint
+        'no-labels': [
+            'error',
+            {
+                allowLoop: breaking({since: 2, before: true, after: false}),
+                allowSwitch: breaking({since: 2, before: true, after: false}),
+            },
+        ],
         'no-unused-labels': 'error',
         'no-caller': 'error',
         'no-cond-assign': 'error',
@@ -36,11 +44,18 @@ module.exports = {
         eqeqeq: ['error', 'always'],
         'use-isnan': ['error', {enforceForSwitchCase: true, enforceForIndexOf: true}],
         'no-empty-function': [
-            'error',
+            breaking({since: 2}), // Was'nt fully worked on tslint
             {
-                allow: ['constructors', 'setters', 'getters', 'methods'],
+                allow: [
+                    'arrowFunctions',
+                    'constructors',
+                    'setters',
+                    'getters',
+                    'methods',
+                ],
             },
         ],
-        // TODO enable 'no-use-before-define' or '@typescript-eslint/no-use-before-define'
+        'no-nested-ternary': breaking({since: 2}),
+        'no-undef': breaking({since: 2}), // Was'nt worked on tslint
     },
 };
