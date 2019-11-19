@@ -38,6 +38,7 @@
 		"eslint-plugin-import": "^2.18.2",
 		"eslint-plugin-jsdoc": "^18.0.1",
 		"eslint-plugin-prettier": "^3.1.1",
+		"eslint-teamcity": "^2.2.0",
 		"prettier": "^1.19.1",
 		"rxjs-tslint": "^0.1.7",
 		"rxjs-tslint-rules": "^4.24.3",
@@ -45,6 +46,7 @@
 		"stylelint-config-prettier": "^5.2.0",
 		"stylelint-config-standard": "^18.3.0",
 		"stylelint-order": "^3.1.0",
+		"stylelint-teamcity-reporter": "^1.1.0",
 		"tslint": "^5.19.0",
 		"tslint-eslint-rules": "^5.4.0",
 		"tslint-microsoft-contrib": "^6.2.0"

@@ -24,12 +24,12 @@ module.exports = {
 npm script:
 ```sh
     "lint:es": "eslint --fix \"src/**/*.ts\"",
-    "lint:es:ci": "eslint \"src/**/*.ts\"",
+    "lint:es:ci": "eslint --format ./node_modules/eslint-teamcity/index.js \"src/**/*.ts\"",
 ```
 
 <details>
     <summary>
-        <h3>(alternatively) External prettier</h3>
+        <b>(alternatively) External prettier</b>
     </summary>
 
 ```js
@@ -53,7 +53,7 @@ npm script:
     "prelint:es": "prettier --write \"src/**/*.ts\"",
     "lint:es": "eslint --fix \"src/**/*.ts\"",
     "prelint:es:ci": "prettier --check \"src/**/*.ts\"",
-    "lint:es:ci": "eslint \"src/**/*.ts\"",
+    "lint:es:ci": "eslint --format ./node_modules/eslint-teamcity/index.js \"src/**/*.ts\"",
 prettier --write && eslint --fix
 ```
 
