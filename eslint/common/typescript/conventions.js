@@ -1,8 +1,7 @@
 const path = require('path');
-const breaking = require('../utils/breaking');
+const breaking = require('../../utils/breaking');
 
 module.exports = {
-    plugins: ['@typescript-eslint', '@typescript-eslint/tslint'],
     rules: {
         'no-unused-vars': 'off', // types and interfaces are not recognized by eslint
         '@typescript-eslint/no-unused-vars': [
@@ -34,6 +33,13 @@ module.exports = {
             before: 'off',
             after: 'warn',
         }),
+        '@typescript-eslint/prefer-readonly': breaking({since: 2}),
+        'functional/prefer-readonly-type': breaking({
+            since: 2,
+            before: 'off',
+            after: 'warn',
+        }),
+        '@typescript-eslint/explicit-function-return-type': 'off', // TODO allow not to set return type when retuns void
 
         // Runs an instance of TSLint within your ESLint setup
         // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin-tslint
@@ -47,7 +53,7 @@ module.exports = {
                     // 'tinkoff-new-line-around-control-statement': true, // TODO CHECK replaced with padding-line-between-statements
                     'tinkoff-angular-member-ordering': true,
                 },
-                rulesDirectory: [path.join(__dirname, '../../tslint/rules')],
+                rulesDirectory: [path.join(__dirname, '../../../tslint/rules')],
             },
         ],
     },

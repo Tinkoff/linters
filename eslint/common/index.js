@@ -6,11 +6,6 @@ module.exports = {
         jasmine: true,
         es6: true,
     },
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-        project: './tsconfig.json',
-        sourceType: 'module',
-    },
     extends: [
         'eslint:recommended',
         './formatting',

@@ -14,19 +14,7 @@ module.exports = {
                 ignoreStrings: true,
             },
         ],
-        // @typescript-eslint/indent: [
-        //     'error',
-        //     4,
-        //     {
-        //         FunctionDeclaration: {
-        //             parameters: 'first'
-        //         },
-        //         FunctionExpression: {
-        //             parameters: 'first'
-        //         }
-        //     }
-        // ],
-        indent: [
+        '@typescript-eslint/indent': [
             'error',
             4,
             {
