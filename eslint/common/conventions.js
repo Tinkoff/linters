@@ -26,5 +26,17 @@ module.exports = {
             {enforceForRenamedProperties: false},
         ],
         'object-shorthand': [breaking({since: 2}), 'properties'],
+        'multiline-ternary': ['error', 'always-multiline'], // replaces "condition-breaks"
+        'operator-linebreak': [
+            'error',
+            'before',
+            {
+                overrides: {
+                    '=': 'none',
+                    '==': 'none',
+                    '===': 'none',
+                },
+            },
+        ],
     },
 };

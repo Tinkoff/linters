@@ -37,9 +37,9 @@ module.exports = {
         ],
         'padding-line-between-statements': [
             'error',
-            {blankLine: 'always', prev: '*', next: ['if', 'for', 'while', 'switch']},
+            {blankLine: 'always', prev: '*', next: ['if', 'for', 'while', 'switch']}, // replaces "new-line-around-control-statement"
             {blankLine: 'always', prev: '*', next: 'return'},
-            {blankLine: 'always', prev: ['const', 'let'], next: '*'},
+            {blankLine: 'always', prev: ['const', 'let'], next: '*'}, // replaces "new-line-after-variable-declaration"
             {blankLine: 'any', prev: ['const', 'let'], next: ['export', 'const', 'let']},
         ],
         'arrow-body-style': ['error', 'as-needed'],
