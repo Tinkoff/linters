@@ -39,7 +39,7 @@ module.exports = {
             before: 'off',
             after: 'warn',
         }),
-        '@typescript-eslint/explicit-function-return-type': 'off', // TODO allow not to set return type when retuns void
+        '@typescript-eslint/explicit-function-return-type': 'off',
 
         // Runs an instance of TSLint within your ESLint setup
         // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin-tslint
@@ -50,7 +50,7 @@ module.exports = {
                     eofline: true, // Dummy rule to supress "Tried to lint [file] but found no valid, enabled rules for this file type and file path in the resolved configuration."
                     'tinkoff-method-return-type': true,
                     'tinkoff-new-line-after-variable-declaration': true,
-                    // 'tinkoff-new-line-around-control-statement': true, // TODO CHECK replaced with padding-line-between-statements
+                    // 'tinkoff-new-line-around-control-statement': true, // replaced with padding-line-between-statements
                     'tinkoff-angular-member-ordering': true,
                 },
                 rulesDirectory: [path.join(__dirname, '../../../tslint/rules')],

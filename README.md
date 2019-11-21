@@ -31,6 +31,7 @@ Add following files in your project:
 module.exports = {
     extends: [
         './node_modules/@tinkoff/linters/eslint/base/prettier',
+        './node_modules/@tinkoff/linters/eslint/angular',
     ]
 }
 ```
@@ -63,6 +64,7 @@ You need to use different base config:
 module.exports = {
     extends: [
         './node_modules/@tinkoff/linters/eslint/base',
+        './node_modules/@tinkoff/linters/eslint/angular',
     ]
 }
 ```
@@ -99,6 +101,7 @@ Parsing error: "parserOptions.project" has been set for @typescript-eslint/parse
     module.exports = {
         extends: [
             './node_modules/@tinkoff/linters/eslint/base',
+            './node_modules/@tinkoff/linters/eslint/angular',
         ],
     +    parserOptions: {
     +        createDefaultProgram: true, // Allows to work with non-ts files
