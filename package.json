@@ -18,7 +18,8 @@
 		"build:watch": "tsc -w",
 		"********** Test": "",
 		"test": "watch \"npm run test:ci\"",
-		"test:ci": "node -r ts-node/register $NODE_DEBUG_OPTION node_modules/.bin/tslint --test ./test/rules/**/tslint.json",
+		"pretest:ci": "node -r ts-node/register $NODE_DEBUG_OPTION node_modules/.bin/tslint --test ./test/rules/**/tslint.json",
+		"test:ci": "jest --ci --config=\"./jest.config.ci.json\"",
 		"preversion": "npm run build:prod"
 	},
 	"author": {
@@ -30,8 +31,10 @@
 		"url": "https://github.com/TinkoffCreditSystems/linters.git"
 	},
 	"dependencies": {
+		"@tinkoff/eslint-plugin": "file:eslint/rules",
 		"@typescript-eslint/eslint-plugin": "^2.7.0",
 		"@typescript-eslint/eslint-plugin-tslint": "^2.7.0",
+		"@typescript-eslint/experimental-utils": "^2.8.0",
 		"@typescript-eslint/parser": "^2.7.0",
 		"eslint": "^6.6.0",
 		"eslint-config-prettier": "^6.6.0",
@@ -40,6 +43,7 @@
 		"eslint-plugin-jsdoc": "^18.0.1",
 		"eslint-plugin-prettier": "^3.1.1",
 		"eslint-teamcity": "^2.2.0",
+		"lodash": "^4.17.15",
 		"prettier": "^1.19.1",
 		"rxjs-tslint": "^0.1.7",
 		"rxjs-tslint-rules": "^4.24.3",
@@ -56,10 +60,11 @@
 	"devDependencies": {
 		"@types/node": "9.3.0",
 		"husky": "^1.2.0",
+		"jest": "^24.9.0",
 		"npm-run-all": "^4.1.5",
 		"rxjs": "^6.5.2",
 		"ts-node": "3.3.0",
-		"tslint-teamcity-reporter": "^3.1.0",
+		"tslint-teamcity-reporter": "^3.2.2",
 		"tsutils": "^3.17.1",
 		"typescript": "~3.2.2",
 		"watch": "1.0.2"

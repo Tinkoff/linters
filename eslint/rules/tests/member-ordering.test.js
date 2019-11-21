@@ -1,12 +1,16 @@
-const breaking = require('../utils/breaking');
+const {CLIEngine} = require('eslint');
+const path = require('path');
 
-module.exports = {
+const cli = new CLIEngine({
+    envs: ['browser', 'node'],
+    useEslintrc: false,
+    configFile: path.join(__dirname, '../../common/typescript/enviroment.js'),
+    parserOptions: {
+        createDefaultProgram: true,
+    },
     rules: {
-        '@typescript-eslint/class-name-casing': 'error',
-
-        '@typescript-eslint/member-ordering': 'off',
         '@tinkoff/member-ordering': [
-            breaking({since: 2}),
+            'error',
             {
                 classes: [
                     'private-instance-field',
@@ -33,4 +37,15 @@ module.exports = {
             },
         ],
     },
-};
+    ignore: false,
+});
+
+const codeframe = cli.getFormatter('codeframe');
+
+test('basic', () => {
+    const report = cli.executeOnFiles([
+        path.join(__dirname, './member-ordering.fixture.ts'),
+    ]);
+
+    expect(codeframe(report.results)).toMatchSnapshot();
+});
