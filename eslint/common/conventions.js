@@ -1,7 +1,21 @@
 const breaking = require('../utils/breaking');
 
+const allExtensions = ['.ts', '.tsx', '.d.ts', '.js', '.jsx'];
+const tsExtensions = ['.ts', '.tsx', '.d.ts'];
+
 module.exports = {
     plugins: ['import'],
+    settings: {
+        'import/extensions': allExtensions,
+        'import/parsers': {
+            '@typescript-eslint/parser': tsExtensions,
+        },
+        'import/resolver': {
+            node: {
+                extensions: allExtensions,
+            },
+        },
+    },
     rules: {
         '@typescript-eslint/class-name-casing': 'error',
         '@typescript-eslint/camelcase': breaking({since: 2}),
