@@ -1,4 +1,3 @@
-const path = require('path');
 const breaking = require('../../utils/breaking');
 
 module.exports = {
@@ -39,22 +38,6 @@ module.exports = {
             before: 'off',
             after: 'warn',
         }),
-        '@typescript-eslint/explicit-function-return-type': 'off',
-
-        // Runs an instance of TSLint within your ESLint setup
-        // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin-tslint
-        '@typescript-eslint/tslint/config': [
-            breaking({since: 2}), // 'tinkoff-angular-member-ordering' was recently changed
-            {
-                rules: {
-                    eofline: true, // Dummy rule to supress "Tried to lint [file] but found no valid, enabled rules for this file type and file path in the resolved configuration."
-                    'tinkoff-method-return-type': true,
-                    'tinkoff-new-line-after-variable-declaration': true,
-                    // 'tinkoff-new-line-around-control-statement': true, // replaced with padding-line-between-statements
-                    'tinkoff-angular-member-ordering': true,
-                },
-                rulesDirectory: [path.join(__dirname, '../../../tslint/rules')],
-            },
-        ],
+        '@tinkoff/require-return-type': 'error',
     },
 };
