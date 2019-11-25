@@ -3,3 +3,5 @@
 !prettier/**/*
 !stylelint/**/*
 !tslint/**/*
+**/tests/*
+.DS_Store
