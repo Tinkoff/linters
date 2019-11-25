@@ -20,7 +20,8 @@
 		"test": "watch \"npm run test:ci\"",
 		"pretest:ci": "node -r ts-node/register $NODE_DEBUG_OPTION node_modules/.bin/tslint --test ./test/rules/**/tslint.json",
 		"test:ci": "jest --ci --config=\"./jest.config.ci.json\"",
-		"preversion": "npm run build:prod"
+		"preversion": "npm run build:prod",
+		"postinstall": "npm i --no-save ./eslint/rules"
 	},
 	"author": {
 		"name": "Tinkoff Team",
@@ -31,7 +32,6 @@
 		"url": "https://github.com/TinkoffCreditSystems/linters.git"
 	},
 	"dependencies": {
-		"@tinkoff/eslint-plugin": "file:eslint/rules",
 		"@typescript-eslint/eslint-plugin": "^2.7.0",
 		"@typescript-eslint/eslint-plugin-tslint": "^2.7.0",
 		"@typescript-eslint/experimental-utils": "^2.8.0",
