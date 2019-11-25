@@ -21,7 +21,8 @@
 		"pretest:ci": "node -r ts-node/register $NODE_DEBUG_OPTION node_modules/.bin/tslint --test ./test/rules/**/tslint.json",
 		"test:ci": "jest --ci --config=\"./jest.config.ci.json\"",
 		"preversion": "npm run build:prod",
-		"postinstall": "npm i --no-save ./eslint/rules"
+		"********** Local dependency fix with hoisting. https://github.com/npm/npm/issues/18266. Uses npm-defined INIT_CWD env https://docs.npmjs.com/cli/run-script#description": "",
+		"postinstall": "cd \"${INIT_CWD}\"; npm i --no-save --no-package-lock ./node_modules/@tinkoff/linters/eslint/rules/ || npm i --no-save --no-package-lock ./eslint/rules/"
 	},
 	"author": {
 		"name": "Tinkoff Team",
