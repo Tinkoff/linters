@@ -1,3 +1,34 @@
+interface RightInterface {
+    isBoolean: boolean;
+    error?: any;
+    readonly x: number;
+    [propName: string]: any;
+    (source: string, subString: string): boolean;
+}
+
+interface RightInterfaceWithConstructor {
+    isBoolean: boolean;
+    error?: any;
+    readonly x: number;
+    new (hour: number, minute: number);
+    [propName: string]: any;
+    (source: string, subString: string): boolean;
+}
+
+type RightTree<T> = {
+    value: T;
+    left: Tree<T>;
+    right: Tree<T>;
+}
+
+type RightLinkedList<T> = T & { next: LinkedList<T> };
+
+type RightArray = Array<RightTree>
+
+type RightUnion =
+    | RightLinkedList
+    | RightArray;
+
 class RightCases {
     private readonly a: string;
     private static readonly a = 'someString';

@@ -8,7 +8,7 @@ module.exports = {
         '@tinkoff/member-ordering': [
             breaking({since: 2}),
             {
-                classes: [
+                default: [
                     'private-instance-field',
                     'private-static-field',
                     'protected-static-field',
