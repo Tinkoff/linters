@@ -165,7 +165,11 @@ module.exports = {
     },
     defaultOptions,
     create(context) {
-        const options = (context.options && context.options[0]) || defaultOptions[0];
+        const options = Object.assign(
+            {},
+            defaultOptions[0],
+            context.options ? context.options[0] : null,
+        );
 
         const sourceCode = context.getSourceCode();
         const functionExpressions = [

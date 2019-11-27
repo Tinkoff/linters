@@ -9,7 +9,7 @@
 		"prelint": "run-s build:prod",
 		"lint": "run-p prettier lint:ts lint:es",
 		"lint:ts": "tslint -c tslint.json -p tsconfig.json \"src/**/*.ts\"",
-		"lint:es": "eslint \"eslint/**/*.js\"",
+		"lint:es": "eslint \"eslint/**/*.{ts,js}\"",
 		"prelint:ci": "run-s build:prod",
 		"lint:ci": "run-p prettier lint:ts:ci",
 		"lint:ts:ci": "tslint -c tslint.json -p tsconfig.json -t ./node_modules/tslint-teamcity-reporter/index.js \"src/**/*.ts\"",
