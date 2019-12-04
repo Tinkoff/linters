@@ -9,7 +9,7 @@ This repository contains configuration files for the linters we use in Tinkoff. 
 ## Install
 
 ```
-$ npm install @tinkoff/linters --save-dev
+$ npm install @tinkoff/linters@beta --save-dev
 ```
 
 > **You don't need** to install `eslint`, `tslint`, `prettier` or `stylelint`, they are added as dependencies of `@tinkoff/linters` and will be installed automatically.
@@ -24,6 +24,10 @@ npm uninstall $(node -e 'const p=require("./package");console.log(Object.keys(p.
 </details>
 
 ## ESLint + Prettier
+This preset is compatible with any and ES Modules based project, written in  `TS` and/or `ES6+`. No matter is it `node`/`react` or `angular`.
+
+For now there is additional `angular` rules available, and we planning to add `RxJS` rules in near future.
+
 Add following files in your project:
 
 ##### **`.eslintrc.js`**
@@ -49,7 +53,7 @@ Add npm-script:
 ```
 
 Add `.eslintignore` file.
-> Don't add `.prettierignore` because it isn't used by prettier in this setup.
+> Don't add `.ts`/`.js` files to `.prettierignore` because it isn't used by prettier in this setup.
 
 <details>
     <summary>
@@ -94,7 +98,7 @@ If you're got this error:
 ```
 Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
 ```
-- Make sure that `.ts` file mentioned in this error is included in your projects `./tsconfig.json`
+- Make sure that `.ts`/`.tsx` file mentioned in this error is included in your projects `./tsconfig.json`
 - OR Update config:
     ##### **`.eslintrc.js`**
     ```diff
