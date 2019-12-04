@@ -18,7 +18,6 @@ const codeframe = cli.getFormatter('codeframe');
 
 test('require-return-type snapshot', () => {
     const report = cli.executeOnFiles([
-        path.join(__dirname, './require-return-type.test.js'),
         path.join(__dirname, './require-return-type.fixture.ts'),
     ]);
 

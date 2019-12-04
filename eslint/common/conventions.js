@@ -1,18 +1,16 @@
 const breaking = require('../utils/breaking');
-
-const allExtensions = ['.ts', '.tsx', '.d.ts', '.js', '.jsx'];
-const tsExtensions = ['.ts', '.tsx', '.d.ts'];
+const extensions = require('../consts/extensions');
 
 module.exports = {
     plugins: ['import'],
     settings: {
-        'import/extensions': allExtensions,
+        'import/extensions': extensions.all,
         'import/parsers': {
-            '@typescript-eslint/parser': tsExtensions,
+            '@typescript-eslint/parser': extensions.ts,
         },
         'import/resolver': {
             node: {
-                extensions: allExtensions,
+                extensions: extensions.all,
             },
         },
     },
@@ -52,5 +50,20 @@ module.exports = {
                 },
             },
         ],
+        'no-unused-vars': [
+            breaking({since: 2}),
+            {
+                vars: 'local',
+                args: 'none',
+                ignoreRestSiblings: true,
+                argsIgnorePattern: '^_',
+                caughtErrors: 'none',
+            },
+        ],
+        'no-use-before-define': breaking({
+            since: 2,
+            before: 'off',
+            after: 'warn',
+        }),
     },
 };
