@@ -8,6 +8,12 @@ This repository contains configuration files for the linters we use in Tinkoff. 
 
 ## Install
 
+Stable version (no `eslint` support, just `tslint`)
+```
+$ npm install @tinkoff/linters --save-dev
+```
+
+Try our beta with ESLint!
 ```
 $ npm install @tinkoff/linters@beta --save-dev
 ```
