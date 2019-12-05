@@ -1,6 +1,7 @@
 const breaking = require('../../utils/breaking');
+const {tsOnly} = require('../../utils/ts');
 
-module.exports = {
+module.exports = tsOnly({
     rules: {
         'no-unused-vars': 'off', // types and interfaces are not recognized by eslint
         '@typescript-eslint/no-unused-vars': [
@@ -27,6 +28,7 @@ module.exports = {
         ],
         '@typescript-eslint/prefer-namespace-keyword': 'error',
         '@typescript-eslint/triple-slash-reference': 'error',
+        'no-use-before-define': 'off', // types and interfaces are not recognized by eslint
         '@typescript-eslint/no-use-before-define': breaking({
             since: 2,
             before: 'off',
@@ -40,4 +42,4 @@ module.exports = {
         }),
         '@tinkoff/require-return-type': 'error',
     },
-};
+});

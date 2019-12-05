@@ -11,7 +11,7 @@
 		"lint:ts": "tslint -c tslint.json -p tsconfig.json \"src/**/*.ts\"",
 		"lint:es": "eslint \"eslint/**/*.{ts,js}\"",
 		"prelint:ci": "run-s build:prod",
-		"lint:ci": "run-p prettier lint:ts:ci",
+		"lint:ci": "run-p prettier lint:ts:ci lint:es",
 		"lint:ts:ci": "tslint -c tslint.json -p tsconfig.json -t ./node_modules/tslint-teamcity-reporter/index.js \"src/**/*.ts\"",
 		"********** Build": "",
 		"build:prod": "tsc",
