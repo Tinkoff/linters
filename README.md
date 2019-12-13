@@ -45,7 +45,7 @@ module.exports = {
     ]
 }
 ```
-##### **`.prettier.config.js`**
+##### **`.prettierrc.js`**
 ```js
 module.exports = {
 	...require('@tinkoff/linters/prettier/prettier.config')
