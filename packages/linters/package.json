@@ -1,0 +1,62 @@
+{
+    "name": "@tinkoff/linters",
+    "version": "1.0.0-rc.4",
+    "description": "Linter configs and custom TSLint rules of Tinkoff",
+    "license": "Apache-2.0",
+    "scripts": {
+        "********** Build": "",
+        "build:prod": "tsc",
+        "build:watch": "tsc -w",
+        "********** Linters": "",
+        "lint:ci": "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts'",
+        "********** Test": "",
+        "test": "watch 'npm run test:ci'",
+        "test:ci": "node -r ts-node/register $NODE_DEBUG_OPTION node_modules/.bin/tslint --test ./test/rules/**/tslint.json",
+        "preversion": "npm run build:prod"
+    },
+    "author": {
+        "name": "Tinkoff Team",
+        "email": "frontend@tinkoff.ru"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TinkoffCreditSystems/linters.git"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.7.0",
+        "@typescript-eslint/eslint-plugin-tslint": "^2.7.0",
+        "@typescript-eslint/experimental-utils": "^2.8.0",
+        "@typescript-eslint/parser": "^2.7.0",
+        "eslint": "^6.6.0",
+        "eslint-config-prettier": "^6.6.0",
+        "eslint-plugin-functional": "^1.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jsdoc": "^18.0.1",
+        "eslint-plugin-prettier": "^3.1.1",
+        "eslint-teamcity": "^2.2.0",
+        "lodash": "^4.17.15",
+        "prettier": "^1.19.1",
+        "rxjs-tslint": "^0.1.7",
+        "rxjs-tslint-rules": "^4.24.3",
+        "semver": "^6.3.0",
+        "stylelint": "^10.1.0",
+        "stylelint-config-prettier": "^5.2.0",
+        "stylelint-config-standard": "^18.3.0",
+        "stylelint-order": "^3.1.0",
+        "stylelint-teamcity-reporter": "^1.1.0",
+        "tslint": "^5.19.0",
+        "tslint-eslint-rules": "^5.4.0",
+        "tslint-microsoft-contrib": "^6.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "9.3.0",
+        "husky": "^1.2.0",
+        "jest": "^24.9.0",
+        "rxjs": "^6.5.2",
+        "ts-node": "3.3.0",
+        "tslint-teamcity-reporter": "^3.2.2",
+        "tsutils": "^3.17.1",
+        "typescript": "~3.2.2",
+        "watch": "1.0.2"
+    }
+}

@@ -1,6 +1,6 @@
 module.exports = {
     extends: [
-        './eslint/base/prettier',
-        './eslint/angular',
+        './packages/linters/eslint/base/prettier',
+        './packages/linters/eslint/angular',
     ],
 }

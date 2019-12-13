@@ -1,2 +1,3 @@
 *.lint
 *.fix
+package-lock.json

@@ -1,0 +1,7 @@
+*
+.DS_Store
+!eslint/**/*
+!prettier/**/*
+!stylelint/**/*
+!tslint/**/*
+**/test/*

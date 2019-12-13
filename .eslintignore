@@ -1,1 +1,3 @@
 *.fixture.*
+packages/linters/tslint/rules
+packages/linters/src

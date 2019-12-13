@@ -1,0 +1,6 @@
+{
+    "rulesDirectory": ["../../../src"],
+    "rules": {
+        "tinkoff-new-line-after-variable-declaration": true
+    }
+}
