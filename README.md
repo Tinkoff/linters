@@ -155,11 +155,9 @@ $ npm i husky lint-staged --save-dev
 ##### **`.lintstagedrc.json`**
 ```js
 {
-    "linters": {
-        "src/**/*.{ts,js}": ["npm run lint:es", "git add"],
-        "src/**/*.less": ["prettier --write", "npm run lint:less", "git add"],
-        "src/**/*.{md,json,template.html}": ["prettier --write", "git add"]
-    }
+    "src/**/*.{ts,js}": ["lint:es", "git add"],
+    "src/**/*.less": ["prettier --write", "lint:less", "git add"],
+    "src/**/*.{md,json,template.html}": ["prettier --write", "git add"]
 }
 ```
 
