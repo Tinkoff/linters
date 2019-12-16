@@ -1,0 +1,4 @@
+{
+    "packages/**/*.{ts,js}": ["eslint", "git add"],
+    "**/*.{md,json,template.html}": ["prettier --write --loglevel=warn", "git add"]
+}
