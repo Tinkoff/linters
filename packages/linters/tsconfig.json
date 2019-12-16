@@ -9,10 +9,10 @@
         "lib": ["es2015"]
     },
     "files": [
-        "src/tinkoffAngularMemberOrderingRule.ts",
-        "src/tinkoffMethodReturnTypeRule.ts",
-        "src/tinkoffConditionBreaksRule.ts",
-        "src/tinkoffNewLineAfterVariableDeclarationRule.ts",
-        "src/tinkoffNewLineAroundControlStatementRule.ts"
+        "tslint/src/tinkoffAngularMemberOrderingRule.ts",
+        "tslint/src/tinkoffMethodReturnTypeRule.ts",
+        "tslint/src/tinkoffConditionBreaksRule.ts",
+        "tslint/src/tinkoffNewLineAfterVariableDeclarationRule.ts",
+        "tslint/src/tinkoffNewLineAroundControlStatementRule.ts"
     ]
 }
