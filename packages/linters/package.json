@@ -8,6 +8,7 @@
         "build:prod": "tsc",
         "build:watch": "tsc -w",
         "********** Linters": "",
+        "prelint:ci": "npm run build:prod",
         "lint:ci": "tslint -c tslint.json -p tsconfig.json 'tslint/src/**/*.ts'",
         "********** Test": "",
         "test": "watch 'npm run test:ci'",
@@ -23,6 +24,7 @@
         "url": "https://github.com/TinkoffCreditSystems/linters.git"
     },
     "dependencies": {
+        "@tinkoff/eslint-plugin": "^1.0.0-rc.4",
         "@typescript-eslint/eslint-plugin": "^2.7.0",
         "@typescript-eslint/eslint-plugin-tslint": "^2.7.0",
         "@typescript-eslint/experimental-utils": "^2.8.0",

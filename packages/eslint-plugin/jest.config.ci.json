@@ -1,1 +1,6 @@
-{}
+{
+    "moduleNameMapper": {
+        "^@tinkoff/eslint-plugin$": "<rootDir>/lib/index.js",
+        "^@tinkoff/linters(.*)$": "<rootDir>../linters$1"
+    }
+}
