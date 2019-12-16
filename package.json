@@ -17,7 +17,7 @@
         "test:ci": "lerna run test:ci --parallel",
         "********** Version": "",
         "preversion": "lerna run build:prod --parallel",
-        "version": "lerna version --conventional-commits --yes --ignore-changes '**/package-lock.json'",
+        "version": "lerna version --conventional-commits ----changelog-preset conventionalcommits --yes --ignore-changes '**/package-lock.json'",
         "********** Publish": "",
         "publish": "lerna publish from-git --yes"
     },
@@ -33,6 +33,7 @@
     "devDependencies": {
         "@tinkoff/eslint-plugin": "file:./packages/eslint-plugin",
         "@tinkoff/linters": "file:./packages/linters",
+        "conventional-changelog-conventionalcommits": "^4.2.3",
         "lerna": "^3.18.3",
         "npm-run-all": "^4.1.5"
     }
