@@ -21,7 +21,8 @@
         "preversion": "lerna run build:prod --parallel",
         "version": "lerna version --conventional-commits ----changelog-preset conventionalcommits --yes --ignore-changes '**/package-lock.json'",
         "********** Publish": "",
-        "publish": "lerna publish from-git --yes --access public"
+        "publish": "lerna publish from-git --yes --access public",
+        "publish:beta": "lerna publish --npm-tag beta from-git --yes --access public"
     },
     "author": {
         "name": "Tinkoff Team",
