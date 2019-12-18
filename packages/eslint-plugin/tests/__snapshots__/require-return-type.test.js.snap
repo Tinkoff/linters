@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`require-return-type snapshot 1`] = `
+"error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:28:6:
+  26 |     }
+  27 | 
+> 28 |     c() {
+     |      ^
+  29 |         // Should fail
+  30 |         return '123';
+  31 |     }
+
+
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:32:7:
+  30 |         return '123';
+  31 |     }
+> 32 |     c2(/* 123 */) {
+     |       ^
+  33 |         // Should fail
+  34 |         return '123';
+  35 |     }
+
+
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:36:7:
+  34 |         return '123';
+  35 |     }
+> 36 |     c3() /* 123 */ {
+     |       ^
+  37 |         // Should fail
+  38 |         return '123';
+  39 |     }
+
+
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:40:7:
+  38 |         return '123';
+  39 |     }
+> 40 |     c4() {
+     |       ^
+  41 |         // 321 // Should fail
+  42 |         return '123';
+  43 |     }
+
+
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:87:1:
+  85 | }
+  86 | 
+> 87 | function ab3() {
+     | ^
+  88 |     // Should fail
+  89 |     return '123';
+  90 | }
+
+
+5 errors found."
+`;

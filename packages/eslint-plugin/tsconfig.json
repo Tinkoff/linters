@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "outDir": "tslint/rules",
+        "module": "es6",
+        "target": "es6",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "skipLibCheck": true,
+        "lib": ["es2018"]
+    }
+}

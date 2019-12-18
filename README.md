@@ -1,6 +1,7 @@
 # Tinkoff Linter Configuration [![Build](https://img.shields.io/travis/TinkoffCreditSystems/linters/master)](https://travis-ci.org/TinkoffCreditSystems/linters) [![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters) [![npm version](https://img.shields.io/npm/v/@tinkoff/linters)](https://www.npmjs.com/package/@tinkoff/linters)
 
 This repository contains configuration files for the linters we use in Tinkoff. It includes:
+
 -   configs and rules for [TSLint](https://palantir.github.io/tslint/)
 -   configs for [Stylelint](https://stylelint.io/)
 -   configs for [Prettier](https://prettier.io)
@@ -9,11 +10,13 @@ This repository contains configuration files for the linters we use in Tinkoff. 
 ## Install
 
 Stable version (no `eslint` support, just `tslint`)
+
 ```
 $ npm install @tinkoff/linters --save-dev
 ```
 
 Try our beta with ESLint!
+
 ```
 $ npm install @tinkoff/linters@beta --save-dev
 ```
@@ -24,41 +27,49 @@ $ npm install @tinkoff/linters@beta --save-dev
     <summary>If you have any of those deps or experiencing problems</summary>
 
 Run following in your project:
+
 ```sh
 npm uninstall $(node -e 'const p=require("./package");console.log(Object.keys(p.dependencies||[]).concat(Object.keys(p.devDependencies||[])).filter(name=>/eslint|stylelint|prettier|tslint/.test(name)).join(" "))')
 ```
+
 </details>
 
 ## ESLint + Prettier
-This preset is compatible with any and ES Modules based project, written in  `TS` and/or `ES6+`. No matter is it `node`/`react` or `angular`.
+
+This preset is compatible with any and ES Modules based project, written in `TS` and/or `ES6+`. No matter is it `node`/`react` or `angular`.
 
 For now there is additional `angular` rules available, and we planning to add `RxJS` rules in near future.
 
 Add following files in your project:
 
 ##### **`.eslintrc.js`**
+
 ```js
 module.exports = {
     extends: [
         './node_modules/@tinkoff/linters/eslint/base/prettier',
         './node_modules/@tinkoff/linters/eslint/angular',
-    ]
-}
+    ],
+};
 ```
+
 ##### **`.prettierrc.js`**
+
 ```js
 module.exports = {
-	...require('@tinkoff/linters/prettier/prettier.config')
+    ...require('@tinkoff/linters/prettier/prettier.config'),
 };
 ```
 
 Add npm-script:
+
 ```sh
     "lint:es": "eslint --fix \"src/**/*.{ts,js}\"",
     "lint:es:ci": "eslint --format ./node_modules/eslint-teamcity/index.js \"src/**/*.{ts,js}\"",
 ```
 
 Add `.eslintignore` file.
+
 > Don't add `.ts`/`.js` files to `.prettierignore` because it isn't used by prettier in this setup.
 
 <details>
@@ -69,24 +80,28 @@ Add `.eslintignore` file.
 > In this case you should have both `.eslintignore` and `.prettierignore` files
 
 You need to use different base config:
+
 ##### **`.eslintrc.js`**
+
 ```js
 module.exports = {
     extends: [
         './node_modules/@tinkoff/linters/eslint/base',
         './node_modules/@tinkoff/linters/eslint/angular',
-    ]
-}
+    ],
+};
 ```
+
 ##### **`.prettier.config.js`**
+
 ```js
 module.exports = {
-	...require('@tinkoff/linters/prettier/prettier.config')
+    ...require('@tinkoff/linters/prettier/prettier.config'),
 };
-
 ```
 
 Add npm-script:
+
 ```sh
     "prelint:es": "prettier --write \"src/**/*.{ts,js}\"",
     "lint:es": "eslint --fix \"src/**/*.{ts,js}\"",
@@ -96,42 +111,34 @@ Add npm-script:
 
 </details>
 
-
 <details>
     <summary>Troubleshooting</summary>
 
 If you're got this error:
+
 ```
 Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
 ```
-- Make sure that `.ts`/`.tsx` file mentioned in this error is included in your projects `./tsconfig.json`
-- OR Update config:
-    ##### **`.eslintrc.js`**
-    ```diff
-    module.exports = {
-        extends: [
-            './node_modules/@tinkoff/linters/eslint/base',
-            './node_modules/@tinkoff/linters/eslint/angular',
-        ],
-    +    parserOptions: {
-    +        createDefaultProgram: true, // Allows to work with non-ts files
-    +    },
-    }
-    ```
-    > `createDefaultProgram` may cause [performance issues](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration)
-</details>
+
+-   Make sure that `.ts`/`.tsx` file mentioned in this error is included in your projects `./tsconfig.json`
+-   OR Update config: ##### **`.eslintrc.js`**
+    `diff module.exports = { extends: [ './node_modules/@tinkoff/linters/eslint/base', './node_modules/@tinkoff/linters/eslint/angular', ], + parserOptions: { + createDefaultProgram: true, // Allows to work with non-ts files + }, }` > `createDefaultProgram` may cause [performance issues](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration)
+    </details>
 
 ## Stylelint
+
 You should extend your Stylelint configs with only one `bases` config:
 
 ##### **`.stylelintrc`**
+
 ```json
 {
-	"extends": ["@tinkoff/linters/stylelint/bases/prettier.stylelint.json"]
+    "extends": ["@tinkoff/linters/stylelint/bases/prettier.stylelint.json"]
 }
 ```
 
 Add npm-script:
+
 ```sh
     "lint:less": "stylelint --config .stylelintrc --fix \"src/**/*.less\"",
     "lint:less:ci": "stylelint --config .stylelintrc --custom-formatter=node_modules/stylelint-teamcity-reporter \"src/**/*.less\"",
@@ -144,6 +151,7 @@ $ npm i husky lint-staged --save-dev
 ```
 
 ##### **`.huskyrc.json`**
+
 ```js
 {
     "hooks": {
@@ -153,6 +161,7 @@ $ npm i husky lint-staged --save-dev
 ```
 
 ##### **`.lintstagedrc.json`**
+
 ```js
 {
     "src/**/*.{ts,js}": ["lint:es", "git add"],
@@ -162,7 +171,9 @@ $ npm i husky lint-staged --save-dev
 ```
 
 ## TSLint (deprecated)
+
 TSLint no longer supported. See [roadmap](/ROADMAP.md).
+
 <details>
     <summary>Installation</summary>
 
@@ -172,21 +183,23 @@ Example of `tslint.json` file in your project:
 
 ```json
 {
-	"extends": [
-		"@tinkoff/linters/tslint/bases/prettier.tslint.json",
-		"@tinkoff/linters/tslint/mixins/rxjs5.5.tslint.json", // For RxJs 5.5
-		"@tinkoff/linters/tslint/mixins/rxjs6.tslint.json" // For RxJS 6+
-	]
+    "extends": [
+        "@tinkoff/linters/tslint/bases/prettier.tslint.json",
+        "@tinkoff/linters/tslint/mixins/rxjs5.5.tslint.json", // For RxJs 5.5
+        "@tinkoff/linters/tslint/mixins/rxjs6.tslint.json" // For RxJS 6+
+    ]
 }
 ```
 
 </details>
 
 ## VS Code
+
 To make eslint work with `.ts` files:
-- Install [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Find VSCode's settings file](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
-- Add following to settings:
+
+-   Install [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+-   [Find VSCode's settings file](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
+-   Add following to settings:
     ```json
     "eslint.validate": [
         "javascript",
@@ -195,8 +208,6 @@ To make eslint work with `.ts` files:
         "typescriptreact"
     ]
     ```
-
-
 
 <br />
 <br />
@@ -230,12 +241,16 @@ When a ternary operator contains complex expressions, it becomes difficult to re
 
 ```ts
 // bad
-const defaultQuestionnaire = this.isCompany || this.accountIsBlocked ? defaultQuestionnaireCompany && 'super text' : defaultQuestionnaireIp;
+const defaultQuestionnaire =
+    this.isCompany || this.accountIsBlocked
+        ? defaultQuestionnaireCompany && 'super text'
+        : defaultQuestionnaireIp;
 
 // good
-const defaultQuestionnaire = this.isCompany || this.accountIsBlocked
-   ? defaultQuestionnaireCompany && 'super text'
-   : defaultQuestionnaireIp;
+const defaultQuestionnaire =
+    this.isCompany || this.accountIsBlocked
+        ? defaultQuestionnaireCompany && 'super text'
+        : defaultQuestionnaireIp;
 
 // good
 const result = isShown ? [] : null;
@@ -248,20 +263,16 @@ The only exception is the arrow functions. For them it is not necessary.
 
 ```ts
 class User {
-    constructor(name: string, age: number) {
-    }
+    constructor(name: string, age: number) {}
 
     // good
-    getStatus(): string {
-    }
+    getStatus(): string {}
 
     // bad
-    getFullname() {
-    }
+    getFullname() {}
 
     // ok
-    setStatus(status: string) {
-    }
+    setStatus(status: string) {}
 }
 
 // bad
@@ -314,8 +325,7 @@ function doSomething(count: number): number {
     if (age > 30) {
     }
 
-    for (let i = 0; i < 10; i++) {
-    }
+    for (let i = 0; i < 10; i++) {}
 
     return {name, age};
 }
@@ -331,4 +341,20 @@ Show that you use `@tinkoff/linters` in your project [![code style: @tinkoff/lin
 
 ## Development
 
-Run tests with `npm run test`.
+-   Intall deps with `npm run bootstrap`.
+-   Run tests with `npm run test:ci`.
+-   Follow [Conventional Commits specification](https://conventionalcommits.org/) for every commitmessage.
+
+## Release
+
+-   Prepare your release in `master` or `release/*` branch.
+-   Run `npm run version` and look what happens.
+    -   Or `npm run version -- --no-push` and `git push --follow-tags` if you not sure.
+-   Run `npm run publish`.
+
+#### Pre-release:
+
+Do the same as above, except this cases:
+
+-   prev version isn't prerelease, but next must be prerelease: `npm run version -- --conventional-prerelease`
+-   prev version is prerelease, but next must be release: `npm run version -- --conventional-graduate`
