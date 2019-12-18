@@ -1,0 +1,10 @@
+{
+    "rulesDirectory": ["../../../src"],
+    "rules": {
+        "tinkoff-condition-breaks": {
+            "options": {
+                "maxWidth": 60
+            }
+        }
+    }
+}
