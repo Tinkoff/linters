@@ -37,7 +37,10 @@
         "@tinkoff/eslint-plugin": "file:./packages/eslint-plugin",
         "concurrently": "5.0.1",
         "conventional-changelog-conventionalcommits": "^4.2.3",
-        "lerna": "^3.18.3",
-        "lint-staged": "^9.5.0"
+        "husky": "^4.2.0",
+        "lerna": "^3.20.2",
+        "lint-staged": "^10.0.1",
+        "markdown-toc": "^1.2.0",
+        "prettier": "^1.19.1"
     }
 }
