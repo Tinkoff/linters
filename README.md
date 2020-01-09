@@ -17,6 +17,9 @@ This repository contains configuration files for the linters we use in Tinkoff. 
 -   [Husky + lint-staged (recomended)](#husky--lint-staged-recomended)
 -   [TSLint (deprecated)](#tslint-deprecated)
 -   [VS Code](#vs-code)
+-   [Troubleshooting](#troubleshooting)
+    -   [`0:0 error Parsing error: File '/…/myProjectRoot/tsconfig.json' not found`](#00-error-parsing-error-file-myprojectroottsconfigjson-not-found)
+    -   [`Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.`](#parsing-error-parseroptionsproject-has-been-set-for-typescript-eslintparser)
 -   [Custom rules for TSLint](#custom-rules-for-tslint)
     -   [`tinkoff-angular-member-ordering`](#tinkoff-angular-member-ordering)
     -   [`tinkoff-condition-breaks`](#tinkoff-condition-breaks)
@@ -131,20 +134,6 @@ Add npm-script:
 
 </details>
 
-<details>
-    <summary>Troubleshooting</summary>
-
-If you're got this error:
-
-```
-Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
-```
-
--   Make sure that `.ts`/`.tsx` file mentioned in this error is included in your projects `./tsconfig.json`
--   OR Update config: **`.eslintrc.js`**
-    `diff module.exports = { extends: [ './node_modules/@tinkoff/linters/eslint/base', './node_modules/@tinkoff/linters/eslint/angular', ], + parserOptions: { + createDefaultProgram: true, // Allows to work with non-ts files + }, }` > `createDefaultProgram` may cause [performance issues](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration)
-    </details>
-
 ## Stylelint
 
 You should extend your Stylelint configs with only one `bases` config:
@@ -229,6 +218,44 @@ To make eslint work with `.ts` files:
     ]
     ```
 
+## Troubleshooting
+
+### `0:0 error Parsing error: File '/…/myProjectRoot/tsconfig.json' not found`
+
+By default `tsconfig.json` is expected in the same root folder as `.eslintrc.js`.
+If you have `tsconfig.json` somewhere in your subfolder you must create additional `.eslintrc.js` in the same folder with your `tsconfig.json`.
+**`.eslintrc.js`**
+
+```js
+module.exports = {
+    parserOptions: {
+        tsconfigRootDir: __dirname,
+    },
+};
+```
+
+### `Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.`
+
+-   Make sure that you have `.ts[x]` file from the error is included in your root `./tsconfig.json`.
+    -   If you dont want to include all `.ts` files in root config then read previous tip.
+-   OR Update config: <br/>
+    **`.eslintrc.js`**
+    ```diff
+    module.exports = {
+        extends: [
+            './node_modules/@tinkoff/linters/eslint/base',
+            './node_modules/@tinkoff/linters/eslint/angular',
+        ],
+    +    parserOptions: {
+    +        createDefaultProgram: true, // Allows to work with non-ts files
+    +    },
+    }
+    ```
+    > `createDefaultProgram` may cause [performance issues](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration)
+
+<br />
+<br />
+-----
 <br />
 <br />
 
