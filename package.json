@@ -1,4 +1,5 @@
 {
+    "name": "linters-monorepo",
     "description": "Linter configs and custom TSLint rules of Tinkoff",
     "license": "Apache-2.0",
     "scripts": {
@@ -11,6 +12,7 @@
         "lint:all": "lerna run lint:ci --parallel",
         "lint:ci": "concurrently 'npm:prettier:ci' 'npm:eslint:ci' 'npm:lint:all'",
         "*** Bootstrap": "",
+        "preinstall": "echo 'Use `npm run bootstrap` instead!'; exit 1",
         "prebootstrap": "rm -rf packages/*/node_modules",
         "bootstrap": "lerna bootstrap --hoist --ignore-prepublish",
         "********** Build": "",
@@ -32,7 +34,6 @@
         "type": "git",
         "url": "https://github.com/TinkoffCreditSystems/linters.git"
     },
-    "dependencies": {},
     "devDependencies": {
         "@tinkoff/eslint-plugin": "file:./packages/eslint-plugin",
         "concurrently": "5.0.1",
