@@ -173,11 +173,13 @@ $ npm i husky lint-staged --save-dev
 
 ```js
 {
-    "src/**/*.{ts,js}": ["lint:es", "git add"],
+    "src/**/*.{ts,js}": ["eslint --fix", "git add"],
     "src/**/*.less": ["prettier --write", "lint:less", "git add"],
     "src/**/*.{md,json,template.html}": ["prettier --write", "git add"]
 }
 ```
+
+> You dont have to add trailing `git add` when using `lint-staged@10+`. [See in its docs](https://github.com/okonet/lint-staged/blob/f9e128d/README.md#reformatting-the-code).
 
 ## TSLint (deprecated)
 
