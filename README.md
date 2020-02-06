@@ -296,12 +296,6 @@ const defaultQuestionnaire =
         : defaultQuestionnaireIp;
 
 // good
-const defaultQuestionnaire =
-    this.isCompany || this.accountIsBlocked
-        ? defaultQuestionnaireCompany && 'super text'
-        : defaultQuestionnaireIp;
-
-// good
 const result = isShown ? [] : null;
 ```
 
