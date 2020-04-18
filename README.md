@@ -206,19 +206,9 @@ Example of `tslint.json` file in your project:
 
 ## VS Code
 
-To make eslint work with `.ts` files:
+Eslint work with `.ts` files "out-of-the-box", just install extension:
 
 -   Install [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
--   [Find VSCode's settings file](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
--   Add following to settings:
-    ```json
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ]
-    ```
 
 ## Troubleshooting
 
