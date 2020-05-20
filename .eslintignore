@@ -1,5 +1,6 @@
 *.fixture.*
 packages/linters/tslint/rules
 packages/linters/tslint/src
+packages/eslint-plugin-tinkoff
 node_modules
 dist

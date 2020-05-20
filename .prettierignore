@@ -1,3 +1,4 @@
 *.lint
 *.fix
 package-lock.json
+packages/eslint-plugin-tinkoff

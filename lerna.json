@@ -1,5 +1,5 @@
 {
-    "packages": ["packages/*"],
+    "packages": ["packages/eslint-plugin", "packages/linters"],
     "version": "1.0.0-rc.5",
     "command": {
         "version": {
