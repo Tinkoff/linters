@@ -5,5 +5,5 @@ module.exports = {
         'prettier --write',
         'git add' // fixes 'Changes not staged for commit'
     ],
-    '**/*.{md,json,template.html}': ['prettier --write --loglevel=warn']
+    '{eslint-plugin,linters}/**/*.{md,json,template.html}': ['prettier --write --loglevel=warn']
 }

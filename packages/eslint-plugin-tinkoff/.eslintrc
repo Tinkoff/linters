@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "extends": [
+    "plugin:tinkoff/lib"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.test.ts",
+        "*.spec.ts"
+      ],
+      "rules": {
+        "max-nested-callbacks": ["error", 10]
+      }
+    }
+  ]
+}

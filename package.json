@@ -13,7 +13,7 @@
         "lint:ci": "concurrently 'npm:prettier:ci' 'npm:eslint:ci' 'npm:lint:all'",
         "*** Bootstrap": "",
         "preinstall": "echo 'Use `npm run bootstrap` instead!'; exit 1",
-        "prebootstrap": "rm -rf packages/*/node_modules",
+        "prebootstrap": "rm -rf packages/{eslint-plugin,linters}/node_modules",
         "bootstrap": "lerna bootstrap --hoist --ignore-prepublish",
         "********** Build": "",
         "build:prod": "lerna run build:prod --parallel",
