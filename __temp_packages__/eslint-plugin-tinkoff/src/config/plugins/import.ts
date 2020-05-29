@@ -13,8 +13,8 @@ export const importConfig = {
     'import/no-commonjs': 'warn',
     'import/unambiguous': 'warn',
     'import/no-deprecated': 'warn',
-    'import/prefer-default-export': 'off', // default хуже чем именованные импорты
-    'import/default': 'error', // включаем валидацию default
+    'import/prefer-default-export': 'off', // default imports is evil
+    'import/default': 'error', // enable default import validation
     'import/extensions': [
       'error',
       'always',
@@ -26,7 +26,7 @@ export const importConfig = {
       },
     ],
     'import/order': ['warn', { groups: [['builtin', 'external', 'internal']] }],
-    'import/no-extraneous-dependencies': 'off', // нужна настройка
+    'import/no-extraneous-dependencies': 'off', // need fine tuning
     'import/no-cycle': 'off',
   },
 };

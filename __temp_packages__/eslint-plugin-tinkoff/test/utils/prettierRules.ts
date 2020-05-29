@@ -1,4 +1,4 @@
-// делаем тесты независимыми от настроек prettier для проекта
+// make tests independed from current project prettier configs
 export const prettierRules = {
   'prettier/prettier': [
     'error',

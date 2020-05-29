@@ -29,7 +29,7 @@ export const reactConfig = {
   plugins: ['react', 'react-hooks'],
 
   rules: {
-    'react/no-unsafe': ['warn', { checkAliases: true }], // показываем варнинги что используем устаревшиеметоды
+    'react/no-unsafe': ['warn', { checkAliases: true }], // show warnings for deprecated methods
     'react/no-unused-prop-types': 'warn',
     'react/jsx-handler-names': 'warn',
     'react/prop-types': 'warn',

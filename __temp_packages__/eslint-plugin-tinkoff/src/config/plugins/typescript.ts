@@ -13,7 +13,7 @@ export const typescriptConfig = {
       files: ['*.ts', '*.tsx'],
 
       rules: {
-        // Ругается на кейсы constructor(public c: C) {}
+        // swears on cases like constructor(public c: C) {}
         'no-useless-constructor': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
@@ -67,10 +67,32 @@ export const typescriptConfig = {
         // '@typescript-eslint/no-unnecessary-qualifier': 'error', need ts config
         // '@typescript-eslint/restrict-plus-operands': 'error', need ts config
         '@typescript-eslint/no-explicit-any': 'warn',
-        '@typescript-eslint/naming-convention': 'error',
+        '@typescript-eslint/naming-convention': [
+          'error',
+          {
+            selector: 'default',
+            format: ['camelCase'],
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+          },
+          {
+            selector: 'variable',
+            format: ['camelCase', 'UPPER_CASE'],
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+          },
+          {
+            selector: 'typeLike',
+            format: ['PascalCase'],
+          },
+          {
+            selector: 'property',
+            format: ['camelCase', 'PascalCase'],
+          },
+        ],
         '@typescript-eslint/ban-ts-comment': 'warn',
         '@typescript-eslint/no-empty-function': 'warn',
-        // стандартный no-unused-expressions не понимает optional chaining из ts
+        // standard no-unused-expressions don't understand optional chaining from ts
         'no-unused-expressions': 'off',
         '@typescript-eslint/no-unused-expressions': [
           'error',

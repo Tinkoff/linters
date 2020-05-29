@@ -105,48 +105,6 @@ Object {
 }
 `;
 
-exports[`fixture eslint plugin test check: lint tramvai app files 1`] = `
-Object {
-  "error.js": Object {
-    "errors": Array [
-      "prettier/prettier",
-      "self-dir/bundle-chunk-name",
-      "self-dir/bundle-chunk-name",
-    ],
-    "warnings": Array [
-      "import/unambiguous",
-    ],
-  },
-  "ok.js": Object {
-    "warnings": Array [
-      "import/unambiguous",
-    ],
-  },
-}
-`;
-
-exports[`fixture eslint plugin test check: lint tramvai ts app files 1`] = `
-Object {
-  "bundle1.ts": Object {},
-  "bundle2.ts": Object {},
-  "error.ts": Object {
-    "errors": Array [
-      "prettier/prettier",
-      "self-dir/bundle-chunk-name",
-      "self-dir/bundle-chunk-name",
-    ],
-    "warnings": Array [
-      "import/unambiguous",
-    ],
-  },
-  "ok.ts": Object {
-    "warnings": Array [
-      "import/unambiguous",
-    ],
-  },
-}
-`;
-
 exports[`fixture eslint plugin test check: lint typescript lib files 1`] = `
 Object {
   "error.ts": Object {

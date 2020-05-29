@@ -3,5 +3,7 @@
   "singleQuote": true,
   "trailingComma": "es5",
   "proseWrap": "never",
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "tabWidth": 2,
+  "printWidth": 100
 }

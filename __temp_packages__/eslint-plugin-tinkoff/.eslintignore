@@ -1,8 +1,7 @@
 test/__fixtures__/*
 test/__snapshots__/*
 
-
-# из гит игнора
+# from .gitignore
 node_modules/
 
 # IDE

@@ -22,16 +22,6 @@ const testCases = [
     type: 'react-typescript',
     eslintConfig: { extends: ['plugin:self-dir/app', 'plugin:self-dir/react'] },
   },
-  {
-    name: 'lint tramvai app files',
-    type: 'tramvai',
-    eslintConfig: { extends: ['plugin:self-dir/main', 'plugin:self-dir/tramvai'] },
-  },
-  {
-    name: 'lint tramvai ts app files',
-    type: 'tramvai-typescript',
-    eslintConfig: { extends: ['plugin:self-dir/main', 'plugin:self-dir/tramvai'] },
-  },
 ];
 
 describe('fixture eslint plugin test', () => {

@@ -82,7 +82,7 @@ describe('eslint validate', () => {
 
     const lintedFile = cli.executeOnText(testJsFile, 'file.js');
     const configResult = cli.getConfigForFile('myfile.js');
-    // в CI и на других устройствах будет другой путь
+    // inside CI and other devices there will be a different way
     configResult.parser = 'this_mock';
 
     expect(lintedFile.results[0].messages).toEqual([]);

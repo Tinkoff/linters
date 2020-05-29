@@ -9,23 +9,21 @@ import { promiseConfig } from './config/plugins/promise';
 import { typescriptConfig } from './config/plugins/typescript';
 import { importConfig } from './config/plugins/import';
 import { baseConfig } from './config/plugins/base';
-import { tramvaiConfig } from './config/plugins/tramvai';
 import { rules } from './config/rules';
 import { testFilesConfig } from './config/plugins/testFiles';
 
 module.exports = {
   configs: {
-    // базовые блоки
+    // main blocks
     app: appConfig,
     lib: libConfig,
 
-    // дополнительнные блоки
+    // additional blocks
     react: reactConfig,
     angular: angularConfig,
-    tramvai: tramvaiConfig,
     jest: jestConfig,
 
-    // внутренние блоки
+    // internal blocks
     main: mainConfig,
     promise: promiseConfig,
     prettier: prettierConfig,
