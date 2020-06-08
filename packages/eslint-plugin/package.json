@@ -21,7 +21,8 @@
         "@typescript-eslint/experimental-utils": "^2.8.0",
         "lodash": "^4.17.15"
     },
-    "devDependencies": {
-        "jest": "^24.9.0"
+    "devDependencies": {},
+    "peerDependencies": {
+        "eslint": ">=7"
     }
 }
