@@ -1,7 +1,0 @@
-*.fixture.*
-packages/linters/tslint/rules
-packages/linters/tslint/src
-node_modules
-dist
-
-__temp_packages__/

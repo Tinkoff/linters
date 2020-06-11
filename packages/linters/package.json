@@ -9,7 +9,7 @@
         "build:watch": "tsc -w",
         "********** Linters": "",
         "prelint:ci": "npm run build:prod",
-        "lint:ci": "tslint -c tslint.json -p tsconfig.json 'tslint/src/**/*.ts'",
+        "lint:ci": "eslint --ext .js --ignore-path .eslintignore . && tslint -c tslint.json -p tsconfig.json 'tslint/src/**/*.ts'",
         "********** Test": "",
         "test": "watch 'npm run test:ci'",
         "test:ci": "node -r ts-node/register $NODE_DEBUG_OPTION node_modules/.bin/tslint --test ./tslint/test/rules/**/tslint.json",

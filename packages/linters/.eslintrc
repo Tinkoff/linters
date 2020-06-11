@@ -1,0 +1,11 @@
+{
+    "root": true,
+
+    "extends": [
+        "./eslint/base/prettier",
+        "./eslint/angular"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    }
+}

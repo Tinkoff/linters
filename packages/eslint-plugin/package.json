@@ -5,6 +5,8 @@
     "license": "Apache-2.0",
     "main": "lib/index.js",
     "scripts": {
+        "********** Linters": "",
+        "lint:ci": "eslint --ext .js --ignore-path .eslintignore .",
         "********** Test": "",
         "test:ci": "jest --ci --config='./jest.config.ci.json' --no-color"
     },
