@@ -1,53 +1,53 @@
 {
-    "name": "@tinkoff/eslint-config-react",
-    "version": "0.1.0",
-    "description": "Tinkoff ESLint configs for React apps",
-    "license": "Apache-2.0",
-    "keywords": [
-      "eslint",
-      "eslintconfig",
-      "eslint-config"
-    ],
-    "scripts": {
-        "build": "tsc",
-        "watch": "tsc -w",
-        "test": "jest --clearCache && jest",
-        "test:watch": "npm run test -- --watch",
-        "lint": "eslint --ext .jsx,.js,.ts,.tsx --ignore-path .eslintignore .",
-        "lint:fix": "npm run lint -- --fix",
-        "prepublish": "npm run build",
-        "prebuild": "rimraf lib",
-
-        "build:prod": "npm run build",
-        "build:watch": "npm run watch",
-        "test:ci": "",
-        "lint:ci": "npm run lint"
-    },
-    "main": "lib/index.js",
-    "files": [
-      "lib",
-      "src"
-    ],
-    "author": {
-        "name": "Tinkoff Team",
-        "email": "frontend@tinkoff.ru"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/TinkoffCreditSystems/linters.git"
-    },
-    "dependencies": {
-        "eslint-config-airbnb": "^18.1.0",
-        "eslint-plugin-jsx-a11y": "^6.2.3",
-        "eslint-plugin-react": "^7.20.0",
-        "eslint-plugin-react-hooks": "^4.0.1"
-    },
-    "devDependencies": {
-        "@tinkoff/eslint-config": "^0.1.0"
-    },
-    "peerDependencies": {
-        "eslint": ">=7",
-        "eslint-config-prettier": ">=6.11",
-        "eslint-plugin-import": ">=2.20"
-    }
+  "name": "@tinkoff/eslint-config-react",
+  "version": "0.1.0",
+  "description": "Tinkoff ESLint configs for React apps",
+  "license": "Apache-2.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest --clearCache && jest",
+    "test:watch": "npm run test -- --watch",
+    "lint": "eslint --ext .jsx,.js,.ts,.tsx --ignore-path .eslintignore .",
+    "lint:fix": "npm run lint -- --fix",
+    "prelint:ci": "npm run build",
+    "pretest:ci": "npm run build",
+    "preversion": "npm run build",
+    "build:prod": "npm run build",
+    "build:watch": "npm run watch",
+    "test:ci": "",
+    "lint:ci": "npm run lint"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "author": {
+    "name": "Tinkoff Team",
+    "email": "frontend@tinkoff.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinkoffCreditSystems/linters.git"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tinkoff/eslint-config": "^0.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7",
+    "eslint-config-prettier": ">=6.11",
+    "eslint-plugin-import": ">=2.20"
+  }
 }

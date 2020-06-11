@@ -1,60 +1,60 @@
 {
-    "name": "@tinkoff/eslint-config",
-    "version": "0.1.0",
-    "description": "Tinkoff ESLint configs to rule them all",
-    "license": "Apache-2.0",
-    "keywords": [
-      "eslint",
-      "eslintconfig",
-      "eslint-config"
-    ],
-    "scripts": {
-        "build": "tsc",
-        "watch": "tsc -w",
-        "test": "jest --clearCache && jest",
-        "test:watch": "npm run test -- --watch",
-        "lint": "eslint --ext .jsx,.js,.ts,.tsx --ignore-path .eslintignore .",
-        "lint:fix": "npm run lint -- --fix",
-        "prepublish": "npm run build",
-        "prebuild": "rimraf lib",
-
-        "build:prod": "npm run build",
-        "build:watch": "npm run watch",
-        "test:ci": "",
-        "lint:ci": "npm run lint"
-    },
-    "main": "lib/index.js",
-    "files": [
-      "lib",
-      "src"
-    ],
-    "author": {
-        "name": "Tinkoff Team",
-        "email": "frontend@tinkoff.ru"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/TinkoffCreditSystems/linters.git"
-    },
-    "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^3.0.0-alpha.27",
-        "@typescript-eslint/parser": "^3.0.0-alpha.27",
-        "babel-eslint": "^10.1.0",
-        "eslint-config-airbnb-base": "^14.1.0",
-        "eslint-config-prettier": "^6.11.0",
-        "eslint-import-resolver-typescript": "^2.0.0",
-        "eslint-import-resolver-webpack": "^0.12.1",
-        "eslint-plugin-babel": "^5.3.0",
-        "eslint-plugin-eslint-comments": "^3.1.2",
-        "eslint-plugin-import": "^2.20.2",
-        "eslint-plugin-jest": "^23.11.0",
-        "eslint-plugin-prettier": "^3.1.3",
-        "eslint-plugin-promise": "^4.2.1",
-        "eslint-plugin-sort-class-members": "^1.7.0"
-    },
-    "devDependencies": {},
-    "peerDependencies": {
-        "eslint": ">=7",
-        "prettier": ">=2"
-    }
+  "name": "@tinkoff/eslint-config",
+  "version": "0.1.0",
+  "description": "Tinkoff ESLint configs to rule them all",
+  "license": "Apache-2.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest --clearCache && jest",
+    "test:watch": "npm run test -- --watch",
+    "lint": "eslint --ext .jsx,.js,.ts,.tsx --ignore-path .eslintignore .",
+    "lint:fix": "npm run lint -- --fix",
+    "prelint:ci": "npm run build",
+    "pretest:ci": "npm run build",
+    "preversion": "npm run build",
+    "build:prod": "npm run build",
+    "build:watch": "npm run watch",
+    "test:ci": "",
+    "lint:ci": "npm run lint"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "author": {
+    "name": "Tinkoff Team",
+    "email": "frontend@tinkoff.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinkoffCreditSystems/linters.git"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.0.0-alpha.27",
+    "@typescript-eslint/parser": "^3.0.0-alpha.27",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-sort-class-members": "^1.7.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "eslint": ">=7",
+    "prettier": ">=2"
+  }
 }
