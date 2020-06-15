@@ -1,0 +1,3 @@
+*.fixture.*
+node_modules
+dist

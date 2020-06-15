@@ -5,6 +5,8 @@
     "license": "Apache-2.0",
     "main": "lib/index.js",
     "scripts": {
+        "********** Linters": "",
+        "lint:ci": "eslint --ext .js --ignore-path .eslintignore .",
         "********** Test": "",
         "test:ci": "jest --ci --config='./jest.config.ci.json' --no-color"
     },
@@ -21,7 +23,8 @@
         "@typescript-eslint/experimental-utils": "^2.8.0",
         "lodash": "^4.17.15"
     },
-    "devDependencies": {
-        "jest": "^24.9.0"
+    "devDependencies": {},
+    "peerDependencies": {
+        "eslint": ">=7"
     }
 }

@@ -1,5 +1,0 @@
-{
-    "parserOptions": {
-        "project": "./packages/linters/tsconfig.json"
-    }
-}

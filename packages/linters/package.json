@@ -9,7 +9,7 @@
         "build:watch": "tsc -w",
         "********** Linters": "",
         "prelint:ci": "npm run build:prod",
-        "lint:ci": "tslint -c tslint.json -p tsconfig.json 'tslint/src/**/*.ts'",
+        "lint:ci": "eslint --ext .js --ignore-path .eslintignore . && tslint -c tslint.json -p tsconfig.json 'tslint/src/**/*.ts'",
         "********** Test": "",
         "test": "watch 'npm run test:ci'",
         "test:ci": "node -r ts-node/register $NODE_DEBUG_OPTION node_modules/.bin/tslint --test ./tslint/test/rules/**/tslint.json",
@@ -51,13 +51,10 @@
         "tslint-microsoft-contrib": "^6.2.0"
     },
     "devDependencies": {
-        "@types/node": "9.3.0",
-        "jest": "^24.9.0",
         "rxjs": "^6.5.2",
         "ts-node": "3.3.0",
         "tslint-teamcity-reporter": "^3.2.2",
         "tsutils": "^3.17.1",
-        "typescript": "~3.2.2",
         "watch": "1.0.2"
     }
 }

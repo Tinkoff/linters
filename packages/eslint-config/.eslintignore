@@ -1,0 +1,15 @@
+*/__fixtures__/*
+*/__snapshots__/*
+
+# from .gitignore
+node_modules/
+
+# IDE
+.DS_Store
+.vscode
+.idea
+
+# Compiled sources
+lib
+
+.tmp
