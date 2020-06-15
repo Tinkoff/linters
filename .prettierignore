@@ -1,3 +1,5 @@
 *.lint
 *.fix
 package-lock.json
+
+__temp_packages__/

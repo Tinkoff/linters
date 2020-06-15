@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fixture eslint plugin test check: lint js lib files 1`] = `
+Object {
+  "error.js": Object {
+    "errors": Array [
+      "lines-between-class-members",
+      "no-param-reassign",
+      "no-unused-vars",
+      "prefer-template",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+    ],
+  },
+  "ok.js": Object {},
+  "warning.js": Object {
+    "warnings": Array [
+      "class-methods-use-this",
+      "no-plusplus",
+      "no-var",
+      "no-var",
+      "no-var",
+      "vars-on-top",
+    ],
+  },
+}
+`;
+
+exports[`fixture eslint plugin test check: lint react js app files 1`] = `
+Object {
+  "error.jsx": Object {
+    "errors": Array [
+      "lines-between-class-members",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+      "react-hooks/exhaustive-deps",
+      "react-hooks/rules-of-hooks",
+      "react/button-has-type",
+      "react/jsx-key",
+      "react/no-deprecated",
+      "react/no-unused-state",
+    ],
+    "warnings": Array [
+      "react/destructuring-assignment",
+      "react/destructuring-assignment",
+      "react/destructuring-assignment",
+      "react/no-unsafe",
+      "react/prop-types",
+      "react/prop-types",
+      "react/prop-types",
+    ],
+  },
+  "ok.jsx": Object {},
+  "warning.jsx": Object {
+    "warnings": Array [
+      "class-methods-use-this",
+      "react/destructuring-assignment",
+      "react/destructuring-assignment",
+      "react/destructuring-assignment",
+      "react/prop-types",
+      "react/prop-types",
+      "react/prop-types",
+    ],
+  },
+}
+`;
+
+exports[`fixture eslint plugin test check: lint react ts app files 1`] = `
+Object {
+  "error.tsx": Object {
+    "errors": Array [
+      "lines-between-class-members",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+      "react-hooks/exhaustive-deps",
+      "react-hooks/rules-of-hooks",
+      "react/button-has-type",
+      "react/jsx-key",
+      "react/no-deprecated",
+      "react/no-unused-state",
+    ],
+    "warnings": Array [
+      "react/destructuring-assignment",
+      "react/destructuring-assignment",
+      "react/destructuring-assignment",
+      "react/no-unsafe",
+    ],
+  },
+  "ok.tsx": Object {},
+  "warning.tsx": Object {
+    "warnings": Array [
+      "@typescript-eslint/no-explicit-any",
+      "react/destructuring-assignment",
+      "react/destructuring-assignment",
+      "react/destructuring-assignment",
+      "react/destructuring-assignment",
+    ],
+  },
+}
+`;
+
+exports[`fixture eslint plugin test check: lint typescript lib files 1`] = `
+Object {
+  "error.ts": Object {
+    "errors": Array [
+      "@typescript-eslint/ban-types",
+      "@typescript-eslint/no-empty-interface",
+      "@typescript-eslint/no-extraneous-class",
+      "lines-between-class-members",
+      "no-param-reassign",
+      "prefer-template",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+      "prettier/prettier",
+    ],
+    "warnings": Array [
+      "@typescript-eslint/no-empty-function",
+    ],
+  },
+  "ok.ts": Object {},
+  "warning.ts": Object {
+    "errors": Array [
+      "no-var",
+      "no-var",
+      "no-var",
+    ],
+    "warnings": Array [
+      "no-plusplus",
+      "vars-on-top",
+    ],
+  },
+}
+`;

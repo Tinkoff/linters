@@ -1,5 +1,5 @@
 module.exports = {
-    'packages/**/*.{ts,js}': ['eslint --fix'],
+    'packages/**/**/*.{ts,js}': ['eslint --fix'],
     '**/README.md': [
         files => files.map(file => `markdown-toc -i ${file}`), // single file per command
         'prettier --write',

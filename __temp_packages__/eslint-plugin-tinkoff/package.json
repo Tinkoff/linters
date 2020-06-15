@@ -1,0 +1,70 @@
+{
+  "name": "eslint-plugin-tinkoff",
+  "version": "0.5.0",
+  "description": "Tinkoff ESLint configs to rule them all",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest --clearCache && jest",
+    "test:watch": "jest --clearCache && jest --watch",
+    "lint": "eslint --ext .jsx,.js,.ts,.tsx --ignore-path .eslintignore .",
+    "lint:fix": "npm run lint -- --fix",
+    "prepublish": "npm run build",
+    "prebuild": "rimraf lib"
+  },
+  "main": "./lib/index",
+  "bugs": {
+    "url": "https://github.com/TinkoffCreditSystems/linters/issues"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "homepage": "https://github.com/TinkoffCreditSystems/linters",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinkoffCreditSystems/linters.git"
+  },
+  "dependencies": {
+    "@tinkoff/utils": "^2.1.2",
+    "@typescript-eslint/eslint-plugin": "^3.0.0-alpha.27",
+    "@typescript-eslint/parser": "^3.0.0-alpha.27",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.11.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.1",
+    "eslint-plugin-sort-class-members": "^1.7.0",
+    "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/eslint": "^6.8.0",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.1",
+    "eslint-plugin-self-dir": "^1.3.1",
+    "eslint-plugin-tinkoff": "file:.",
+    "jest": "^26.0.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.2"
+  },
+  "engines": {
+    "node": "^10.12.0 || >=12.0.0"
+  }
+}
