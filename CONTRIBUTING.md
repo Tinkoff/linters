@@ -9,7 +9,9 @@
 -   Prepare your release into `master` or `release/*` branch.
 -   Run `npm run version` and look what happens.
     -   Or `npm run version -- --no-push` and `git push --follow-tags` you are not sure.
--   Run `npm run publish`.
+-   Run one of following
+    -   `npm run publish`
+    -   `npm run publish:beta`
 
 **Pre-release:**
 
