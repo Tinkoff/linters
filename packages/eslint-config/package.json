@@ -20,7 +20,7 @@
     "preversion": "npm run build",
     "build:prod": "npm run build",
     "build:watch": "npm run watch",
-    "test:ci": "",
+    "test:ci": "npm run test",
     "lint:ci": "npm run lint"
   },
   "main": "lib/index.js",
