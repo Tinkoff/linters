@@ -32,9 +32,6 @@
         "type": "git",
         "url": "https://github.com/TinkoffCreditSystems/linters.git"
     },
-    "publishConfig": {
-        "access": "public"
-    },
     "devDependencies": {
         "@types/eslint": "^6.8.0",
         "@types/jest": "^25.2.3",
@@ -43,7 +40,7 @@
         "concurrently": "5.0.1",
         "conventional-changelog-conventionalcommits": "^4.2.3",
         "husky": "^4.2.0",
-        "lerna": "^3.20.2",
+        "lerna": "^3.22.1",
         "lint-staged": "^10.0.1",
         "markdown-toc": "^1.2.0",
         "prettier": "^1.19.1",
