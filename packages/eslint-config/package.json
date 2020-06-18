@@ -55,5 +55,8 @@
   "peerDependencies": {
     "eslint": ">=7",
     "prettier": ">=2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

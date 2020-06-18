@@ -49,5 +49,8 @@
     "eslint": ">=7",
     "eslint-config-prettier": ">=6.11",
     "eslint-plugin-import": ">=2.20"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

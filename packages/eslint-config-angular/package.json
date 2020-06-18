@@ -44,5 +44,8 @@
     "eslint": ">=7",
     "eslint-plugin-import": ">=2.20",
     "eslint-plugin-sort-class-members": ">=1.7"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
