@@ -1,6 +1,6 @@
 {
     "name": "@tinkoff/eslint-plugin",
-    "version": "1.0.0-rc.5",
+    "version": "1.0.0-rc.6",
     "description": "Custom ESLint rules of Tinkoff",
     "license": "Apache-2.0",
     "main": "lib/index.js",
@@ -23,7 +23,6 @@
         "@typescript-eslint/experimental-utils": "^2.8.0",
         "lodash": "^4.17.15"
     },
-    "devDependencies": {},
     "peerDependencies": {
         "eslint": ">=7"
     }

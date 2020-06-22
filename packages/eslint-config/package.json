@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config",
-  "version": "0.1.0",
+  "version": "1.0.0-rc.6",
   "description": "Tinkoff ESLint configs to rule them all",
   "license": "Apache-2.0",
   "keywords": [
@@ -52,9 +52,11 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-sort-class-members": "^1.7.0"
   },
-  "devDependencies": {},
   "peerDependencies": {
     "eslint": ">=7",
     "prettier": ">=2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

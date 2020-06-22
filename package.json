@@ -21,8 +21,8 @@
         "preversion": "lerna run build:prod --parallel && cp ./README.md ./packages/linters/",
         "version": "lerna version --conventional-commits ----changelog-preset conventionalcommits --yes --ignore-changes '**/package-lock.json'",
         "********** Publish": "",
-        "publish": "lerna publish from-git --yes --access public --pre-dist-tag beta",
-        "publish:beta": "lerna publish --dist-tag beta from-git --yes --access public"
+        "publish": "lerna publish from-git --yes --pre-dist-tag beta",
+        "publish:beta": "lerna publish --dist-tag beta from-git --yes"
     },
     "author": {
         "name": "Tinkoff Team",
@@ -40,7 +40,7 @@
         "concurrently": "5.0.1",
         "conventional-changelog-conventionalcommits": "^4.2.3",
         "husky": "^4.2.0",
-        "lerna": "^3.20.2",
+        "lerna": "^3.22.1",
         "lint-staged": "^10.0.1",
         "markdown-toc": "^1.2.0",
         "prettier": "^1.19.1",
