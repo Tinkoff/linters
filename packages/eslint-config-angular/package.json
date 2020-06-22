@@ -9,25 +9,14 @@
     "eslint-config"
   ],
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
     "test": "jest --clearCache && jest",
     "test:watch": "npm run test -- --watch",
-    "lint": "eslint --ext .jsx,.js,.ts,.tsx --ignore-path .eslintignore .",
+    "lint": "eslint --ignore-path .eslintignore .",
     "lint:fix": "npm run lint -- --fix",
-    "prelint:ci": "npm run build",
-    "pretest:ci": "npm run build",
-    "preversion": "npm run build",
-    "build:prod": "npm run build",
-    "build:watch": "npm run watch",
     "test:ci": "npm run test",
     "lint:ci": "npm run lint"
   },
-  "main": "lib/index.js",
-  "files": [
-    "lib",
-    "src"
-  ],
+  "main": "index.js",
   "author": {
     "name": "Tinkoff Team",
     "email": "frontend@tinkoff.ru"
@@ -40,10 +29,10 @@
     "@tinkoff/eslint-config": "^1.0.0-rc.6"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=3",
-    "eslint": ">=7",
-    "eslint-plugin-import": ">=2.20",
-    "eslint-plugin-sort-class-members": ">=1.7"
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "eslint": "7.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-sort-class-members": "^1.7.0"
   },
   "publishConfig": {
     "access": "public"

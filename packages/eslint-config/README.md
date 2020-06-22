@@ -11,6 +11,7 @@ npm i --save-dev @tinkoff/eslint-config
 ```
 
 Then, need to include necessary configurations sets to `.eslintrc`. Wee need to choose base configuration, and any necessary additional configs.
+Package include `eslint@7` and `prettier@2` dependencies.
 
 ### Base configurations
 

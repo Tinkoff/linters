@@ -13,9 +13,6 @@ node_modules/
 .vscode
 .idea
 
-# Compiled sources
-lib
-
 .tmp
 
 debug-path
