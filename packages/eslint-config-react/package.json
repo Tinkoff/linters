@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config-react",
-  "version": "1.0.0-rc.6",
+  "version": "1.0.0-rc.7",
   "description": "Tinkoff ESLint configs for React apps",
   "license": "Apache-2.0",
   "keywords": [
@@ -32,12 +32,12 @@
     "eslint-plugin-react-hooks": "^4.0.4"
   },
   "devDependencies": {
-    "@tinkoff/eslint-config": "^1.0.0-rc.6"
+    "@tinkoff/eslint-config": "^1.0.0-rc.7"
   },
   "peerDependencies": {
     "eslint": "7.2.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-import": "^2.21.2"
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4"
   },
   "publishConfig": {
     "access": "public"
