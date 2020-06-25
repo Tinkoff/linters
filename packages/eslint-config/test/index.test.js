@@ -7,7 +7,7 @@ describe('@tinkoff/eslint-config', () => {
       useEslintrc: false,
       cwd: path.join(__dirname, '..'),
       baseConfig: {
-        extends: ['./lib/app'],
+        extends: ['./app'],
       },
     });
 
@@ -19,7 +19,7 @@ describe('@tinkoff/eslint-config', () => {
       useEslintrc: false,
       cwd: path.join(__dirname, '..'),
       baseConfig: {
-        extends: ['./lib/lib'],
+        extends: ['./lib'],
       },
     });
 
@@ -31,7 +31,7 @@ describe('@tinkoff/eslint-config', () => {
       useEslintrc: false,
       cwd: path.join(__dirname, '..'),
       baseConfig: {
-        extends: ['./lib/jest'],
+        extends: ['./jest'],
       },
     });
 

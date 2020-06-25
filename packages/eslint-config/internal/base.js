@@ -32,7 +32,7 @@ module.exports = {
       },
     ],
     'func-name-matching': 'warn',
-    'global-require': 'warn',
+    'global-require': 'off',
     'class-methods-use-this': 'warn',
     'no-continue': 'off',
     'no-restricted-syntax': 'warn',
