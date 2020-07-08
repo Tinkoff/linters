@@ -69,7 +69,9 @@ module.exports = {
         ],
         // '@typescript-eslint/no-unnecessary-qualifier': 'error', need ts config
         // '@typescript-eslint/restrict-plus-operands': 'error', need ts config
-        '@typescript-eslint/no-explicit-any': 'warn',
+        '@typescript-eslint/no-explicit-any': 'off',
+        camelcase: 'off',
+        '@typescript-eslint/camelcase': 'off',
         '@typescript-eslint/naming-convention': [
           'error',
           {
@@ -86,7 +88,7 @@ module.exports = {
           },
           {
             selector: 'typeLike',
-            format: ['PascalCase'],
+            format: ['PascalCase', 'UPPER_CASE'],
           },
           {
             selector: 'property',
