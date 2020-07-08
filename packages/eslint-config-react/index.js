@@ -48,7 +48,7 @@ module.exports = {
     'react/jsx-key': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/default-props-match-prop-types': 'warn',
-    'react/require-default-props': 'warn',
+    'react/require-default-props': 'off', // default values in props destructuring is not supported
     'react/static-property-placement': ['error', 'static public field'],
 
     'react/sort-comp': [
