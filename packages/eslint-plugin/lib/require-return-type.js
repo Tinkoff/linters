@@ -1,3 +1,5 @@
+const {getUpperFunction} = require('eslint/lib/rules/utils/ast-utils');
+
 const path = require('path');
 
 module.exports = {
@@ -21,42 +23,37 @@ module.exports = {
             return {};
         }
 
-        function getFunctionNode(node, functionNodeType) {
-            while (node.type !== functionNodeType) {
-                node = node.parent;
+        const reportedFns = new WeakSet();
+
+        function reportMissingType(returnNode) {
+            const {argument: returnArgument} = returnNode;
+            const fnNode = getUpperFunction(returnNode);
+
+            if (
+                !returnArgument ||
+                returnArgument.name === 'undefined' ||
+                returnArgument.operator === 'void' ||
+                fnNode.type === 'ArrowFunctionExpression' ||
+                reportedFns.has(fnNode)
+            ) {
+                return;
             }
 
-            return node;
-        }
-
-        function createReportMissingType(functionNodeType) {
-            return function reportMissingType(returnNode) {
-                const {argument: returnArgument} = returnNode;
-                const fnNode = getFunctionNode(returnNode, functionNodeType);
-
-                if (
-                    !returnArgument ||
-                    returnArgument.name === 'undefined' ||
-                    returnArgument.operator === 'void'
-                ) {
-                    return;
-                }
+            if (
+                fnNode &&
+                (!fnNode.returnType || fnNode.returnType.type !== 'TSTypeAnnotation')
+            ) {
+                reportedFns.add(fnNode);
 
                 context.report({
                     node: fnNode,
                     messageId: 'typeRequired',
                 });
-            };
+            }
         }
 
         return {
-            'FunctionDeclaration:not([returnType.type="TSTypeAnnotation"]) ReturnStatement': createReportMissingType(
-                'FunctionDeclaration',
-            ),
-            // MethodDefinition always contains FunctionExpression so we'll check only them
-            'MethodDefinition FunctionExpression:not([returnType.type="TSTypeAnnotation"]) ReturnStatement': createReportMissingType(
-                'FunctionExpression',
-            ),
+            ReturnStatement: reportMissingType,
         };
     },
 };

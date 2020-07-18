@@ -41,6 +41,16 @@ error: Function with return keyword should specify return type (@tinkoff/require
   43 |     }
 
 
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:75:2:
+  73 | };
+  74 | 
+> 75 | +function () {
+     |  ^
+  76 |     return '123';
+  77 | };
+  78 | 
+
+
 error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:87:1:
   85 | }
   86 | 
@@ -51,5 +61,25 @@ error: Function with return keyword should specify return type (@tinkoff/require
   90 | }
 
 
-5 errors found."
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:105:19:
+  103 |         });
+  104 | 
+> 105 |         ['a'].map(function (a) {
+      |                   ^
+  106 |             if (a) {
+  107 |                 return 0;
+  108 |             }
+
+
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:116:5:
+  114 | 
+  115 | function fnWithNestedFn() {
+> 116 |     function nestedFn() {
+      |     ^
+  117 |         return '';
+  118 |     }
+  119 | }
+
+
+8 errors found."
 `;
