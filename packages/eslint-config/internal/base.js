@@ -33,7 +33,7 @@ module.exports = {
     ],
     'func-name-matching': 'warn',
     'global-require': 'off',
-    'class-methods-use-this': 'warn',
+    'class-methods-use-this': 'off',
     'no-continue': 'off',
     'no-restricted-syntax': 'warn',
     'default-case': 'warn',
