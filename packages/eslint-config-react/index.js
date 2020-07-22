@@ -50,6 +50,7 @@ module.exports = {
     'react/default-props-match-prop-types': 'warn',
     'react/require-default-props': 'off', // default values in props destructuring is not supported
     'react/static-property-placement': ['error', 'static public field'],
+    'react/state-in-constructor': 'off',
 
     'react/sort-comp': [
       'off',
@@ -118,7 +119,7 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'warn',
     'jsx-a11y/click-events-have-key-events': 'warn',
     'jsx-a11y/mouse-events-have-key-events': 'warn',
-    'class-methods-use-this': 'warn',
+    'class-methods-use-this': 'off',
     'react/jsx-props-no-spreading': 'warn',
     'no-underscore-dangle': 'off',
   },
