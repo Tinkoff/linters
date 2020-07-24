@@ -64,15 +64,15 @@ const arrow3 = () => '123';
 const arrow4 = () => '123';
 const arrow5 = (param: string) =>
     param +
-    function() {
+    function () {
         new a();
     };
 
-+function(): string {
++function (): string {
     return '123';
 };
 
-+function() {
++function () {
     return '123';
 };
 
@@ -91,3 +91,29 @@ function ab3() {
 
 // Edge case
 // () => ({ action: 'xxx' }) as const
+
+class B {
+    constructor() {
+        ['a'].map(a => {
+            return 0;
+        });
+
+        ['a'].map(function (a): number {
+            return 0;
+        });
+
+        ['a'].map(function (a) {
+            if (a) {
+                return 0;
+            }
+
+            return 1;
+        });
+    }
+}
+
+function fnWithNestedFn() {
+    function nestedFn() {
+        return '';
+    }
+}
