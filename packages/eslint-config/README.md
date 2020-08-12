@@ -45,21 +45,21 @@ Package include `eslint@7` and `prettier@2` dependencies.
 
 Main configurations sets contains common rules
 
-- `@tinkoff/eslint-config/app` - common rules and specific rules for applications
-- `@tinkoff/eslint-config/lib` - common rules and specific rules for libraries
+-   `@tinkoff/eslint-config/app` - common rules and specific rules for applications
+-   `@tinkoff/eslint-config/lib` - common rules and specific rules for libraries
 
 Additional configurations sets. This configs **not** contain common eslint rules, and must be included with main configurations
 
-- `@tinkoff/eslint-config/jest` - rules for lint Jest test suits
+-   `@tinkoff/eslint-config/jest` - rules for lint Jest test suits
 
 ## Internal used plugins
 
 `@tinkoff/eslint-config/app` and `@tinkoff/eslint-config/lib` include:
 
-- `eslint-config-airbnb` - common and popular configuration
-- `eslint-plugin-eslint-comments` - validate `eslint` comments
-- `eslint-plugin-import` - validate proper imports
-- `eslint-plugin-promise` - enforce best practices for promises
-- `eslint-plugin-jest` - validate jest tests
-- `@typescript-eslint/eslint-plugin` - lint TypeScript files, adopt many eslint rules to TS code, and provide specific TS rules
-- `eslint-plugin-prettier` - disable code formatting using eslint tools and transfers all the logic to a prettier, and report differences as eslint issues
+-   `eslint-config-airbnb` - common and popular configuration
+-   `eslint-plugin-eslint-comments` - validate `eslint` comments
+-   `eslint-plugin-import` - validate proper imports
+-   `eslint-plugin-promise` - enforce best practices for promises
+-   `eslint-plugin-jest` - validate jest tests
+-   `@typescript-eslint/eslint-plugin` - lint TypeScript files, adopt many eslint rules to TS code, and provide specific TS rules
+-   `eslint-plugin-prettier` - disable code formatting using eslint tools and transfers all the logic to a prettier, and report differences as eslint issues

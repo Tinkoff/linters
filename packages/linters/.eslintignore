@@ -1,5 +1,0 @@
-*.fixture.*
-tslint/rules
-tslint/src
-node_modules
-dist

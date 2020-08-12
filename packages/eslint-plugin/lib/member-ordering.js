@@ -165,11 +165,10 @@ module.exports = {
     },
     defaultOptions,
     create(context) {
-        const options = Object.assign(
-            {},
-            defaultOptions[0],
-            context.options ? context.options[0] : null,
-        );
+        const options = {
+            ...defaultOptions[0],
+            ...(context.options ? context.options[0] : null),
+        };
 
         const sourceCode = context.getSourceCode();
         const functionExpressions = [
@@ -182,9 +181,9 @@ module.exports = {
 
             if (
                 decoratorCalleeName &&
-                allowedDecorators.includes('@' + decoratorCalleeName)
+                allowedDecorators.includes(`@${decoratorCalleeName}`)
             ) {
-                return '@' + decoratorCalleeName;
+                return `@${decoratorCalleeName}`;
             }
 
             if (node.value && functionExpressions.includes(node.value.type)) {
@@ -227,12 +226,12 @@ module.exports = {
                 case AST_NODE_TYPES.TSMethodSignature:
                 case AST_NODE_TYPES.TSAbstractClassProperty:
                 case AST_NODE_TYPES.ClassProperty:
-                    return util.getNameFromPropertyName(node.key);
+                    return util.getNameFromMember(node, sourceCode);
                 case AST_NODE_TYPES.TSAbstractMethodDefinition:
                 case AST_NODE_TYPES.MethodDefinition:
                     return node.kind === 'constructor'
                         ? 'constructor'
-                        : util.getNameFromClassMember(node, sourceCode);
+                        : util.getNameFromMember(node, sourceCode);
                 case AST_NODE_TYPES.TSConstructSignatureDeclaration:
                     return 'new';
                 default:

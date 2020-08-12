@@ -1,5 +1,5 @@
 import * as Lint from 'tslint';
-import {Replacement} from 'tslint';
+import { Replacement } from 'tslint';
 import * as ts from 'typescript';
 
 const INDENT = '    ';
@@ -23,9 +23,7 @@ class ConditionalBreaksWalker extends Lint.RuleWalker {
 
     private checkForErrors(node: ts.ConditionalExpression) {
         if (
-            (this.hasNoOperation(node) &&
-                this.isOnOneLine(node) &&
-                this.isNotTooLong(node)) ||
+            (this.hasNoOperation(node) && this.isOnOneLine(node) && this.isNotTooLong(node)) ||
             this.bothPartsStartOnNewLine(node)
         ) {
             return;
@@ -68,7 +66,7 @@ class ConditionalBreaksWalker extends Lint.RuleWalker {
     }
 
     private isEmbeddedOrEmbedding(node: ts.Node): boolean {
-        let parent = node.parent;
+        let { parent } = node;
 
         while (parent) {
             if (parent.kind === ts.SyntaxKind.ConditionalExpression) {
@@ -88,7 +86,7 @@ class ConditionalBreaksWalker extends Lint.RuleWalker {
     private hasOperation(node: ts.Node): boolean {
         return (
             ts.isBinaryExpression(node) ||
-            node.getChildren().some(node => ts.isExpressionStatement(node))
+            node.getChildren().some((node) => ts.isExpressionStatement(node))
         );
     }
 
@@ -108,42 +106,37 @@ class ConditionalBreaksWalker extends Lint.RuleWalker {
     }
 
     private static getFixes(node: ts.ConditionalExpression): Replacement[] {
-        const lineAndChar = ts.getLineAndCharacterOfPosition(
-            node.getSourceFile(),
-            node.getStart(),
-        );
+        const lineAndChar = ts.getLineAndCharacterOfPosition(node.getSourceFile(), node.getStart());
         const lineStartPosition = ts.getPositionOfLineAndCharacter(
             node.getSourceFile(),
             lineAndChar.line,
-            0,
+            0
         );
         const whitespaces = ConditionalBreaksWalker.getWhitespaces(
             node.getSourceFile().text,
-            lineStartPosition,
+            lineStartPosition
         );
 
         return [
             new Replacement(
                 node.questionToken.getFullStart(),
                 node.questionToken.getFullWidth(),
-                node.questionToken
-                    .getFullText()
-                    .replace(/\s*\?/, '\n' + whitespaces + '?'),
+                node.questionToken.getFullText().replace(/\s*\?/, `\n${whitespaces}?`)
             ),
             new Replacement(
                 node.colonToken.getFullStart(),
                 node.colonToken.getFullWidth(),
-                node.colonToken.getFullText().replace(/\s*:/, '\n' + whitespaces + ':'),
+                node.colonToken.getFullText().replace(/\s*:/, `\n${whitespaces}:`)
             ),
             new Replacement(
                 node.whenTrue.getFullStart(),
                 node.whenTrue.getFullWidth(),
-                node.whenTrue.getFullText().replace(/^\s*/, ' '),
+                node.whenTrue.getFullText().replace(/^\s*/, ' ')
             ),
             new Replacement(
                 node.whenFalse.getFullStart(),
                 node.whenFalse.getFullWidth(),
-                node.whenFalse.getFullText().replace(/^\s*/, ' '),
+                node.whenFalse.getFullText().replace(/^\s*/, ' ')
             ),
         ];
     }

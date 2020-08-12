@@ -15,8 +15,32 @@ module.exports = {
         },
     },
     rules: {
-        '@typescript-eslint/class-name-casing': 'error',
-        '@typescript-eslint/camelcase': breaking({since: 2}),
+        '@typescript-eslint/naming-convention': [
+            breaking({since: 2}),
+            {
+                selector: 'default',
+                format: ['camelCase'],
+            },
+            {
+                selector: 'variable',
+                format: ['camelCase', 'UPPER_CASE'],
+            },
+            {
+                selector: 'parameter',
+                format: ['camelCase'],
+                leadingUnderscore: 'allow',
+            },
+            {
+                selector: 'memberLike',
+                modifiers: ['private'],
+                format: ['camelCase'],
+                leadingUnderscore: 'require',
+            },
+            {
+                selector: 'typeLike',
+                format: ['PascalCase'],
+            },
+        ],
         'no-bitwise': 'error',
         'no-console': [
             breaking({since: 2}), // Was'nt worked on tslint
@@ -38,7 +62,7 @@ module.exports = {
             {enforceForRenamedProperties: false},
         ],
         'object-shorthand': [breaking({since: 2}), 'properties'],
-        'multiline-ternary': ['error', 'always-multiline'], // replaces "condition-breaks"
+        'multiline-ternary': ['error', 'always-multiline'], // replaces 'condition-breaks'
         'operator-linebreak': [
             'error',
             'before',

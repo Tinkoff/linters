@@ -2,7 +2,13 @@ const breaking = require('../utils/breaking');
 
 module.exports = {
     rules: {
-        '@typescript-eslint/class-name-casing': 'error',
+        '@typescript-eslint/naming-convention': [
+            'error',
+            {
+                selector: 'typeLike',
+                format: ['PascalCase'],
+            },
+        ],
 
         '@typescript-eslint/member-ordering': 'off',
         '@tinkoff/member-ordering': [

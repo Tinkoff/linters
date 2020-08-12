@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`require-return-type snapshot 1`] = `
-"error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:28:6:
+"error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:28:6:
   26 |     }
   27 | 
 > 28 |     c() {
@@ -11,7 +11,7 @@ exports[`require-return-type snapshot 1`] = `
   31 |     }
 
 
-error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:32:7:
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:32:7:
   30 |         return '123';
   31 |     }
 > 32 |     c2(/* 123 */) {
@@ -21,7 +21,7 @@ error: Function with return keyword should specify return type (@tinkoff/require
   35 |     }
 
 
-error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:36:7:
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:36:7:
   34 |         return '123';
   35 |     }
 > 36 |     c3() /* 123 */ {
@@ -31,7 +31,7 @@ error: Function with return keyword should specify return type (@tinkoff/require
   39 |     }
 
 
-error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:40:7:
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:40:7:
   38 |         return '123';
   39 |     }
 > 40 |     c4() {
@@ -41,7 +41,7 @@ error: Function with return keyword should specify return type (@tinkoff/require
   43 |     }
 
 
-error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:75:2:
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:75:2:
   73 | };
   74 | 
 > 75 | +function () {
@@ -51,7 +51,7 @@ error: Function with return keyword should specify return type (@tinkoff/require
   78 | 
 
 
-error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:87:1:
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:87:1:
   85 | }
   86 | 
 > 87 | function ab3() {
@@ -61,7 +61,7 @@ error: Function with return keyword should specify return type (@tinkoff/require
   90 | }
 
 
-error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:105:19:
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:105:19:
   103 |         });
   104 | 
 > 105 |         ['a'].map(function (a) {
@@ -71,7 +71,7 @@ error: Function with return keyword should specify return type (@tinkoff/require
   108 |             }
 
 
-error: Function with return keyword should specify return type (@tinkoff/require-return-type) at tests/require-return-type.fixture.ts:116:5:
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:116:5:
   114 | 
   115 | function fnWithNestedFn() {
 > 116 |     function nestedFn() {

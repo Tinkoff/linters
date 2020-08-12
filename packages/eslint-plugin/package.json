@@ -4,12 +4,7 @@
     "description": "Custom ESLint rules of Tinkoff",
     "license": "Apache-2.0",
     "main": "lib/index.js",
-    "scripts": {
-        "********** Linters": "",
-        "lint:ci": "eslint --ext .js --ignore-path .eslintignore .",
-        "********** Test": "",
-        "test:ci": "jest --ci --config='./jest.config.ci.json' --no-color"
-    },
+    "scripts": {},
     "author": {
         "name": "Tinkoff Team",
         "email": "frontend@tinkoff.ru"
@@ -19,8 +14,8 @@
         "url": "https://github.com/TinkoffCreditSystems/linters.git"
     },
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "2.7.0",
-        "@typescript-eslint/experimental-utils": "^2.8.0",
+        "@typescript-eslint/eslint-plugin": "^3.7.0",
+        "@typescript-eslint/experimental-utils": "^3.7.0",
         "lodash": "^4.17.15"
     },
     "peerDependencies": {

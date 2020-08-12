@@ -1,7 +1,7 @@
-import {IRuleMetadata, RuleFailure, Rules} from 'tslint';
+import { IRuleMetadata, RuleFailure, Rules } from 'tslint';
 import * as ts from 'typescript';
-import {hasModifier} from 'tsutils';
-import {AngularMemberOrderingWalker, defaultMemberData} from './utils';
+import { hasModifier } from 'tsutils';
+import { AngularMemberOrderingWalker, defaultMemberData } from './utils';
 
 export class Rule extends Rules.AbstractRule {
     static memberData = defaultMemberData;
@@ -64,11 +64,7 @@ export class Rule extends Rules.AbstractRule {
     apply(sourceFile: ts.SourceFile): RuleFailure[] {
         this.memberOrderingOptionsParse(Rule.metadata.options.order);
 
-        const walker = new TinkoffAngularMemberOrderingWalker(
-            sourceFile,
-            this.ruleName,
-            undefined,
-        );
+        const walker = new TinkoffAngularMemberOrderingWalker(sourceFile, this.ruleName, undefined);
 
         return this.applyWithWalker(walker);
     }
@@ -92,13 +88,8 @@ type NodeDeclaration =
 class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
     private bindingWasAppeared = false;
 
-    protected getFailureString(
-        nextNode: NodeDeclaration,
-        prevNode: NodeDeclaration,
-    ): string {
-        return `${this.getNodeType(nextNode)} must be before ${this.getNodeType(
-            prevNode,
-        )}`;
+    protected getFailureString(nextNode: NodeDeclaration, prevNode: NodeDeclaration): string {
+        return `${this.getNodeType(nextNode)} must be before ${this.getNodeType(prevNode)}`;
     }
 
     protected getFailureStringForAccessor(node: NodeDeclaration): string {
@@ -144,13 +135,9 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
         return toBeReturned;
     }
 
-    protected wrongWithAccessor(
-        node: NodeDeclaration,
-        prevNode: NodeDeclaration,
-    ): boolean {
+    protected wrongWithAccessor(node: NodeDeclaration, prevNode: NodeDeclaration): boolean {
         return (
-            this.isInputAfterAccessor(node, prevNode) ||
-            this.isOutputAfterAccessor(node, prevNode)
+            this.isInputAfterAccessor(node, prevNode) || this.isOutputAfterAccessor(node, prevNode)
         );
     }
 
@@ -169,10 +156,7 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
         return node.getChildAt(0).getWidth();
     }
 
-    private isInputAfterAccessor(
-        node: NodeDeclaration,
-        prevNode: NodeDeclaration,
-    ): boolean {
+    private isInputAfterAccessor(node: NodeDeclaration, prevNode: NodeDeclaration): boolean {
         const isNodeInput = this.isInput(node);
         const isNodeAccessor = this.isInputAccessor(node);
         const isPrevNodeInputAccessor = this.isInputAccessor(prevNode);
@@ -180,10 +164,7 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
         return isNodeInput && !isNodeAccessor && isPrevNodeInputAccessor;
     }
 
-    private isOutputAfterAccessor(
-        node: NodeDeclaration,
-        prevNode: NodeDeclaration,
-    ): boolean {
+    private isOutputAfterAccessor(node: NodeDeclaration, prevNode: NodeDeclaration): boolean {
         const isNodeOutput = this.isOutput(node);
         const isNodeAccessor = this.isOutputAccessor(node);
         const isPrevNodeNodeOutputAccessor = this.isOutputAccessor(prevNode);
@@ -249,16 +230,11 @@ class TinkoffAngularMemberOrderingWalker extends AngularMemberOrderingWalker {
         const nodeIsOutput = this.isOutput(node);
         const prevNodeIsInput = this.isInput(prevNode);
         const nodeStartsWithPrevNode = this.getNodeName(node).startsWith(
-            this.getNodeName(prevNode),
+            this.getNodeName(prevNode)
         );
         const nodeEndsWithChange = this.getNodeName(node).endsWith('Change');
 
-        return (
-            nodeEndsWithChange &&
-            nodeStartsWithPrevNode &&
-            prevNodeIsInput &&
-            nodeIsOutput
-        );
+        return nodeEndsWithChange && nodeStartsWithPrevNode && prevNodeIsInput && nodeIsOutput;
     }
 
     private getNodeName(node: NodeDeclaration): string {

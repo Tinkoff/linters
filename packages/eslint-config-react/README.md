@@ -20,5 +20,5 @@ Then, need to include necessary configurations sets to `.eslintrc`. Wee need to 
 
 ## Internal used plugins
 
-- `eslint-plugin-react` - common react lint rules
-- `eslint-plugin-react-hooks` - lint rules for react hooks
+-   `eslint-plugin-react` - common react lint rules
+-   `eslint-plugin-react-hooks` - lint rules for react hooks
