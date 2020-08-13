@@ -1,6 +1,6 @@
 {
     "name": "@tinkoff/eslint-plugin",
-    "version": "1.0.0-rc.9",
+    "version": "1.0.0-rc.10",
     "description": "Custom ESLint rules of Tinkoff",
     "license": "Apache-2.0",
     "main": "lib/index.js",
