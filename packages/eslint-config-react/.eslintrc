@@ -1,8 +1,0 @@
-{
-  "root": true,
-
-  "extends": [
-    "@tinkoff/eslint-config/lib",
-    "@tinkoff/eslint-config/jest"
-  ]
-}

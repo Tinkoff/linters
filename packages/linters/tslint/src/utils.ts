@@ -1,6 +1,6 @@
 import * as ts from 'typescript';
-import {getNextStatement, getPreviousStatement} from 'tsutils';
-import {AbstractWalker, IOptions, Replacement} from 'tslint';
+import { getNextStatement, getPreviousStatement } from 'tsutils';
+import { AbstractWalker, IOptions, Replacement } from 'tslint';
 
 export function getLeadingWhitespace(node: ts.Node, sourceFile: ts.SourceFile): string {
     const fromLine = ts.getLineAndCharacterOfPosition(sourceFile, node.getStart()).line;
@@ -8,10 +8,7 @@ export function getLeadingWhitespace(node: ts.Node, sourceFile: ts.SourceFile): 
     return getWhitespace(sourceFile, fromLine);
 }
 
-export function getTrailingWhitespace(
-    node: ts.Statement,
-    sourceFile: ts.SourceFile,
-): string {
+export function getTrailingWhitespace(node: ts.Statement, sourceFile: ts.SourceFile): string {
     const next = getNextStatement(node);
     const fromLine = ts.getLineAndCharacterOfPosition(sourceFile, next.getStart()).line;
 
@@ -23,7 +20,7 @@ function getWhitespace(sourceFile: ts.SourceFile, fromLine: number): string {
         ts.ScriptTarget.ES5,
         false,
         ts.LanguageVariant.Standard,
-        sourceFile.text,
+        sourceFile.text
     );
 
     whitespaceScanner.setTextPos(sourceFile.getLineStarts()[fromLine]);
@@ -64,16 +61,14 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
         }
 
         let start = node.getStart(this.sourceFile);
-        let line = ts.getLineAndCharacterOfPosition(this.sourceFile, start).line;
+        let { line } = ts.getLineAndCharacterOfPosition(this.sourceFile, start);
         const comments = ts.getLeadingCommentRanges(this.sourceFile.text, node.pos);
 
         if (comments !== undefined) {
             // check for blank lines between comments
             for (let i = comments.length - 1; i >= 0; --i) {
-                const endLine = ts.getLineAndCharacterOfPosition(
-                    this.sourceFile,
-                    comments[i].end,
-                ).line;
+                const endLine = ts.getLineAndCharacterOfPosition(this.sourceFile, comments[i].end)
+                    .line;
 
                 if (endLine < line - 1) {
                     return;
@@ -91,14 +86,10 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
             const replacement = new Replacement(
                 prev.getEnd(),
                 start - prev.getEnd(),
-                `\n\n${whitespace}`,
+                `\n\n${whitespace}`
             );
 
-            this.addFailureAtNode(
-                node.getFirstToken(),
-                this.getFailureString(),
-                replacement,
-            );
+            this.addFailureAtNode(node.getFirstToken(), this.getFailureString(), replacement);
         }
     }
 
@@ -111,7 +102,7 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
 
         let start = next.getStart();
         let end = node.getEnd();
-        let line = ts.getLineAndCharacterOfPosition(this.sourceFile, end).line;
+        let { line } = ts.getLineAndCharacterOfPosition(this.sourceFile, end);
         let nextLine = ts.getLineAndCharacterOfPosition(this.sourceFile, start).line;
         const comments =
             ts.getTrailingCommentRanges(this.sourceFile.text, end) ||
@@ -120,18 +111,15 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
         if (comments !== undefined) {
             // check for blank lines between comments
             for (let i = comments.length - 1; i >= 0; --i) {
-                const startLine = ts.getLineAndCharacterOfPosition(
-                    this.sourceFile,
-                    comments[i].pos,
-                ).line;
+                const startLine = ts.getLineAndCharacterOfPosition(this.sourceFile, comments[i].pos)
+                    .line;
 
                 if (startLine === line && comments[i].end < next.getStart()) {
                     end = comments[i].end;
                     line = ts.getLineAndCharacterOfPosition(this.sourceFile, end).line;
                 } else {
                     start = comments[i].pos;
-                    nextLine = ts.getLineAndCharacterOfPosition(this.sourceFile, start)
-                        .line;
+                    nextLine = ts.getLineAndCharacterOfPosition(this.sourceFile, start).line;
                 }
             }
         }
@@ -140,11 +128,7 @@ export abstract class NewLineRuleWalker extends AbstractWalker<void> {
             const whitespace = getTrailingWhitespace(node, this.sourceFile);
             const replacement = new Replacement(end, start - end, `\n\n${whitespace}`);
 
-            this.addFailureAtNode(
-                node.getLastToken(),
-                this.getFailureString(),
-                replacement,
-            );
+            this.addFailureAtNode(node.getLastToken(), this.getFailureString(), replacement);
         }
     }
 
@@ -265,13 +249,13 @@ export abstract class AngularMemberOrderingWalker extends AbstractWalker<IOption
             this.addFailureAt(
                 node.getStart(),
                 this.nodeWidth(node),
-                this.getFailureString(node, this.lastPropertyDeclaration),
+                this.getFailureString(node, this.lastPropertyDeclaration)
             );
         } else if (this.wrongWithAccessor(node, this.lastPropertyDeclaration)) {
             this.addFailureAt(
                 this.lastPropertyDeclaration.getStart(),
                 this.nodeWidth(this.lastPropertyDeclaration),
-                this.getFailureStringForAccessor(this.lastPropertyDeclaration),
+                this.getFailureStringForAccessor(this.lastPropertyDeclaration)
             );
         }
 
@@ -296,18 +280,14 @@ export abstract class AngularMemberOrderingWalker extends AbstractWalker<IOption
 
     protected abstract getFailureString(
         nextNode: NodeDeclaration,
-        prevNode: NodeDeclaration,
+        prevNode: NodeDeclaration
     ): string;
+
     protected abstract getFailureStringForAccessor(node: NodeDeclaration): string;
     protected abstract hasMatch(node: ts.Node): boolean;
-    protected abstract isRightOrder(
-        node: NodeDeclaration,
-        prevNode: NodeDeclaration,
-    ): boolean;
+    protected abstract isRightOrder(node: NodeDeclaration, prevNode: NodeDeclaration): boolean;
+
     protected abstract isClass(node: ts.Node): boolean;
     protected abstract nodeWidth(node: NodeDeclaration): number;
-    protected abstract wrongWithAccessor(
-        node: NodeDeclaration,
-        prevNode: NodeDeclaration,
-    ): boolean;
+    protected abstract wrongWithAccessor(node: NodeDeclaration, prevNode: NodeDeclaration): boolean;
 }

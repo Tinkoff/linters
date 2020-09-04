@@ -1,6 +1,22 @@
 # IDE
-.idea
+.DS_Store
 .vscode
+.idea
+
+# Dependency directories
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Packages sources
+packages/linters/tslint/rules
+packages/linters/README.md
 
 # Other
-node_modules
+.tmp
+debug-path

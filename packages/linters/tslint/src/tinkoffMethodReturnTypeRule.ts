@@ -24,11 +24,7 @@ class TinkoffMethodReturnTypeWalker extends Lint.RuleWalker {
         const methodNode = this.findMethodNode(returnNode) as ts.MethodDeclaration;
 
         if (methodNode && !this.checkTypeDefExists(methodNode)) {
-            this.addFailureAt(
-                this.findClosingBracket(methodNode).getEnd(),
-                1,
-                Rule.FAILURE_STRING,
-            );
+            this.addFailureAt(this.findClosingBracket(methodNode).getEnd(), 1, Rule.FAILURE_STRING);
         }
     }
 
@@ -50,12 +46,10 @@ class TinkoffMethodReturnTypeWalker extends Lint.RuleWalker {
     }
 
     private checkTypeDefExists(node: ts.Node): boolean {
-        return node.getChildren().some(child => ts.isTypeNode(child));
+        return node.getChildren().some((child) => ts.isTypeNode(child));
     }
 
     private findClosingBracket(node: ts.Node): ts.Node {
-        return node
-            .getChildren()
-            .find(child => child.kind === ts.SyntaxKind.CloseParenToken);
+        return node.getChildren().find((child) => child.kind === ts.SyntaxKind.CloseParenToken);
     }
 }

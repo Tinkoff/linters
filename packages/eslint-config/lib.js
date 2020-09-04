@@ -1,10 +1,10 @@
 module.exports = {
-  extends: ['./index'],
+    extends: ['./index'],
 
-  plugins: [],
+    plugins: [],
 
-  rules: {
-    'import/no-dynamic-require': 'off',
-    '@typescript-eslint/no-var-requires': 'off',
-  },
+    rules: {
+        'import/no-dynamic-require': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+    },
 };

@@ -1,7 +1,7 @@
 import * as Lint from 'tslint';
 import * as ts from 'typescript';
-import {NewLineRuleWalker} from './utils';
-import {IRuleMetadata} from 'tslint';
+import { IRuleMetadata } from 'tslint';
+import { NewLineRuleWalker } from './utils';
 
 export class Rule extends Lint.Rules.AbstractRule {
     static FAILURE_STRING = 'Missing blank line around control statement';
@@ -21,7 +21,7 @@ export class Rule extends Lint.Rules.AbstractRule {
         const walker = new NewlineAroundControlStatementWalker(
             sourceFile,
             this.ruleName,
-            undefined,
+            undefined
         );
 
         return this.applyWithWalker(walker);

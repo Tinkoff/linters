@@ -1,6 +1,6 @@
-import {IRuleMetadata, RuleFailure, Rules} from 'tslint';
+import { IRuleMetadata, RuleFailure, Rules } from 'tslint';
 import * as ts from 'typescript';
-import {NewLineRuleWalker} from './utils';
+import { NewLineRuleWalker } from './utils';
 
 export class Rule extends Rules.AbstractRule {
     static FAILURE_STRING = 'Missing one blank line around variable declaration';
@@ -20,7 +20,7 @@ export class Rule extends Rules.AbstractRule {
         const walker = new TinkoffNewLineAfterVariableDeclarationWalker(
             sourceFile,
             this.ruleName,
-            undefined,
+            undefined
         );
 
         return this.applyWithWalker(walker);

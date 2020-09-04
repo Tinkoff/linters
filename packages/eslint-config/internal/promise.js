@@ -1,9 +1,9 @@
 module.exports = {
-  extends: ['plugin:promise/recommended'],
+    extends: ['plugin:promise/recommended'],
 
-  rules: {
-    'promise/always-return': 'warn',
-    'promise/catch-or-return': 'warn',
-    'promise/param-names': 'warn',
-  },
+    rules: {
+        'promise/always-return': 'warn',
+        'promise/catch-or-return': 'warn',
+        'promise/param-names': 'warn',
+    },
 };

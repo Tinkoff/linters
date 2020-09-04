@@ -1,7 +1,7 @@
 module.exports = {
-  extends: ['plugin:jest/recommended'],
+    extends: ['plugin:jest/recommended'],
 
-  plugins: [],
+    plugins: [],
 
-  rules: {},
+    rules: {},
 };

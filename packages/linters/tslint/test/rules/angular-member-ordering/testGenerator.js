@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 /**
  * This file contains code which generates tests for `AngularMemberOrdering` rule.
  *
@@ -7,6 +5,7 @@
  */
 
 const fs = require('fs');
+
 const file = 'test.ts.lint';
 
 const tab = '   ';
@@ -139,17 +138,19 @@ function getRandomMethod() {
     return methods[Math.floor(Math.random() * methods.length)];
 }
 
+// eslint-disable-next-line no-unused-vars
 function getGetter() {
     return 'get some() {return 1}';
 }
 
+// eslint-disable-next-line no-unused-vars
 function getSetter() {
     return 'set some() {return 2}';
 }
 
 const errors = {};
 
-let memberData = defaultMemberData;
+const memberData = defaultMemberData;
 
 function failureStringWithNumb(nextNode, prevNode, number) {
     return `[${number}]: ${nextNode} must be before ${prevNode}\n`;
@@ -195,7 +196,7 @@ function writeFailures() {
 
 function parseField(index) {
     let fieldType;
-    let fieldTypeArr = order[index].split('-');
+    const fieldTypeArr = order[index].split('-');
 
     if (fieldTypeArr[0] === 'public') {
         if (Math.random() > 0.5) {
@@ -204,17 +205,15 @@ function parseField(index) {
     }
 
     if (fieldTypeArr[0] === '@Input' || fieldTypeArr[0] === '@Output') {
-        fieldType = fieldTypeArr[0] + '()';
+        fieldType = `${fieldTypeArr[0]}()`;
     } else if (fieldTypeArr[1] === 'instance') {
         fieldTypeArr.splice(1, 1);
         fieldType = fieldTypeArr.join(' ');
+    } else if (fieldTypeArr[0] !== '') {
+        fieldType = fieldTypeArr.join(' ');
     } else {
-        if (fieldTypeArr[0] !== '') {
-            fieldType = fieldTypeArr.join(' ');
-        } else {
-            fieldTypeArr.splice(0, 1);
-            fieldType = fieldTypeArr.join(' ');
-        }
+        fieldTypeArr.splice(0, 1);
+        fieldType = fieldTypeArr.join(' ');
     }
 
     return fieldType;
@@ -222,16 +221,16 @@ function parseField(index) {
 
 function makeField(type) {
     if (!type) {
-        return getRandomVariable() + '\n';
+        return `${getRandomVariable()}\n`;
     }
     if (type.endsWith('method') || type.endsWith('getter') || type.endsWith('setter')) {
-        return (type.slice(0, -7) + ' ' + getRandomMethod()).trim() + '\n';
+        return `${`${type.slice(0, -7)} ${getRandomMethod()}`.trim()}\n`;
     }
 
     if (type.endsWith('field')) {
-        return (type.slice(0, -6) + ' ' + getRandomVariable()).trim() + '\n';
+        return `${`${type.slice(0, -6)} ${getRandomVariable()}`.trim()}\n`;
     }
-    return type + ' ' + getRandomVariable() + '\n';
+    return `${type} ${getRandomVariable()}\n`;
 }
 
 function generateRightCases() {
@@ -263,11 +262,9 @@ function makeFailure(firstIndex, secondIndex) {
     fs.appendFileSync(file, tab + firstField);
     fs.appendFileSync(
         file,
-        tab +
-            repeatFailure +
-            tab.repeat(3) +
-            errors[`${firstIndex}-${secondIndex}`] +
-            '\n\n',
+        `${
+            tab + repeatFailure + tab.repeat(3) + errors[`${firstIndex}-${secondIndex}`]
+        }\n\n`,
     );
 }
 
