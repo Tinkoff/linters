@@ -17,11 +17,11 @@ module.exports = tsOnly({
         '@typescript-eslint/naming-convention': [
             breaking({since: 2}),
             {
-                "selector": "interface",
-                "format": ["PascalCase"],
-                "custom": {
-                    "regex": "^I[A-Z]",
-                    "match": false
+                selector: 'interface',
+                format: ['PascalCase'],
+                custom: {
+                    regex: '^I[A-Z]',
+                    match: false,
                 },
             },
         ],
