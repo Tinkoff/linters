@@ -14,18 +14,6 @@ module.exports = tsOnly({
                 caughtErrors: 'none',
             },
         ],
-        '@typescript-eslint/naming-convention': [
-            breaking({since: 2}),
-            {
-                selector: 'interface',
-                format: ['PascalCase'],
-                custom: {
-                    regex: '^I[A-Z]',
-                    match: false,
-                },
-            },
-        ],
-
         '@typescript-eslint/no-inferrable-types': [
             'error',
             {
