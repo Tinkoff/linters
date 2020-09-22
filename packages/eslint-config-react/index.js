@@ -104,6 +104,10 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
 
+        // For React 16 this rule have been enable. Because in old code we have import React
+        'react/jsx-uses-react': 'error',
+        'react/react-in-jsx-scope': 'off',
+
         'jsx-a11y/aria-role': 'warn',
         'jsx-a11y/no-static-element-interactions': 'warn',
         'jsx-a11y/anchor-has-content': 'warn',
