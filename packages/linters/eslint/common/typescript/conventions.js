@@ -14,11 +14,6 @@ module.exports = tsOnly({
                 caughtErrors: 'none',
             },
         ],
-        '@typescript-eslint/interface-name-prefix': [
-            breaking({since: 2}),
-            {prefixWithI: 'never'},
-        ],
-
         '@typescript-eslint/no-inferrable-types': [
             'error',
             {

@@ -37,6 +37,14 @@ module.exports = {
                 leadingUnderscore: 'require',
             },
             {
+                selector: 'interface',
+                format: ['PascalCase'],
+                custom: {
+                    regex: '^_?I[A-Z]',
+                    match: false,
+                },
+            },
+            {
                 selector: 'typeLike',
                 format: ['PascalCase'],
             },
