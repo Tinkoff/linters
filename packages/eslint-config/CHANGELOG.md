@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0-rc.12 (2020-10-01)
+
+### Features
+
+-   move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+-   **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
+
+### Bug Fixes
+
+-   update dependencies ([#59](https://github.com/TinkoffCreditSystems/linters/issues/59)) ([c6d3025](https://github.com/TinkoffCreditSystems/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
+-   **eslint-config, eslint-config-react:** off class-methods-use-this and react/state-in-constructor rules ([#56](https://github.com/TinkoffCreditSystems/linters/issues/56)) ([fae2041](https://github.com/TinkoffCreditSystems/linters/commit/fae2041603d4e8a3f0ce8dd2a75284fd8275045f))
+-   **eslint-config, eslint-config-react:** update rules ([#53](https://github.com/TinkoffCreditSystems/linters/issues/53)) ([40cc0b1](https://github.com/TinkoffCreditSystems/linters/commit/40cc0b1f29c5616a8e5175473d4aeb384ef43133))
+
 ## 1.0.0-rc.11 (2020-09-04)
 
 ### Features
