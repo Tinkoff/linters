@@ -23,11 +23,5 @@ jobs:
         npm i -g lerna@^3.22.1
         npm run bootstrap
 
-    - name: Lint
-      run: npm run lint:ci
-
-    - name: Test
-      run: npm run test:ci
-
     - name: Publish
       run: npm run publish:beta -- --dry-run

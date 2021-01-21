@@ -1,9 +1,6 @@
 name: Check
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
@@ -11,8 +8,6 @@ on:
 
 jobs:
   check:
-    if: "!contains(github.event.head_commit.message, 'chore(release)')"
-
     runs-on: ubuntu-latest
 
     strategy:
