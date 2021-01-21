@@ -1,9 +1,15 @@
 {
-    "packages": ["packages/*"],
+    "packages": [
+        "packages/*",
+        "tools/actions/*"
+    ],
     "version": "1.0.0-rc.12",
     "command": {
         "version": {
-            "allowBranch": ["master", "release/*"]
+            "allowBranch": [
+                "master",
+                "release/*"
+            ]
         }
     }
 }

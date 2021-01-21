@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  pull_request:
+    branches:
+      - 'release/*'
+    types: [opened]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+  
+    - name: Install
+      run: |
+        npm i -g lerna@^3.22.1
+        npm run bootstrap
+
+    - name: Git Identity
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create release commit and tag
+      run: |
+        npm run version -- --no-push
+
+    - name: Push release commit and tag
+      run: git push --follow-tags

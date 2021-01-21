@@ -6,6 +6,10 @@
 
 ## Release
 
+- Create and push `release/*` branch
+
+## _Release
+
 -   Prepare your release into `master` or `release/*` branch.
 -   Run `npm run version` and look what happens.
     -   Or `npm run version -- --no-push` and `git push --follow-tags` you are not sure.
