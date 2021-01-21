@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0-rc.13 (2021-01-21)
+
+
+### Features
+
+* **eslint-config:** make rules less strict ([#71](https://github.com/TinkoffCreditSystems/linters/issues/71)) ([5cac851](https://github.com/TinkoffCreditSystems/linters/commit/5cac851a287f1aa08c11213ad0bf6f0663916ce8))
+* move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+* **eslint:** add eslint rules ([#23](https://github.com/TinkoffCreditSystems/linters/issues/23)) ([f141671](https://github.com/TinkoffCreditSystems/linters/commit/f1416714db5723bdac07dc439bb243ca5c071656))
+* **eslint:** migrate rest of custom rules to eslint ([#24](https://github.com/TinkoffCreditSystems/linters/issues/24)) ([20d24cb](https://github.com/TinkoffCreditSystems/linters/commit/20d24cb6c845280de54ea8b84151411b14f4d62d))
+* **eslint-plugin-tinkoff:** add eslint-plugin-tinkoff source code to packages ([#43](https://github.com/TinkoffCreditSystems/linters/issues/43)) ([2fe98e9](https://github.com/TinkoffCreditSystems/linters/commit/2fe98e9ebfdd5536cb63a02c179e7a8643377952))
+* **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
+* **prettier:** prettier enabled by default for .md, .less and ng-templates ([#32](https://github.com/TinkoffCreditSystems/linters/issues/32)) ([ad08682](https://github.com/TinkoffCreditSystems/linters/commit/ad0868214098e07fc3c17f234d0bc506ab053dd8))
+* **tslint:** change angular member ordering ([#21](https://github.com/TinkoffCreditSystems/linters/issues/21)) ([b0d7112](https://github.com/TinkoffCreditSystems/linters/commit/b0d711278e3ab01c545f26d76cf7b0ebafe9c2e3))
+* **tslint:** interfaces shoud not start with "I" symbol ([e22f9f0](https://github.com/TinkoffCreditSystems/linters/commit/e22f9f0cd819478b2640b623849ffa3290ddf936))
+* add rules for rxjs 6 ([1d4ecbe](https://github.com/TinkoffCreditSystems/linters/commit/1d4ecbee7285a44107b7fea8efbb12eaff346972))
+* enable  in prettier.config.js ([#6](https://github.com/TinkoffCreditSystems/linters/issues/6)) ([93a6485](https://github.com/TinkoffCreditSystems/linters/commit/93a6485e3c96603f29106bbaaf2d529b1fbde009))
+* fix deprecated parser ([#8](https://github.com/TinkoffCreditSystems/linters/issues/8)) ([35b8e4d](https://github.com/TinkoffCreditSystems/linters/commit/35b8e4d1736af8fe7eaa6006c8cd7ae08821094f))
+* update dependencies `stylelint`, `stylelint-config-standard`, `stylelint-order` ([2152ae3](https://github.com/TinkoffCreditSystems/linters/commit/2152ae30c52ff90485bc40e082168b7dc4bae7d8))
+
+
+### Bug Fixes
+
+* **eslint-plugin:** nested return statement ([#57](https://github.com/TinkoffCreditSystems/linters/issues/57)) ([1195552](https://github.com/TinkoffCreditSystems/linters/commit/1195552d97c8d70271ad8ef2a3f97e7defbe0104))
+* update dependencies ([#59](https://github.com/TinkoffCreditSystems/linters/issues/59)) ([c6d3025](https://github.com/TinkoffCreditSystems/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
+* **eslint:** fix "@tinkoff/member-ordering" rule failing ([#29](https://github.com/TinkoffCreditSystems/linters/issues/29)) ([a2964c0](https://github.com/TinkoffCreditSystems/linters/commit/a2964c0922d9a90630f0c66ec61711c44520b22f))
+* **eslint:** fix again npm local module installation ([#27](https://github.com/TinkoffCreditSystems/linters/issues/27)) ([70da4b1](https://github.com/TinkoffCreditSystems/linters/commit/70da4b1c5452a972498219236cacac300b82ab8b))
+* **eslint:** fix npm local module installation ([#26](https://github.com/TinkoffCreditSystems/linters/issues/26)) ([c983724](https://github.com/TinkoffCreditSystems/linters/commit/c9837240e239aad56b6142678f0a91d544ec0694))
+* **eslint-config, eslint-config-react:** off class-methods-use-this and react/state-in-constructor rules ([#56](https://github.com/TinkoffCreditSystems/linters/issues/56)) ([fae2041](https://github.com/TinkoffCreditSystems/linters/commit/fae2041603d4e8a3f0ce8dd2a75284fd8275045f))
+* **eslint-config, eslint-config-react:** update rules ([#53](https://github.com/TinkoffCreditSystems/linters/issues/53)) ([40cc0b1](https://github.com/TinkoffCreditSystems/linters/commit/40cc0b1f29c5616a8e5175473d4aeb384ef43133))
+* **eslint-plugin:** fix dependency + add lerna ([#35](https://github.com/TinkoffCreditSystems/linters/issues/35)) ([cf67afb](https://github.com/TinkoffCreditSystems/linters/commit/cf67afbde066a90f93c16969dd00fb4a7847f0c8))
+* **tslint-json:** `bases/tslint.json` remove not used file + fix eof rule ([bf5f025](https://github.com/TinkoffCreditSystems/linters/commit/bf5f0252684deae6cc1429a2f625e2460b28dac5))
+
+
+
 ## 1.0.0-rc.12 (2020-10-01)
 
 ### Features
