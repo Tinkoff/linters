@@ -31,11 +31,24 @@ module.exports = {
                 variables: true,
             },
         ],
-        'func-name-matching': 'warn',
+        'func-name-matching': 'off',
         'global-require': 'off',
         'class-methods-use-this': 'off',
         'no-continue': 'off',
-        'no-restricted-syntax': 'warn',
+        'no-restricted-syntax': [
+            'warn',
+            {
+                selector: 'LabeledStatement',
+                message:
+                    'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+            },
+            {
+                selector: 'WithStatement',
+                message:
+                    '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+            },
+        ],
+        'guard-for-in': 'off',
         'default-case': 'warn',
         'no-plusplus': ['warn', {allowForLoopAfterthoughts: true}],
         'consistent-return': 'warn',
@@ -57,7 +70,7 @@ module.exports = {
             },
         ],
         'max-depth': ['warn', 4],
-        'max-params': ['warn', 3],
+        'max-params': ['warn', 4],
         'max-classes-per-file': ['error', 4],
         complexity: ['error', 25],
         'max-statements': ['error', 25],
