@@ -11,13 +11,16 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      GITHUB_TOKEN: ${{ secrets.SUPER_OLEG_PAT }}
-
     steps:
     - uses: actions/checkout@v2
       with:
+        token: ${{ secrets.SUPER_OLEG_PAT }}
         fetch-depth: 0
+
+    - name: Git Identity
+      run: |
+        git config --global user.name 'SuperOleg39'
+        git config --global user.email 'SuperOleg39@users.noreply.github.com'
 
     - uses: actions/setup-node@v2
       with:
@@ -27,14 +30,6 @@ jobs:
       run: |
         npm i -g lerna@^3.22.1
         npm run bootstrap
-
-    - name: Git Identity
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create release commit and tag
       run: |
