@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0-rc.19](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.18...v1.0.0-rc.19) (2021-01-22)
+
+
+### Bug Fixes
+
+* use lerna publish from-package, revert testing source code changes ([#85](https://github.com/TinkoffCreditSystems/linters/issues/85)) ([10fe95c](https://github.com/TinkoffCreditSystems/linters/commit/10fe95c80674ca9ff6b1c0cba2efa6230e8ffabe))
+
+
+
 ## [1.0.0-rc.18](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.17...v1.0.0-rc.18) (2021-01-22)
 
 
