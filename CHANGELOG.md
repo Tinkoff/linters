@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0-rc.21](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.20...v1.0.0-rc.21) (2021-01-22)
+
+
+### Bug Fixes
+
+* rename publish script, revert source code testing changes ([#87](https://github.com/TinkoffCreditSystems/linters/issues/87)) ([996944b](https://github.com/TinkoffCreditSystems/linters/commit/996944b80d711c55de4533e09084c2d3785581b8))
+
+
+
 ## [1.0.0-rc.20](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.19...v1.0.0-rc.20) (2021-01-22)
 
 
