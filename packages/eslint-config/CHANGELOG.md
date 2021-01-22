@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0-rc.18](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.17...v1.0.0-rc.18) (2021-01-22)
+
+
+### Bug Fixes
+
+* add registry-url to setup-node action, change source code for testing ([#84](https://github.com/TinkoffCreditSystems/linters/issues/84)) ([011ecdb](https://github.com/TinkoffCreditSystems/linters/commit/011ecdb71b871ccb40d9f28a7e3254d2f1657f70))
+
+
+
 ## [1.0.0-rc.17](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.16...v1.0.0-rc.17) (2021-01-22)
 
 
