@@ -14,8 +14,8 @@ All merged PR to `master` branch trigger github actions release and publish work
 -   Run `npm run version` and look what happens.
     -   Or `npm run version -- --no-push` and `git push --follow-tags` you are not sure.
 -   Run one of following
-    -   `npm run publish`
-    -   `npm run publish:beta`
+    -   `npm run publish:ci`
+    -   `npm run publish:ci:beta`
 
 **Pre-release:**
 
