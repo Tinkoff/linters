@@ -4,11 +4,11 @@
 -   Run tests with `npm run test:ci`.
 -   Follow [Conventional Commits specification](https://conventionalcommits.org/) for every commitmessage.
 
-## Release
+## Automatic release
 
-- Create and push `release/*` branch, then make PR to `master` branch
+All merged PR to `master` branch trigger github actions release and publish workflow.
 
-## _Release
+## Manual release
 
 -   Prepare your release into `master` or `release/*` branch.
 -   Run `npm run version` and look what happens.
