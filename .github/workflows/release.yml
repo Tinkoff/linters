@@ -37,3 +37,9 @@ jobs:
 
     - name: Push release commit and tag
       run: git push --follow-tags
+
+    - name: Publish packages
+      run: npm run publish:beta
+      env:
+        # NPM_TOKEN: ${{ secrets.SUPER_OLEG_NPM_AUTH_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.SUPER_OLEG_NPM_AUTH_TOKEN }}
