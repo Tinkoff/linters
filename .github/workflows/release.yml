@@ -25,6 +25,7 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: '14.x'
+        registry-url: 'https://registry.npmjs.org'
 
     - name: Install
       run: |
@@ -41,4 +42,4 @@ jobs:
     - name: Publish packages
       run: npm run publish:beta
       env:
-        NPM_TOKEN: ${{ secrets.SUPER_OLEG_NPM_AUTH_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.SUPER_OLEG_NPM_AUTH_TOKEN }}
