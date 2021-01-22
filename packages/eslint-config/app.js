@@ -3,7 +3,5 @@ module.exports = {
 
     plugins: [],
 
-    rules: {
-        'import/no-dynamic-require': 'off',
-    },
+    rules: {},
 };
