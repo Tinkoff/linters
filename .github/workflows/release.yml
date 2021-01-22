@@ -40,6 +40,6 @@ jobs:
       run: git push --follow-tags
 
     - name: Publish packages
-      run: npm run publish:beta
+      run: npm run publish:beta -- --no-verify-access
       env:
         NODE_AUTH_TOKEN: ${{ secrets.SUPER_OLEG_NPM_AUTH_TOKEN }}
