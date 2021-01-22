@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0-rc.16](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.15...v1.0.0-rc.16) (2021-01-22)
+
+
+### Bug Fixes
+
+* test new npm token, change source code for debugging ([#82](https://github.com/TinkoffCreditSystems/linters/issues/82)) ([26a8ee8](https://github.com/TinkoffCreditSystems/linters/commit/26a8ee85b79acb73d81d930e9835bcf0f77c16db))
+
+
+
 ## [1.0.0-rc.15](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.14...v1.0.0-rc.15) (2021-01-21)
 
 
