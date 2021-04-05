@@ -11,7 +11,7 @@ npm i --save-dev @tinkoff/eslint-config
 ```
 
 Then, need to include necessary configurations sets to `.eslintrc`. Wee need to choose base configuration, and any necessary additional configs.
-Package include `eslint@7` and `prettier@2` dependencies.
+Package include `eslint@7` and `prettier@2` dependencies, so you should remove `eslint`, `prettier`, and `@tinkoff/eslint-config` internal dependencies from your project `package.json`.
 
 ### Base configurations
 
@@ -63,3 +63,9 @@ Additional configurations sets. This configs **not** contain common eslint rules
 -   `eslint-plugin-jest` - validate jest tests
 -   `@typescript-eslint/eslint-plugin` - lint TypeScript files, adopt many eslint rules to TS code, and provide specific TS rules
 -   `eslint-plugin-prettier` - disable code formatting using eslint tools and transfers all the logic to a prettier, and report differences as eslint issues
+
+## Troubleshooting
+
+### Wrong or duplicated eslint or some eslint plugins versions
+
+Try to remove `eslint`, `prettier`, and `@tinkoff/eslint-config` internal dependencies from your project `package.json`, then reinstall dependencies.
