@@ -34,12 +34,12 @@ jobs:
 
     - name: Create release commit and tag
       run: |
-        npm run version -- --no-push --conventional-graduate
+        npm run version -- --no-push
 
     - name: Push release commit and tag
       run: git push --follow-tags
 
     - name: Publish packages
-      run: npm run publish
+      run: npm run publish:ci
       env:
         NODE_AUTH_TOKEN: ${{ secrets.SUPER_OLEG_NPM_AUTH_TOKEN }}
