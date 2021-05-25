@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0...v1.0.1) (2021-05-25)
+
+
+### Bug Fixes
+
+* prettier version fixed to 2.2.1 ([#100](https://github.com/TinkoffCreditSystems/linters/issues/100)) ([0ff7030](https://github.com/TinkoffCreditSystems/linters/commit/0ff70309315b6ec46808633b2836bb1f5a8d338f))
+
+
+
 ## [1.0.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.22...v1.0.0) (2021-04-05)
 
 **Note:** Version bump only for package linters-monorepo
