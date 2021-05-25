@@ -29,7 +29,7 @@
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-teamcity": "^2.2.0",
         "lodash": "^4.17.15",
-        "prettier": "^2.0.5",
+        "prettier": "2.2.1",
         "rxjs-tslint": "^0.1.7",
         "rxjs-tslint-rules": "^4.24.3",
         "semver": "^6.3.0",
