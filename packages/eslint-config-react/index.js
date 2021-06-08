@@ -36,6 +36,16 @@ module.exports = {
                 'react/prop-types': 'off',
             },
         },
+        {
+            files: ['*.spec.*', '*.test.*', '*.unit.*', '*/__tests__/*'],
+
+            rules: {
+                'react-perf/jsx-no-new-object-as-prop': 'off',
+                'react-perf/jsx-no-new-array-as-prop': 'off',
+                'react-perf/jsx-no-new-function-as-prop': 'off',
+                'react-perf/jsx-no-jsx-as-prop': 'off',
+            },
+        },
     ],
 
     rules: {
