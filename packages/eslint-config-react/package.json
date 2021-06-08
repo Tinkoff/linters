@@ -1,6 +1,6 @@
 {
     "name": "@tinkoff/eslint-config-react",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Tinkoff ESLint configs for React apps",
     "license": "Apache-2.0",
     "keywords": [
