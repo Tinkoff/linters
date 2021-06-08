@@ -26,7 +26,7 @@ module.exports = {
         browser: true,
     },
 
-    plugins: ['react', 'react-hooks'],
+    plugins: ['react', 'react-hooks', 'react-perf'],
 
     overrides: [
         {
@@ -126,5 +126,10 @@ module.exports = {
         'class-methods-use-this': 'off',
         'react/jsx-props-no-spreading': 'warn',
         'no-underscore-dangle': 'off',
+
+        'react-perf/jsx-no-new-object-as-prop': 'warn',
+        'react-perf/jsx-no-new-array-as-prop': 'warn',
+        'react-perf/jsx-no-new-function-as-prop': 'warn',
+        'react-perf/jsx-no-jsx-as-prop': 'warn',
     },
 };
