@@ -19,7 +19,7 @@
         "********** Test": "",
         "test:ci": "jest --no-colors",
         "********** Version": "",
-        "preversion": "lerna run build:prod --parallel && cp ./README.md ./packages/linters/",
+        "preversion": "lerna run build:prod --parallel",
         "version": "lerna version --no-private --conventional-commits --changelog-preset conventionalcommits --yes --ignore-changes '**/package-lock.json'",
         "********** Publish": "",
         "publish:ci": "lerna publish from-git --yes",
