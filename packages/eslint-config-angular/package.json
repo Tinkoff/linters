@@ -3,11 +3,7 @@
     "version": "1.0.1",
     "description": "Tinkoff ESLint configs for Angular apps",
     "license": "Apache-2.0",
-    "keywords": [
-        "eslint",
-        "eslintconfig",
-        "eslint-config"
-    ],
+    "keywords": ["eslint", "eslintconfig", "eslint-config"],
     "scripts": {},
     "main": "index.js",
     "author": {
@@ -22,7 +18,7 @@
         "@tinkoff/eslint-config": "^1.0.1"
     },
     "peerDependencies": {
-        "@typescript-eslint/eslint-plugin": "^3.7.0",
+        "@typescript-eslint/eslint-plugin": "^4.28.2",
         "eslint": "^7.5.0",
         "eslint-plugin-import": "^2.22.0",
         "eslint-plugin-sort-class-members": "^1.7.0"
