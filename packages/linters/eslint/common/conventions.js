@@ -1,5 +1,6 @@
 const breaking = require('../utils/breaking');
 const extensions = require('../consts/extensions');
+const {tsOnly} = require('../utils/ts');
 
 module.exports = {
     plugins: ['import'],
@@ -15,40 +16,6 @@ module.exports = {
         },
     },
     rules: {
-        '@typescript-eslint/naming-convention': [
-            breaking({since: 2}),
-            {
-                selector: 'default',
-                format: ['camelCase'],
-            },
-            {
-                selector: 'variable',
-                format: ['camelCase', 'UPPER_CASE'],
-            },
-            {
-                selector: 'parameter',
-                format: ['camelCase'],
-                leadingUnderscore: 'allow',
-            },
-            {
-                selector: 'memberLike',
-                modifiers: ['private'],
-                format: ['camelCase'],
-                leadingUnderscore: 'require',
-            },
-            {
-                selector: 'interface',
-                format: ['PascalCase'],
-                custom: {
-                    regex: '^_?I[A-Z]',
-                    match: false,
-                },
-            },
-            {
-                selector: 'typeLike',
-                format: ['PascalCase'],
-            },
-        ],
         'no-bitwise': 'error',
         'no-console': [
             breaking({since: 2}), // Was'nt worked on tslint
@@ -98,4 +65,42 @@ module.exports = {
             after: 'warn',
         }),
     },
+    ...tsOnly({
+        rules: {
+            '@typescript-eslint/naming-convention': [
+                breaking({since: 2}),
+                {
+                    selector: 'default',
+                    format: ['camelCase'],
+                },
+                {
+                    selector: 'variable',
+                    format: ['camelCase', 'UPPER_CASE'],
+                },
+                {
+                    selector: 'parameter',
+                    format: ['camelCase'],
+                    leadingUnderscore: 'allow',
+                },
+                {
+                    selector: 'memberLike',
+                    modifiers: ['private'],
+                    format: ['camelCase'],
+                    leadingUnderscore: 'require',
+                },
+                {
+                    selector: 'interface',
+                    format: ['PascalCase'],
+                    custom: {
+                        regex: '^_?I[A-Z]',
+                        match: false,
+                    },
+                },
+                {
+                    selector: 'typeLike',
+                    format: ['PascalCase'],
+                },
+            ],
+        },
+    }),
 };

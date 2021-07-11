@@ -7,104 +7,56 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
 
-
-
-
-
 ## [1.0.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.22...v1.0.0) (2021-04-05)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
-
-
-
-
 
 ## [1.0.0-rc.22](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.21...v1.0.0-rc.22) (2021-04-05)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
 
-
-
-
-
 ## [1.0.0-rc.21](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.20...v1.0.0-rc.21) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
-
-
-
-
 
 ## [1.0.0-rc.20](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.19...v1.0.0-rc.20) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
 
-
-
-
-
 ## [1.0.0-rc.19](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.18...v1.0.0-rc.19) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
-
-
-
-
 
 ## [1.0.0-rc.18](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.17...v1.0.0-rc.18) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
 
-
-
-
-
 ## [1.0.0-rc.17](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.16...v1.0.0-rc.17) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
-
-
-
-
 
 ## [1.0.0-rc.16](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.15...v1.0.0-rc.16) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
 
-
-
-
-
 ## [1.0.0-rc.15](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.14...v1.0.0-rc.15) (2021-01-21)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
-
-
-
-
 
 ## [1.0.0-rc.14](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.13...v1.0.0-rc.14) (2021-01-21)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
 
-
-
-
-
 ## 1.0.0-rc.13 (2021-01-21)
-
 
 ### Features
 
-* move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
-* **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
-
+-   move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+-   **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
 
 ### Bug Fixes
 
-* update dependencies ([#59](https://github.com/TinkoffCreditSystems/linters/issues/59)) ([c6d3025](https://github.com/TinkoffCreditSystems/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
-
-
+-   update dependencies ([#59](https://github.com/TinkoffCreditSystems/linters/issues/59)) ([c6d3025](https://github.com/TinkoffCreditSystems/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
 
 ## 1.0.0-rc.12 (2020-10-01)
 

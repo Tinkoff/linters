@@ -12,5 +12,6 @@ describe('@tinkoff/eslint-config-angular', () => {
         });
 
         expect(() => cli.executeOnText(`const foo = 'bar';`)).not.toThrow();
+        expect(() => cli.executeOnText(`const foo = 'bar';`, 'index.ts')).not.toThrow();
     });
 });

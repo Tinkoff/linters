@@ -1,16 +1,8 @@
 const breaking = require('../utils/breaking');
+const {tsOnly} = require('../utils/ts');
 
 module.exports = {
     rules: {
-        '@typescript-eslint/naming-convention': [
-            'error',
-            {
-                selector: 'typeLike',
-                format: ['PascalCase'],
-            },
-        ],
-
-        '@typescript-eslint/member-ordering': 'off',
         '@tinkoff/member-ordering': [
             breaking({since: 2}),
             {
@@ -39,4 +31,17 @@ module.exports = {
             },
         ],
     },
+    ...tsOnly({
+        rules: {
+            '@typescript-eslint/naming-convention': [
+                'error',
+                {
+                    selector: 'typeLike',
+                    format: ['PascalCase'],
+                },
+            ],
+
+            '@typescript-eslint/member-ordering': 'off',
+        },
+    }),
 };

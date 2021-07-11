@@ -3,11 +3,7 @@
     "version": "1.1.1",
     "description": "Tinkoff ESLint configs for React apps",
     "license": "Apache-2.0",
-    "keywords": [
-        "eslint",
-        "eslintconfig",
-        "eslint-config"
-    ],
+    "keywords": ["eslint", "eslintconfig", "eslint-config"],
     "scripts": {},
     "main": "index.js",
     "author": {

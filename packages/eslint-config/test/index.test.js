@@ -12,6 +12,7 @@ describe('@tinkoff/eslint-config', () => {
         });
 
         expect(() => cli.executeOnText(`const foo = 'bar';`)).not.toThrow();
+        expect(() => cli.executeOnText(`const foo = 'bar';`, 'index.ts')).not.toThrow();
     });
 
     it('lib config working', () => {
@@ -24,6 +25,7 @@ describe('@tinkoff/eslint-config', () => {
         });
 
         expect(() => cli.executeOnText(`const foo = 'bar';`)).not.toThrow();
+        expect(() => cli.executeOnText(`const foo = 'bar';`, 'index.ts')).not.toThrow();
     });
 
     it('jest config working', () => {
@@ -36,5 +38,9 @@ describe('@tinkoff/eslint-config', () => {
         });
 
         expect(() => cli.executeOnText(`const foo = 'bar';`)).not.toThrow();
+        expect(() => cli.executeOnText(`const foo = 'bar';`, 'index.ts')).not.toThrow();
+        expect(() =>
+            cli.executeOnText(`const foo = 'bar';`, 'index.spec.ts'),
+        ).not.toThrow();
     });
 });

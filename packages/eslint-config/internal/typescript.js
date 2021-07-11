@@ -121,6 +121,13 @@ module.exports = {
                 ],
                 '@typescript-eslint/explicit-module-boundary-types': 'off',
                 'consistent-return': 'off',
+                '@typescript-eslint/consistent-type-imports': [
+                    'warn',
+                    {
+                        prefer: 'type-imports',
+                        disallowTypeAnnotations: true,
+                    },
+                ],
             },
         },
     ],
