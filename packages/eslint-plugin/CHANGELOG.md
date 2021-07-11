@@ -7,25 +7,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @tinkoff/eslint-plugin
 
-
-
-
-
 ## 1.0.0-rc.13 (2021-01-21)
-
 
 ### Features
 
-* move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
-* **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
-
+-   move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+-   **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
 
 ### Bug Fixes
 
-* **eslint-plugin:** fix dependency + add lerna ([#35](https://github.com/TinkoffCreditSystems/linters/issues/35)) ([cf67afb](https://github.com/TinkoffCreditSystems/linters/commit/cf67afbde066a90f93c16969dd00fb4a7847f0c8))
-* **eslint-plugin:** nested return statement ([#57](https://github.com/TinkoffCreditSystems/linters/issues/57)) ([1195552](https://github.com/TinkoffCreditSystems/linters/commit/1195552d97c8d70271ad8ef2a3f97e7defbe0104))
-
-
+-   **eslint-plugin:** fix dependency + add lerna ([#35](https://github.com/TinkoffCreditSystems/linters/issues/35)) ([cf67afb](https://github.com/TinkoffCreditSystems/linters/commit/cf67afbde066a90f93c16969dd00fb4a7847f0c8))
+-   **eslint-plugin:** nested return statement ([#57](https://github.com/TinkoffCreditSystems/linters/issues/57)) ([1195552](https://github.com/TinkoffCreditSystems/linters/commit/1195552d97c8d70271ad8ef2a3f97e7defbe0104))
 
 ## 1.0.0-rc.12 (2020-10-01)
 

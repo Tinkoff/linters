@@ -5,118 +5,79 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### [1.0.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0...v1.0.1) (2021-05-25)
 
-
 ### Bug Fixes
 
-* prettier version fixed to 2.2.1 ([#100](https://github.com/TinkoffCreditSystems/linters/issues/100)) ([0ff7030](https://github.com/TinkoffCreditSystems/linters/commit/0ff70309315b6ec46808633b2836bb1f5a8d338f))
-
-
+-   prettier version fixed to 2.2.1 ([#100](https://github.com/TinkoffCreditSystems/linters/issues/100)) ([0ff7030](https://github.com/TinkoffCreditSystems/linters/commit/0ff70309315b6ec46808633b2836bb1f5a8d338f))
 
 ## [1.0.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.22...v1.0.0) (2021-04-05)
 
 **Note:** Version bump only for package @tinkoff/eslint-config
 
-
-
-
-
 ## [1.0.0-rc.22](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.21...v1.0.0-rc.22) (2021-04-05)
 
 **Note:** Version bump only for package @tinkoff/eslint-config
 
-
-
-
-
 ## [1.0.0-rc.21](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.20...v1.0.0-rc.21) (2021-01-22)
-
 
 ### Bug Fixes
 
-* rename publish script, revert source code testing changes ([#87](https://github.com/TinkoffCreditSystems/linters/issues/87)) ([996944b](https://github.com/TinkoffCreditSystems/linters/commit/996944b80d711c55de4533e09084c2d3785581b8))
-
-
+-   rename publish script, revert source code testing changes ([#87](https://github.com/TinkoffCreditSystems/linters/issues/87)) ([996944b](https://github.com/TinkoffCreditSystems/linters/commit/996944b80d711c55de4533e09084c2d3785581b8))
 
 ## [1.0.0-rc.20](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.19...v1.0.0-rc.20) (2021-01-22)
 
-
 ### Bug Fixes
 
-* revert from-package, add --no-verify-access, change source code for testing ([#86](https://github.com/TinkoffCreditSystems/linters/issues/86)) ([aa1b815](https://github.com/TinkoffCreditSystems/linters/commit/aa1b815340f14d99c8b7811c4a1979f714889dc9))
-
-
+-   revert from-package, add --no-verify-access, change source code for testing ([#86](https://github.com/TinkoffCreditSystems/linters/issues/86)) ([aa1b815](https://github.com/TinkoffCreditSystems/linters/commit/aa1b815340f14d99c8b7811c4a1979f714889dc9))
 
 ## [1.0.0-rc.19](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.18...v1.0.0-rc.19) (2021-01-22)
 
-
 ### Bug Fixes
 
-* use lerna publish from-package, revert testing source code changes ([#85](https://github.com/TinkoffCreditSystems/linters/issues/85)) ([10fe95c](https://github.com/TinkoffCreditSystems/linters/commit/10fe95c80674ca9ff6b1c0cba2efa6230e8ffabe))
-
-
+-   use lerna publish from-package, revert testing source code changes ([#85](https://github.com/TinkoffCreditSystems/linters/issues/85)) ([10fe95c](https://github.com/TinkoffCreditSystems/linters/commit/10fe95c80674ca9ff6b1c0cba2efa6230e8ffabe))
 
 ## [1.0.0-rc.18](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.17...v1.0.0-rc.18) (2021-01-22)
 
-
 ### Bug Fixes
 
-* add registry-url to setup-node action, change source code for testing ([#84](https://github.com/TinkoffCreditSystems/linters/issues/84)) ([011ecdb](https://github.com/TinkoffCreditSystems/linters/commit/011ecdb71b871ccb40d9f28a7e3254d2f1657f70))
-
-
+-   add registry-url to setup-node action, change source code for testing ([#84](https://github.com/TinkoffCreditSystems/linters/issues/84)) ([011ecdb](https://github.com/TinkoffCreditSystems/linters/commit/011ecdb71b871ccb40d9f28a7e3254d2f1657f70))
 
 ## [1.0.0-rc.17](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.16...v1.0.0-rc.17) (2021-01-22)
 
-
 ### Bug Fixes
 
-* new npm token, revert source test changes ([#83](https://github.com/TinkoffCreditSystems/linters/issues/83)) ([25894d4](https://github.com/TinkoffCreditSystems/linters/commit/25894d4a6a569db985020713137145cf33df26c8))
-
-
+-   new npm token, revert source test changes ([#83](https://github.com/TinkoffCreditSystems/linters/issues/83)) ([25894d4](https://github.com/TinkoffCreditSystems/linters/commit/25894d4a6a569db985020713137145cf33df26c8))
 
 ## [1.0.0-rc.16](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.15...v1.0.0-rc.16) (2021-01-22)
 
-
 ### Bug Fixes
 
-* test new npm token, change source code for debugging ([#82](https://github.com/TinkoffCreditSystems/linters/issues/82)) ([26a8ee8](https://github.com/TinkoffCreditSystems/linters/commit/26a8ee85b79acb73d81d930e9835bcf0f77c16db))
-
-
+-   test new npm token, change source code for debugging ([#82](https://github.com/TinkoffCreditSystems/linters/issues/82)) ([26a8ee8](https://github.com/TinkoffCreditSystems/linters/commit/26a8ee85b79acb73d81d930e9835bcf0f77c16db))
 
 ## [1.0.0-rc.15](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.14...v1.0.0-rc.15) (2021-01-21)
 
-
 ### Bug Fixes
 
-* revert testing changes, fix publish ci ([#81](https://github.com/TinkoffCreditSystems/linters/issues/81)) ([9eba4bd](https://github.com/TinkoffCreditSystems/linters/commit/9eba4bd622265c1fe262b5ce4b31e26711c4a448))
-
-
+-   revert testing changes, fix publish ci ([#81](https://github.com/TinkoffCreditSystems/linters/issues/81)) ([9eba4bd](https://github.com/TinkoffCreditSystems/linters/commit/9eba4bd622265c1fe262b5ce4b31e26711c4a448))
 
 ## [1.0.0-rc.14](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.13...v1.0.0-rc.14) (2021-01-21)
 
-
 ### Bug Fixes
 
-* change for publish testing ([#80](https://github.com/TinkoffCreditSystems/linters/issues/80)) ([e04cf4d](https://github.com/TinkoffCreditSystems/linters/commit/e04cf4d53eb0b26cd97116ebd6741425d687ef97))
-
-
+-   change for publish testing ([#80](https://github.com/TinkoffCreditSystems/linters/issues/80)) ([e04cf4d](https://github.com/TinkoffCreditSystems/linters/commit/e04cf4d53eb0b26cd97116ebd6741425d687ef97))
 
 ## 1.0.0-rc.13 (2021-01-21)
 
-
 ### Features
 
-* **eslint-config:** make rules less strict ([#71](https://github.com/TinkoffCreditSystems/linters/issues/71)) ([5cac851](https://github.com/TinkoffCreditSystems/linters/commit/5cac851a287f1aa08c11213ad0bf6f0663916ce8))
-* move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
-* **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
-
+-   **eslint-config:** make rules less strict ([#71](https://github.com/TinkoffCreditSystems/linters/issues/71)) ([5cac851](https://github.com/TinkoffCreditSystems/linters/commit/5cac851a287f1aa08c11213ad0bf6f0663916ce8))
+-   move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+-   **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
 
 ### Bug Fixes
 
-* update dependencies ([#59](https://github.com/TinkoffCreditSystems/linters/issues/59)) ([c6d3025](https://github.com/TinkoffCreditSystems/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
-* **eslint-config, eslint-config-react:** off class-methods-use-this and react/state-in-constructor rules ([#56](https://github.com/TinkoffCreditSystems/linters/issues/56)) ([fae2041](https://github.com/TinkoffCreditSystems/linters/commit/fae2041603d4e8a3f0ce8dd2a75284fd8275045f))
-* **eslint-config, eslint-config-react:** update rules ([#53](https://github.com/TinkoffCreditSystems/linters/issues/53)) ([40cc0b1](https://github.com/TinkoffCreditSystems/linters/commit/40cc0b1f29c5616a8e5175473d4aeb384ef43133))
-
-
+-   update dependencies ([#59](https://github.com/TinkoffCreditSystems/linters/issues/59)) ([c6d3025](https://github.com/TinkoffCreditSystems/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
+-   **eslint-config, eslint-config-react:** off class-methods-use-this and react/state-in-constructor rules ([#56](https://github.com/TinkoffCreditSystems/linters/issues/56)) ([fae2041](https://github.com/TinkoffCreditSystems/linters/commit/fae2041603d4e8a3f0ce8dd2a75284fd8275045f))
+-   **eslint-config, eslint-config-react:** update rules ([#53](https://github.com/TinkoffCreditSystems/linters/issues/53)) ([40cc0b1](https://github.com/TinkoffCreditSystems/linters/commit/40cc0b1f29c5616a8e5175473d4aeb384ef43133))
 
 ## 1.0.0-rc.12 (2020-10-01)
 

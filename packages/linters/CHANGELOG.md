@@ -7,41 +7,26 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @tinkoff/linters
 
-
-
-
-
 ### [1.0.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0...v1.0.1) (2021-05-25)
-
 
 ### Bug Fixes
 
-* prettier version fixed to 2.2.1 ([#100](https://github.com/TinkoffCreditSystems/linters/issues/100)) ([0ff7030](https://github.com/TinkoffCreditSystems/linters/commit/0ff70309315b6ec46808633b2836bb1f5a8d338f))
-
-
+-   prettier version fixed to 2.2.1 ([#100](https://github.com/TinkoffCreditSystems/linters/issues/100)) ([0ff7030](https://github.com/TinkoffCreditSystems/linters/commit/0ff70309315b6ec46808633b2836bb1f5a8d338f))
 
 ## [1.0.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.22...v1.0.0) (2021-04-05)
 
 **Note:** Version bump only for package @tinkoff/linters
 
-
-
-
-
 ## 1.0.0-rc.13 (2021-01-21)
-
 
 ### Features
 
-* move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
-* **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
-
+-   move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+-   **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
 
 ### Bug Fixes
 
-* **eslint-plugin:** fix dependency + add lerna ([#35](https://github.com/TinkoffCreditSystems/linters/issues/35)) ([cf67afb](https://github.com/TinkoffCreditSystems/linters/commit/cf67afbde066a90f93c16969dd00fb4a7847f0c8))
-
-
+-   **eslint-plugin:** fix dependency + add lerna ([#35](https://github.com/TinkoffCreditSystems/linters/issues/35)) ([cf67afb](https://github.com/TinkoffCreditSystems/linters/commit/cf67afbde066a90f93c16969dd00fb4a7847f0c8))
 
 ## 1.0.0-rc.12 (2020-10-01)
 

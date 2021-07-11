@@ -1,4 +1,5 @@
 const breaking = require('../utils/breaking');
+const {tsOnly} = require('../utils/ts');
 
 module.exports = {
     rules: {
@@ -12,27 +13,6 @@ module.exports = {
                 ignoreUrls: true,
                 ignoreRegExpLiterals: true,
                 ignoreStrings: true,
-            },
-        ],
-        '@typescript-eslint/indent': [
-            'error',
-            4,
-            {
-                SwitchCase: 1,
-                outerIIFEBody: 1,
-                MemberExpression: 1,
-                CallExpression: {
-                    arguments: 1,
-                },
-                ArrayExpression: 1,
-                ObjectExpression: 1,
-                ImportDeclaration: 1,
-                FunctionDeclaration: {
-                    parameters: 1,
-                },
-                FunctionExpression: {
-                    parameters: 1,
-                },
             },
         ],
         'padding-line-between-statements': [
@@ -53,4 +33,29 @@ module.exports = {
         'one-var': ['error', 'never'],
         'prefer-arrow-callback': ['error', {allowNamedFunctions: true}],
     },
+    ...tsOnly({
+        rules: {
+            '@typescript-eslint/indent': [
+                'error',
+                4,
+                {
+                    SwitchCase: 1,
+                    outerIIFEBody: 1,
+                    MemberExpression: 1,
+                    CallExpression: {
+                        arguments: 1,
+                    },
+                    ArrayExpression: 1,
+                    ObjectExpression: 1,
+                    ImportDeclaration: 1,
+                    FunctionDeclaration: {
+                        parameters: 1,
+                    },
+                    FunctionExpression: {
+                        parameters: 1,
+                    },
+                },
+            ],
+        },
+    }),
 };

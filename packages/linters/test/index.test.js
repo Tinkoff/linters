@@ -9,9 +9,13 @@ describe('@tinkoff/linters', () => {
             baseConfig: {
                 extends: ['./eslint/base/prettier', './eslint/angular'],
             },
+            parserOptions: {
+                createDefaultProgram: true,
+            },
         });
 
         expect(() => cli.executeOnText(`const foo = 'bar';`)).not.toThrow();
+        expect(() => cli.executeOnText(`const foo = 'bar';`, 'index.ts')).not.toThrow();
     });
 
     it('report errors', () => {
@@ -21,8 +25,12 @@ describe('@tinkoff/linters', () => {
             baseConfig: {
                 extends: ['./eslint/base/prettier', './eslint/angular'],
             },
+            parserOptions: {
+                createDefaultProgram: true,
+            },
         });
 
         expect(cli.executeOnText(`var foo = "bar"`).errorCount).toBe(2);
+        expect(cli.executeOnText(`var foo = "bar"`, 'index.ts').errorCount).toBe(2);
     });
 });

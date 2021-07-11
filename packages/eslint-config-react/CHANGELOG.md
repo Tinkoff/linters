@@ -5,126 +5,72 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### [1.1.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.1.0...v1.1.1) (2021-06-08)
 
-
 ### Bug Fixes
 
-* **react:** off react-perf rules to test files ([#104](https://github.com/TinkoffCreditSystems/linters/issues/104)) ([1772df8](https://github.com/TinkoffCreditSystems/linters/commit/1772df869805c20dff2f3452cd16fd4601b9d8cc))
-
-
+-   **react:** off react-perf rules to test files ([#104](https://github.com/TinkoffCreditSystems/linters/issues/104)) ([1772df8](https://github.com/TinkoffCreditSystems/linters/commit/1772df869805c20dff2f3452cd16fd4601b9d8cc))
 
 ## [1.1.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.1...v1.1.0) (2021-06-08)
 
-
 ### Features
 
-* **react:** add eslint-plugin-react-perf ([#103](https://github.com/TinkoffCreditSystems/linters/issues/103)) ([c08da4a](https://github.com/TinkoffCreditSystems/linters/commit/c08da4a8c2607c6301bdbc9d63d9137acb258805))
-
-
+-   **react:** add eslint-plugin-react-perf ([#103](https://github.com/TinkoffCreditSystems/linters/issues/103)) ([c08da4a](https://github.com/TinkoffCreditSystems/linters/commit/c08da4a8c2607c6301bdbc9d63d9137acb258805))
 
 ### [1.0.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0...v1.0.1) (2021-05-25)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ## [1.0.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.22...v1.0.0) (2021-04-05)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
-
-
-
-
 
 ## [1.0.0-rc.22](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.21...v1.0.0-rc.22) (2021-04-05)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ## [1.0.0-rc.21](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.20...v1.0.0-rc.21) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
-
-
-
-
 
 ## [1.0.0-rc.20](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.19...v1.0.0-rc.20) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ## [1.0.0-rc.19](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.18...v1.0.0-rc.19) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
-
-
-
-
 
 ## [1.0.0-rc.18](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.17...v1.0.0-rc.18) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ## [1.0.0-rc.17](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.16...v1.0.0-rc.17) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
-
-
-
-
 
 ## [1.0.0-rc.16](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.15...v1.0.0-rc.16) (2021-01-22)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ## [1.0.0-rc.15](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.14...v1.0.0-rc.15) (2021-01-21)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
-
-
-
-
 
 ## [1.0.0-rc.14](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0-rc.13...v1.0.0-rc.14) (2021-01-21)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ## 1.0.0-rc.13 (2021-01-21)
-
 
 ### Features
 
-* move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
-* **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
-
+-   move infrastructure (linting, testing) to repository root ([#61](https://github.com/TinkoffCreditSystems/linters/issues/61)) ([4a372d4](https://github.com/TinkoffCreditSystems/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+-   **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/TinkoffCreditSystems/linters/issues/45)) ([50d14b1](https://github.com/TinkoffCreditSystems/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
 
 ### Bug Fixes
 
-* update dependencies ([#59](https://github.com/TinkoffCreditSystems/linters/issues/59)) ([c6d3025](https://github.com/TinkoffCreditSystems/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
-* **eslint-config, eslint-config-react:** off class-methods-use-this and react/state-in-constructor rules ([#56](https://github.com/TinkoffCreditSystems/linters/issues/56)) ([fae2041](https://github.com/TinkoffCreditSystems/linters/commit/fae2041603d4e8a3f0ce8dd2a75284fd8275045f))
-* **eslint-config, eslint-config-react:** update rules ([#53](https://github.com/TinkoffCreditSystems/linters/issues/53)) ([40cc0b1](https://github.com/TinkoffCreditSystems/linters/commit/40cc0b1f29c5616a8e5175473d4aeb384ef43133))
-
-
+-   update dependencies ([#59](https://github.com/TinkoffCreditSystems/linters/issues/59)) ([c6d3025](https://github.com/TinkoffCreditSystems/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
+-   **eslint-config, eslint-config-react:** off class-methods-use-this and react/state-in-constructor rules ([#56](https://github.com/TinkoffCreditSystems/linters/issues/56)) ([fae2041](https://github.com/TinkoffCreditSystems/linters/commit/fae2041603d4e8a3f0ce8dd2a75284fd8275045f))
+-   **eslint-config, eslint-config-react:** update rules ([#53](https://github.com/TinkoffCreditSystems/linters/issues/53)) ([40cc0b1](https://github.com/TinkoffCreditSystems/linters/commit/40cc0b1f29c5616a8e5175473d4aeb384ef43133))
 
 ## 1.0.0-rc.12 (2020-10-01)
 
