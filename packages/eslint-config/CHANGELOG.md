@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.1.2...v1.2.0) (2021-07-11)
+
+
+### Features
+
+* **eslint-config:** bump [@typescript-eslint](https://github.com/typescript-eslint) modules to ^4.28.2 ([#109](https://github.com/TinkoffCreditSystems/linters/issues/109)) ([93db9af](https://github.com/TinkoffCreditSystems/linters/commit/93db9afed71a5033ece1f05d5a029b98e799b53a))
+
+
+
 ### [1.0.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.0.0...v1.0.1) (2021-05-25)
 
 ### Bug Fixes
