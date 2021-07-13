@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.0...v1.2.1) (2021-07-13)
+
+
+### Bug Fixes
+
+* migrate from babel-eslint ([#111](https://github.com/TinkoffCreditSystems/linters/issues/111)) ([e6731a3](https://github.com/TinkoffCreditSystems/linters/commit/e6731a3ea86271496ff667ec7330124f91aeed1c))
+
+
+
 ## [1.2.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.1.2...v1.2.0) (2021-07-11)
 
 

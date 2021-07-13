@@ -1,9 +1,13 @@
 {
     "name": "@tinkoff/eslint-config",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Tinkoff ESLint configs to rule them all",
     "license": "Apache-2.0",
-    "keywords": ["eslint", "eslintconfig", "eslint-config"],
+    "keywords": [
+        "eslint",
+        "eslintconfig",
+        "eslint-config"
+    ],
     "scripts": {},
     "main": "index.js",
     "author": {
