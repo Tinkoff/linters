@@ -19,7 +19,14 @@ module.exports = {
                 // swears on cases like constructor(public c: C) {}
                 'no-useless-constructor': 'off',
                 '@typescript-eslint/explicit-function-return-type': 'off',
-                '@typescript-eslint/no-unused-vars': 'off',
+                'no-unused-vars': 'off',
+                '@typescript-eslint/no-unused-vars': [
+                    'warn',
+                    {
+                        argsIgnorePattern: '^_',
+                        varsIgnorePattern: '^_',
+                    },
+                ],
                 'class-methods-use-this': 'off',
                 '@typescript-eslint/member-ordering': [
                     'off',
