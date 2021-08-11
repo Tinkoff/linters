@@ -3,7 +3,7 @@
         "packages/*",
         "tools/actions/*"
     ],
-    "version": "1.2.2",
+    "version": "1.2.3",
     "command": {
         "version": {
             "allowBranch": [

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.2...v1.2.3) (2021-08-11)
+
+
+### Bug Fixes
+
+* **eslint-config:** support superagent library in jest/expect-expect rule ([3d56225](https://github.com/TinkoffCreditSystems/linters/commit/3d56225872c6d693e42e127e76c47fc1d059178e))
+
+
+
 ### [1.2.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.1...v1.2.2) (2021-07-26)
 
 **Note:** Version bump only for package linters-monorepo
