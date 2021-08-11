@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.4](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.3...v1.2.4) (2021-08-11)
+
+
+### Bug Fixes
+
+* **eslint-config:** fix no-shadow rule and import type autofix conflict ([0c0c260](https://github.com/TinkoffCreditSystems/linters/commit/0c0c260841230b09afb7e3ac9e120ebb78ef4967))
+
+
+
 ### [1.2.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.2...v1.2.3) (2021-08-11)
 
 
