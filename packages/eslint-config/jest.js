@@ -3,5 +3,16 @@ module.exports = {
 
     plugins: [],
 
-    rules: {},
+    rules: {
+        'jest/expect-expect': [
+            'warn',
+            {
+                assertFunctionNames: [
+                    'expect',
+                    // support superagent library
+                    'request.**.expect',
+                ],
+            },
+        ],
+    },
 };
