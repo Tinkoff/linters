@@ -135,6 +135,12 @@ module.exports = {
                         disallowTypeAnnotations: true,
                     },
                 ],
+                'no-shadow': 'off',
+                '@typescript-eslint/no-shadow': ['warn'],
+                // conflict with import type statement, try to merge default and named imports
+                // https://github.com/typescript-eslint/typescript-eslint/issues/2545#issuecomment-692842483
+                // https://github.com/import-js/eslint-plugin-import/issues/2114
+                'import/no-duplicates': 'off',
             },
         },
     ],
