@@ -15,3 +15,7 @@ Rules pack specific for React application, documentation available at [packages/
 > in development mode!
 
 Rules pack specific for Angular application, documentation available at [packages/eslint-config-angular/README.md](packages/eslint-config-angular/README.md)
+
+## prettier-config
+
+Common Prettier configuration for Tinkoff projects, documentation available at [packages/prettier-config/README.md](packages/prettier-config-angular/README.md)

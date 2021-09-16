@@ -1,0 +1,23 @@
+{
+  "name": "@tinkoff/prettier-config",
+  "version": "0.2.0",
+  "description": "Tinkoff prettier config",
+  "license": "Apache-2.0",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "scripts": {},
+  "main": "index.js",
+  "author": {
+      "name": "Tinkoff Team",
+      "email": "frontend@tinkoff.ru"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/TinkoffCreditSystems/linters.git"
+  },
+  "publishConfig": {
+      "access": "public"
+  }
+}
