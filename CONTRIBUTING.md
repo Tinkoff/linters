@@ -1,7 +1,7 @@
 ## Development
 
--   Install [Lerna](https://github.com/lerna/lerna#readme) with `npm i -g lerna`.
--   Intall deps with `npm run bootstrap`.
+-   Install [Lerna](https://github.com/lerna/lerna#readme) with `npm i -g lerna@3`.
+-   Install deps with `npm run bootstrap`.
 -   Run tests with `npm run test:ci`.
 -   Follow [Conventional Commits specification](https://conventionalcommits.org/) for every commitmessage.
 
