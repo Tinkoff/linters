@@ -26,7 +26,7 @@ module.exports = {
         browser: true,
     },
 
-    plugins: ['react', 'react-hooks', 'react-perf'],
+    plugins: ['react', 'react-hooks'],
 
     overrides: [
         {
@@ -34,16 +34,6 @@ module.exports = {
 
             rules: {
                 'react/prop-types': 'off',
-            },
-        },
-        {
-            files: ['*.spec.*', '*.test.*', '*.unit.*', '*/__tests__/*'],
-
-            rules: {
-                'react-perf/jsx-no-new-object-as-prop': 'off',
-                'react-perf/jsx-no-new-array-as-prop': 'off',
-                'react-perf/jsx-no-new-function-as-prop': 'off',
-                'react-perf/jsx-no-jsx-as-prop': 'off',
             },
         },
     ],
@@ -136,10 +126,5 @@ module.exports = {
         'class-methods-use-this': 'off',
         'react/jsx-props-no-spreading': 'warn',
         'no-underscore-dangle': 'off',
-
-        'react-perf/jsx-no-new-object-as-prop': 'warn',
-        'react-perf/jsx-no-new-array-as-prop': 'warn',
-        'react-perf/jsx-no-new-function-as-prop': 'warn',
-        'react-perf/jsx-no-jsx-as-prop': 'warn',
     },
 };
