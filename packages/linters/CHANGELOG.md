@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.4.0...v1.5.0) (2021-10-08)
+
+
+### Features
+
+* update [@typescript-eslint](https://github.com/typescript-eslint) dependencies ([#120](https://github.com/TinkoffCreditSystems/linters/issues/120)) ([353dc07](https://github.com/TinkoffCreditSystems/linters/commit/353dc078b5eb75edf9b189a3ddf1a9f81b1e450c))
+
+
+
 ## [1.2.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.1.2...v1.2.0) (2021-07-11)
 
 

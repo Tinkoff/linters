@@ -1,6 +1,6 @@
 {
     "name": "@tinkoff/linters",
-    "version": "1.2.0",
+    "version": "1.5.0",
     "description": "Linter configs and custom TSLint rules of Tinkoff",
     "license": "Apache-2.0",
     "scripts": {
@@ -16,11 +16,11 @@
         "url": "https://github.com/TinkoffCreditSystems/linters.git"
     },
     "dependencies": {
-        "@tinkoff/eslint-plugin": "^1.2.0",
+        "@tinkoff/eslint-plugin": "^1.5.0",
         "@typescript-eslint/eslint-plugin": "4.32.0",
-        "@typescript-eslint/parser": "4.32.0",
         "@typescript-eslint/eslint-plugin-tslint": "4.28.2",
         "@typescript-eslint/experimental-utils": "4.28.2",
+        "@typescript-eslint/parser": "4.32.0",
         "eslint": "^7.5.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-functional": "^1.0.0",
