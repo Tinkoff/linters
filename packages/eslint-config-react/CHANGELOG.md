@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.3.0...v1.4.0) (2021-10-08)
+
+
+### Features
+
+* remove react-perf plugin ([a9a918b](https://github.com/TinkoffCreditSystems/linters/commit/a9a918b821c75c7674f0ba874717d2231fad3605))
+
+
+
 ### [1.2.4](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.3...v1.2.4) (2021-08-11)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
