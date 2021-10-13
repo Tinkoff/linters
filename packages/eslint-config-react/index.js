@@ -124,7 +124,7 @@ module.exports = {
         'jsx-a11y/click-events-have-key-events': 'warn',
         'jsx-a11y/mouse-events-have-key-events': 'warn',
         'class-methods-use-this': 'off',
-        'react/jsx-props-no-spreading': 'warn',
+        'react/jsx-props-no-spreading': 'off',
         'no-underscore-dangle': 'off',
     },
 };
