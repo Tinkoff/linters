@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.5.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.5.1...v1.5.2) (2021-10-14)
+
+
+### Bug Fixes
+
+*  rule react/jsx-props-no-spreading disabled ([04b992a](https://github.com/TinkoffCreditSystems/linters/commit/04b992a12eac2fa0a2a779011c7da414980813aa))
+
+
+
 ## [1.5.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.4.0...v1.5.0) (2021-10-08)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
