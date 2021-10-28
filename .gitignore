@@ -3,6 +3,7 @@
 .vscode
 .idea
 .history
+*.iml
 
 # Dependency directories
 node_modules
