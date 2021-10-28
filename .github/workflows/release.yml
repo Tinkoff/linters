@@ -27,10 +27,8 @@ jobs:
         node-version: '14.x'
         registry-url: 'https://registry.npmjs.org'
 
-    - name: Install
-      run: |
-        npm i -g lerna@^3.22.1
-        npm run bootstrap
+    - name: Clean install
+      run: npm ci
 
     - name: Create release commit and tag
       run: |
