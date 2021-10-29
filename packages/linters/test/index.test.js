@@ -2,6 +2,10 @@ import ESlint from 'eslint';
 import path from 'path';
 
 describe('@tinkoff/linters', () => {
+  beforeEach(() => {
+    jest.spyOn(console, 'warn').mockImplementation(() => {});
+  });
+
   it('working', () => {
     const cli = new ESlint.CLIEngine({
       useEslintrc: false,
