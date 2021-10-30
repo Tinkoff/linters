@@ -15,204 +15,204 @@ interface RightInterfaceWithConstructor {
     (source: string, subString: string): boolean;
 }
 
-type RightTree<T> = {
+type RightTree<T = unknown> = {
     value: T;
     left: Tree<T>;
     right: Tree<T>;
 };
 
-type RightLinkedList<T> = T & {next: LinkedList<T>};
+type RightLinkedList<T = unknown> = T & {next: LinkedList<T>};
 
 type RightArray = Array<RightTree>;
 
 type RightUnion = RightLinkedList | RightArray;
 
-class RightCases {
-    private readonly a: string;
-    private static readonly a = 'someString';
-    protected static a = 'someString';
-    protected a = 5;
-    public a;
-    public static a = 'someString';
-    @Input() a = 5;
-    @Output() a = 'someString';
-    public get some() {
+class RightCases1 {
+    private readonly a1: string;
+    private static readonly a2 = 'someString';
+    protected static a3 = 'someString';
+    protected a4 = 5;
+    public a5;
+    public static a6 = 'someString';
+    @Input() a7 = 5;
+    @Output() a8 = 'someString';
+    public get some9() {
         return 1;
     }
-    public set some() {
-        return 2;
+    public set some10(_) {
+        // noop
     }
-    protected get some() {
+    protected get some11() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some12(_) {
+        // noop
     }
-    private get some() {
+    private get some13() {
         return 1;
     }
-    private set some() {
-        return 2;
+    private set some14(_) {
+        // noop
     }
-    public b(): number {
+    public b15(): number {
         return 5;
     }
-    static b(): number {
+    static b16(): number {
         return 5;
     }
-    protected b(): number {
+    protected b17(): number {
         return 5;
     }
-    protected static a() {
+    protected static a18() {
         return 5;
     }
-    private c(a: number): number {
+    private c19(a: number): number {
         return a;
     }
-    private static b(): number {
+    private static b20(): number {
         return 5;
     }
 }
 
 // Right cases
 
-class RightCases {
-    private readonly a: string;
-    private static readonly a = 5;
-    protected static a = 'someString';
-    protected a;
-    public a: string;
-    static a = 'someString';
-    @Input() a = 5;
-    @Output() a: string;
-    public get some() {
+class RightCases2 {
+    private readonly a1: string;
+    private static readonly a2 = 5;
+    protected static a3 = 'someString';
+    protected a4;
+    public a5: string;
+    static a6 = 'someString';
+    @Input() a7 = 5;
+    @Output() a8: string;
+    public get some9() {
         return 1;
     }
-    public set some() {
-        return 2;
+    public set some10(_) {
+        // noop
     }
-    protected get some() {
+    protected get some11() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some12(_) {
+        // noop
     }
-    private get some() {
+    private get some13() {
         return 1;
     }
-    private set some() {
-        return 2;
+    private set some14(_) {
+        // noop
     }
-    c(a: number): number {
+    c15(a: number): number {
         return a;
     }
-    public static a() {
+    public static a16() {
         return 5;
     }
-    protected a() {
+    protected a17() {
         return 5;
     }
-    protected static a() {
+    protected static a18() {
         return 5;
     }
-    private a() {
+    private c19() {
         return 5;
     }
-    private static b(): number {
+    private static b20(): number {
         return 5;
     }
 }
 
-class RightCases {
-    private readonly a = 'someString';
-    private static readonly a = 'someString';
-    protected static a = 'someString';
-    protected a = 5;
-    public a = 5;
-    static a = 'someString';
-    @Input() a = 5;
-    @Output() a;
-    get some() {
+class RightCases3 {
+    private readonly a1 = 'someString';
+    private static readonly a2 = 'someString';
+    protected static a3 = 'someString';
+    protected a4 = 5;
+    public a5 = 5;
+    static a6 = 'someString';
+    @Input() a7 = 5;
+    @Output() a8;
+    get some9() {
         return 1;
     }
-    set some() {
-        return 2;
+    set some10(_) {
+        // noop
     }
-    protected get some() {
+    protected get some12() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some13(_) {
+        // noop
     }
-    private get some() {
+    private get some14() {
         return 1;
     }
-    private set some() {
-        return 2;
+    private set some15(_) {
+        // noop
     }
-    public b(): number {
+    public b16(): number {
         return 5;
     }
-    static a() {
+    static a17() {
         return 5;
     }
-    protected b(): number {
+    protected b18(): number {
         return 5;
     }
-    protected static b(): number {
+    protected static b19(): number {
         return 5;
     }
-    private c(a: number): number {
+    private c20(a: number): number {
         return a;
     }
-    private static a() {
+    private static a21() {
         return 5;
     }
 }
 
-class RightCases {
-    private readonly a: string;
-    private static readonly a = 'someString';
-    protected static a = 'someString';
-    protected a = 5;
-    public a;
-    public static a = 'someString';
-    @Input() a = 5;
-    @Output() a = 'someString';
-    public get some() {
+class RightCases4 {
+    private readonly a1: string;
+    private static readonly a2 = 'someString';
+    protected static a3 = 'someString';
+    protected a4 = 5;
+    public a5;
+    public static a6 = 'someString';
+    @Input() a7 = 5;
+    @Output() a8 = 'someString';
+    public get some10() {
         return 1;
     }
-    public set some() {
-        return 2;
+    public set some11(_) {
+        // noop
     }
-    protected get some() {
+    protected get some12() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some13(_) {
+        // noop
     }
-    private get some() {
+    private get some14() {
         return 1;
     }
-    private set some() {
-        return 2;
+    private set some15(_) {
+        // noop
     }
-    public b(): number {
+    public b16(): number {
         return 5;
     }
-    static b(): number {
+    static b17(): number {
         return 5;
     }
-    protected b(): number {
+    protected b18(): number {
         return 5;
     }
-    protected static a() {
+    protected static a19() {
         return 5;
     }
-    private c(a: number): number {
+    private c20(a: number): number {
         return a;
     }
-    private static b(): number {
+    private static b21(): number {
         return 5;
     }
 }
@@ -220,2699 +220,2719 @@ class RightCases {
 // Wrong cases
 
 // Wrong cases for private-instance-field-fields
-class Failures {
-    private static readonly a: string;
-    private a = 'someString';
-    protected static a: string;
-    private a = 5;
-    protected a;
-    private a;
-    a;
-    private a = 5;
-    public static a = 5;
-    private a: string;
-    @Input() a = 5;
-    private a;
-    @Output() a = 'someString';
-    private a;
-    public get some() {
+class Failures1 {
+    private static readonly a1: string;
+    private a2 = 'someString';
+    protected static a3: string;
+    private a4 = 5;
+    protected a5;
+    private a6;
+    a7;
+    private a8 = 5;
+    public static a9 = 5;
+    private a10: string;
+    @Input() a11 = 5;
+    private a12;
+    @Output() a13 = 'someString';
+    private a14;
+    public get some15() {
         return 1;
     }
-    private a = 5;
-    set some() {
-        return 2;
+    private a16 = 5;
+    set some17(_) {
+        // noop
     }
-    private a;
-    protected get some() {
+    private a18;
+    protected get some19() {
         return 1;
     }
-    private readonly a = 5;
-    protected set some() {
-        return 2;
+    private readonly a20 = 5;
+    protected set some21(_) {
+        // noop
     }
-    private readonly a = 5;
-    private get some() {
+    private readonly a22 = 5;
+    private get some23() {
         return 1;
     }
-    private readonly a = 5;
-    private set some() {
-        return 2;
+    private readonly a24 = 5;
+    private set some25(_) {
+        // noop
     }
-    private readonly a;
-    c(a: number): number {
+    private readonly a26;
+    c27(a: number): number {
         return a;
     }
-    private readonly a;
-    static c(a: number): number {
+    private readonly a28;
+    static c29(a: number): number {
         return a;
     }
-    private readonly a = 5;
-    protected c(a: number): number {
+    private readonly a30 = 5;
+    protected c31(a: number): number {
         return a;
     }
-    private readonly a = 5;
-    protected static a() {
+    private readonly a32 = 5;
+    protected static a33() {
         return 5;
     }
-    private readonly a = 5;
-    private b(): number {
+    private readonly a34 = 5;
+    private b35(): number {
         return 5;
     }
-    private readonly a = 'someString';
-    private static a() {
+    private readonly a36 = 'someString';
+    private static a37() {
         return 5;
     }
-    private readonly a = 5;
+    private readonly a38 = 5;
 }
 
-class Failures {
-    private static readonly a = 5;
-    private a;
-    protected static a: string;
-    private a = 5;
-    protected a;
-    private a: string;
-    a = 'someString';
-    private a: string;
-    public static a = 'someString';
-    private a: string;
-    @Input() a = 'someString';
-    private a = 5;
-    @Output() a = 5;
-    private a = 'someString';
-    get some() {
+class Failures2 {
+    private static readonly a1 = 5;
+    private a2;
+    protected static a3: string;
+    private a4 = 5;
+    protected a5;
+    private a6: string;
+    a7 = 'someString';
+    private a8: string;
+    public static a9 = 'someString';
+    private a10: string;
+    @Input() a11 = 'someString';
+    private a12 = 5;
+    @Output() a13 = 5;
+    private a14 = 'someString';
+    get some15() {
         return 1;
     }
-    private a = 'someString';
-    public set some() {
-        return 2;
+    private a16 = 'someString';
+    public set some17(_) {
+        // noop
     }
-    private a = 5;
-    protected get some() {
+    private a18 = 5;
+    protected get some19() {
         return 1;
     }
-    private readonly a: string;
-    protected set some() {
-        return 2;
+    private readonly a20: string;
+    protected set some21(_) {
+        // noop
     }
-    private readonly a = 5;
-    private get some() {
+    private readonly a22 = 5;
+    private get some23() {
         return 1;
     }
-    private readonly a = 5;
-    private set some() {
-        return 2;
+    private readonly a24 = 5;
+    private set some25(_) {
+        // noop
     }
-    private readonly a = 5;
-    public b(): number {
+    private readonly a26 = 5;
+    public b27(): number {
         return 5;
     }
-    private readonly a;
-    public static b(): number {
+    private readonly a28;
+    public static b29(): number {
         return 5;
     }
-    private readonly a = 5;
-    protected c(a: number): number {
+    private readonly a30 = 5;
+    protected c31(a: number): number {
         return a;
     }
-    private readonly a;
-    protected static b(): number {
+    private readonly a32;
+    protected static b33(): number {
         return 5;
     }
-    private readonly a = 5;
-    private b(): number {
+    private readonly a34 = 5;
+    private b35(): number {
         return 5;
     }
-    private readonly a: string;
-    private static a() {
+    private readonly a36: string;
+    private static a37() {
         return 5;
     }
-    private readonly a;
+    private readonly a38;
 }
 
-class Failures {
-    private static readonly a;
-    private a = 'someString';
-    protected static a: string;
-    private a: string;
-    protected a = 5;
-    private a = 'someString';
-    public a;
-    private a = 5;
-    static a = 'someString';
-    private a: string;
-    @Input() a = 5;
-    private a;
-    @Output() a = 'someString';
-    private a;
-    get some() {
+class Failures3 {
+    private static readonly a1;
+    private a2 = 'someString';
+    protected static a3: string;
+    private a4: string;
+    protected a5 = 5;
+    private a6 = 'someString';
+    public a7;
+    private a8 = 5;
+    static a9 = 'someString';
+    private a10: string;
+    @Input() a11 = 5;
+    private a12;
+    @Output() a13 = 'someString';
+    private a14;
+    get some15() {
         return 1;
     }
-    private a = 5;
-    public set some() {
-        return 2;
+    private a16 = 5;
+    public set some17(_) {
+        // noop
     }
-    private a = 'someString';
-    protected get some() {
+    private a18 = 'someString';
+    protected get some19() {
         return 1;
     }
-    private readonly a = 5;
-    protected set some() {
-        return 2;
+    private readonly a20 = 5;
+    protected set some21(_) {
+        // noop
     }
-    private readonly a = 5;
-    private get some() {
+    private readonly a22 = 5;
+    private get some23() {
         return 1;
     }
-    private readonly a: string;
-    private set some() {
-        return 2;
+    private readonly a24: string;
+    private set some25(_) {
+        // noop
     }
-    private readonly a;
-    a() {
+    private readonly a26;
+    a27() {
         return 5;
     }
-    private readonly a = 5;
-    static a() {
+    private readonly a28 = 5;
+    static a29() {
         return 5;
     }
-    private readonly a = 'someString';
-    protected c(a: number): number {
-        return a;
+    private readonly a30 = 'someString';
+    protected c32(c: number): number {
+        return c;
     }
-    private readonly a = 'someString';
-    protected static b(): number {
+    private readonly a33 = 'someString';
+    protected static b34(): number {
         return 5;
     }
-    private readonly a;
-    private b(): number {
+    private readonly a35;
+    private b36(): number {
         return 5;
     }
-    private readonly a = 'someString';
-    private static a() {
+    private readonly a37 = 'someString';
+    private static a38() {
         return 5;
     }
-    private readonly a: string;
+    private readonly a39: string;
 }
 
 // Wrong cases for private-static-field-fields
-class Failures {
-    protected static a = 5;
-    private static a = 5;
-    protected a;
-    private static a;
-    public a: string;
-    private static a = 5;
-    static a = 5;
-    private static a = 5;
-    @Input() a: string;
-    private static a: string;
-    @Output() a = 5;
-    private static a;
-    get some() {
+class Failures4 {
+    protected static a1 = 5;
+    private static a2 = 5;
+    protected a3;
+    private static a4;
+    public a5: string;
+    private static a6 = 5;
+    static a7 = 5;
+    private static a8 = 5;
+    @Input() a9: string;
+    private static a10: string;
+    @Output() a11 = 5;
+    private static a12;
+    get some12() {
         return 1;
     }
-    private static a = 5;
-    set some() {
-        return 2;
+    private static a13 = 5;
+    set some14(_) {
+        // noop
     }
-    private static a = 'someString';
-    protected get some() {
+    private static a15 = 'someString';
+    protected get some16() {
         return 1;
     }
-    private static readonly a = 'someString';
-    protected set some() {
-        return 2;
+    private static readonly a17 = 'someString';
+    protected set some18(_) {
+        // noop
     }
-    private static readonly a = 5;
-    private get some() {
+    private static readonly a19 = 5;
+    private get some20() {
         return 1;
     }
-    private static readonly a = 'someString';
-    private set some() {
-        return 2;
+    private static readonly a21 = 'someString';
+    private set some22(_) {
+        // noop
     }
-    private static readonly a: string;
-    c(a: number): number {
+    private static readonly a23: string;
+    c24(a: number): number {
         return a;
     }
-    private static readonly a: string;
-    static b(): number {
+    private static readonly a25: string;
+    static b26(): number {
         return 5;
     }
-    private static readonly a = 'someString';
-    protected c(a: number): number {
+    private static readonly a27 = 'someString';
+    protected c28(a: number): number {
         return a;
     }
-    private static readonly a = 'someString';
-    protected static a() {
+    private static readonly a29 = 'someString';
+    protected static a30() {
         return 5;
     }
-    private static readonly a = 5;
-    private c(a: number): number {
+    private static readonly a31 = 5;
+    private c32(a: number): number {
         return a;
     }
-    private static readonly a: string;
-    private static a() {
+    private static readonly a33: string;
+    private static a34() {
         return 5;
     }
-    private static readonly a = 5;
+    private static readonly a35 = 5;
 }
 
-class Failures {
-    protected static a = 5;
-    private static a = 5;
-    protected a = 5;
-    private static a = 5;
-    public a = 5;
-    private static a = 5;
-    static a: string;
-    private static a = 5;
-    @Input() a;
-    private static a = 'someString';
-    @Output() a = 5;
-    private static a;
-    get some() {
+class Failures5 {
+    protected static a1 = 5;
+    private static a2 = 5;
+    protected a3 = 5;
+    private static a4 = 5;
+    public a5 = 5;
+    private static a6 = 5;
+    static a7: string;
+    private static a8 = 5;
+    @Input() a9;
+    private static a10 = 'someString';
+    @Output() a11 = 5;
+    private static a12;
+    get some13() {
         return 1;
     }
-    private static a;
-    public set some() {
-        return 2;
+    private static a14;
+    public set some15(_) {
+        // noop
     }
-    private static a = 5;
-    protected get some() {
+    private static a16 = 5;
+    protected get some17() {
         return 1;
     }
-    private static readonly a;
-    protected set some() {
-        return 2;
+    private static readonly a18;
+    protected set some19(_) {
+        // noop
     }
-    private static readonly a: string;
-    private get some() {
+    private static readonly a20: string;
+    private get some21() {
         return 1;
     }
-    private static readonly a = 'someString';
-    private set some() {
-        return 2;
+    private static readonly a22 = 'someString';
+    private set some23(_) {
+        // noop
     }
-    private static readonly a = 5;
-    c(a: number): number {
+    private static readonly a24 = 5;
+    c25(a: number): number {
         return a;
     }
-    private static readonly a: string;
-    static a() {
+    private static readonly a26: string;
+    static a27() {
         return 5;
     }
-    private static readonly a = 5;
-    protected a() {
+    private static readonly a28 = 5;
+    protected a29() {
         return 5;
     }
-    private static readonly a = 5;
-    protected static c(a: number): number {
+    private static readonly a30 = 5;
+    protected static c31(a: number): number {
         return a;
     }
-    private static readonly a = 5;
-    private a() {
+    private static readonly a32 = 5;
+    private a33() {
         return 5;
     }
-    private static readonly a = 5;
-    private static a() {
+    private static readonly a34 = 5;
+    private static a35() {
         return 5;
     }
-    private static readonly a;
+    private static readonly a36;
 }
 
-class Failures {
-    protected static a = 5;
-    private static a;
-    protected a = 5;
-    private static a = 5;
-    public a = 5;
-    private static a = 'someString';
-    public static a = 5;
-    private static a = 'someString';
-    @Input() a: string;
-    private static a = 5;
-    @Output() a: string;
-    private static a = 5;
-    public get some() {
+class Failures6 {
+    protected static a1 = 5;
+    private static a2;
+    protected a3 = 5;
+    private static a4 = 5;
+    public a5 = 5;
+    private static a6 = 'someString';
+    public static a7 = 5;
+    private static a8 = 'someString';
+    @Input() a9: string;
+    private static a10 = 5;
+    @Output() a11: string;
+    private static a12 = 5;
+    public get some13() {
         return 1;
     }
-    private static a = 5;
-    set some() {
-        return 2;
+    private static a14 = 5;
+    set some15(_) {
+        // noop
     }
-    private static a;
-    protected get some() {
+    private static a16;
+    protected get some17() {
         return 1;
     }
-    private static readonly a = 'someString';
-    protected set some() {
-        return 2;
+    private static readonly a18 = 'someString';
+    protected set some19(_) {
+        // noop
     }
-    private static readonly a = 5;
-    private get some() {
+    private static readonly a20 = 5;
+    private get some21() {
         return 1;
     }
-    private static readonly a = 5;
-    private set some() {
-        return 2;
+    private static readonly a22 = 5;
+    private set some23(_) {
+        // noop
     }
-    private static readonly a = 'someString';
-    a() {
+    private static readonly a24 = 'someString';
+    a25() {
         return 5;
     }
-    private static readonly a;
-    static c(a: number): number {
+    private static readonly a26;
+    static c27(a: number): number {
         return a;
     }
-    private static readonly a = 'someString';
-    protected b(): number {
+    private static readonly a29 = 'someString';
+    protected b30(): number {
         return 5;
     }
-    private static readonly a: string;
-    protected static a() {
+    private static readonly a31: string;
+    protected static a32() {
         return 5;
     }
-    private static readonly a = 5;
-    private c(a: number): number {
+    private static readonly a33 = 5;
+    private c34(a: number): number {
         return a;
     }
-    private static readonly a = 5;
-    private static a() {
+    private static readonly a35 = 5;
+    private static a36() {
         return 5;
     }
-    private static readonly a = 5;
+    private static readonly a37 = 5;
 }
 
 // Wrong cases for protected-static-field-fields
-class Failures {
-    protected a: string;
-    protected static a;
-    public a = 5;
-    protected static a = 5;
-    public static a;
-    protected static a = 5;
-    @Input() a = 5;
-    protected static a = 5;
-    @Output() a = 'someString';
-    protected static a = 5;
-    public get some() {
+class Failures7 {
+    protected a1: string;
+    protected static a2;
+    public a3 = 5;
+    protected static a4 = 5;
+    public static a5;
+    protected static a6 = 5;
+    @Input() a7 = 5;
+    protected static a8 = 5;
+    @Output() a9 = 'someString';
+    protected static a10 = 5;
+    public get some11() {
         return 1;
     }
-    protected static a = 'someString';
-    public set some() {
-        return 2;
+    protected static a12 = 'someString';
+    public set some13(_) {
+        // noop
     }
-    protected static a: string;
-    protected get some() {
+    protected static a14: string;
+    protected get some15() {
         return 1;
     }
-    protected static a: string;
-    protected set some() {
-        return 2;
+    protected static a16: string;
+    protected set some17(_) {
+        // noop
     }
-    protected static a = 'someString';
-    private get some() {
+    protected static a18 = 'someString';
+    private get some19() {
         return 1;
     }
-    protected static a = 5;
-    private set some() {
-        return 2;
+    protected static a20 = 5;
+    private set some21(_) {
+        // noop
     }
-    protected static a: string;
-    public b(): number {
+    protected static a22: string;
+    public b23(): number {
         return 5;
     }
-    protected static a = 5;
-    static b(): number {
+    protected static a24 = 5;
+    static b25(): number {
         return 5;
     }
-    protected static a: string;
-    protected c(a: number): number {
+    protected static a26: string;
+    protected c27(a: number): number {
         return a;
     }
-    protected static a = 5;
-    protected static c(a: number): number {
+    protected static a28 = 5;
+    protected static c29(a: number): number {
         return a;
     }
-    protected static a: string;
-    private b(): number {
+    protected static a30: string;
+    private b31(): number {
         return 5;
     }
-    protected static a = 'someString';
-    private static a() {
+    protected static a32 = 'someString';
+    private static a33() {
         return 5;
     }
-    protected static a;
+    protected static a34;
 }
 
-class Failures {
-    protected a = 'someString';
-    protected static a: string;
-    a = 5;
-    protected static a: string;
-    static a: string;
-    protected static a = 5;
-    @Input() a = 5;
-    protected static a;
-    @Output() a = 'someString';
-    protected static a = 5;
-    get some() {
+class Failures8 {
+    protected a1 = 'someString';
+    protected static a2: string;
+    a3 = 5;
+    protected static a4: string;
+    static a5: string;
+    protected static a6 = 5;
+    @Input() a7 = 5;
+    protected static a8;
+    @Output() a9 = 'someString';
+    protected static a10 = 5;
+    get some11() {
         return 1;
     }
-    protected static a = 5;
-    public set some() {
-        return 2;
+    protected static a12 = 5;
+    public set some13(_) {
+        // noop
     }
-    protected static a;
-    protected get some() {
+    protected static a14;
+    protected get some15() {
         return 1;
     }
-    protected static a = 'someString';
-    protected set some() {
-        return 2;
+    protected static a16 = 'someString';
+    protected set some17(_) {
+        // noop
     }
-    protected static a = 5;
-    private get some() {
+    protected static a18 = 5;
+    private get some19() {
         return 1;
     }
-    protected static a;
-    private set some() {
-        return 2;
+    protected static a20;
+    private set some21(_) {
+        // noop
     }
-    protected static a = 'someString';
-    c(a: number): number {
+    protected static a22 = 'someString';
+    c23(a: number): number {
         return a;
     }
-    protected static a = 'someString';
-    public static a() {
+    protected static a24 = 'someString';
+    public static a25() {
         return 5;
     }
-    protected static a = 5;
-    protected c(a: number): number {
+    protected static a26 = 5;
+    protected c27(a: number): number {
         return a;
     }
-    protected static a;
-    protected static b(): number {
+    protected static a28;
+    protected static b29(): number {
         return 5;
     }
-    protected static a = 5;
-    private a() {
+    protected static a30 = 5;
+    private a31() {
         return 5;
     }
-    protected static a = 'someString';
-    private static c(a: number): number {
+    protected static a32 = 'someString';
+    private static c33(a: number): number {
         return a;
     }
-    protected static a = 5;
+    protected static a34 = 5;
 }
 
-class Failures {
-    protected a: string;
-    protected static a: string;
-    public a = 5;
-    protected static a: string;
-    public static a = 5;
-    protected static a: string;
-    @Input() a: string;
-    protected static a: string;
-    @Output() a;
-    protected static a: string;
-    get some() {
+class Failure9 {
+    protected a1: string;
+    protected static a2: string;
+    public a3 = 5;
+    protected static a4: string;
+    public static a5 = 5;
+    protected static a6: string;
+    @Input() a7: string;
+    protected static a8: string;
+    @Output() a9;
+    protected static a10: string;
+    get some11() {
         return 1;
     }
-    protected static a = 5;
-    public set some() {
-        return 2;
+    protected static a12 = 5;
+    public set some13(_) {
+        // noop
     }
-    protected static a = 5;
-    protected get some() {
+    protected static a14 = 5;
+    protected get some15() {
         return 1;
     }
-    protected static a;
-    protected set some() {
-        return 2;
+    protected static a16;
+    protected set some17(_) {
+        // noop
     }
-    protected static a = 5;
-    private get some() {
+    protected static a18 = 5;
+    private get some19() {
         return 1;
     }
-    protected static a = 5;
-    private set some() {
-        return 2;
+    protected static a20 = 5;
+    private set some21(_) {
+        // noop
     }
-    protected static a = 5;
-    public c(a: number): number {
+    protected static a22 = 5;
+    public c23(a: number): number {
         return a;
     }
-    protected static a = 5;
-    static c(a: number): number {
+    protected static a24 = 5;
+    static c25(a: number): number {
         return a;
     }
-    protected static a: string;
-    protected b(): number {
+    protected static a26: string;
+    protected b27(): number {
         return 5;
     }
-    protected static a = 5;
-    protected static a() {
+    protected static a28 = 5;
+    protected static a29() {
         return 5;
     }
-    protected static a = 'someString';
-    private b(): number {
+    protected static a30 = 'someString';
+    private b31(): number {
         return 5;
     }
-    protected static a;
-    private static c(a: number): number {
+    protected static a32;
+    private static c33(a: number): number {
         return a;
     }
-    protected static a = 'someString';
+    protected static a34 = 'someString';
 }
 
 // Wrong cases for protected-instance-field-fields
-class Failures {
-    public a = 5;
-    protected a = 5;
-    public static a = 5;
-    protected a = 5;
-    @Input() a = 'someString';
-    protected a = 'someString';
-    @Output() a = 'someString';
-    protected a = 5;
-    get some() {
+class Failures10 {
+    public a1 = 5;
+    protected a2 = 5;
+    public static a3 = 5;
+    protected a4 = 5;
+    @Input() a5 = 'someString';
+    protected a6 = 'someString';
+    @Output() a7 = 'someString';
+    protected a8 = 5;
+    get some9() {
         return 1;
     }
-    protected a = 5;
-    set some() {
-        return 2;
+    protected a10 = 5;
+    set some11(_) {
+        // noop
     }
-    protected a = 'someString';
-    protected get some() {
+    protected a12 = 'someString';
+    protected get some13() {
         return 1;
     }
-    protected a: string;
-    protected set some() {
-        return 2;
+    protected a14: string;
+    protected set some15(_) {
+        // noop
     }
-    protected a = 'someString';
-    private get some() {
+    protected a16 = 'someString';
+    private get some17() {
         return 1;
     }
-    protected a = 5;
-    private set some() {
-        return 2;
+    protected a18 = 5;
+    protected set some19(_) {
+        // noop
     }
-    protected a = 'someString';
-    public c(a: number): number {
+    protected a20 = 'someString';
+    public c21(a: number): number {
         return a;
     }
-    protected a: string;
-    public static a() {
+    protected a22: string;
+    public static a23() {
         return 5;
     }
-    protected a: string;
-    protected b(): number {
+    protected a24: string;
+    protected b25(): number {
         return 5;
     }
-    protected a = 'someString';
-    protected static c(a: number): number {
+    protected a26 = 'someString';
+    protected static c27(a: number): number {
         return a;
     }
-    protected a = 'someString';
-    private b(): number {
+    protected a28 = 'someString';
+    private b29(): number {
         return 5;
     }
-    protected a = 5;
-    private static a() {
+    protected a30 = 5;
+    private static a31() {
         return 5;
     }
-    protected a = 5;
+    protected a32 = 5;
 }
 
-class Failures {
-    public a;
-    protected a: string;
-    static a;
-    protected a = 5;
-    @Input() a: string;
-    protected a = 'someString';
-    @Output() a = 5;
-    protected a = 5;
-    public get some() {
+class Failures11 {
+    public a1;
+    protected a2: string;
+    static a3;
+    protected a4 = 5;
+    @Input() a5: string;
+    protected a6 = 'someString';
+    @Output() a7 = 5;
+    protected a8 = 5;
+    public get some9() {
         return 1;
     }
-    protected a = 5;
-    set some() {
-        return 2;
+    protected a10 = 5;
+    set some11(_) {
+        // noop
     }
-    protected a;
-    protected get some() {
+    protected a12;
+    protected get some13() {
         return 1;
     }
-    protected a: string;
-    protected set some() {
-        return 2;
+    protected a14: string;
+    protected set some15(_) {
+        // noop
     }
-    protected a;
-    private get some() {
+    protected a16;
+    private get some17() {
         return 1;
     }
-    protected a = 'someString';
-    private set some() {
-        return 2;
+    protected a18 = 'someString';
+    protected set some19(_) {
+        // noop
     }
-    protected a: string;
-    b(): number {
+    protected a20: string;
+    b21(): number {
         return 5;
     }
-    protected a = 5;
-    static b(): number {
+    protected a22 = 5;
+    static b23(): number {
         return 5;
     }
-    protected a;
-    protected a() {
+    protected a24;
+    protected a25() {
         return 5;
     }
-    protected a = 'someString';
-    protected static b(): number {
+    protected a26 = 'someString';
+    protected static b27(): number {
         return 5;
     }
-    protected a = 5;
-    private a() {
+    protected a28 = 5;
+    private a29() {
         return 5;
     }
-    protected a = 'someString';
-    private static c(a: number): number {
+    protected a30 = 'someString';
+    private static c31(a: number): number {
         return a;
     }
-    protected a: string;
+    protected a32: string;
 }
 
-class Failures {
-    public a;
-    protected a = 5;
-    public static a;
-    protected a = 'someString';
-    @Input() a = 5;
-    protected a;
-    @Output() a = 5;
-    protected a = 5;
-    get some() {
+class Failures12 {
+    public a1;
+    protected a2 = 5;
+    public static a3;
+    protected a4 = 'someString';
+    @Input() a5 = 5;
+    protected a6;
+    @Output() a7 = 5;
+    protected a8 = 5;
+    get some9() {
         return 1;
     }
-    protected a: string;
-    public set some() {
-        return 2;
+    protected a10: string;
+    public set some11(_) {
+        // noop
     }
-    protected a = 5;
-    protected get some() {
+    protected a12 = 5;
+    protected get some13() {
         return 1;
     }
-    protected a;
-    protected set some() {
-        return 2;
+    protected a14;
+    protected set some15(_) {
+        // noop
     }
-    protected a = 5;
-    private get some() {
+    protected a16 = 5;
+    private get some17() {
         return 1;
     }
-    protected a = 5;
-    private set some() {
-        return 2;
+    protected a18 = 5;
+    protected set some19(_) {
+        // noop
     }
-    protected a;
-    public a() {
+    protected a20;
+    public a21() {
         return 5;
     }
-    protected a: string;
-    static c(a: number): number {
+    protected a22: string;
+    static c23(a: number): number {
         return a;
     }
-    protected a: string;
-    protected b(): number {
+    protected a24: string;
+    protected b25(): number {
         return 5;
     }
-    protected a = 5;
+    protected a26 = 5;
     protected static a() {
         return 5;
     }
-    protected a = 5;
-    private b(): number {
+    protected a27 = 5;
+    private b28(): number {
         return 5;
     }
-    protected a = 5;
-    private static c(a: number): number {
+    protected a29 = 5;
+    private static c30(a: number): number {
         return a;
     }
-    protected a: string;
+    protected a31: string;
 }
 
 // Wrong cases for public-instance-field-fields
-class Failures {
-    public static a = 'someString';
-    a: string;
-    @Input() a = 'someString';
-    public a: string;
-    @Output() a: string;
-    a;
-    public get some() {
+class Failures13 {
+    public static a1 = 'someString';
+    a2: string;
+    @Input() a3 = 'someString';
+    public a4: string;
+    @Output() a5: string;
+    a6;
+    public get some7() {
         return 1;
     }
-    a = 'someString';
-    set some() {
-        return 2;
+    a8 = 'someString';
+    set some9(_) {
+        // noop
     }
-    public a = 5;
-    protected get some() {
+    public a10 = 5;
+    protected get some11() {
         return 1;
     }
-    a: string;
-    protected set some() {
-        return 2;
+    a12: string;
+    protected set some13(_) {
+        // noop
     }
-    public a = 5;
-    private get some() {
+    public a14 = 5;
+    private get some15() {
         return 1;
     }
-    a: string;
-    private set some() {
-        return 2;
+    a16: string;
+    protected set some17(_) {
+        // noop
     }
-    public a: string;
-    c(a: number): number {
+    public a18: string;
+    c19(a: number): number {
         return a;
     }
-    a = 5;
-    static c(a: number): number {
+    a20 = 5;
+    static c21(a: number): number {
         return a;
     }
-    a = 5;
-    protected a() {
+    a22 = 5;
+    protected a23() {
         return 5;
     }
-    a;
-    protected static a() {
+    a24;
+    protected static a25() {
         return 5;
     }
-    a = 5;
-    private c(a: number): number {
+    a26 = 5;
+    private c27(a: number): number {
         return a;
     }
-    a = 5;
-    private static b(): number {
+    a28 = 5;
+    private static b29(): number {
         return 5;
     }
-    a = 5;
+    a30 = 5;
 }
 
-class Failures {
-    static a = 5;
-    public a = 5;
-    @Input() a;
-    a = 5;
-    @Output() a;
-    public a = 5;
-    get some() {
+class Failures14 {
+    static a1 = 5;
+    public a2 = 5;
+    @Input() a3;
+    a4 = 5;
+    @Output() a5;
+    public a6 = 5;
+    get some7() {
         return 1;
     }
-    public a = 5;
-    set some() {
-        return 2;
+    public a8 = 5;
+    set some9(_) {
+        // noop
     }
-    public a = 5;
-    protected get some() {
+    public a10 = 5;
+    protected get some11() {
         return 1;
     }
-    public a = 'someString';
-    protected set some() {
-        return 2;
+    public a12 = 'someString';
+    protected set some13(_) {
+        // noop
     }
-    public a = 'someString';
-    private get some() {
+    public a14 = 'someString';
+    private get some15() {
         return 1;
     }
-    public a = 5;
-    private set some() {
-        return 2;
+    public a16 = 5;
+    protected set some17(_) {
+        // noop
     }
-    a = 5;
-    public a() {
+    a18 = 5;
+    public a19() {
         return 5;
     }
-    public a;
-    static b(): number {
+    public a20;
+    static b21(): number {
         return 5;
     }
-    public a = 5;
-    protected c(a: number): number {
+    public a22 = 5;
+    protected c23(a: number): number {
         return a;
     }
-    public a = 5;
-    protected static b(): number {
+    public a24 = 5;
+    protected static b25(): number {
         return 5;
     }
-    public a = 5;
-    private b(): number {
+    public a26 = 5;
+    private b27(): number {
         return 5;
     }
-    a = 5;
-    private static a() {
+    a28 = 5;
+    private static a29() {
         return 5;
     }
-    public a: string;
+    public a30: string;
 }
 
-class Failures {
-    static a: string;
-    a: string;
-    @Input() a = 'someString';
-    a = 5;
-    @Output() a: string;
-    a = 5;
-    public get some() {
+class Failures15 {
+    static a1: string;
+    a2: string;
+    @Input() a3 = 'someString';
+    a4 = 5;
+    @Output() a5: string;
+    a6 = 5;
+    public get some7() {
         return 1;
     }
-    a: string;
-    set some() {
-        return 2;
+    a8: string;
+    set some9(_) {
+        // noop
     }
-    public a = 5;
-    protected get some() {
+    public a10 = 5;
+    protected get some11() {
         return 1;
     }
-    public a;
-    protected set some() {
-        return 2;
+    public a12;
+    protected set some13(_) {
+        // noop
     }
-    public a = 5;
-    private get some() {
+    public a14 = 5;
+    private get some15() {
         return 1;
     }
-    public a = 5;
-    private set some() {
-        return 2;
+    public a16 = 5;
+    protected set some17(_) {
+        // noop
     }
-    a = 'someString';
-    public b(): number {
+    a18 = 'someString';
+    public b19(): number {
         return 5;
     }
-    public a: string;
-    static c(a: number): number {
+    public a20: string;
+    static c21(a: number): number {
         return a;
     }
-    public a;
-    protected b(): number {
+    public a22;
+    protected b23(): number {
         return 5;
     }
-    public a = 5;
-    protected static c(a: number): number {
+    public a24 = 5;
+    protected static c25(a: number): number {
         return a;
     }
-    a = 'someString';
-    private a() {
+    a26 = 'someString';
+    private a27() {
         return 5;
     }
-    public a = 'someString';
-    private static a() {
+    public a28 = 'someString';
+    private static a29() {
         return 5;
     }
-    public a = 5;
+    public a30 = 5;
 }
 
 // Wrong cases for public-static-field-fields
-class Failures {
-    @Input() a = 'someString';
-    public static a = 5;
-    @Output() a = 5;
-    static a = 5;
-    get some() {
+class Failures16 {
+    @Input() a1 = 'someString';
+    public static a2 = 5;
+    @Output() a2 = 5;
+    static a3 = 5;
+    get some4() {
         return 1;
     }
-    static a = 5;
-    public set some() {
-        return 2;
+    static a5 = 5;
+    public set some6(_) {
+        // noop
     }
-    public static a;
-    protected get some() {
+    public static a7;
+    protected get some8() {
         return 1;
     }
-    static a = 5;
-    protected set some() {
-        return 2;
+    static a9 = 5;
+    protected set some10(_) {
+        // noop
     }
-    static a;
-    private get some() {
+    static a11;
+    private get some12() {
         return 1;
     }
-    static a = 'someString';
-    private set some() {
-        return 2;
+    static a13 = 'someString';
+    protected set some14(_) {
+        // noop
     }
-    static a = 'someString';
-    c(a: number): number {
+    static a15 = 'someString';
+    c16(a: number): number {
         return a;
     }
-    public static a: string;
-    public static b(): number {
+    public static a17: string;
+    public static b18(): number {
         return 5;
     }
-    static a: string;
-    protected b(): number {
+    static a19: string;
+    protected b20(): number {
         return 5;
     }
-    public static a: string;
-    protected static b(): number {
+    public static a21: string;
+    protected static b22(): number {
         return 5;
     }
-    static a: string;
-    private a() {
+    static a23: string;
+    private a24() {
         return 5;
     }
-    public static a: string;
-    private static a() {
+    public static a25: string;
+    private static a26() {
         return 5;
     }
-    public static a = 5;
+    public static a27 = 5;
 }
 
-class Failures {
-    @Input() a = 'someString';
-    static a = 5;
-    @Output() a = 5;
-    public static a: string;
-    get some() {
+class Failures17 {
+    @Input() a1 = 'someString';
+    static a2 = 5;
+    @Output() a3 = 5;
+    public static a4: string;
+    get some5() {
         return 1;
     }
-    static a = 5;
-    public set some() {
-        return 2;
+    static a6 = 5;
+    public set some7(_) {
+        // noop
     }
-    public static a: string;
-    protected get some() {
+    public static a8: string;
+    protected get some9() {
         return 1;
     }
-    public static a = 5;
-    protected set some() {
-        return 2;
+    public static a10 = 5;
+    protected set some11(_) {
+        // noop
     }
-    static a = 5;
-    private get some() {
+    static a12 = 5;
+    private get some13() {
         return 1;
     }
-    static a = 5;
-    private set some() {
-        return 2;
+    static a14 = 5;
+    protected set some15(_) {
+        // noop
     }
-    static a = 5;
-    public b(): number {
+    static a16 = 5;
+    public b17(): number {
         return 5;
     }
-    public static a = 'someString';
-    public static b(): number {
+    public static a18 = 'someString';
+    public static b19(): number {
         return 5;
     }
-    public static a: string;
-    protected b(): number {
+    public static a20: string;
+    protected b21(): number {
         return 5;
     }
-    static a;
-    protected static a() {
+    static a22;
+    protected static a23() {
         return 5;
     }
-    static a = 5;
-    private b(): number {
+    static a24 = 5;
+    private b25(): number {
         return 5;
     }
-    static a = 5;
-    private static a() {
+    static a26 = 5;
+    private static a27() {
         return 5;
     }
-    static a = 5;
+    static a28 = 5;
 }
 
-class Failures {
-    @Input() a: string;
-    public static a = 5;
-    @Output() a: string;
-    static a;
-    public get some() {
+class Failures18 {
+    @Input() a1: string;
+    public static a2 = 5;
+    @Output() a3: string;
+    static a4;
+    public get some5() {
         return 1;
     }
-    static a = 5;
-    set some() {
-        return 2;
+    static a6 = 5;
+    set some7(_) {
+        // noop
     }
-    public static a = 5;
-    protected get some() {
+    public static a8 = 5;
+    protected get some9() {
         return 1;
     }
-    static a;
-    protected set some() {
-        return 2;
+    static a10;
+    protected set some11(_) {
+        // noop
     }
-    public static a;
-    private get some() {
+    public static a12;
+    private get some13() {
         return 1;
     }
-    public static a = 'someString';
-    private set some() {
-        return 2;
+    public static a14 = 'someString';
+    protected set some15(_) {
+        // noop
     }
-    static a: string;
-    a() {
+    static a16: string;
+    a17() {
         return 5;
     }
-    static a: string;
-    public static c(a: number): number {
+    static a18: string;
+    public static c19(a: number): number {
         return a;
     }
-    public static a: string;
-    protected a() {
+    public static a20: string;
+    protected a21() {
         return 5;
     }
-    static a = 5;
-    protected static b(): number {
+    static a22 = 5;
+    protected static b23(): number {
         return 5;
     }
-    public static a = 5;
-    private a() {
+    public static a24 = 5;
+    private a25() {
         return 5;
     }
-    static a;
-    private static b(): number {
+    static a26;
+    private static b27(): number {
         return 5;
     }
-    public static a: string;
+    public static a28: string;
 }
 
 // Wrong cases for @Input-fields
-class Failures {
-    @Output() a = 5;
-    @Input() a;
-    get some() {
+class Failures19 {
+    @Output() a1 = 5;
+    @Input() a2;
+    get some3() {
         return 1;
     }
-    @Input() a = 5;
-    set some() {
-        return 2;
+    @Input() a4 = 5;
+    set some5(_) {
+        // noop
     }
-    @Input() a = 'someString';
-    protected get some() {
+    @Input() a6 = 'someString';
+    protected get some7() {
         return 1;
     }
-    @Input() a = 'someString';
-    protected set some() {
-        return 2;
+    @Input() a8 = 'someString';
+    protected set some9(_) {
+        // noop
     }
-    @Input() a;
-    private get some() {
+    @Input() a10;
+    private get some11() {
         return 1;
     }
-    @Input() a: string;
-    private set some() {
-        return 2;
+    @Input() a12: string;
+    protected set some13(_) {
+        // noop
     }
-    @Input() a: string;
-    public a() {
+    @Input() a14: string;
+    public a15() {
         return 5;
     }
-    @Input() a: string;
-    static c(a: number): number {
+    @Input() a16: string;
+    static c17(a: number): number {
         return a;
     }
-    @Input() a: string;
-    protected b(): number {
+    @Input() a18: string;
+    protected b19(): number {
         return 5;
     }
-    @Input() a = 'someString';
-    protected static b(): number {
+    @Input() a20 = 'someString';
+    protected static b21(): number {
         return 5;
     }
-    @Input() a = 5;
-    private a() {
+    @Input() a22 = 5;
+    private a23() {
         return 5;
     }
-    @Input() a = 'someString';
-    private static b(): number {
+    @Input() a24 = 'someString';
+    private static b25(): number {
         return 5;
     }
-    @Input() a = 5;
+    @Input() a26 = 5;
 }
 
-class Failures {
-    @Output() a = 5;
-    @Input() a: string;
-    public get some() {
+class Failures20 {
+    @Output() a1 = 5;
+    @Input() a2: string;
+    public get some3() {
         return 1;
     }
-    @Input() a: string;
-    set some() {
-        return 2;
+    @Input() a4: string;
+    set some5(_) {
+        // noop
     }
-    @Input() a = 5;
-    protected get some() {
+    @Input() a6 = 5;
+    protected get some7() {
         return 1;
     }
-    @Input() a;
-    protected set some() {
-        return 2;
+    @Input() a8;
+    protected set some9(_) {
+        // noop
     }
-    @Input() a = 5;
-    private get some() {
+    @Input() a10 = 5;
+    private get some11() {
         return 1;
     }
-    @Input() a = 5;
-    private set some() {
-        return 2;
+    @Input() a12 = 5;
+    protected set some13(_) {
+        // noop
     }
-    @Input() a = 'someString';
-    b(): number {
+    @Input() a14 = 'someString';
+    b15(): number {
         return 5;
     }
-    @Input() a = 'someString';
-    public static c(a: number): number {
+    @Input() a16 = 'someString';
+    public static c17(a: number): number {
         return a;
     }
-    @Input() a = 'someString';
-    protected a() {
+    @Input() a18 = 'someString';
+    protected a19() {
         return 5;
     }
-    @Input() a = 5;
-    protected static c(a: number): number {
+    @Input() a20 = 5;
+    protected static c21(a: number): number {
         return a;
     }
-    @Input() a = 5;
-    private c(a: number): number {
+    @Input() a22 = 5;
+    private c23(a: number): number {
         return a;
     }
-    @Input() a = 5;
-    private static b(): number {
+    @Input() a24 = 5;
+    private static b25(): number {
         return 5;
     }
-    @Input() a: string;
+    @Input() a26: string;
 }
 
-class Failures {
-    @Output() a = 5;
-    @Input() a = 'someString';
-    get some() {
+class Failures21 {
+    @Output() a1 = 5;
+    @Input() a2 = 'someString';
+    get some3() {
         return 1;
     }
-    @Input() a = 5;
-    set some() {
-        return 2;
+    @Input() a4 = 5;
+    set some5(_) {
+        // noop
     }
-    @Input() a = 5;
-    protected get some() {
+    @Input() a6 = 5;
+    protected get some7() {
         return 1;
     }
-    @Input() a: string;
-    protected set some() {
-        return 2;
+    @Input() a8: string;
+    protected set some9(_) {
+        // noop
     }
-    @Input() a: string;
-    private get some() {
+    @Input() a10: string;
+    private get some11() {
         return 1;
     }
-    @Input() a = 5;
-    private set some() {
-        return 2;
+    @Input() a12 = 5;
+    protected set some13(_) {
+        // noop
     }
-    @Input() a = 5;
-    public c(a: number): number {
+    @Input() a14 = 5;
+    public c15(a: number): number {
         return a;
     }
-    @Input() a = 5;
-    public static a() {
+    @Input() a16 = 5;
+    public static a17() {
         return 5;
     }
-    @Input() a = 5;
-    protected c(a: number): number {
+    @Input() a18 = 5;
+    protected c19(a: number): number {
         return a;
     }
-    @Input() a;
-    protected static c(a: number): number {
+    @Input() a20;
+    protected static c21(a: number): number {
         return a;
     }
-    @Input() a: string;
-    private b(): number {
+    @Input() a22: string;
+    private b23(): number {
         return 5;
     }
-    @Input() a: string;
-    private static c(a: number): number {
+    @Input() a24: string;
+    private static c25(a: number): number {
         return a;
     }
-    @Input() a = 5;
+    @Input() a26 = 5;
 }
 
 // Wrong cases for @Output-fields
-class Failures {
-    get some() {
+class Failures22 {
+    get some1() {
         return 1;
     }
-    @Output() a;
-    public set some() {
-        return 2;
+    @Output() a2;
+    public set some3(_) {
+        // noop
     }
-    @Output() a = 5;
-    protected get some() {
+    @Output() a4 = 5;
+    protected get some5() {
         return 1;
     }
-    @Output() a: string;
-    protected set some() {
-        return 2;
+    @Output() a6: string;
+    protected set some7(_) {
+        // noop
     }
-    @Output() a = 5;
-    private get some() {
+    @Output() a8 = 5;
+    private get some9() {
         return 1;
     }
-    @Output() a: string;
-    private set some() {
-        return 2;
+    @Output() a10: string;
+    protected set some11(_) {
+        // noop
     }
-    @Output() a = 'someString';
+    @Output() a12 = 'someString';
     c(a: number): number {
         return a;
     }
-    @Output() a = 'someString';
+    @Output() a13 = 'someString';
     public static b(): number {
         return 5;
     }
-    @Output() a;
-    protected b(): number {
+    @Output() a14;
+    protected b15(): number {
         return 5;
     }
-    @Output() a = 5;
-    protected static c(a: number): number {
+    @Output() a16 = 5;
+    protected static c17(a: number): number {
         return a;
     }
-    @Output() a = 5;
+    @Output() a18 = 5;
+    private a19() {
+        return 5;
+    }
+    @Output() a20 = 5;
+    private static c21(a: number): number {
+        return a;
+    }
+    @Output() a22 = 'someString';
+}
+
+class Failures23 {
+    get some1() {
+        return 1;
+    }
+    @Output() a2;
+    public set some3(_) {
+        // noop
+    }
+    @Output() a4;
+    protected get some5() {
+        return 1;
+    }
+    @Output() a6;
+    protected set some7(_) {
+        // noop
+    }
+    @Output() a8: string;
+    private get some9() {
+        return 1;
+    }
+    @Output() a10: string;
+    protected set some11(_) {
+        // noop
+    }
+    @Output() a12;
+    public a13() {
+        return 5;
+    }
+    @Output() a14 = 'someString';
+    public static c15(a: number): number {
+        return a;
+    }
+    @Output() a16: string;
+    protected a17() {
+        return 5;
+    }
+    @Output() a18: string;
+    protected static b19(): number {
+        return 5;
+    }
+    @Output() a20;
     private a() {
         return 5;
     }
-    @Output() a = 5;
-    private static c(a: number): number {
+    @Output() a21;
+    private static c22(a: number): number {
         return a;
     }
-    @Output() a = 'someString';
+    @Output() a23 = 'someString';
 }
 
-class Failures {
-    get some() {
+class Failures24 {
+    public get some1() {
         return 1;
     }
-    @Output() a;
-    public set some() {
-        return 2;
+    @Output() a2;
+    set some3(_) {
+        // noop
     }
-    @Output() a;
-    protected get some() {
+    @Output() a4 = 'someString';
+    protected get some5() {
         return 1;
     }
-    @Output() a;
-    protected set some() {
-        return 2;
+    @Output() a6 = 5;
+    protected set some7(_) {
+        // noop
     }
-    @Output() a: string;
-    private get some() {
+    @Output() a8 = 5;
+    private get some9() {
         return 1;
     }
-    @Output() a: string;
-    private set some() {
-        return 2;
+    @Output() a10: string;
+    protected set some11(_) {
+        // noop
     }
-    @Output() a;
-    public a() {
-        return 5;
-    }
-    @Output() a = 'someString';
-    public static c(a: number): number {
+    @Output() a12 = 'someString';
+    c13(a: number): number {
         return a;
     }
-    @Output() a: string;
-    protected a() {
-        return 5;
-    }
-    @Output() a: string;
-    protected static b(): number {
-        return 5;
-    }
-    @Output() a;
-    private a() {
-        return 5;
-    }
-    @Output() a;
-    private static c(a: number): number {
+    @Output() a14;
+    public static c15(a: number): number {
         return a;
     }
-    @Output() a = 'someString';
-}
-
-class Failures {
-    public get some() {
-        return 1;
-    }
-    @Output() a;
-    set some() {
-        return 2;
-    }
-    @Output() a = 'someString';
-    protected get some() {
-        return 1;
-    }
-    @Output() a = 5;
-    protected set some() {
-        return 2;
-    }
-    @Output() a = 5;
-    private get some() {
-        return 1;
-    }
-    @Output() a: string;
-    private set some() {
-        return 2;
-    }
-    @Output() a = 'someString';
-    c(a: number): number {
-        return a;
-    }
-    @Output() a;
-    public static c(a: number): number {
-        return a;
-    }
-    @Output() a;
-    protected a() {
+    @Output() a16;
+    protected a17() {
         return 5;
     }
-    @Output() a: string;
+    @Output() a18: string;
     protected static a() {
         return 5;
     }
-    @Output() a = 5;
-    private a() {
+    @Output() a19 = 5;
+    private a20() {
         return 5;
     }
-    @Output() a = 'someString';
-    private static c(a: number): number {
+    @Output() a21 = 'someString';
+    private static c22(a: number): number {
         return a;
     }
-    @Output() a = 5;
+    @Output() a23 = 5;
 }
 
 // Wrong cases for public-getter-fields
-class Failures {
-    set some() {
-        return 2;
+class Failures25 {
+    set some1(_) {
+        // noop
     }
-    get some() {
+    get some2() {
         return 1;
     }
-    protected get some() {
+    protected get some3() {
         return 1;
     }
-    get some() {
+    get some4() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some5(_) {
+        // noop
     }
-    public get some() {
+    public get some6() {
         return 1;
     }
-    private get some() {
+    private get some7() {
         return 1;
     }
-    get some() {
+    get some8() {
         return 1;
     }
-    private set some() {
-        return 2;
+    protected set some9(_) {
+        // noop
     }
-    public get some() {
+    public get some10() {
         return 1;
     }
-    public a() {
+    public a11() {
         return 5;
     }
-    public get some() {
+    public get some12() {
         return 1;
     }
-    public static a() {
+    public static a13() {
         return 5;
     }
-    public get some() {
+    public get some14() {
         return 1;
     }
-    protected a() {
+    protected a15() {
         return 5;
     }
-    public get some() {
+    public get some16() {
         return 1;
     }
-    protected static b(): number {
+    protected static b17(): number {
         return 5;
     }
-    get some() {
+    get some18() {
         return 1;
     }
-    private b(): number {
+    private b19(): number {
         return 5;
     }
-    get some() {
+    get some20() {
         return 1;
     }
-    private static c(a: number): number {
+    private static c21(a: number): number {
         return a;
     }
-    public get some() {
+    public get some22() {
         return 1;
     }
 }
 
-class Failures {
-    set some() {
-        return 2;
+class Failures26 {
+    set some1(_) {
+        // noop
     }
-    public get some() {
+    public get some2() {
         return 1;
     }
-    protected get some() {
+    protected get some3() {
         return 1;
     }
-    public get some() {
+    public get some4() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some5(_) {
+        // noop
     }
-    get some() {
+    get some6() {
         return 1;
     }
-    private get some() {
+    private get some7() {
         return 1;
     }
-    public get some() {
+    public get some8() {
         return 1;
     }
-    private set some() {
-        return 2;
+    protected set some9(_) {
+        // noop
     }
-    get some() {
+    get some10() {
         return 1;
     }
-    c(a: number): number {
+    c11(a: number): number {
         return a;
     }
-    get some() {
+    get some12() {
         return 1;
     }
-    public static b(): number {
+    public static b13(): number {
         return 5;
     }
-    public get some() {
+    public get some14() {
         return 1;
     }
-    protected b(): number {
+    protected b15(): number {
         return 5;
     }
-    get some() {
+    get some16() {
         return 1;
     }
-    protected static a() {
+    protected static a17() {
         return 5;
     }
-    get some() {
+    get some18() {
         return 1;
     }
-    private a() {
+    private a19() {
         return 5;
     }
-    get some() {
+    get some20() {
         return 1;
     }
-    private static c(a: number): number {
+    private static c21(a: number): number {
         return a;
     }
-    get some() {
+    get some22() {
         return 1;
     }
 }
 
-class Failures {
-    set some() {
-        return 2;
+class Failures27 {
+    set some1(_) {
+        // noop
     }
-    get some() {
+    get some2() {
         return 1;
     }
-    protected get some() {
+    protected get some3() {
         return 1;
     }
-    public get some() {
+    public get some4() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some5(_) {
+        // noop
     }
-    public get some() {
+    public get some6() {
         return 1;
     }
-    private get some() {
+    private get some7() {
         return 1;
     }
-    public get some() {
+    public get some9() {
         return 1;
     }
-    private set some() {
-        return 2;
+    protected set some10(_) {
+        // noop
     }
-    public get some() {
+    public get some11() {
         return 1;
     }
-    public c(a: number): number {
+    public c12(a: number): number {
         return a;
     }
-    get some() {
+    get some13() {
         return 1;
     }
-    public static c(a: number): number {
+    public static c14(a: number): number {
         return a;
     }
-    get some() {
+    get some15() {
         return 1;
     }
-    protected c(a: number): number {
+    protected c16(a: number): number {
         return a;
     }
-    get some() {
+    get some17() {
         return 1;
     }
-    protected static c(a: number): number {
+    protected static c18(a: number): number {
         return a;
     }
-    get some() {
+    get some19() {
         return 1;
     }
-    private b(): number {
+    private b20(): number {
         return 5;
     }
-    get some() {
+    get some21() {
         return 1;
     }
-    private static a() {
+    private static a22() {
         return 5;
     }
-    public get some() {
+    public get some23() {
         return 1;
     }
 }
 
 // Wrong cases for public-setter-fields
-class Failures {
-    protected get some() {
+class Failures28 {
+    protected get some1() {
         return 1;
     }
-    set some() {
-        return 2;
+    set some2(_) {
+        // noop
     }
-    protected set some() {
-        return 2;
+    protected set some3(_) {
+        // noop
     }
-    set some() {
-        return 2;
+    set some4(_) {
+        // noop
     }
-    private get some() {
+    private get some5() {
         return 1;
     }
-    set some() {
-        return 2;
+    set some6(_) {
+        // noop
     }
-    private set some() {
-        return 2;
+    protected set some7(_) {
+        // noop
     }
-    public set some() {
-        return 2;
+    public set some9(_) {
+        // noop
     }
-    public c(a: number): number {
+    public c10(a: number): number {
         return a;
     }
-    public set some() {
-        return 2;
+    public set some11(_) {
+        // noop
+    }
+    static b12(): number {
+        return 5;
+    }
+    set some13(_) {
+        // noop
+    }
+    protected b14(): number {
+        return 5;
+    }
+    set some15(_) {
+        // noop
+    }
+    protected static b16(): number {
+        return 5;
+    }
+    public set some17(_) {
+        // noop
+    }
+    private a18() {
+        return 5;
+    }
+    public set some19(_) {
+        // noop
+    }
+    private static a20() {
+        return 5;
+    }
+    public set some21(_) {
+        // noop
+    }
+}
+
+class Failures29 {
+    protected get some1() {
+        return 1;
+    }
+    set some2(_) {
+        // noop
+    }
+    protected set some3(_) {
+        // noop
+    }
+    set some4(_) {
+        // noop
+    }
+    private get some5() {
+        return 1;
+    }
+    public set some6(_) {
+        // noop
+    }
+    protected set some7(_) {
+        // noop
+    }
+    set some8(_) {
+        // noop
+    }
+    public a9() {
+        return 5;
+    }
+    public set some10(_) {
+        // noop
+    }
+    public static b11(): number {
+        return 5;
+    }
+    set some12(_) {
+        // noop
+    }
+    protected a13() {
+        return 5;
+    }
+    set some14(_) {
+        // noop
+    }
+    protected static b15(): number {
+        return 5;
+    }
+    set some15(_) {
+        // noop
+    }
+    private c16(a: number): number {
+        return a;
+    }
+    public set some17(_) {
+        // noop
+    }
+    private static b18(): number {
+        return 5;
+    }
+    public set some19(_) {
+        // noop
+    }
+}
+
+class Failures30 {
+    protected get some1() {
+        return 1;
+    }
+    set some2(_) {
+        // noop
+    }
+    protected set some3(_) {
+        // noop
+    }
+    set some4(_) {
+        // noop
+    }
+    private get some5() {
+        return 1;
+    }
+    set some6(_) {
+        // noop
+    }
+    protected set some7(_) {
+        // noop
+    }
+    set some8(_) {
+        // noop
+    }
+    public b9(): number {
+        return 5;
+    }
+    set some10(_) {
+        // noop
     }
     static b(): number {
         return 5;
     }
-    set some() {
-        return 2;
+    set some11(_) {
+        // noop
     }
-    protected b(): number {
-        return 5;
-    }
-    set some() {
-        return 2;
-    }
-    protected static b(): number {
-        return 5;
-    }
-    public set some() {
-        return 2;
-    }
-    private a() {
-        return 5;
-    }
-    public set some() {
-        return 2;
-    }
-    private static a() {
-        return 5;
-    }
-    public set some() {
-        return 2;
-    }
-}
-
-class Failures {
-    protected get some() {
-        return 1;
-    }
-    set some() {
-        return 2;
-    }
-    protected set some() {
-        return 2;
-    }
-    set some() {
-        return 2;
-    }
-    private get some() {
-        return 1;
-    }
-    public set some() {
-        return 2;
-    }
-    private set some() {
-        return 2;
-    }
-    set some() {
-        return 2;
-    }
-    public a() {
-        return 5;
-    }
-    public set some() {
-        return 2;
-    }
-    public static b(): number {
-        return 5;
-    }
-    set some() {
-        return 2;
-    }
-    protected a() {
-        return 5;
-    }
-    set some() {
-        return 2;
-    }
-    protected static b(): number {
-        return 5;
-    }
-    set some() {
-        return 2;
-    }
-    private c(a: number): number {
+    protected c12(a: number): number {
         return a;
     }
-    public set some() {
-        return 2;
+    set some13(_) {
+        // noop
     }
-    private static b(): number {
+    protected static a14() {
         return 5;
     }
-    public set some() {
-        return 2;
+    set some15(_) {
+        // noop
     }
-}
-
-class Failures {
-    protected get some() {
-        return 1;
-    }
-    set some() {
-        return 2;
-    }
-    protected set some() {
-        return 2;
-    }
-    set some() {
-        return 2;
-    }
-    private get some() {
-        return 1;
-    }
-    set some() {
-        return 2;
-    }
-    private set some() {
-        return 2;
-    }
-    set some() {
-        return 2;
-    }
-    public b(): number {
+    private b16(): number {
         return 5;
     }
-    set some() {
-        return 2;
+    public set some17(_) {
+        // noop
     }
-    static b(): number {
-        return 5;
-    }
-    set some() {
-        return 2;
-    }
-    protected c(a: number): number {
+    private static c18(a: number): number {
         return a;
     }
-    set some() {
-        return 2;
-    }
-    protected static a() {
-        return 5;
-    }
-    set some() {
-        return 2;
-    }
-    private b(): number {
-        return 5;
-    }
-    public set some() {
-        return 2;
-    }
-    private static c(a: number): number {
-        return a;
-    }
-    set some() {
-        return 2;
+    set some19(_) {
+        // noop
     }
 }
 
 // Wrong cases for protected-getter-fields
-class Failures {
-    protected set some() {
-        return 2;
+class Failures31 {
+    protected set some1(_) {
+        // noop
     }
-    protected get some() {
+    protected get some2() {
         return 1;
     }
-    private get some() {
+    private get some3() {
         return 1;
     }
-    protected get some() {
+    protected get some4() {
         return 1;
     }
-    private set some() {
-        return 2;
+    protected set some5(_) {
+        // noop
     }
-    protected get some() {
+    protected get some6() {
         return 1;
     }
-    public c(a: number): number {
+    public c7(a: number): number {
         return a;
     }
-    protected get some() {
+    protected get some8() {
         return 1;
     }
-    static b(): number {
+    static b9(): number {
         return 5;
     }
-    protected get some() {
+    protected get some10() {
         return 1;
     }
-    protected a() {
+    protected a11() {
         return 5;
     }
-    protected get some() {
+    protected get some12() {
         return 1;
     }
-    protected static b(): number {
+    protected static b13(): number {
         return 5;
     }
-    protected get some() {
+    protected get some14() {
         return 1;
     }
-    private a() {
+    private a15() {
         return 5;
     }
-    protected get some() {
+    protected get some16() {
         return 1;
     }
-    private static b(): number {
+    private static b17(): number {
         return 5;
     }
-    protected get some() {
+    protected get some18() {
         return 1;
     }
 }
 
-class Failures {
-    protected set some() {
-        return 2;
+class Failures32 {
+    protected set some1(_) {
+        // noop
     }
-    protected get some() {
+    protected get some2() {
         return 1;
     }
-    private get some() {
+    private get some3() {
         return 1;
     }
-    protected get some() {
+    protected get some4() {
         return 1;
     }
-    private set some() {
-        return 2;
+    protected set some5(_) {
+        // noop
     }
-    protected get some() {
+    protected get some6() {
         return 1;
     }
-    public a() {
+    public a7() {
         return 5;
     }
-    protected get some() {
+    protected get some8() {
         return 1;
     }
-    static c(a: number): number {
+    static c9(a: number): number {
         return a;
     }
-    protected get some() {
+    protected get some10() {
         return 1;
     }
-    protected c(a: number): number {
+    protected c11(a: number): number {
         return a;
     }
-    protected get some() {
+    protected get some12() {
         return 1;
     }
-    protected static c(a: number): number {
+    protected static c13(a: number): number {
         return a;
     }
-    protected get some() {
+    protected get some14() {
         return 1;
     }
-    private c(a: number): number {
+    private c15(a: number): number {
         return a;
     }
-    protected get some() {
+    protected get some16() {
         return 1;
     }
-    private static c(a: number): number {
+    private static c17(a: number): number {
         return a;
     }
-    protected get some() {
+    protected get some18() {
         return 1;
     }
 }
 
-class Failures {
-    protected set some() {
-        return 2;
+class Failures33 {
+    protected set some1(_) {
+        // noop
     }
-    protected get some() {
+    protected get some2() {
         return 1;
     }
-    private get some() {
+    private get some3() {
         return 1;
     }
-    protected get some() {
+    protected get some4() {
         return 1;
     }
-    private set some() {
-        return 2;
+    protected set some5(_) {
+        // noop
     }
-    protected get some() {
+    protected get some6() {
         return 1;
     }
-    b(): number {
+    b7(): number {
         return 5;
     }
-    protected get some() {
+    protected get some8() {
         return 1;
     }
-    static a() {
+    static a9() {
         return 5;
     }
-    protected get some() {
+    protected get some10() {
         return 1;
     }
-    protected c(a: number): number {
+    protected c11(a: number): number {
         return a;
     }
-    protected get some() {
+    protected get some12() {
         return 1;
     }
-    protected static b(): number {
+    protected static b13(): number {
         return 5;
     }
-    protected get some() {
+    protected get some14() {
         return 1;
     }
-    private a() {
+    private a15() {
         return 5;
     }
-    protected get some() {
+    protected get some16() {
         return 1;
     }
-    private static c(a: number): number {
+    private static c17(a: number): number {
         return a;
     }
-    protected get some() {
+    protected get some18() {
         return 1;
     }
 }
 
 // Wrong cases for protected-setter-fields
-class Failures {
-    private get some() {
+class Failures34 {
+    private get some1() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some2(_) {
+        // noop
     }
-    private set some() {
-        return 2;
+    protected set some3(_) {
+        // noop
     }
-    protected set some() {
-        return 2;
+    protected set some4(_) {
+        // noop
     }
-    public a() {
+    public a5() {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some6(_) {
+        // noop
     }
     public static b(): number {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some7(_) {
+        // noop
     }
-    protected c(a: number): number {
+    protected c8(a: number): number {
         return a;
     }
-    protected set some() {
-        return 2;
+    protected set some9(_) {
+        // noop
     }
-    protected static a() {
+    protected static a10() {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some11(_) {
+        // noop
     }
-    private b(): number {
+    private b12(): number {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some13(_) {
+        // noop
     }
-    private static a() {
+    private static a14() {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some15(_) {
+        // noop
     }
 }
 
-class Failures {
-    private get some() {
+class Failures35 {
+    private get some1() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some2(_) {
+        // noop
     }
-    private set some() {
-        return 2;
+    protected set some3(_) {
+        // noop
     }
-    protected set some() {
-        return 2;
+    protected set some4(_) {
+        // noop
     }
-    b(): number {
+    b4(): number {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some5(_) {
+        // noop
     }
-    public static c(a: number): number {
+    public static c6(a: number): number {
         return a;
     }
-    protected set some() {
-        return 2;
+    protected set some7(_) {
+        // noop
     }
-    protected c(a: number): number {
+    protected c8(a: number): number {
         return a;
     }
-    protected set some() {
-        return 2;
+    protected set some9(_) {
+        // noop
     }
-    protected static c(a: number): number {
+    protected static c10(a: number): number {
         return a;
     }
-    protected set some() {
-        return 2;
+    protected set some11(_) {
+        // noop
     }
-    private c(a: number): number {
+    private c12(a: number): number {
         return a;
     }
-    protected set some() {
-        return 2;
+    protected set some13(_) {
+        // noop
     }
-    private static b(): number {
+    private static b14(): number {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some15(_) {
+        // noop
     }
 }
 
-class Failures {
-    private get some() {
+class Failures36 {
+    private get some1() {
         return 1;
     }
-    protected set some() {
-        return 2;
+    protected set some2(_) {
+        // noop
     }
-    private set some() {
-        return 2;
+    protected set some3(_) {
+        // noop
     }
-    protected set some() {
-        return 2;
+    protected set some4(_) {
+        // noop
     }
-    public a() {
+    public a5() {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some6(_) {
+        // noop
     }
-    static c(a: number): number {
+    static c7(a: number): number {
         return a;
     }
-    protected set some() {
-        return 2;
+    protected set some8(_) {
+        // noop
     }
-    protected c(a: number): number {
+    protected c9(a: number): number {
         return a;
     }
-    protected set some() {
-        return 2;
+    protected set some10(_) {
+        // noop
     }
-    protected static b(): number {
+    protected static b11(): number {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some12(_) {
+        // noop
     }
-    private b(): number {
+    private b13(): number {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some14(_) {
+        // noop
     }
-    private static a() {
+    private static a15() {
         return 5;
     }
-    protected set some() {
-        return 2;
+    protected set some16(_) {
+        // noop
     }
 }
 
 // Wrong cases for private-getter-fields
-class Failures {
-    private set some() {
-        return 2;
+class Failures37 {
+    protected set some1(_) {
+        // noop
     }
-    private get some() {
+    private get some2() {
         return 1;
     }
-    a() {
+    a3() {
         return 5;
     }
-    private get some() {
+    private get some4() {
         return 1;
     }
-    public static a() {
+    public static a5() {
         return 5;
     }
-    private get some() {
+    private get some6() {
         return 1;
     }
-    protected b(): number {
+    protected b7(): number {
         return 5;
     }
-    private get some() {
+    private get some8() {
         return 1;
     }
-    protected static c(a: number): number {
+    protected static c9(a: number): number {
         return a;
     }
-    private get some() {
+    private get some10() {
         return 1;
     }
-    private b(): number {
+    private b11(): number {
         return 5;
     }
-    private get some() {
+    private get some12() {
         return 1;
     }
-    private static b(): number {
+    private static b13(): number {
         return 5;
     }
-    private get some() {
+    private get some14() {
         return 1;
     }
 }
 
-class Failures {
-    private set some() {
-        return 2;
+class Failures38 {
+    protected set some1(_) {
+        // noop
     }
-    private get some() {
+    private get some2() {
         return 1;
     }
-    public a() {
+    public a3() {
         return 5;
     }
-    private get some() {
+    private get some4() {
         return 1;
     }
-    static a() {
+    static a5() {
         return 5;
     }
-    private get some() {
+    private get some6() {
         return 1;
     }
-    protected c(a: number): number {
+    protected c7(a: number): number {
         return a;
     }
-    private get some() {
+    private get some8() {
         return 1;
     }
-    protected static a() {
+    protected static a9() {
         return 5;
     }
-    private get some() {
+    private get some10() {
         return 1;
     }
-    private a() {
+    private a11() {
         return 5;
     }
-    private get some() {
+    private get some12() {
         return 1;
     }
-    private static b(): number {
+    private static b13(): number {
         return 5;
     }
-    private get some() {
+    private get some14() {
         return 1;
     }
 }
 
-class Failures {
-    private set some() {
-        return 2;
+class Failures39 {
+    protected set some1(_) {
+        // noop
     }
-    private get some() {
+    private get some2() {
         return 1;
     }
-    a() {
+    a3() {
         return 5;
     }
-    private get some() {
+    private get some4() {
         return 1;
     }
-    static a() {
+    static a5() {
         return 5;
     }
-    private get some() {
+    private get some6() {
         return 1;
     }
-    protected c(a: number): number {
+    protected c7(a: number): number {
         return a;
     }
-    private get some() {
+    private get some8() {
         return 1;
     }
-    protected static a() {
+    protected static a9() {
         return 5;
     }
-    private get some() {
+    private get some10() {
         return 1;
     }
-    private a() {
+    private a10() {
         return 5;
     }
-    private get some() {
+    private get some11() {
         return 1;
     }
-    private static c(a: number): number {
+    private static c12(a: number): number {
         return a;
     }
-    private get some() {
+    private get some13() {
         return 1;
     }
 }
 
 // Wrong cases for private-setter-fields
-class Failures {
-    a() {
+class Failures40 {
+    a1() {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some2(_) {
+        // noop
     }
-    static a() {
+    static a3() {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some4(_) {
+        // noop
     }
-    protected b(): number {
+    protected b5(): number {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some6(_) {
+        // noop
     }
-    protected static a() {
+    protected static a7() {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some8(_) {
+        // noop
     }
-    private b(): number {
+    private b9(): number {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some10(_) {
+        // noop
     }
-    private static c(a: number): number {
+    private static c11(a: number): number {
         return a;
     }
-    private set some() {
-        return 2;
+    protected set some12(_) {
+        // noop
     }
 }
 
-class Failures {
-    a() {
+class Failures41 {
+    a1() {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some2(_) {
+        // noop
     }
-    static c(a: number): number {
+    static c3(a: number): number {
         return a;
     }
-    private set some() {
-        return 2;
+    protected set some4(_) {
+        // noop
     }
-    protected c(a: number): number {
+    protected c5(a: number): number {
         return a;
     }
-    private set some() {
-        return 2;
+    protected set some6(_) {
+        // noop
     }
-    protected static a() {
+    protected static a7() {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some8(_) {
+        // noop
     }
-    private b(): number {
+    private b9(): number {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some10(_) {
+        // noop
     }
-    private static c(a: number): number {
+    private static c11(a: number): number {
         return a;
     }
-    private set some() {
-        return 2;
+    protected set some12(_) {
+        // noop
     }
 }
 
-class Failures {
-    public b(): number {
+class Failures42 {
+    public b1(): number {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some2(_) {
+        // noop
     }
-    public static a() {
+    public static a3() {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some4(_) {
+        // noop
     }
-    protected a() {
+    protected a5() {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some6(_) {
+        // noop
     }
-    protected static a() {
+    protected static a7() {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some8(_) {
+        // noop
     }
-    private b(): number {
+    private b9(): number {
         return 5;
     }
-    private set some() {
-        return 2;
+    protected set some10(_) {
+        // noop
     }
-    private static c(a: number): number {
+    private static c11(a: number): number {
         return a;
     }
-    private set some() {
-        return 2;
+    protected set some12(_) {
+        // noop
     }
 }
 
 // Wrong cases for public-instance-method-fields
-class Failures {
-    static b(): number {
+class Failures43 {
+    static b1(): number {
         return 5;
     }
-    c(a: number): number {
+    c2(a: number): number {
         return a;
     }
-    protected b(): number {
+    protected b3(): number {
         return 5;
     }
-    public b(): number {
+    public b4(): number {
         return 5;
     }
-    protected static b(): number {
+    protected static b5(): number {
         return 5;
     }
-    public b(): number {
+    public b6(): number {
         return 5;
     }
-    private a() {
+    private a7() {
         return 5;
     }
-    public c(a: number): number {
+    public c8(a: number): number {
         return a;
     }
-    private static a() {
+    private static a9() {
         return 5;
     }
-    a() {
+    a10() {
         return 5;
     }
 }
 
-class Failures {
-    public static c(a: number): number {
+class Failures44 {
+    public static c1(a: number): number {
         return a;
     }
-    public c(a: number): number {
+    public c2(a: number): number {
         return a;
     }
-    protected b(): number {
+    protected b3(): number {
         return 5;
     }
-    public b(): number {
+    public b4(): number {
         return 5;
     }
-    protected static b(): number {
+    protected static b5(): number {
         return 5;
     }
-    public b(): number {
+    public b6(): number {
         return 5;
     }
-    private a() {
+    private a7() {
         return 5;
     }
-    a() {
+    a8() {
         return 5;
     }
-    private static c(a: number): number {
+    private static c9(a: number): number {
         return a;
     }
-    a() {
+    a10() {
         return 5;
     }
 }
 
-class Failures {
-    public static c(a: number): number {
+class Failures45 {
+    public static c1(a: number): number {
         return a;
     }
-    public b(): number {
+    public b2(): number {
         return 5;
     }
-    protected c(a: number): number {
+    protected c3(a: number): number {
         return a;
     }
-    b(): number {
+    b4(): number {
         return 5;
     }
-    protected static c(a: number): number {
+    protected static c5(a: number): number {
         return a;
     }
-    public a() {
+    public a6() {
         return 5;
     }
-    private a() {
+    private a7() {
         return 5;
     }
-    public b(): number {
+    public b8(): number {
         return 5;
     }
-    private static a() {
+    private static a9() {
         return 5;
     }
-    public a() {
+    public a10() {
         return 5;
     }
 }
 
 // Wrong cases for public-static-method-fields
-class Failures {
-    protected c(a: number): number {
+class Failures46 {
+    protected c1(a: number): number {
         return a;
     }
-    public static b(): number {
+    public static b2(): number {
         return 5;
     }
-    protected static b(): number {
+    protected static b3(): number {
         return 5;
     }
-    static a() {
+    static a4() {
         return 5;
     }
-    private a() {
+    private a5() {
         return 5;
     }
-    public static b(): number {
+    public static b6(): number {
         return 5;
     }
-    private static c(a: number): number {
+    private static c7(a: number): number {
         return a;
     }
-    public static a() {
+    public static a8() {
         return 5;
     }
 }
 
-class Failures {
-    protected c(a: number): number {
+class Failures47 {
+    protected c1(a: number): number {
         return a;
     }
-    static a() {
+    static a2() {
         return 5;
     }
-    protected static c(a: number): number {
+    protected static c3(a: number): number {
         return a;
     }
-    public static c(a: number): number {
+    public static c4(a: number): number {
         return a;
     }
-    private c(a: number): number {
+    private c5(a: number): number {
         return a;
     }
-    static b(): number {
+    static b6(): number {
         return 5;
     }
-    private static c(a: number): number {
+    private static c7(a: number): number {
         return a;
     }
-    public static a() {
+    public static a8() {
         return 5;
     }
 }
 
-class Failures {
-    protected c(a: number): number {
+class Failures48 {
+    protected c1(a: number): number {
         return a;
     }
-    static c(a: number): number {
+    static c2(a: number): number {
         return a;
     }
-    protected static c(a: number): number {
+    protected static c3(a: number): number {
         return a;
     }
-    public static b(): number {
+    public static b4(): number {
         return 5;
     }
-    private a() {
+    private a5() {
         return 5;
     }
-    public static a() {
+    public static a6() {
         return 5;
     }
-    private static c(a: number): number {
+    private static c7(a: number): number {
         return a;
     }
-    public static a() {
+    public static a8() {
         return 5;
     }
 }
 
 // Wrong cases for protected-instance-method-fields
-class Failures {
-    protected static b(): number {
+class Failures49 {
+    protected static b1(): number {
         return 5;
     }
-    protected c(a: number): number {
+    protected c2(a: number): number {
         return a;
     }
-    private c(a: number): number {
+    private c3(a: number): number {
         return a;
     }
-    protected c(a: number): number {
+    protected c4(a: number): number {
         return a;
     }
-    private static a() {
+    private static a5() {
         return 5;
     }
-    protected b(): number {
-        return 5;
-    }
-}
-
-class Failures {
-    protected static a() {
-        return 5;
-    }
-    protected c(a: number): number {
-        return a;
-    }
-    private c(a: number): number {
-        return a;
-    }
-    protected c(a: number): number {
-        return a;
-    }
-    private static c(a: number): number {
-        return a;
-    }
-    protected b(): number {
+    protected b6(): number {
         return 5;
     }
 }
 
-class Failures {
-    protected static c(a: number): number {
+class Failures50 {
+    protected static a1() {
+        return 5;
+    }
+    protected c2(a: number): number {
         return a;
     }
-    protected b(): number {
-        return 5;
-    }
-    private c(a: number): number {
+    private c3(a: number): number {
         return a;
     }
-    protected b(): number {
+    protected c4(a: number): number {
+        return a;
+    }
+    private static c5(a: number): number {
+        return a;
+    }
+    protected b6(): number {
         return 5;
     }
-    private static b(): number {
+}
+
+class Failures51 {
+    protected static c1(a: number): number {
+        return a;
+    }
+    protected b2(): number {
         return 5;
     }
-    protected a() {
+    private c3(a: number): number {
+        return a;
+    }
+    protected b4(): number {
+        return 5;
+    }
+    private static b5(): number {
+        return 5;
+    }
+    protected a6() {
         return 5;
     }
 }
 
 // Wrong cases for protected-static-method-fields
-class Failures {
-    private b(): number {
+class Failures52 {
+    private b1(): number {
         return 5;
     }
-    protected static a() {
+    protected static a2() {
         return 5;
     }
-    private static b(): number {
+    private static b3(): number {
         return 5;
     }
-    protected static c(a: number): number {
+    protected static c4(a: number): number {
         return a;
     }
 }
 
-class Failures {
-    private a() {
+class Failures53 {
+    private a1() {
         return 5;
     }
-    protected static c(a: number): number {
+    protected static c2(a: number): number {
         return a;
     }
-    private static c(a: number): number {
+    private static c3(a: number): number {
         return a;
     }
-    protected static b(): number {
+    protected static b4(): number {
         return 5;
     }
 }
 
-class Failures {
-    private b(): number {
+class Failures54 {
+    private b1(): number {
         return 5;
     }
-    protected static a() {
+    protected static a2() {
         return 5;
     }
-    private static a() {
+    private static a3() {
         return 5;
     }
-    protected static a() {
+    protected static a4() {
         return 5;
     }
 }
 
 // Wrong cases for private-instance-method-fields
-class Failures {
-    private static a() {
+class Failures55 {
+    private static a1() {
         return 5;
     }
-    private a() {
+    private a2() {
         return 5;
     }
 }
 
-class Failures {
-    private static b(): number {
+class Failures56 {
+    private static b1(): number {
         return 5;
     }
-    private c(a: number): number {
+    private c2(a: number): number {
         return a;
     }
 }
 
-class Failures {
-    private static b(): number {
+class Failures57 {
+    private static b1(): number {
         return 5;
     }
-    private b(): number {
+    private b2(): number {
         return 5;
     }
 }
+
+function Input() {
+    return (_target: unknown, _key: string) => {};
+}
+
+function Output() {
+    return (_target: unknown, _key: string) => {};
+}
+
+type TreeNode<T extends TreeNode = any> = {children?: Array<T>} & object;
+
+interface Tree<T = unknown> {
+    children?: TreeNode<T>[]; // type for a known property.
+    [key: string]: any; // type for unknown keys.
+}
+
+type LinkedList<T = unknown> = {
+    head: T;
+    next: T;
+};
