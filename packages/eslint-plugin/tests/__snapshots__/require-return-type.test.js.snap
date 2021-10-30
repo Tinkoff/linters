@@ -41,13 +41,13 @@ error: Function with return keyword should specify return type (@tinkoff/require
   43 |     }
 
 
-error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:75:2:
-  73 | };
+error: Function with return keyword should specify return type (@tinkoff/require-return-type) at packages/eslint-plugin/tests/require-return-type.fixture.ts:75:3:
+  73 | })();
   74 | 
-> 75 | +function () {
-     |  ^
+> 75 | +(function () {
+     |   ^
   76 |     return '123';
-  77 | };
+  77 | })();
   78 | 
 
 

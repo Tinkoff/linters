@@ -1,6 +1,6 @@
-const Decorator = fn => {};
+const Decorator = () => (_target: unknown, _key: string) => {};
 
-class a {
+class A {
     b() {}
     public e(): string {
         return '123';
@@ -46,17 +46,17 @@ class a {
     }
 }
 
-() => {
-    new a();
-};
+(() => {
+    new A();
+})();
 
-(): string => {
+((): string => {
     return '123';
-};
+})();
 
-() => {
+(() => {
     return '123';
-};
+})();
 
 const arrow = (): string => '123';
 const arrow2 = (param: string): string => param;
@@ -65,19 +65,19 @@ const arrow4 = () => '123';
 const arrow5 = (param: string) =>
     param +
     function () {
-        new a();
+        new A();
     };
 
-+function (): string {
++(function (): string {
     return '123';
-};
+})();
 
-+function () {
++(function () {
     return '123';
-};
+})();
 
 function ab() {
-    new a();
+    new A();
 }
 
 function ab2() {
