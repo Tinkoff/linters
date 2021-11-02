@@ -31,3 +31,9 @@ module.exports = require('@tinkoff/stylelint-config/prettier');
 ```js
 module.exports = require('@tinkoff/stylelint-config/angular');
 ```
+
+-   **taiga-ui**
+
+```js
+module.exports = require('@tinkoff/stylelint-config/taiga-ui');
+```
