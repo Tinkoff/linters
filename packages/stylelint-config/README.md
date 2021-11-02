@@ -25,3 +25,9 @@ More information about available at [stylelint documentation](https://github.com
 ```js
 module.exports = require('@tinkoff/stylelint-config/prettier');
 ```
+
+-   **angular**
+
+```js
+module.exports = require('@tinkoff/stylelint-config/angular');
+```
