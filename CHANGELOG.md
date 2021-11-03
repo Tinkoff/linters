@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.10.0...v1.11.0) (2021-11-03)
+
+
+### Features
+
+* **eslint-plugin:** deprecate current rules ([#136](https://github.com/TinkoffCreditSystems/linters/issues/136)) ([251e45c](https://github.com/TinkoffCreditSystems/linters/commit/251e45cdbbebe55c8860c64212c467448752a087))
+
+
+
 ## [1.10.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.8.0...v1.10.0) (2021-11-03)
 
 
