@@ -1,21 +1,25 @@
 # Tinkoff eslint configurations
 
-This repository contains base and specific configurations for JavaScript / Typescript, React and Angular applications and libraries.
+Monorepo for all the tooling which enables ESLint, Prettier, Stylelint to support TypeScript projects.
 
-## eslint-config
+### ♻️ Sharable configs
 
-Base rules pack for applications and libraries, documentation available at [packages/eslint-config/README.md](packages/eslint-config/README.md)
+| **Package**                                                                                | **Version**                                                                     | **README**                                                                                      | **Downloads**                                                                                                                 |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [@tinkoff/eslint-config](https://npmjs.com/package/@tinkoff/eslint-config)                 | ![](https://img.shields.io/npm/v/%40tinkoff%2Feslint-config/latest.svg)         | [![](https://img.shields.io/badge/README--green.svg)](packages/eslint-config/README.md)         | [![](https://img.shields.io/npm/dw/@tinkoff/eslint-config)](https://npmjs.com/package/@tinkoff/eslint-config)                 |
+| [@tinkoff/eslint-config-react](https://npmjs.com/package/@tinkoff/eslint-config-react)     | ![](https://img.shields.io/npm/v/%40tinkoff%2Feslint-config-react/latest.svg)   | [![](https://img.shields.io/badge/README--green.svg)](packages/eslint-config-react/README.md)   | [![](https://img.shields.io/npm/dw/@tinkoff/eslint-config-react)](https://npmjs.com/package/@tinkoff/eslint-config-react)     |
+| [@tinkoff/eslint-config-angular](https://npmjs.com/package/@tinkoff/eslint-config-angular) | ![](https://img.shields.io/npm/v/%40tinkoff%2Feslint-config-angular/latest.svg) | [![](https://img.shields.io/badge/README--green.svg)](packages/eslint-config-angular/README.md) | [![](https://img.shields.io/npm/dw/@tinkoff/eslint-config-angular)](https://npmjs.com/package/@tinkoff/eslint-config-angular) |
+| [@tinkoff/prettier-config](https://npmjs.com/package/@tinkoff/prettier-config)             | ![](https://img.shields.io/npm/v/%40tinkoff%2Fprettier-config/latest.svg)       | [![](https://img.shields.io/badge/README--green.svg)](packages/prettier-config/README.md)       | [![](https://img.shields.io/npm/dw/@tinkoff/prettier-config)](https://npmjs.com/package/@tinkoff/prettier-config)             |
+| [@tinkoff/stylelint-config](https://npmjs.com/package/@tinkoff/stylelint-config)           | ![](https://img.shields.io/npm/v/%40tinkoff%2Fstylelint-config/latest.svg)      | [![](https://img.shields.io/badge/README--green.svg)](packages/stylelint-config/README.md)      | [![](https://img.shields.io/npm/dw/@tinkoff/stylelint-config)](https://npmjs.com/package/@tinkoff/stylelint-config)           |
 
-## eslint-config-react
+### ❇️ Plugins
 
-Rules pack specific for React application, documentation available at [packages/eslint-config-react/README.md](packages/eslint-config-react/README.md)
+| **Package**                                                                | **Version**                                                             | **README**                                                                              | **Downloads**                                                                                                 |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [@tinkoff/eslint-plugin](https://npmjs.com/package/@tinkoff/eslint-plugin) | ![](https://img.shields.io/npm/v/%40tinkoff%2Feslint-plugin/latest.svg) | [![](https://img.shields.io/badge/README--green.svg)](packages/eslint-plugin/README.md) | [![](https://img.shields.io/npm/dw/@tinkoff/eslint-plugin)](https://npmjs.com/package/@tinkoff/eslint-plugin) |
 
-## eslint-config-angular
+### ⚠️ Deprecated
 
-> in development mode!
-
-Rules pack specific for Angular application, documentation available at [packages/eslint-config-angular/README.md](packages/eslint-config-angular/README.md)
-
-## prettier-config
-
-Common Prettier configuration for Tinkoff projects, documentation available at [packages/prettier-config/README.md](packages/prettier-config-angular/README.md)
+| **Package**                                                    | **Version**                                                       | **README**                                                                        | **Downloads**                                                                                     |
+| -------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [@tinkoff/linters](https://npmjs.com/package/@tinkoff/linters) | ![](https://img.shields.io/npm/v/%40tinkoff%2Flinters/latest.svg) | [![](https://img.shields.io/badge/README--green.svg)](packages/linters/README.md) | [![](https://img.shields.io/npm/dw/@tinkoff/linters)](https://npmjs.com/package/@tinkoff/linters) |
