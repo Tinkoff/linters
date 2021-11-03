@@ -3,11 +3,7 @@
     "version": "1.11.0",
     "description": "Tinkoff ESLint configs to rule them all",
     "license": "Apache-2.0",
-    "keywords": [
-        "eslint",
-        "eslintconfig",
-        "eslint-config"
-    ],
+    "keywords": ["eslint", "eslintconfig", "eslint-config"],
     "scripts": {},
     "main": "index.js",
     "author": {
@@ -34,7 +30,7 @@
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-promise": "^4.2.1",
         "eslint-plugin-sort-class-members": "^1.7.0",
-        "prettier": "2.2.1"
+        "prettier": "2.4.1"
     },
     "publishConfig": {
         "access": "public"

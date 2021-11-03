@@ -1,6 +1,9 @@
 *.lint
 *.fix
+lerna.json
+package.json
 package-lock.json
+CHANGELOG.md
 
 __temp_packages__
 

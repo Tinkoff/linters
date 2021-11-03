@@ -18,7 +18,8 @@ npm i --save-dev @tinkoff/stylelint-config
 }
 ```
 
-More information about available at [stylelint documentation](https://github.com/stylelint/stylelint/blob/main/docs/user-guide/configure.md)
+More information about available at
+[stylelint documentation](https://github.com/stylelint/stylelint/blob/main/docs/user-guide/configure.md)
 
 ### Available presets
 

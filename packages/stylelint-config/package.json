@@ -3,10 +3,7 @@
     "version": "1.12.1",
     "description": "Tinkoff stylelint config",
     "license": "Apache-2.0",
-    "keywords": [
-        "stylelint",
-        "prettier"
-    ],
+    "keywords": ["stylelint", "prettier"],
     "main": "stylelint.config.js",
     "author": {
         "name": "Tinkoff Team",
