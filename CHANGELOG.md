@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.11.0...v1.12.0) (2021-11-03)
+
+
+### Features
+
+* **stylelint-config:** decompose to less, angular presets ([#138](https://github.com/TinkoffCreditSystems/linters/issues/138)) ([7fefd6e](https://github.com/TinkoffCreditSystems/linters/commit/7fefd6e68f750af4ec9ac9d018fb86c06238efd9))
+
+
+
 ## [1.11.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.10.0...v1.11.0) (2021-11-03)
 
 
