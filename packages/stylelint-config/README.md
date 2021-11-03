@@ -12,8 +12,10 @@ npm i --save-dev @tinkoff/stylelint-config
 
 1. Create `stylelint.config.js` at project root
 
-```js
-module.exports = require('@tinkoff/stylelint-config');
+```json
+{
+    "extends": ["@tinkoff/stylelint-config"]
+}
 ```
 
 More information about available at [stylelint documentation](https://github.com/stylelint/stylelint/blob/main/docs/user-guide/configure.md)
@@ -23,17 +25,23 @@ More information about available at [stylelint documentation](https://github.com
 -   **prettier**
 
 ```js
-module.exports = require('@tinkoff/stylelint-config/prettier');
+{
+    "extends": ["@tinkoff/stylelint-config/prettier"]
+}
+```
+
+-   **less**
+
+```json
+{
+    "extends": ["@tinkoff/stylelint-config/less"]
+}
 ```
 
 -   **angular**
 
-```js
-module.exports = require('@tinkoff/stylelint-config/angular');
-```
-
--   **taiga-ui**
-
-```js
-module.exports = require('@tinkoff/stylelint-config/taiga-ui');
+```json
+{
+    "extends": ["@tinkoff/stylelint-config/angular"]
+}
 ```
