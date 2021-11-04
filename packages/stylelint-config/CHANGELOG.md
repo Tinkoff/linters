@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.12.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.12.0...v1.12.1) (2021-11-04)
+
+
+### Bug Fixes
+
+* **stylelint-config:** ignore ng-deep ([#140](https://github.com/TinkoffCreditSystems/linters/issues/140)) ([331e3f6](https://github.com/TinkoffCreditSystems/linters/commit/331e3f6abcc8613c10e1e61aa7f2b270250b49f1))
+
+
+
 ## [1.12.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.11.0...v1.12.0) (2021-11-03)
 
 
