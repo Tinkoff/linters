@@ -21,3 +21,6 @@ packages/linters/tslint/rules
 # Other
 .tmp
 debug-path
+
+# Husky
+.husky/_
