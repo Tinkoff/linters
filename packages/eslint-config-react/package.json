@@ -1,9 +1,13 @@
 {
     "name": "@tinkoff/eslint-config-react",
-    "version": "1.12.2",
+    "version": "1.13.0",
     "description": "Tinkoff ESLint configs for React apps",
     "license": "Apache-2.0",
-    "keywords": ["eslint", "eslintconfig", "eslint-config"],
+    "keywords": [
+        "eslint",
+        "eslintconfig",
+        "eslint-config"
+    ],
     "scripts": {},
     "main": "index.js",
     "author": {
@@ -21,7 +25,7 @@
         "eslint-plugin-react-hooks": "^4.0.8"
     },
     "devDependencies": {
-        "@tinkoff/eslint-config": "^1.11.0"
+        "@tinkoff/eslint-config": "^1.13.0"
     },
     "peerDependencies": {
         "eslint": "^7.5.0",

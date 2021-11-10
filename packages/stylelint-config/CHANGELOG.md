@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.12.2...v1.13.0) (2021-11-10)
+
+
+### Features
+
+* **prettier-config:** expose configs for angular ([#139](https://github.com/TinkoffCreditSystems/linters/issues/139)) ([7291ad7](https://github.com/TinkoffCreditSystems/linters/commit/7291ad7ae95c6ff6729b0400efc37dba1ca62949))
+
+
+
 ### [1.12.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.12.0...v1.12.1) (2021-11-04)
 
 
