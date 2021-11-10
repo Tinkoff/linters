@@ -3,163 +3,111 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-### [1.12.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.12.0...v1.12.1) (2021-11-04)
-
+### [1.12.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.12.1...v1.12.2) (2021-11-10)
 
 ### Bug Fixes
 
-* **stylelint-config:** ignore ng-deep ([#140](https://github.com/TinkoffCreditSystems/linters/issues/140)) ([331e3f6](https://github.com/TinkoffCreditSystems/linters/commit/331e3f6abcc8613c10e1e61aa7f2b270250b49f1))
+-   **eslint-config-react:** downgrade back to 6.4.1 for avoid broken eslint-plugin-jsx-a11y 6.5.0 ([08ac7ff](https://github.com/TinkoffCreditSystems/linters/commit/08ac7ff7c72c092842e5115e5ea510dff49c1fdf))
 
+### [1.12.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.12.0...v1.12.1) (2021-11-04)
 
+### Bug Fixes
+
+-   **stylelint-config:** ignore ng-deep ([#140](https://github.com/TinkoffCreditSystems/linters/issues/140)) ([331e3f6](https://github.com/TinkoffCreditSystems/linters/commit/331e3f6abcc8613c10e1e61aa7f2b270250b49f1))
 
 ## [1.12.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.11.0...v1.12.0) (2021-11-03)
 
-
 ### Features
 
-* **stylelint-config:** decompose to less, angular presets ([#138](https://github.com/TinkoffCreditSystems/linters/issues/138)) ([7fefd6e](https://github.com/TinkoffCreditSystems/linters/commit/7fefd6e68f750af4ec9ac9d018fb86c06238efd9))
-
-
+-   **stylelint-config:** decompose to less, angular presets ([#138](https://github.com/TinkoffCreditSystems/linters/issues/138)) ([7fefd6e](https://github.com/TinkoffCreditSystems/linters/commit/7fefd6e68f750af4ec9ac9d018fb86c06238efd9))
 
 ## [1.11.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.10.0...v1.11.0) (2021-11-03)
 
-
 ### Features
 
-* **eslint-plugin:** deprecate current rules ([#136](https://github.com/TinkoffCreditSystems/linters/issues/136)) ([251e45c](https://github.com/TinkoffCreditSystems/linters/commit/251e45cdbbebe55c8860c64212c467448752a087))
-
-
+-   **eslint-plugin:** deprecate current rules ([#136](https://github.com/TinkoffCreditSystems/linters/issues/136)) ([251e45c](https://github.com/TinkoffCreditSystems/linters/commit/251e45cdbbebe55c8860c64212c467448752a087))
 
 ## [1.10.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.8.0...v1.10.0) (2021-11-03)
 
-
 ### Features
 
-* **stylelint-config:** expose configs for taiga-ui ([4cbc6b0](https://github.com/TinkoffCreditSystems/linters/commit/4cbc6b0619805ae052f17005e91017cb0b8c50bb))
-
-
+-   **stylelint-config:** expose configs for taiga-ui ([4cbc6b0](https://github.com/TinkoffCreditSystems/linters/commit/4cbc6b0619805ae052f17005e91017cb0b8c50bb))
 
 ## [1.8.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.7.1...v1.8.0) (2021-11-02)
 
-
 ### Features
 
-* **stylelint-config:** expose configs for angular ([0feaafe](https://github.com/TinkoffCreditSystems/linters/commit/0feaafe82da3b9464aa03d1de0f608ddbeb1a66d))
-
-
+-   **stylelint-config:** expose configs for angular ([0feaafe](https://github.com/TinkoffCreditSystems/linters/commit/0feaafe82da3b9464aa03d1de0f608ddbeb1a66d))
 
 ### [1.7.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.7.0...v1.7.1) (2021-11-02)
 
 **Note:** Version bump only for package linters-monorepo
 
-
-
-
-
 ## [1.7.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.5.3...v1.7.0) (2021-11-02)
-
 
 ### Features
 
-* **stylelint-config:** expose configs for stylelint ([1db1b61](https://github.com/TinkoffCreditSystems/linters/commit/1db1b61a28ad8d0320601500e0b4cfb15cf800c7))
-
-
+-   **stylelint-config:** expose configs for stylelint ([1db1b61](https://github.com/TinkoffCreditSystems/linters/commit/1db1b61a28ad8d0320601500e0b4cfb15cf800c7))
 
 ### [1.5.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.5.2...v1.5.3) (2021-10-28)
 
 **Note:** Version bump only for package linters-monorepo
 
-
-
-
-
 ### [1.5.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.5.1...v1.5.2) (2021-10-14)
-
 
 ### Bug Fixes
 
-*  rule react/jsx-props-no-spreading disabled ([04b992a](https://github.com/TinkoffCreditSystems/linters/commit/04b992a12eac2fa0a2a779011c7da414980813aa))
-
-
+-   rule react/jsx-props-no-spreading disabled ([04b992a](https://github.com/TinkoffCreditSystems/linters/commit/04b992a12eac2fa0a2a779011c7da414980813aa))
 
 ### [1.5.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.5.0...v1.5.1) (2021-10-13)
 
 **Note:** Version bump only for package linters-monorepo
 
-
-
-
-
 ## [1.5.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.4.0...v1.5.0) (2021-10-08)
-
 
 ### Features
 
-* update [@typescript-eslint](https://github.com/typescript-eslint) dependencies ([#120](https://github.com/TinkoffCreditSystems/linters/issues/120)) ([353dc07](https://github.com/TinkoffCreditSystems/linters/commit/353dc078b5eb75edf9b189a3ddf1a9f81b1e450c))
-
-
+-   update [@typescript-eslint](https://github.com/typescript-eslint) dependencies ([#120](https://github.com/TinkoffCreditSystems/linters/issues/120)) ([353dc07](https://github.com/TinkoffCreditSystems/linters/commit/353dc078b5eb75edf9b189a3ddf1a9f81b1e450c))
 
 ## [1.4.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.3.0...v1.4.0) (2021-10-08)
 
-
 ### Features
 
-* remove react-perf plugin ([a9a918b](https://github.com/TinkoffCreditSystems/linters/commit/a9a918b821c75c7674f0ba874717d2231fad3605))
-
-
+-   remove react-perf plugin ([a9a918b](https://github.com/TinkoffCreditSystems/linters/commit/a9a918b821c75c7674f0ba874717d2231fad3605))
 
 ## [1.3.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.4...v1.3.0) (2021-09-16)
 
-
 ### Features
 
-* **prettier:** add prettier config ([594a691](https://github.com/TinkoffCreditSystems/linters/commit/594a6910517885364c4e92454170c2109e2f5e6e))
-
-
+-   **prettier:** add prettier config ([594a691](https://github.com/TinkoffCreditSystems/linters/commit/594a6910517885364c4e92454170c2109e2f5e6e))
 
 ### [1.2.4](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.3...v1.2.4) (2021-08-11)
 
-
 ### Bug Fixes
 
-* **eslint-config:** fix no-shadow rule and import type autofix conflict ([0c0c260](https://github.com/TinkoffCreditSystems/linters/commit/0c0c260841230b09afb7e3ac9e120ebb78ef4967))
-
-
+-   **eslint-config:** fix no-shadow rule and import type autofix conflict ([0c0c260](https://github.com/TinkoffCreditSystems/linters/commit/0c0c260841230b09afb7e3ac9e120ebb78ef4967))
 
 ### [1.2.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.2...v1.2.3) (2021-08-11)
 
-
 ### Bug Fixes
 
-* **eslint-config:** support superagent library in jest/expect-expect rule ([3d56225](https://github.com/TinkoffCreditSystems/linters/commit/3d56225872c6d693e42e127e76c47fc1d059178e))
-
-
+-   **eslint-config:** support superagent library in jest/expect-expect rule ([3d56225](https://github.com/TinkoffCreditSystems/linters/commit/3d56225872c6d693e42e127e76c47fc1d059178e))
 
 ### [1.2.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.1...v1.2.2) (2021-07-26)
 
 **Note:** Version bump only for package linters-monorepo
 
-
-
-
-
 ### [1.2.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.0...v1.2.1) (2021-07-13)
-
 
 ### Bug Fixes
 
-* migrate from babel-eslint ([#111](https://github.com/TinkoffCreditSystems/linters/issues/111)) ([e6731a3](https://github.com/TinkoffCreditSystems/linters/commit/e6731a3ea86271496ff667ec7330124f91aeed1c))
-
-
+-   migrate from babel-eslint ([#111](https://github.com/TinkoffCreditSystems/linters/issues/111)) ([e6731a3](https://github.com/TinkoffCreditSystems/linters/commit/e6731a3ea86271496ff667ec7330124f91aeed1c))
 
 ## [1.2.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.1.2...v1.2.0) (2021-07-11)
 
-
 ### Features
 
-* **eslint-config:** bump [@typescript-eslint](https://github.com/typescript-eslint) modules to ^4.28.2 ([#109](https://github.com/TinkoffCreditSystems/linters/issues/109)) ([93db9af](https://github.com/TinkoffCreditSystems/linters/commit/93db9afed71a5033ece1f05d5a029b98e799b53a))
-
-
+-   **eslint-config:** bump [@typescript-eslint](https://github.com/typescript-eslint) modules to ^4.28.2 ([#109](https://github.com/TinkoffCreditSystems/linters/issues/109)) ([93db9af](https://github.com/TinkoffCreditSystems/linters/commit/93db9afed71a5033ece1f05d5a029b98e799b53a))
 
 ### [1.1.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.1.1...v1.1.2) (2021-06-22)
 

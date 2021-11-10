@@ -1,14 +1,9 @@
 {
-    "packages": [
-        "packages/*"
-    ],
-    "version": "1.12.1",
+    "packages": ["packages/*"],
+    "version": "1.12.2",
     "command": {
         "version": {
-            "allowBranch": [
-                "master",
-                "release/*"
-            ],
+            "allowBranch": ["master", "release/*"],
             "message": "chore(release): publish %s"
         }
     }

@@ -3,80 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.12.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.12.1...v1.12.2) (2021-11-10)
+
+### Bug Fixes
+
+-   **eslint-config-react:** downgrade back to 6.4.1 for avoid broken eslint-plugin-jsx-a11y 6.5.0 ([08ac7ff](https://github.com/TinkoffCreditSystems/linters/commit/08ac7ff7c72c092842e5115e5ea510dff49c1fdf))
+
 ## [1.11.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.10.0...v1.11.0) (2021-11-03)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ### [1.5.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.5.1...v1.5.2) (2021-10-14)
-
 
 ### Bug Fixes
 
-*  rule react/jsx-props-no-spreading disabled ([04b992a](https://github.com/TinkoffCreditSystems/linters/commit/04b992a12eac2fa0a2a779011c7da414980813aa))
-
-
+-   rule react/jsx-props-no-spreading disabled ([04b992a](https://github.com/TinkoffCreditSystems/linters/commit/04b992a12eac2fa0a2a779011c7da414980813aa))
 
 ## [1.5.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.4.0...v1.5.0) (2021-10-08)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ## [1.4.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.3.0...v1.4.0) (2021-10-08)
-
 
 ### Features
 
-* remove react-perf plugin ([a9a918b](https://github.com/TinkoffCreditSystems/linters/commit/a9a918b821c75c7674f0ba874717d2231fad3605))
-
-
+-   remove react-perf plugin ([a9a918b](https://github.com/TinkoffCreditSystems/linters/commit/a9a918b821c75c7674f0ba874717d2231fad3605))
 
 ### [1.2.4](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.3...v1.2.4) (2021-08-11)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ### [1.2.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.2...v1.2.3) (2021-08-11)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
-
-
-
-
 
 ### [1.2.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.1...v1.2.2) (2021-07-26)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ### [1.2.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.2.0...v1.2.1) (2021-07-13)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
 
-
-
-
-
 ## [1.2.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.1.2...v1.2.0) (2021-07-11)
-
 
 ### Features
 
-* **eslint-config:** bump [@typescript-eslint](https://github.com/typescript-eslint) modules to ^4.28.2 ([#109](https://github.com/TinkoffCreditSystems/linters/issues/109)) ([93db9af](https://github.com/TinkoffCreditSystems/linters/commit/93db9afed71a5033ece1f05d5a029b98e799b53a))
-
-
+-   **eslint-config:** bump [@typescript-eslint](https://github.com/typescript-eslint) modules to ^4.28.2 ([#109](https://github.com/TinkoffCreditSystems/linters/issues/109)) ([93db9af](https://github.com/TinkoffCreditSystems/linters/commit/93db9afed71a5033ece1f05d5a029b98e799b53a))
 
 ### [1.1.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.1.0...v1.1.1) (2021-06-08)
 
