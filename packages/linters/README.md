@@ -44,7 +44,8 @@ Try our beta with ESLint!
 $ npm install @tinkoff/linters@beta --save-dev
 ```
 
-> **You don't need** to install `eslint`, `tslint`, `prettier` or `stylelint`, they are added as dependencies of `@tinkoff/linters` and will be installed automatically.
+> **You don't need** to install `eslint`, `tslint`, `prettier` or `stylelint`, they are added as dependencies of
+> `@tinkoff/linters` and will be installed automatically.
 
 <details>
     <summary>If you have any of those deps or experiencing problems</summary>
@@ -59,7 +60,8 @@ npm uninstall $(node -e 'const p=require("./package");console.log(Object.keys(p.
 
 ## ESLint + Prettier
 
-This preset is compatible with any and ES Modules based project, written in `TS` and/or `ES6+`. No matter is it `node`/`react` or `angular`.
+This preset is compatible with any and ES Modules based project, written in `TS` and/or `ES6+`. No matter is it
+`node`/`react` or `angular`.
 
 For now there is additional `angular` rules available, and we planning to add `RxJS` rules in near future.
 
@@ -179,7 +181,8 @@ $ npm i husky lint-staged --save-dev
 }
 ```
 
-> You dont have to add trailing `git add` when using `lint-staged@10+`. [See in its docs](https://github.com/okonet/lint-staged/blob/f9e128d/README.md#reformatting-the-code).
+> You dont have to add trailing `git add` when using `lint-staged@10+`.
+> [See in its docs](https://github.com/okonet/lint-staged/blob/f9e128d/README.md#reformatting-the-code).
 
 ## TSLint (deprecated)
 
@@ -188,7 +191,8 @@ TSLint no longer supported. See [roadmap](/ROADMAP.md).
 <details>
     <summary>Installation</summary>
 
-For TSLint and Stylelint configs we use `bases/mixins` concept. You should extend your TSLint and Stylelint configs with only one `bases` config, and any number of `mixins` configs.
+For TSLint and Stylelint configs we use `bases/mixins` concept. You should extend your TSLint and Stylelint configs with
+only one `bases` config, and any number of `mixins` configs.
 
 Example of `tslint.json` file in your project:
 
@@ -214,8 +218,8 @@ Eslint work with `.ts` files "out-of-the-box", just install extension:
 
 ### `0:0 error Parsing error: File '/…/myProjectRoot/tsconfig.json' not found`
 
-By default `tsconfig.json` is expected in the same root folder as `.eslintrc.js`.
-If you have `tsconfig.json` somewhere in your subfolder you must create additional `.eslintrc.js` in the same folder with your `tsconfig.json`.
+By default `tsconfig.json` is expected in the same root folder as `.eslintrc.js`. If you have `tsconfig.json` somewhere
+in your subfolder you must create additional `.eslintrc.js` in the same folder with your `tsconfig.json`.
 **`.eslintrc.js`**
 
 ```js
@@ -230,8 +234,7 @@ module.exports = {
 
 -   Make sure that you have `.ts[x]` file from the error is included in your root `./tsconfig.json`.
     -   If you dont want to include all `.ts` files in root config then read previous tip.
--   OR Update config: <br/>
-    **`.eslintrc.js`**
+-   OR Update config: <br/> **`.eslintrc.js`**
     ```diff
     module.exports = {
         extends: [
@@ -243,7 +246,8 @@ module.exports = {
     +    },
     }
     ```
-    > `createDefaultProgram` may cause [performance issues](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration)
+    > `createDefaultProgram` may cause
+    > [performance issues](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration)
 
 <br />
 <br />
@@ -276,7 +280,8 @@ We arrange members of Angular components in the following order:
 
 ### `tinkoff-condition-breaks`
 
-When a ternary operator contains complex expressions, it becomes difficult to read and understand. In that case we divide it into several lines.
+When a ternary operator contains complex expressions, it becomes difficult to read and understand. In that case we
+divide it into several lines.
 
 ```ts
 // bad
@@ -291,8 +296,8 @@ const result = isShown ? [] : null;
 
 ### `tinkoff-method-return-type`
 
-If a function or a method returns result, we must specify its type.
-The only exception is the arrow functions. For them it is not necessary.
+If a function or a method returns result, we must specify its type. The only exception is the arrow functions. For them
+it is not necessary.
 
 ```ts
 class User {
@@ -326,8 +331,8 @@ const doSomething = () => {
 
 ### `tinkoff-new-line-after-variable-declaration`
 
-We separate variable declarations from the previous and subsequent code with an empty string.
-But we do not add an empty line before the first variable inside the block.
+We separate variable declarations from the previous and subsequent code with an empty string. But we do not add an empty
+line before the first variable inside the block.
 
 ```ts
 // bad
@@ -366,7 +371,8 @@ function doSomething(count: number): number {
 
 ## Badge
 
-Show that you use `@tinkoff/linters` in your project [![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters)
+Show that you use `@tinkoff/linters` in your project
+[![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters)
 
 ```md
 [![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters)

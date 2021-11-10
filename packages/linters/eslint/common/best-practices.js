@@ -20,8 +20,16 @@ module.exports = {
         'no-eval': 'error',
         'no-new-func': 'error',
         'no-implied-eval': 'error',
-        'no-prototype-builtins': breaking({since: 2, before: 'off', after: 'warn'}),
-        'no-extra-boolean-cast': breaking({since: 2, before: 'off', after: 'warn'}),
+        'no-prototype-builtins': breaking({
+            since: 2,
+            before: 'off',
+            after: 'warn',
+        }),
+        'no-extra-boolean-cast': breaking({
+            since: 2,
+            before: 'off',
+            after: 'warn',
+        }),
         'no-useless-escape': breaking({since: 2, before: 'off', after: 'warn'}),
         'guard-for-in': breaking({since: 2}), // Was'nt fully worked on tslint
         'no-labels': [

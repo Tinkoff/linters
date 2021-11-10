@@ -10,8 +10,9 @@ Install from npm
 npm i --save-dev @tinkoff/eslint-config
 ```
 
-Then, need to include necessary configurations sets to `.eslintrc`. Wee need to choose base configuration, and any necessary additional configs.
-Package include `eslint@7` and `prettier@2` dependencies, so you should remove `eslint`, `prettier`, and `@tinkoff/eslint-config` internal dependencies from your project `package.json`.
+Then, need to include necessary configurations sets to `.eslintrc`. Wee need to choose base configuration, and any
+necessary additional configs. Package include `eslint@7` and `prettier@2` dependencies, so you should remove `eslint`,
+`prettier`, and `@tinkoff/eslint-config` internal dependencies from your project `package.json`.
 
 ### Base configurations
 
@@ -48,7 +49,8 @@ Main configurations sets contains common rules
 -   `@tinkoff/eslint-config/app` - common rules and specific rules for applications
 -   `@tinkoff/eslint-config/lib` - common rules and specific rules for libraries
 
-Additional configurations sets. This configs **not** contain common eslint rules, and must be included with main configurations
+Additional configurations sets. This configs **not** contain common eslint rules, and must be included with main
+configurations
 
 -   `@tinkoff/eslint-config/jest` - rules for lint Jest test suits
 
@@ -61,11 +63,14 @@ Additional configurations sets. This configs **not** contain common eslint rules
 -   `eslint-plugin-import` - validate proper imports
 -   `eslint-plugin-promise` - enforce best practices for promises
 -   `eslint-plugin-jest` - validate jest tests
--   `@typescript-eslint/eslint-plugin` - lint TypeScript files, adopt many eslint rules to TS code, and provide specific TS rules
--   `eslint-plugin-prettier` - disable code formatting using eslint tools and transfers all the logic to a prettier, and report differences as eslint issues
+-   `@typescript-eslint/eslint-plugin` - lint TypeScript files, adopt many eslint rules to TS code, and provide specific
+    TS rules
+-   `eslint-plugin-prettier` - disable code formatting using eslint tools and transfers all the logic to a prettier, and
+    report differences as eslint issues
 
 ## Troubleshooting
 
 ### Wrong or duplicated eslint or some eslint plugins versions
 
-Try to remove `eslint`, `prettier`, and `@tinkoff/eslint-config` internal dependencies from your project `package.json`, then reinstall dependencies.
+Try to remove `eslint`, `prettier`, and `@tinkoff/eslint-config` internal dependencies from your project `package.json`,
+then reinstall dependencies.
