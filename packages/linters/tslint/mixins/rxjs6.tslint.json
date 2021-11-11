@@ -1,6 +1,6 @@
 {
-    "extends": ["./rxjs.common.tslint.json"],
-    "rules": {
-        "rxjs-proper-imports": true
-    }
+  "extends": ["./rxjs.common.tslint.json"],
+  "rules": {
+    "rxjs-proper-imports": true
+  }
 }

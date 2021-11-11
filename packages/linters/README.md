@@ -2,31 +2,31 @@
 
 This repository contains configuration files for the linters we use in Tinkoff. It includes:
 
--   configs and rules for [ESLint](https://eslint.org/)
--   configs and rules for [TSLint](https://palantir.github.io/tslint/) <small>(deprecated)</small>
--   configs for [Stylelint](https://stylelint.io/)
--   configs for [Prettier](https://prettier.io)
+- configs and rules for [ESLint](https://eslint.org/)
+- configs and rules for [TSLint](https://palantir.github.io/tslint/) <small>(deprecated)</small>
+- configs for [Stylelint](https://stylelint.io/)
+- configs for [Prettier](https://prettier.io)
 
 ## Table of Contents
 
 <!-- toc -->
 
--   [Install](#install)
--   [ESLint + Prettier](#eslint--prettier)
--   [Stylelint](#stylelint)
--   [Husky + lint-staged (recomended)](#husky--lint-staged-recomended)
--   [TSLint (deprecated)](#tslint-deprecated)
--   [VS Code](#vs-code)
--   [Troubleshooting](#troubleshooting)
-    -   [`0:0 error Parsing error: File '/…/myProjectRoot/tsconfig.json' not found`](#00-error-parsing-error-file-myprojectroottsconfigjson-not-found)
-    -   [`Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.`](#parsing-error-parseroptionsproject-has-been-set-for-typescript-eslintparser)
--   [Custom rules for TSLint](#custom-rules-for-tslint)
-    -   [`tinkoff-angular-member-ordering`](#tinkoff-angular-member-ordering)
-    -   [`tinkoff-condition-breaks`](#tinkoff-condition-breaks)
-    -   [`tinkoff-method-return-type`](#tinkoff-method-return-type)
-    -   [`tinkoff-new-line-after-variable-declaration`](#tinkoff-new-line-after-variable-declaration)
-    -   [`tinkoff-new-line-around-control-statement`](#tinkoff-new-line-around-control-statement)
--   [Badge](#badge)
+- [Install](#install)
+- [ESLint + Prettier](#eslint--prettier)
+- [Stylelint](#stylelint)
+- [Husky + lint-staged (recomended)](#husky--lint-staged-recomended)
+- [TSLint (deprecated)](#tslint-deprecated)
+- [VS Code](#vs-code)
+- [Troubleshooting](#troubleshooting)
+  - [`0:0 error Parsing error: File '/…/myProjectRoot/tsconfig.json' not found`](#00-error-parsing-error-file-myprojectroottsconfigjson-not-found)
+  - [`Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.`](#parsing-error-parseroptionsproject-has-been-set-for-typescript-eslintparser)
+- [Custom rules for TSLint](#custom-rules-for-tslint)
+  - [`tinkoff-angular-member-ordering`](#tinkoff-angular-member-ordering)
+  - [`tinkoff-condition-breaks`](#tinkoff-condition-breaks)
+  - [`tinkoff-method-return-type`](#tinkoff-method-return-type)
+  - [`tinkoff-new-line-after-variable-declaration`](#tinkoff-new-line-after-variable-declaration)
+  - [`tinkoff-new-line-around-control-statement`](#tinkoff-new-line-around-control-statement)
+- [Badge](#badge)
 
 <!-- tocstop -->
 
@@ -71,10 +71,10 @@ Add following files in your project:
 
 ```js
 module.exports = {
-    extends: [
-        './node_modules/@tinkoff/linters/eslint/base/prettier',
-        './node_modules/@tinkoff/linters/eslint/angular',
-    ],
+  extends: [
+    './node_modules/@tinkoff/linters/eslint/base/prettier',
+    './node_modules/@tinkoff/linters/eslint/angular',
+  ],
 };
 ```
 
@@ -82,7 +82,7 @@ module.exports = {
 
 ```js
 module.exports = {
-    ...require('@tinkoff/linters/prettier/prettier.config'),
+  ...require('@tinkoff/linters/prettier/prettier.config'),
 };
 ```
 
@@ -110,10 +110,10 @@ You need to use different base config:
 
 ```js
 module.exports = {
-    extends: [
-        './node_modules/@tinkoff/linters/eslint/base',
-        './node_modules/@tinkoff/linters/eslint/angular',
-    ],
+  extends: [
+    './node_modules/@tinkoff/linters/eslint/base',
+    './node_modules/@tinkoff/linters/eslint/angular',
+  ],
 };
 ```
 
@@ -121,7 +121,7 @@ module.exports = {
 
 ```js
 module.exports = {
-    ...require('@tinkoff/linters/prettier/prettier.config'),
+  ...require('@tinkoff/linters/prettier/prettier.config'),
 };
 ```
 
@@ -144,7 +144,7 @@ You should extend your Stylelint configs with only one `bases` config:
 
 ```json
 {
-    "extends": ["@tinkoff/linters/stylelint/bases/prettier.stylelint.json"]
+  "extends": ["@tinkoff/linters/stylelint/bases/prettier.stylelint.json"]
 }
 ```
 
@@ -198,11 +198,11 @@ Example of `tslint.json` file in your project:
 
 ```json
 {
-    "extends": [
-        "@tinkoff/linters/tslint/bases/prettier.tslint.json",
-        "@tinkoff/linters/tslint/mixins/rxjs5.5.tslint.json", // For RxJs 5.5
-        "@tinkoff/linters/tslint/mixins/rxjs6.tslint.json" // For RxJS 6+
-    ]
+  "extends": [
+    "@tinkoff/linters/tslint/bases/prettier.tslint.json",
+    "@tinkoff/linters/tslint/mixins/rxjs5.5.tslint.json", // For RxJs 5.5
+    "@tinkoff/linters/tslint/mixins/rxjs6.tslint.json" // For RxJS 6+
+  ]
 }
 ```
 
@@ -212,7 +212,7 @@ Example of `tslint.json` file in your project:
 
 Eslint work with `.ts` files "out-of-the-box", just install extension:
 
--   Install [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- Install [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Troubleshooting
 
@@ -224,30 +224,30 @@ in your subfolder you must create additional `.eslintrc.js` in the same folder w
 
 ```js
 module.exports = {
-    parserOptions: {
-        tsconfigRootDir: __dirname,
-    },
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+  },
 };
 ```
 
 ### `Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.`
 
--   Make sure that you have `.ts[x]` file from the error is included in your root `./tsconfig.json`.
-    -   If you dont want to include all `.ts` files in root config then read previous tip.
--   OR Update config: <br/> **`.eslintrc.js`**
-    ```diff
-    module.exports = {
-        extends: [
-            './node_modules/@tinkoff/linters/eslint/base',
-            './node_modules/@tinkoff/linters/eslint/angular',
-        ],
-    +    parserOptions: {
-    +        createDefaultProgram: true, // Allows to work with non-ts files
-    +    },
-    }
-    ```
-    > `createDefaultProgram` may cause
-    > [performance issues](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration)
+- Make sure that you have `.ts[x]` file from the error is included in your root `./tsconfig.json`.
+  - If you dont want to include all `.ts` files in root config then read previous tip.
+- OR Update config: <br/> **`.eslintrc.js`**
+  ```diff
+  module.exports = {
+      extends: [
+          './node_modules/@tinkoff/linters/eslint/base',
+          './node_modules/@tinkoff/linters/eslint/angular',
+      ],
+  +    parserOptions: {
+  +        createDefaultProgram: true, // Allows to work with non-ts files
+  +    },
+  }
+  ```
+  > `createDefaultProgram` may cause
+  > [performance issues](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration)
 
 <br />
 <br />
@@ -259,24 +259,24 @@ module.exports = {
 
 We follow some rules which are not implemented in TSLint. So we implemented them ourselves.
 
--   [`tinkoff-angular-member-ordering`](#tinkoff-angular-member-ordering)
--   [`tinkoff-condition-breaks`](#tinkoff-condition-breaks)
--   [`tinkoff-method-return-type`](#tinkoff-method-return-type)
--   [`tinkoff-new-line-after-variable-declaration`](#tinkoff-new-line-after-variable-declaration)
--   [`tinkoff-new-line-around-control-statement`](#tinkoff-new-line-around-control-statement)
+- [`tinkoff-angular-member-ordering`](#tinkoff-angular-member-ordering)
+- [`tinkoff-condition-breaks`](#tinkoff-condition-breaks)
+- [`tinkoff-method-return-type`](#tinkoff-method-return-type)
+- [`tinkoff-new-line-after-variable-declaration`](#tinkoff-new-line-after-variable-declaration)
+- [`tinkoff-new-line-around-control-statement`](#tinkoff-new-line-around-control-statement)
 
 ### `tinkoff-angular-member-ordering`
 
 We arrange members of Angular components in the following order:
 
--   public static members;
--   members decorated with `@Input()` (both fields and setters);
--   members decorated with `@Output()`;
--   other public members;
--   protected static members;
--   protected instance members;
--   private static members;
--   private members.
+- public static members;
+- members decorated with `@Input()` (both fields and setters);
+- members decorated with `@Output()`;
+- other public members;
+- protected static members;
+- protected instance members;
+- private static members;
+- private members.
 
 ### `tinkoff-condition-breaks`
 
@@ -286,9 +286,9 @@ divide it into several lines.
 ```ts
 // bad
 const defaultQuestionnaire =
-    this.isCompany || this.accountIsBlocked
-        ? defaultQuestionnaireCompany && 'super text'
-        : defaultQuestionnaireIp;
+  this.isCompany || this.accountIsBlocked
+    ? defaultQuestionnaireCompany && 'super text'
+    : defaultQuestionnaireIp;
 
 // good
 const result = isShown ? [] : null;
@@ -301,31 +301,31 @@ it is not necessary.
 
 ```ts
 class User {
-    constructor(name: string, age: number) {}
+  constructor(name: string, age: number) {}
 
-    // good
-    getStatus(): string {}
+  // good
+  getStatus(): string {}
 
-    // bad
-    getFullname() {}
+  // bad
+  getFullname() {}
 
-    // ok
-    setStatus(status: string) {}
+  // ok
+  setStatus(status: string) {}
 }
 
 // bad
 function getAge() {
-    return 50;
+  return 50;
 }
 
 // good
 function getName(): string {
-    return 'Bob';
+  return 'Bob';
 }
 
 // good
 const doSomething = () => {
-    return 'done';
+  return 'done';
 };
 ```
 
@@ -360,12 +360,12 @@ But we do not add an empty line before the first variable inside the block.
 
 ```ts
 function doSomething(count: number): number {
-    if (age > 30) {
-    }
+  if (age > 30) {
+  }
 
-    for (let i = 0; i < 10; i++) {}
+  for (let i = 0; i < 10; i++) {}
 
-    return {name, age};
+  return { name, age };
 }
 ```
 

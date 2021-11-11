@@ -1,7 +1,7 @@
 module.exports = {
-    extends: ['./index'],
+  extends: ['./index'],
 
-    plugins: [],
+  plugins: [],
 
-    rules: {},
+  rules: {},
 };

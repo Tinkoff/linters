@@ -1,6 +1,6 @@
 {
-    "extends": ["./tslint/bases/prettier.tslint.json"],
-    "rules": {
-        "no-use-before-declare": false
-    }
+  "extends": ["./tslint/bases/prettier.tslint.json"],
+  "rules": {
+    "no-use-before-declare": false
+  }
 }

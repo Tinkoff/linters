@@ -1,6 +1,6 @@
 {
-    "rulesDirectory": ["../../../src"],
-    "rules": {
-        "tinkoff-angular-member-ordering": true
-    }
+  "rulesDirectory": ["../../../src"],
+  "rules": {
+    "tinkoff-angular-member-ordering": true
+  }
 }

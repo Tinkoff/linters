@@ -2,10 +2,10 @@
 
 ```json5
 {
-    plugins: ['@tinkoff/eslint-plugin'],
-    rules: {
-        // ...
-    },
+  plugins: ['@tinkoff/eslint-plugin'],
+  rules: {
+    // ...
+  },
 }
 ```
 

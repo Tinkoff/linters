@@ -14,7 +14,7 @@ npm i --save-dev @tinkoff/stylelint-config
 
 ```json
 {
-    "extends": ["@tinkoff/stylelint-config"]
+  "extends": ["@tinkoff/stylelint-config"]
 }
 ```
 
@@ -23,7 +23,7 @@ More information about available at
 
 ### Available presets
 
--   **prettier**
+- **prettier**
 
 ```js
 {
@@ -31,18 +31,18 @@ More information about available at
 }
 ```
 
--   **less**
+- **less**
 
 ```json
 {
-    "extends": ["@tinkoff/stylelint-config/less"]
+  "extends": ["@tinkoff/stylelint-config/less"]
 }
 ```
 
--   **angular**
+- **angular**
 
 ```json
 {
-    "extends": ["@tinkoff/stylelint-config/angular"]
+  "extends": ["@tinkoff/stylelint-config/angular"]
 }
 ```

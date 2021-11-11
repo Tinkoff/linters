@@ -1,18 +1,18 @@
 module.exports = {
-    extends: ['plugin:jest/recommended'],
+  extends: ['plugin:jest/recommended'],
 
-    plugins: [],
+  plugins: [],
 
-    rules: {
-        'jest/expect-expect': [
-            'warn',
-            {
-                assertFunctionNames: [
-                    'expect',
-                    // support superagent library
-                    'request.**.expect',
-                ],
-            },
+  rules: {
+    'jest/expect-expect': [
+      'warn',
+      {
+        assertFunctionNames: [
+          'expect',
+          // support superagent library
+          'request.**.expect',
         ],
-    },
+      },
+    ],
+  },
 };
