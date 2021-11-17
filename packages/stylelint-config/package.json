@@ -1,30 +1,30 @@
 {
-    "name": "@tinkoff/stylelint-config",
-    "version": "1.13.1",
-    "description": "Tinkoff stylelint config",
-    "license": "Apache-2.0",
-    "keywords": [
-        "stylelint",
-        "prettier"
-    ],
-    "main": "stylelint.config.js",
-    "author": {
-        "name": "Tinkoff Team",
-        "email": "frontend@tinkoff.ru"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/TinkoffCreditSystems/linters.git"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "dependencies": {
-        "postcss": "^8.3.11",
-        "stylelint": "^14.0.1",
-        "stylelint-config-prettier": "^9.0.3",
-        "stylelint-config-standard": "^23.0.0",
-        "stylelint-no-px": "^1.0.1",
-        "stylelint-order": "^5.0.0"
-    }
+  "name": "@tinkoff/stylelint-config",
+  "version": "1.13.1",
+  "description": "Tinkoff stylelint config",
+  "license": "Apache-2.0",
+  "keywords": [
+    "stylelint",
+    "prettier"
+  ],
+  "main": "stylelint.config.js",
+  "author": {
+    "name": "Tinkoff Team",
+    "email": "frontend@tinkoff.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinkoffCreditSystems/linters.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "postcss": "^8.3.11",
+    "stylelint": "^14.0.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^23.0.0",
+    "stylelint-no-px": "^1.0.1",
+    "stylelint-order": "^5.0.0"
+  }
 }
