@@ -1,7 +1,6 @@
 *.lint
 *.fix
 lerna.json
-package.json
 package-lock.json
 CHANGELOG.md
 

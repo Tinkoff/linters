@@ -1,33 +1,33 @@
 {
-    "name": "@tinkoff/eslint-config-angular",
-    "version": "1.13.1",
-    "description": "Tinkoff ESLint configs for Angular apps",
-    "license": "Apache-2.0",
-    "keywords": [
-        "eslint",
-        "eslintconfig",
-        "eslint-config"
-    ],
-    "scripts": {},
-    "main": "index.js",
-    "author": {
-        "name": "Tinkoff Team",
-        "email": "frontend@tinkoff.ru"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/TinkoffCreditSystems/linters.git"
-    },
-    "devDependencies": {
-        "@tinkoff/eslint-config": "^1.13.1"
-    },
-    "peerDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.3.0",
-        "eslint": "^7.5.0",
-        "eslint-plugin-import": "^2.22.0",
-        "eslint-plugin-sort-class-members": "^1.7.0"
-    },
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@tinkoff/eslint-config-angular",
+  "version": "1.13.1",
+  "description": "Tinkoff ESLint configs for Angular apps",
+  "license": "Apache-2.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "scripts": {},
+  "main": "index.js",
+  "author": {
+    "name": "Tinkoff Team",
+    "email": "frontend@tinkoff.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinkoffCreditSystems/linters.git"
+  },
+  "devDependencies": {
+    "@tinkoff/eslint-config": "^1.13.1"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-sort-class-members": "^1.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
