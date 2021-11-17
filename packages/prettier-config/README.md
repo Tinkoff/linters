@@ -21,11 +21,11 @@ More information about available at
 
 ### Available presets
 
--   **angular**
+- **angular**
 
 ```json5
 {
-    // ...
-    prettier: '@tinkoff/prettier-config/angular',
+  // ...
+  prettier: '@tinkoff/prettier-config/angular',
 }
 ```

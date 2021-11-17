@@ -31,7 +31,7 @@
         "type": "git",
         "url": "https://github.com/TinkoffCreditSystems/linters.git"
     },
-    "prettier": "./packages/linters/prettier/prettier.config",
+    "prettier": "./packages/prettier-config/index.js",
     "devDependencies": {
         "@babel/core": "^7.10.3",
         "@babel/preset-env": "^7.10.3",

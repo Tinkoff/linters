@@ -21,5 +21,5 @@ necessary additional configs.
 
 ## Internal used plugins
 
--   `eslint-plugin-react` - common react lint rules
--   `eslint-plugin-react-hooks` - lint rules for react hooks
+- `eslint-plugin-react` - common react lint rules
+- `eslint-plugin-react-hooks` - lint rules for react hooks

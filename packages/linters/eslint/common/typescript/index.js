@@ -1,3 +1,3 @@
 module.exports = {
-    extends: ['./enviroment', './conventions'],
+  extends: ['./enviroment', './conventions'],
 };

@@ -1,6 +1,6 @@
 {
-    "rulesDirectory": ["../../../src"],
-    "rules": {
-        "tinkoff-method-return-type": true
-    }
+  "rulesDirectory": ["../../../src"],
+  "rules": {
+    "tinkoff-method-return-type": true
+  }
 }
