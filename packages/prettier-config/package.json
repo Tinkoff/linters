@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "prettier": "2.4.1",
+    "@prettier/plugin-xml": "^1.1.0",
     "prettier-plugin-organize-attributes": "~0.0.4"
   }
 }
