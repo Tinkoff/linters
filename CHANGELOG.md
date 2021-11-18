@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.15.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.14.0...v1.15.0) (2021-11-18)
+
+
+### Features
+
+* **prettier-config:** support xml,svg ([#146](https://github.com/TinkoffCreditSystems/linters/issues/146)) ([ac8dbca](https://github.com/TinkoffCreditSystems/linters/commit/ac8dbca0164a0160152a673c7dfc7154480a3b68))
+
+
+
 ## [1.14.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.13.2...v1.14.0) (2021-11-17)
 
 
