@@ -10,7 +10,7 @@ module.exports = {
   trailingComma: 'all',
   bracketSpacing: false,
   arrowParens: 'avoid',
-  plugins: ['prettier-plugin-organize-attributes'],
+  plugins: ['prettier-plugin-organize-attributes', '@prettier/plugin-xml'],
   attributeGroups: [
     '$ANGULAR_STRUCTURAL_DIRECTIVE',
     '$ANGULAR_ELEMENT_REF',
@@ -51,6 +51,14 @@ module.exports = {
     {
       files: ['*.template.html', '*.component.html'],
       options: { parser: 'angular' },
+    },
+    {
+      files: ['*.svg'],
+      options: { parser: 'xml' },
+    },
+    {
+      files: ['*.xml'],
+      options: { parser: 'xml' },
     },
   ],
 };
