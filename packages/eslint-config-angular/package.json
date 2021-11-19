@@ -8,6 +8,11 @@
     "eslintconfig",
     "eslint-config"
   ],
+  "files": [
+    "index.js",
+    "internal",
+    "README.md"
+  ],
   "scripts": {},
   "main": "index.js",
   "author": {
