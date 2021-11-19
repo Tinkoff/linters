@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.16.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.15.1...v1.16.0) (2021-11-19)
+
+
+### Features
+
+* **eslint-config-angular:** decomposition by internal settings ([8d2632d](https://github.com/TinkoffCreditSystems/linters/commit/8d2632d399f83a0cef6b38abc79737e3b0496013))
+
+
+
 ## [1.14.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.13.2...v1.14.0) (2021-11-17)
 
 
