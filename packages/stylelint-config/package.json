@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/stylelint-config",
-  "version": "1.13.2",
+  "version": "1.16.1",
   "description": "Tinkoff stylelint config",
   "license": "Apache-2.0",
   "keywords": [
@@ -20,9 +20,9 @@
     "access": "public"
   },
   "dependencies": {
-    "stylelint": "^14.0.1",
     "postcss": "^8.3.11",
     "postcss-less": "^5.0.0",
+    "stylelint": "^14.0.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^23.0.0",
     "stylelint-no-px": "^1.0.1",

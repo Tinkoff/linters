@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.16.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.16.0...v1.16.1) (2021-11-19)
+
+
+### Bug Fixes
+
+* **stylelint-config:** fix missing dependencies for less ([#150](https://github.com/TinkoffCreditSystems/linters/issues/150)) ([122ff5f](https://github.com/TinkoffCreditSystems/linters/commit/122ff5fce7754af5e6200a30471198ecb851a16c))
+
+
+
 ### [1.13.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.13.1...v1.13.2) (2021-11-17)
 
 **Note:** Version bump only for package @tinkoff/stylelint-config
