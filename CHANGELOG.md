@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.15.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.15.0...v1.15.1) (2021-11-19)
+
+
+### Bug Fixes
+
+* **prettier-config:** use valid parser for scss files ([#148](https://github.com/TinkoffCreditSystems/linters/issues/148)) ([caa4261](https://github.com/TinkoffCreditSystems/linters/commit/caa4261ff1820916497ed042b3523e4faeea2689))
+
+
+
 ## [1.15.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.14.0...v1.15.0) (2021-11-18)
 
 
