@@ -6,15 +6,14 @@ describe('member-ordering / happy path', () => {
     cwd: path.join(__dirname, '..'),
     useEslintrc: false,
     baseConfig: {
-      ...require('../../index.js'),
-      overrides: [
-        {
-          files: ['*.ts'],
-          plugins: ['@typescript-eslint'],
-          parser: '@typescript-eslint/parser',
-          rules: require('../../rules/member-ordering'),
-        },
-      ],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      rules: {
+        '@typescript-eslint/member-ordering':
+          require('../../internal/typescript').overrides[0].rules[
+            '@typescript-eslint/member-ordering'
+          ],
+      },
     },
   });
 
