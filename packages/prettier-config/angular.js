@@ -46,7 +46,7 @@ module.exports = {
     },
     {
       files: ['*.scss'],
-      options: { parser: 'sass' },
+      options: { parser: 'scss' },
     },
     {
       files: ['*.template.html', '*.component.html'],
