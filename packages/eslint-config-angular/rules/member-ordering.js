@@ -1,5 +1,5 @@
 /**
- * @note: only rules which start with ^@typescript-eslint/
+ * @note: rules for member-ordering
  */
 module.exports = {
   /**
