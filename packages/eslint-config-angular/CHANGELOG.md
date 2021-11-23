@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.16.1...v1.17.0) (2021-11-23)
+
+
+### Features
+
+* **eslint-config-angular:** add default ignore pattern ([#151](https://github.com/TinkoffCreditSystems/linters/issues/151)) ([fde6df0](https://github.com/TinkoffCreditSystems/linters/commit/fde6df0ead229cfd02fdde0a80d31bffbee1985c))
+
+
+
 ## [1.16.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.15.1...v1.16.0) (2021-11-19)
 
 
