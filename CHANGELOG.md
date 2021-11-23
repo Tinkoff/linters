@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.18.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.18.0...v1.18.1) (2021-11-23)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** ignore no-param-reassign ([#153](https://github.com/TinkoffCreditSystems/linters/issues/153)) ([6682f9f](https://github.com/TinkoffCreditSystems/linters/commit/6682f9f9ef301458d7bcfc8ebce1a1045657322b))
+
+
+
 ## [1.18.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.17.0...v1.18.0) (2021-11-23)
 
 
