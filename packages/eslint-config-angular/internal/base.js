@@ -1,5 +1,19 @@
 module.exports = {
-  extends: [],
+  ignorePatterns: [
+    'dist',
+    'node_modules',
+    '**/node_modules/**',
+    '**/schematics/*',
+    '**/coverage/**',
+    'eslintrc.js',
+    '.eslintrc.js',
+    '**/*.d.ts',
+    '**/dist/**',
+    '**/docs/**',
+    '.cache/**',
+    '.git/**',
+    '.idea/**',
+  ],
   parser: '@typescript-eslint/parser',
   rules: {
     'no-param-reassign': 'error',
