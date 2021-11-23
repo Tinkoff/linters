@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`imports / unhappy path unhappy 1`] = `
+"error: Run autofix to sort these imports! (simple-import-sort/imports) at packages/eslint-config-angular/test/imports/__fixtures__/imports-unhappy.fixture.ts:1:1:
+> 1 | import { rules as _TSLint } from '@typescript-eslint/eslint-plugin';
+    | ^
+  2 | import { process as _process } from 'babel-jest';
+  3 | import { _A as A, _B as B } from './shared-imports.fixture';
+  4 | 
+
+
+1 error found.
+1 error potentially fixable with the \`--fix\` option."
+`;
