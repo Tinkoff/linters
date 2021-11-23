@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.18.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.17.0...v1.18.0) (2021-11-23)
+
+
+### Features
+
+* **eslint-config-angular:** add import rules ([#152](https://github.com/TinkoffCreditSystems/linters/issues/152)) ([be87476](https://github.com/TinkoffCreditSystems/linters/commit/be874767a8bce800c110a51281ee14423c966f4d))
+
+
+
 ## [1.17.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.16.1...v1.17.0) (2021-11-23)
 
 
