@@ -16,7 +16,7 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   rules: {
-    'no-param-reassign': 'error',
+    'no-param-reassign': 'off',
 
     /**
      * @note: note you must disable the base rule
