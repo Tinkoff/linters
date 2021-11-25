@@ -2,28 +2,8 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts'],
-      parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint', 'sort-class-members'],
-      parserOptions: {
-        sourceType: 'module',
-        errorOnUnknownASTType: true,
-        errorOnTypeScriptSyntacticAndSemanticIssues: true,
-        warnOnUnsupportedTypeScriptVersion: false,
-        ecmaVersion: 6,
-      },
       rules: {
-        '@typescript-eslint/no-extraneous-class': [
-          'error',
-          {
-            allowConstructorOnly: true,
-            allowEmpty: false,
-            allowStaticOnly: true,
-            allowWithDecorator: true,
-          },
-        ],
-
-        '@typescript-eslint/no-useless-constructor': ['error'],
-
         /**
          * @note(splincode): use @typescript-eslint/member-ordering instead
          */
@@ -78,13 +58,13 @@ module.exports = {
                * [sort: public -> protected -> private]
                **/
               /*
-              'public-static-get',
-              'public-static-set',
-              'protected-static-get',
-              'protected-static-set',
-              'private-static-get',
-              'private-static-set',
-              */
+                'public-static-get',
+                'public-static-set',
+                'protected-static-get',
+                'protected-static-set',
+                'private-static-get',
+                'private-static-set',
+                */
 
               /**
                * @note(splincode):
@@ -96,19 +76,19 @@ module.exports = {
                * [sort: decorated -> non-decorated]
                **/
               /*
-              'public-decorated-get',
-              'public-instance-get',
-              'public-decorated-set',
-              'public-instance-set',
-              'protected-decorated-get',
-              'protected-instance-get',
-              'protected-decorated-set',
-              'protected-instance-set',
-              'private-decorated-get',
-              'private-instance-get',
-              'private-decorated-set',
-              'private-instance-set',
-              */
+                'public-decorated-get',
+                'public-instance-get',
+                'public-decorated-set',
+                'public-instance-set',
+                'protected-decorated-get',
+                'protected-instance-get',
+                'protected-decorated-set',
+                'protected-instance-set',
+                'private-decorated-get',
+                'private-instance-get',
+                'private-decorated-set',
+                'private-instance-set',
+                */
 
               /**
                * static methods
@@ -146,12 +126,6 @@ module.exports = {
             ],
           },
         ],
-      },
-    },
-    {
-      files: ['*.spec.ts'],
-      rules: {
-        '@typescript-eslint/no-extraneous-class': 'off',
       },
     },
   ],
