@@ -1,4 +1,9 @@
 module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
   ignorePatterns: [
     'dist',
     'node_modules',
@@ -14,14 +19,14 @@ module.exports = {
     '.git/**',
     '.idea/**',
   ],
+  /**
+   * @note: use @typescript-eslint/parser instead @babel/parser
+   */
   parser: '@typescript-eslint/parser',
   rules: {
-    'no-param-reassign': 'off',
-
     /**
-     * @note: note you must disable the base rule
-     * as it can report incorrect errors in @typescript-eslint
+     * @note: [*.js, *.ts]
      */
-    'no-useless-constructor': 'off',
+    'no-param-reassign': 'off',
   },
 };
