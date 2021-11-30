@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`line statements / unhappy path unhappy 1`] = `
+"error: Expected blank line before this statement (@typescript-eslint/padding-line-between-statements) at packages/eslint-config-angular/test/line-statements/__fixtures__/line-statements-unhappy.fixture.ts:5:1:
+  3 | 
+  4 | function a2() {}
+> 5 | function b2() {}
+    | ^
+  6 | function c2() {
+  7 |     const value = '123';
+  8 |     return value + 'etc';
+
+
+error: Expected blank line before this statement (@typescript-eslint/padding-line-between-statements) at packages/eslint-config-angular/test/line-statements/__fixtures__/line-statements-unhappy.fixture.ts:6:1:
+  4 | function a2() {}
+  5 | function b2() {}
+> 6 | function c2() {
+    | ^
+  7 |     const value = '123';
+  8 |     return value + 'etc';
+  9 | }
+
+
+error: Expected blank line before this statement (@typescript-eslint/padding-line-between-statements) at packages/eslint-config-angular/test/line-statements/__fixtures__/line-statements-unhappy.fixture.ts:8:5:
+   6 | function c2() {
+   7 |     const value = '123';
+>  8 |     return value + 'etc';
+     |     ^
+   9 | }
+  10 | 
+  11 | const d2: string | null = null;
+
+
+error: Expected blank line before this statement (@typescript-eslint/padding-line-between-statements) at packages/eslint-config-angular/test/line-statements/__fixtures__/line-statements-unhappy.fixture.ts:13:1:
+  11 | const d2: string | null = null;
+  12 | let e2: string | null = null;
+> 13 | switch (d2) {
+     | ^
+  14 |     case '1': {
+  15 |         e1 = '1';
+  16 |         break;
+
+
+error: Expected blank line before this statement (@typescript-eslint/padding-line-between-statements) at packages/eslint-config-angular/test/line-statements/__fixtures__/line-statements-unhappy.fixture.ts:31:1:
+  29 | 
+  30 | let sum2: number = 0;
+> 31 | for (let i = 0; i < 5; i++) {
+     | ^
+  32 |     sum2 += i;
+  33 | }
+  34 | sum2 = 0;
+
+
+error: Expected blank line before this statement (@typescript-eslint/padding-line-between-statements) at packages/eslint-config-angular/test/line-statements/__fixtures__/line-statements-unhappy.fixture.ts:34:1:
+  32 |     sum2 += i;
+  33 | }
+> 34 | sum2 = 0;
+     | ^
+  35 | 
+  36 | class LinesBetween2 {
+  37 |     x;
+
+
+error: Expected blank line between class members (@typescript-eslint/lines-between-class-members) at packages/eslint-config-angular/test/line-statements/__fixtures__/line-statements-unhappy.fixture.ts:44:5:
+  42 |         //...
+  43 |     }
+> 44 |     bar() {
+     |     ^
+  45 |         //...
+  46 |     }
+  47 | }
+
+
+7 errors found.
+7 errors potentially fixable with the \`--fix\` option."
+`;

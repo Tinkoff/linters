@@ -28,5 +28,6 @@ module.exports = {
      * @note: [*.js, *.ts]
      */
     'no-param-reassign': 'off',
+    'no-case-declarations': 'error',
   },
 };
