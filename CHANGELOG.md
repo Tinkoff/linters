@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.19.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.18.2...v1.19.0) (2021-11-30)
+
+
+### Features
+
+* **prettier-config:** support readable formatting for yml files ([#156](https://github.com/TinkoffCreditSystems/linters/issues/156)) ([f9e66fe](https://github.com/TinkoffCreditSystems/linters/commit/f9e66fe90c98f7f5aeb5804aa428060c747e89eb))
+
+
+
 ### [1.18.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.18.1...v1.18.2) (2021-11-25)
 
 **Note:** Version bump only for package linters-monorepo
