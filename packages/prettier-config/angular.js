@@ -10,8 +10,13 @@ module.exports = {
   trailingComma: 'all',
   bracketSpacing: false,
   arrowParens: 'avoid',
-  plugins: ['prettier-plugin-organize-attributes', '@prettier/plugin-xml'],
+  plugins: [
+    // https://github.com/prettier/prettier-vscode/issues/2259#issuecomment-952950119
+    require.resolve('prettier-plugin-organize-attributes'),
+    require.resolve('@prettier/plugin-xml'),
+  ],
   attributeGroups: [
+    // prettier-plugin-organize-attribute
     '$ANGULAR_STRUCTURAL_DIRECTIVE',
     '$ANGULAR_ELEMENT_REF',
     '$ID',
@@ -57,8 +62,13 @@ module.exports = {
       options: { parser: 'xml' },
     },
     {
+      // @prettier/plugin-xml
       files: ['*.xml'],
       options: { parser: 'xml' },
+    },
+    {
+      files: ['*.yml', '*.yaml'],
+      options: { parser: 'yaml', tabWidth: 2 },
     },
   ],
 };
