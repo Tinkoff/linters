@@ -38,10 +38,6 @@ module.exports = {
       options: { parser: 'typescript' },
     },
     {
-      files: ['*.md'],
-      options: { parser: 'markdown' },
-    },
-    {
       files: ['*.json', '.prettierrc', '.stylelintrc'],
       options: { parser: 'json' },
     },
@@ -69,6 +65,10 @@ module.exports = {
     {
       files: ['*.yml', '*.yaml'],
       options: { parser: 'yaml', tabWidth: 2 },
+    },
+    {
+      files: ['*.md'],
+      options: { parser: 'markdown', tabWidth: 2 },
     },
   ],
 };
