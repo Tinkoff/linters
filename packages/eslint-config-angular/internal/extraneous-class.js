@@ -2,6 +2,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts'],
+      plugins: ['@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-extraneous-class': [
           'error',
@@ -16,6 +17,7 @@ module.exports = {
     },
     {
       files: ['*.spec.ts', '*.fixture.ts'],
+      plugins: ['@typescript-eslint'],
       rules: {
         /**
          * @note: because in tests, there may be special fixtures

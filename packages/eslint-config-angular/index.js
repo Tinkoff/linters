@@ -4,6 +4,7 @@ module.exports = {
     './internal/base-typescript',
     './internal/import',
     './internal/member-ordering',
+    './internal/line-statements',
     './internal/extraneous-class',
   ],
 };
