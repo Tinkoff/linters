@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.21.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.20.0...v1.21.0) (2021-12-07)
+
+
+### Features
+
+* **eslint-config-angular:** support line statements ([#155](https://github.com/TinkoffCreditSystems/linters/issues/155)) ([6a5bdfe](https://github.com/TinkoffCreditSystems/linters/commit/6a5bdfe7ccc0014bcfc3122c60e80dec27152d7f))
+
+
+
 ### [1.18.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.18.1...v1.18.2) (2021-11-25)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
