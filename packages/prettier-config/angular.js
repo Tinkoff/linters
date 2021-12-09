@@ -50,7 +50,11 @@ module.exports = {
       options: { parser: 'scss' },
     },
     {
-      files: ['*.template.html', '*.component.html'],
+      files: ['*.html'],
+      options: { parser: 'html' },
+    },
+    {
+      files: ['*.component.html', '*.template.html'],
       options: { parser: 'angular' },
     },
     {
