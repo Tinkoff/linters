@@ -24,7 +24,8 @@
     "url": "https://github.com/TinkoffCreditSystems/linters.git"
   },
   "dependencies": {
-    "eslint-plugin-simple-import-sort": "^7.0.0"
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-html": "^6.2.0"
   },
   "peerDependencies": {
     "@tinkoff/eslint-config": "^1.13.2",
