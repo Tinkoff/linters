@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.23.0...v1.24.0) (2022-01-18)
+
+
+### Features
+
+* **eslint-config-angular:** support member-accessibility ([#164](https://github.com/TinkoffCreditSystems/linters/issues/164)) ([e49e86a](https://github.com/TinkoffCreditSystems/linters/commit/e49e86a4d322dc1fa34b639deaf5f75bb4298ae4))
+
+
+
 ## [1.23.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.22.0...v1.23.0) (2021-12-14)
 
 
