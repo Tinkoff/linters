@@ -18,6 +18,11 @@ module.exports = {
          */
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': ['error'],
+        '@typescript-eslint/prefer-readonly': ['error'],
+        '@typescript-eslint/explicit-member-accessibility': [
+          'error',
+          { accessibility: 'no-public' },
+        ],
       },
     },
   ],
