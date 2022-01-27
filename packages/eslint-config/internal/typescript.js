@@ -135,12 +135,6 @@ module.exports = {
             disallowTypeAnnotations: true,
           },
         ],
-        "@typescript-eslint/consistent-type-exports": [
-          "warn",
-          {
-            "fixMixedExportsWithInlineTypeSpecifier": false
-          }
-        ],
         'no-shadow': 'off',
         '@typescript-eslint/no-shadow': ['warn'],
         // conflict with import type statement, try to merge default and named imports
