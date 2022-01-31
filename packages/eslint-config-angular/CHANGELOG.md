@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.25.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.24.0...v1.25.0) (2022-01-31)
+
+
+### Features
+
+* **eslint-config-angular:** support no-inferrable-types, no-unused-vars ([#165](https://github.com/TinkoffCreditSystems/linters/issues/165)) ([475f2a2](https://github.com/TinkoffCreditSystems/linters/commit/475f2a26437c5246ae6a12c3dd5e98e911f163fb))
+
+
+
 ## [1.24.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.23.0...v1.24.0) (2022-01-18)
 
 
