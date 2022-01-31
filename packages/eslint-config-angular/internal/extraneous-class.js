@@ -2,6 +2,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts'],
+      parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-extraneous-class': [
@@ -17,6 +18,7 @@ module.exports = {
     },
     {
       files: ['*.spec.ts', '*.fixture.ts'],
+      parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
         /**
