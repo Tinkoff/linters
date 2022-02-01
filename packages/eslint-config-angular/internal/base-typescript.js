@@ -4,6 +4,7 @@ module.exports = {
       files: ['*.ts'],
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
+      extends: ['plugin:@typescript-eslint/eslint-recommended'],
       parserOptions: {
         sourceType: 'module',
         errorOnUnknownASTType: true,
