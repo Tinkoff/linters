@@ -44,7 +44,7 @@ module.exports = {
     'react/jsx-handler-names': 'warn',
     'react/prop-types': 'warn',
     'react/jsx-filename-extension': 'off',
-    'react/destructuring-assignment': 'warn',
+    'react/destructuring-assignment': 'off',
     'react/jsx-key': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/default-props-match-prop-types': 'warn',

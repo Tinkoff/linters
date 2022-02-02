@@ -14,5 +14,6 @@ module.exports = {
         ],
       },
     ],
+    'jest/no-disabled-tests': 'off',
   },
 };
