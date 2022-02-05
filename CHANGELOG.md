@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.25.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.1...v1.25.2) (2022-02-05)
+
+
+### Bug Fixes
+
+* Some rules was unused and don't help with development ([#172](https://github.com/TinkoffCreditSystems/linters/issues/172)) ([dca2c89](https://github.com/TinkoffCreditSystems/linters/commit/dca2c8998d6ebfc8b88bf90d812d0f3149854ce3))
+
+
+
 ### [1.25.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.0...v1.25.1) (2022-01-31)
 
 
