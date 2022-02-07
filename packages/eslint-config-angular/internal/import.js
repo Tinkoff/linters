@@ -1,14 +1,20 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'simple-import-sort', 'eslint-plugin-import'],
+  plugins: [
+    'import',
+    '@typescript-eslint',
+    'simple-import-sort',
+    'eslint-plugin-import',
+  ],
   settings: {
     'import/parsers': { '@typescript-eslint/parser': ['.ts'] },
     'import/resolver': {
       'eslint-import-resolver-typescript': true,
-
-      // always try to resolve types under `<root>@types` directory
-      // even it doesn't contain any source code, like `@types/etc`
-      alwaysTryTypes: true,
+      typescript: {
+        // always try to resolve types under `<root>@types` directory
+        // even it doesn't contain any source code, like `@types/etc`
+        alwaysTryTypes: true,
+      },
     },
   },
   rules: {
