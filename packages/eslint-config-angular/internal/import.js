@@ -32,5 +32,8 @@ module.exports = {
     'import/no-duplicates': 'off',
     'no-duplicate-imports': 'off',
     '@typescript-eslint/no-duplicate-imports': 'error',
+
+    // overwrite rule from `@tinkoff/eslint-config`
+    '@typescript-eslint/consistent-type-imports': 'off',
   },
 };
