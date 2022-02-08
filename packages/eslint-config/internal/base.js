@@ -35,19 +35,7 @@ module.exports = {
     'global-require': 'off',
     'class-methods-use-this': 'off',
     'no-continue': 'off',
-    'no-restricted-syntax': [
-      'warn',
-      {
-        selector: 'LabeledStatement',
-        message:
-          'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
-      },
-      {
-        selector: 'WithStatement',
-        message:
-          '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
-      },
-    ],
+    'no-restricted-syntax': 'off',
     'guard-for-in': 'off',
     'default-case': 'warn',
     'no-plusplus': 'off',
