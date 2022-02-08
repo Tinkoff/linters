@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.26.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.0...v1.26.1) (2022-02-08)
+
+
+### Bug Fixes
+
+* Disabled old rule thar did not allow the use for of ([89053d0](https://github.com/TinkoffCreditSystems/linters/commit/89053d0c6d1bcc05cab4fae5a8a30900ebe1dbfe))
+* Remove default-case rules because we usually use TS and sometimes dont need default ([b6747a0](https://github.com/TinkoffCreditSystems/linters/commit/b6747a08b3219764c4fbb0e262d0205be86e04d2))
+
+
+
 ### [1.25.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.2...v1.25.3) (2022-02-07)
 
 
