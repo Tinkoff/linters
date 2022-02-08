@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.26.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.3...v1.26.0) (2022-02-08)
+
+
+### Features
+
+* **prettier-config:** use json-stringify parser for prettying package.json files ([#169](https://github.com/TinkoffCreditSystems/linters/issues/169)) ([174d1e6](https://github.com/TinkoffCreditSystems/linters/commit/174d1e6e1500ce836aa94c9ca6c9d112b166afc1))
+
+
+
 ## [1.22.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.21.0...v1.22.0) (2021-12-09)
 
 
