@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.26.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.2...v1.26.3) (2022-02-08)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
 ### [1.26.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.0...v1.26.1) (2022-02-08)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
