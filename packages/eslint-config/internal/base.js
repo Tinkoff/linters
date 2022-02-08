@@ -13,6 +13,7 @@ module.exports = {
     ecmaFeatures: {
       legacyDecorators: true,
     },
+    requireConfigFile: false,
   },
 
   rules: {
