@@ -37,7 +37,7 @@ module.exports = {
     'no-continue': 'off',
     'no-restricted-syntax': 'off',
     'guard-for-in': 'off',
-    'default-case': 'warn',
+    'default-case': 'off',
     'no-plusplus': 'off',
     'func-names': 'off',
     'consistent-return': 'warn',
