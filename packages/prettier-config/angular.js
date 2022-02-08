@@ -42,6 +42,10 @@ module.exports = {
       options: { parser: 'json' },
     },
     {
+      files: ['package.json', 'ng-package.json'],
+      options: { parser: 'json-stringify' },
+    },
+    {
       files: ['*.less'],
       options: { parser: 'less' },
     },
