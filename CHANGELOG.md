@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.27.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.3...v1.27.0) (2022-02-17)
+
+
+### Features
+
+* **eslint-config-angular:** use recommendation rules from eslint/typescript ([#170](https://github.com/TinkoffCreditSystems/linters/issues/170)) ([3fc25f3](https://github.com/TinkoffCreditSystems/linters/commit/3fc25f3baa3b10af028fedd36ea48cfea2167433))
+
+
+
 ### [1.26.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.2...v1.26.3) (2022-02-08)
 
 **Note:** Version bump only for package linters-monorepo
