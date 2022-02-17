@@ -19,6 +19,7 @@ module.exports = {
     '.git/**',
     '.idea/**',
   ],
+  extends: ['eslint:recommended'],
   /**
    * @note: use @typescript-eslint/parser instead @babel/parser
    */
