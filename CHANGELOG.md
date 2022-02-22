@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.27.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.0...v1.27.1) (2022-02-22)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** support `no-return-assign` ([#177](https://github.com/TinkoffCreditSystems/linters/issues/177)) ([fa278e7](https://github.com/TinkoffCreditSystems/linters/commit/fa278e7d401727645d3169984b061d670f9f6b3a))
+
+
+
 ## [1.27.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.3...v1.27.0) (2022-02-17)
 
 
