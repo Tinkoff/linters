@@ -31,5 +31,6 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-case-declarations': 'error',
     'no-console': ['error', { allow: ['info', 'assert', 'warn', 'error'] }],
+    'no-return-assign': ['error', 'always'],
   },
 };
