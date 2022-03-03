@@ -33,5 +33,13 @@ module.exports = {
     'no-console': ['error', { allow: ['info', 'assert', 'warn', 'error'] }],
     'no-implicit-coercion': ['error', { allow: ['!!'] }],
     'no-return-assign': ['error', 'always'],
+    'no-useless-rename': [
+      'error',
+      {
+        ignoreDestructuring: true,
+        ignoreImport: false,
+        ignoreExport: false,
+      },
+    ],
   },
 };
