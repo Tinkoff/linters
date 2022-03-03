@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.27.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.2...v1.27.3) (2022-03-03)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** support `no-useless-rename` ([#179](https://github.com/TinkoffCreditSystems/linters/issues/179)) ([89660d5](https://github.com/TinkoffCreditSystems/linters/commit/89660d544d07b844a8cd589c366dd0e55ffa7dc4))
+
+
+
 ### [1.27.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.1...v1.27.2) (2022-02-23)
 
 
