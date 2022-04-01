@@ -13,8 +13,12 @@ npm i --save-dev @tinkoff/eslint-config @tinkoff/eslint-config-angular
 Then, need to include necessary configurations sets to `.eslintrc`. Wee need to choose base configuration, and any
 necessary additional configs.
 
-```bash
+```json
 {
-  "extends": ["@tinkoff/eslint-config/app", "@tinkoff/eslint-config-angular"]
+  "extends": [
+    "@tinkoff/eslint-config/app",
+    "@tinkoff/eslint-config-angular",
+    "@tinkoff/eslint-config-angular/html"
+  ]
 }
 ```
