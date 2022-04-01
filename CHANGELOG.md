@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.29.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.28.0...v1.29.0) (2022-04-01)
+
+
+### Features
+
+* separate html and typescript rules ([#183](https://github.com/TinkoffCreditSystems/linters/issues/183)) ([1abe9e7](https://github.com/TinkoffCreditSystems/linters/commit/1abe9e7d2f898fc5402e92f68f15d6ae05fd53f6))
+
+
+
 ## [1.28.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.3...v1.28.0) (2022-04-01)
 
 
