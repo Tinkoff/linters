@@ -21,9 +21,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@prettier/plugin-xml": "~1.1.0",
-    "@types/prettier": "^2.4.2",
-    "prettier": "2.5.1",
-    "prettier-plugin-organize-attributes": "~0.0.4"
+    "@prettier/plugin-xml": "~2.0.1",
+    "@types/prettier": "^2.4.4",
+    "prettier": "2.6.1",
+    "prettier-plugin-organize-attributes": "~0.0.5"
   }
 }
