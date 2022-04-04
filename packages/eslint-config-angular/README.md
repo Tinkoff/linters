@@ -10,7 +10,7 @@ Install from npm
 npm i --save-dev @tinkoff/eslint-config @tinkoff/eslint-config-angular
 ```
 
-Then, need to include necessary configurations sets to `.eslintrc`. Wee need to choose base configuration, and any
+Then, need to include necessary configurations sets to `.eslintrc`. We need to choose base configuration, and any
 necessary additional configs.
 
 ```json
@@ -19,6 +19,18 @@ necessary additional configs.
     "@tinkoff/eslint-config/app",
     "@tinkoff/eslint-config-angular",
     "@tinkoff/eslint-config-angular/html"
+  ]
+}
+```
+
+you can also partially import some configs
+
+```json
+{
+  "extends": [
+    "@tinkoff/eslint-config/app",
+    "@tinkoff/eslint-config-angular/ts/import",
+    "@tinkoff/eslint-config-angular/ts/line-statements"
   ]
 }
 ```
