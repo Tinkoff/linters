@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.29.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.1...v1.29.2) (2022-04-04)
+
+
+### Bug Fixes
+
+* **prettier-config:** dedupe prettier 2.6.2 ([#186](https://github.com/TinkoffCreditSystems/linters/issues/186)) ([d6d1221](https://github.com/TinkoffCreditSystems/linters/commit/d6d1221b319d7d306e50d0638c9cafe72ca93eb6))
+
+
+
 ### [1.29.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.0...v1.29.1) (2022-04-04)
 
 
