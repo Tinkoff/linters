@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.29.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.2...v1.29.3) (2022-04-05)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** expose html, ts configs ([#184](https://github.com/TinkoffCreditSystems/linters/issues/184)) ([da1fde4](https://github.com/TinkoffCreditSystems/linters/commit/da1fde47f0ce9599686c3568510142ca522de431))
+
+
+
 ### [1.29.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.1...v1.29.2) (2022-04-04)
 
 
