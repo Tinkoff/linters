@@ -20,11 +20,11 @@
     "access": "public"
   },
   "dependencies": {
-    "postcss": "^8.3.11",
-    "postcss-less": "^5.0.0",
-    "stylelint": "^14.0.1",
+    "postcss": "^8.4.12",
+    "postcss-less": "^6.0.0",
+    "stylelint": "^14.6.1",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^23.0.0",
+    "stylelint-config-standard": "^25.0.0",
     "stylelint-no-px": "^1.0.1",
     "stylelint-order": "^5.0.0"
   }
