@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.30.0...v1.31.0) (2022-04-06)
+
+
+### Features
+
+* **eslint-config-angular:** add rxjs plugin ([#188](https://github.com/TinkoffCreditSystems/linters/issues/188)) ([d90e4d6](https://github.com/TinkoffCreditSystems/linters/commit/d90e4d6daad360e4a18253ccd2e7e0e1963b708f))
+
+
+
 ## [1.30.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.3...v1.30.0) (2022-04-05)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config-angular",
-  "version": "1.29.3",
+  "version": "1.31.0",
   "description": "Tinkoff ESLint configs for Angular apps",
   "license": "Apache-2.0",
   "keywords": [
@@ -27,9 +27,9 @@
   },
   "dependencies": {
     "eslint-plugin-html": "^6.2.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-rxjs": "^5.0.2",
-    "eslint-plugin-rxjs-angular": "^2.0.0"
+    "eslint-plugin-rxjs-angular": "^2.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0"
   },
   "peerDependencies": {
     "@tinkoff/eslint-config": "^1.13.2",
