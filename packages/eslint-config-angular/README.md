@@ -18,7 +18,8 @@ necessary additional configs.
   "extends": [
     "@tinkoff/eslint-config/app",
     "@tinkoff/eslint-config-angular",
-    "@tinkoff/eslint-config-angular/html"
+    "@tinkoff/eslint-config-angular/html",
+    "@tinkoff/eslint-config-angular/rxjs"
   ]
 }
 ```
