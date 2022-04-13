@@ -1,6 +1,6 @@
-# eslint-config-tinkoff
+# @tinkoff/eslint-config-angular
 
-ESlint plugin includes Tinkoff rules for Angular applications.
+ESlint plugin includes Tinkoff rules for Angular applications. Designed to use with `@tinkoff/eslint-config`.
 
 ## Usage
 

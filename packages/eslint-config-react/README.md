@@ -1,6 +1,6 @@
-# eslint-config-tinkoff
+# @tinkoff/eslint-config-react
 
-ESlint plugin includes Tinkoff rules for React applications.
+ESlint plugin includes Tinkoff rules for React applications. Designed to use with `@tinkoff/eslint-config`.
 
 ## Usage
 
