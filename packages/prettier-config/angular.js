@@ -43,7 +43,16 @@ module.exports = {
     },
     {
       files: ['package.json', 'ng-package.json'],
-      options: { parser: 'json-stringify' },
+      options: {
+        parser: 'json-stringify',
+        plugins: [
+          require('path').resolve(
+            __dirname,
+            'plugins',
+            'prettier-plugin-sort-package'
+          ),
+        ],
+      },
     },
     {
       files: ['*.less'],
