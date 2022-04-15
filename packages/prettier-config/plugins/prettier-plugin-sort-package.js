@@ -17,10 +17,17 @@ exports.parsers = {
 
       if (isPackageJson) {
         const json = JSON.parse(processed);
-
-        const scripts = JSON.parse(JSON.stringify(json?.scripts ?? {}));
+        const unsortedScripts = deepClone(json?.scripts ?? {});
         const sorted = sortPackageJson(json);
-        sorted.scripts = scripts; // ignore sorting scripts
+
+        /**
+         * @note: add the scripts field if it's provided
+         * the scripts must be unsorted
+         */
+        // eslint-disable-next-line no-prototype-builtins
+        if (json?.hasOwnProperty('scripts')) {
+          sorted.scripts = unsortedScripts;
+        }
 
         return JSON.stringify(sorted);
       }
@@ -29,3 +36,7 @@ exports.parsers = {
     },
   },
 };
+
+function deepClone(value) {
+  return JSON.parse(JSON.stringify(value));
+}
