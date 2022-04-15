@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.32.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.1...v1.32.0) (2022-04-15)
+
+
+### Features
+
+* **prettier-config:** add plugin to sort the keys of a package.json ([#189](https://github.com/TinkoffCreditSystems/linters/issues/189)) ([685676a](https://github.com/TinkoffCreditSystems/linters/commit/685676aae9f3b543b572ba5204d4e1c8df6045a4))
+
+
+
 ### [1.31.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.0...v1.31.1) (2022-04-13)
 
 **Note:** Version bump only for package linters-monorepo

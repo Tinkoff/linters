@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/prettier-config",
-  "version": "1.31.1",
+  "version": "1.32.0",
   "description": "Tinkoff prettier config",
   "license": "Apache-2.0",
   "keywords": [
@@ -23,9 +23,9 @@
   "dependencies": {
     "@prettier/plugin-xml": "~2.0.1",
     "@types/prettier": "^2.4.4",
+    "prettier": "2.6.2",
     "prettier-package-json": "^2.6.3",
     "prettier-plugin-organize-attributes": "~0.0.5",
-    "prettier": "2.6.2",
     "sort-package-json": "^1.55.0"
   }
 }
