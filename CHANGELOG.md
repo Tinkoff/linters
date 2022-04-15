@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.32.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.32.0...v1.32.1) (2022-04-15)
+
+
+### Bug Fixes
+
+* **prettier-config:** don't add scripts field if it's not provided ([#191](https://github.com/TinkoffCreditSystems/linters/issues/191)) ([4ec48b8](https://github.com/TinkoffCreditSystems/linters/commit/4ec48b8592ff8f0c0a49fe586dff07153f531c1f))
+
+
+
 ## [1.32.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.1...v1.32.0) (2022-04-15)
 
 
