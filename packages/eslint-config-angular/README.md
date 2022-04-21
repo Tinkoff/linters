@@ -19,7 +19,8 @@ necessary additional configs.
     "@tinkoff/eslint-config/app",
     "@tinkoff/eslint-config-angular",
     "@tinkoff/eslint-config-angular/html",
-    "@tinkoff/eslint-config-angular/rxjs"
+    "@tinkoff/eslint-config-angular/rxjs",
+    "@tinkoff/eslint-config-angular/promise"
   ]
 }
 ```

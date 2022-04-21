@@ -12,6 +12,7 @@
     "index.js",
     "rxjs",
     "html",
+    "promise",
     "ts",
     "README.md"
   ],
