@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.33.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.0...v1.33.1) (2022-04-21)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** use `array-simple` instead of `array` ([#193](https://github.com/TinkoffCreditSystems/linters/issues/193)) ([ba74fde](https://github.com/TinkoffCreditSystems/linters/commit/ba74fdef7ecec92506776bd83dbaf70a93d96f8f))
+
+
+
 ## [1.33.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.32.1...v1.33.0) (2022-04-21)
 
 
