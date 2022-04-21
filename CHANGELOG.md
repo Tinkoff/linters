@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.32.1...v1.33.0) (2022-04-21)
+
+
+### Features
+
+* **eslint-config-angular:** support `@typescript-eslint/array-type` ([#192](https://github.com/TinkoffCreditSystems/linters/issues/192)) ([d8e0023](https://github.com/TinkoffCreditSystems/linters/commit/d8e0023d89ebbd5745f5f2ec17ae58b867d856a8))
+
+
+
 ### [1.32.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.32.0...v1.32.1) (2022-04-15)
 
 
