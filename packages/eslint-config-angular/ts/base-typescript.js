@@ -35,7 +35,7 @@ module.exports = {
         ],
         '@typescript-eslint/array-type': [
           'error',
-          { default: 'array', readonly: 'array-simple' },
+          { default: 'array-simple', readonly: 'array-simple' },
         ],
       },
     },
