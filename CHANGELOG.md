@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.2...v1.34.0) (2022-04-21)
+
+
+### Features
+
+* **eslint-config-angular:** add most useful rules for async-await ([#195](https://github.com/TinkoffCreditSystems/linters/issues/195)) ([015e0d1](https://github.com/TinkoffCreditSystems/linters/commit/015e0d194827282ea6cc6f5b74146c3d1bd2fc37))
+
+
+
 ### [1.33.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.1...v1.33.2) (2022-04-21)
 
 
