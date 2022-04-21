@@ -33,6 +33,10 @@ module.exports = {
           'error',
           { argsIgnorePattern: '^_' },
         ],
+        '@typescript-eslint/array-type': [
+          'error',
+          { default: 'array', readonly: 'array-simple' },
+        ],
       },
     },
   ],
