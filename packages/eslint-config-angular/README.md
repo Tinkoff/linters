@@ -10,29 +10,34 @@ Install from npm
 npm i --save-dev @tinkoff/eslint-config @tinkoff/eslint-config-angular
 ```
 
-Then, need to include necessary configurations sets to `.eslintrc`. We need to choose base configuration, and any
-necessary additional configs.
+Then, need to include `recommendation` configurations sets to `.eslintrc`. We need to choose base configuration, and any
+necessary additional configs:
 
 ```json
 {
-  "extends": [
-    "@tinkoff/eslint-config/app",
-    "@tinkoff/eslint-config-angular",
-    "@tinkoff/eslint-config-angular/html",
-    "@tinkoff/eslint-config-angular/rxjs",
-    "@tinkoff/eslint-config-angular/promise"
-  ]
+  "extends": ["@tinkoff/eslint-config/app", "@tinkoff/eslint-config-angular"]
 }
 ```
 
-you can also partially import some configs
+You can also include `optional` configurations, however, you are responsible for implementing these rules in your project:
 
-```json
+```json5
 {
-  "extends": [
-    "@tinkoff/eslint-config/app",
-    "@tinkoff/eslint-config-angular/ts/import",
-    "@tinkoff/eslint-config-angular/ts/line-statements"
-  ]
+  extends: [
+    // recommended
+    '@tinkoff/eslint-config/app',
+    '@tinkoff/eslint-config-angular',
+
+    // optional
+    '@tinkoff/eslint-config-angular/html',
+    '@tinkoff/eslint-config-angular/rxjs',
+    '@tinkoff/eslint-config-angular/promise',
+  ],
 }
 ```
+
+#### Warning
+
+- There are some problems with `@tinkoff/eslint-config-angular/html` configuration, because under the hood uses
+  `eslint-plugin-html` plugin. When `eslint-plugin-html` is extended, rules from other plugins don't work. [See opened
+  issue](https://github.com/BenoitZugmeyer/eslint-plugin-html/issues/176).
