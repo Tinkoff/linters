@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.34.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.34.0...v1.34.1) (2022-04-25)
+
+**Note:** Version bump only for package linters-monorepo
+
+
+
+
+
 ## [1.34.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.2...v1.34.0) (2022-04-21)
 
 
