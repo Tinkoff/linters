@@ -6,7 +6,7 @@ describe('member-ordering / unhappy', () => {
     cwd: path.join(__dirname, '..'),
     useEslintrc: false,
     baseConfig: {
-      extends: ['../ts/member-ordering'],
+      extends: ['../member-ordering'],
     },
   });
 

@@ -13,9 +13,9 @@ npm i --save-dev @tinkoff/eslint-config @tinkoff/eslint-config-angular
 Then, need to include `recommendation` configurations sets to `.eslintrc`. We need to choose base configuration, and any
 necessary additional configs:
 
-```json
+```json5
 {
-  "extends": ["@tinkoff/eslint-config/app", "@tinkoff/eslint-config-angular"]
+  extends: ['@tinkoff/eslint-config/app', '@tinkoff/eslint-config-angular'],
 }
 ```
 
@@ -32,6 +32,9 @@ You can also include `optional` configurations, however, you are responsible for
     '@tinkoff/eslint-config-angular/html',
     '@tinkoff/eslint-config-angular/rxjs',
     '@tinkoff/eslint-config-angular/promise',
+    '@tinkoff/eslint-config-angular/imports',
+    '@tinkoff/eslint-config-angular/line-statements',
+    '@tinkoff/eslint-config-angular/member-ordering',
   ],
 }
 ```

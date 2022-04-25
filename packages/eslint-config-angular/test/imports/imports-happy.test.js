@@ -6,7 +6,7 @@ describe('imports / happy path', () => {
     cwd: path.join(__dirname, '..'),
     useEslintrc: false,
     baseConfig: {
-      extends: ['../ts/base', '../ts/import'],
+      extends: ['../imports'],
     },
   });
 
