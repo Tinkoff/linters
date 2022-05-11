@@ -41,5 +41,6 @@ module.exports = {
         ignoreExport: false,
       },
     ],
+    eqeqeq: ['error', 'always'],
   },
 };
