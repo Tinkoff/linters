@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.35.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.34.1...v1.35.0) (2022-06-15)
+
+
+### Features
+
+* **eslint-config-angular:** support `eqeqeq` ([#199](https://github.com/TinkoffCreditSystems/linters/issues/199)) ([2be0ecb](https://github.com/TinkoffCreditSystems/linters/commit/2be0ecb2d8c4faf5067ffc63dd637c63d8efa71e))
+
+
+
 ### [1.34.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.34.0...v1.34.1) (2022-04-25)
 
 **Note:** Version bump only for package linters-monorepo
