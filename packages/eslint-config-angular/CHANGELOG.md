@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.36.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.35.0...v1.36.0) (2022-06-15)
+
+
+### Features
+
+* **eslint-config-angular:** decomposition angular complex configs to optional configs ([#197](https://github.com/TinkoffCreditSystems/linters/issues/197)) ([df3c1a3](https://github.com/TinkoffCreditSystems/linters/commit/df3c1a395fcef1fd7df07e0e39472f9b7782b67c))
+
+
+
 ## [1.35.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.34.1...v1.35.0) (2022-06-15)
 
 
