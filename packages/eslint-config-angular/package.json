@@ -9,11 +9,14 @@
     "eslint-config"
   ],
   "files": [
-    "index.js",
-    "rxjs",
     "html",
+    "imports",
+    "line-statements",
+    "member-ordering",
     "promise",
-    "ts",
+    "recommended",
+    "rxjs",
+    "index.js",
     "README.md"
   ],
   "scripts": {},
