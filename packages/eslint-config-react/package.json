@@ -29,8 +29,8 @@
   },
   "peerDependencies": {
     "eslint": "^7.5.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-prettier": "^3.1.4"
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^3.4.1"
   },
   "publishConfig": {
     "access": "public"
