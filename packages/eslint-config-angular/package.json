@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config-angular",
-  "version": "1.36.0",
+  "version": "1.36.1",
   "description": "Tinkoff ESLint configs for Angular apps",
   "license": "Apache-2.0",
   "keywords": [
