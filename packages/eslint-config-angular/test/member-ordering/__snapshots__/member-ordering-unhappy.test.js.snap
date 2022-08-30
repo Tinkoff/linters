@@ -51,16 +51,6 @@ error: Member a10 should be declared before all protected instance field definit
   17 |   @Bar() a13 = 'someString';
 
 
-error: Member a11 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:15:3:
-  13 |   public static a9 = 5;
-  14 |   private a10: string;
-> 15 |   @Foo() a11 = 5;
-     |   ^
-  16 |   private a12;
-  17 |   @Bar() a13 = 'someString';
-  18 |   private a14;
-
-
 error: Member a12 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:16:3:
   14 |   private a10: string;
   15 |   @Foo() a11 = 5;
@@ -69,16 +59,6 @@ error: Member a12 should be declared before all protected instance field definit
   17 |   @Bar() a13 = 'someString';
   18 |   private a14;
   19 |   public get some15() {
-
-
-error: Member a13 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:17:3:
-  15 |   @Foo() a11 = 5;
-  16 |   private a12;
-> 17 |   @Bar() a13 = 'someString';
-     |   ^
-  18 |   private a14;
-  19 |   public get some15() {
-  20 |     return 1;
 
 
 error: Member a14 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:18:3:
@@ -291,16 +271,6 @@ error: Member a10 should be declared before all protected instance field definit
   82 |   @Bar() a13 = 5;
 
 
-error: Member a11 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:80:3:
-  78 |   public static a9 = 'someString';
-  79 |   private a10: string;
-> 80 |   @Foo() a11 = 'someString';
-     |   ^
-  81 |   private a12 = 5;
-  82 |   @Bar() a13 = 5;
-  83 |   private a14 = 'someString';
-
-
 error: Member a12 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:81:3:
   79 |   private a10: string;
   80 |   @Foo() a11 = 'someString';
@@ -309,16 +279,6 @@ error: Member a12 should be declared before all protected instance field definit
   82 |   @Bar() a13 = 5;
   83 |   private a14 = 'someString';
   84 |   get some15() {
-
-
-error: Member a13 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:82:3:
-  80 |   @Foo() a11 = 'someString';
-  81 |   private a12 = 5;
-> 82 |   @Bar() a13 = 5;
-     |   ^
-  83 |   private a14 = 'someString';
-  84 |   get some15() {
-  85 |     return 1;
 
 
 error: Member a14 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:83:3:
@@ -531,16 +491,6 @@ error: Member a10 should be declared before all protected instance field definit
   147 |   @Bar() a13 = 'someString';
 
 
-error: Member a11 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:145:3:
-  143 |   static a9 = 'someString';
-  144 |   private a10: string;
-> 145 |   @Foo() a11 = 5;
-      |   ^
-  146 |   private a12;
-  147 |   @Bar() a13 = 'someString';
-  148 |   private a14;
-
-
 error: Member a12 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:146:3:
   144 |   private a10: string;
   145 |   @Foo() a11 = 5;
@@ -549,16 +499,6 @@ error: Member a12 should be declared before all protected instance field definit
   147 |   @Bar() a13 = 'someString';
   148 |   private a14;
   149 |   get some15() {
-
-
-error: Member a13 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:147:3:
-  145 |   @Foo() a11 = 5;
-  146 |   private a12;
-> 147 |   @Bar() a13 = 'someString';
-      |   ^
-  148 |   private a14;
-  149 |   get some15() {
-  150 |     return 1;
 
 
 error: Member a14 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:148:3:
@@ -761,16 +701,6 @@ error: Member a8 should be declared before all protected instance field definiti
   211 |   @Bar() a11 = 5;
 
 
-error: Member a9 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:209:3:
-  207 |   static a7 = 5;
-  208 |   private static a8 = 5;
-> 209 |   @Foo() a9: string;
-      |   ^
-  210 |   private static a10: string;
-  211 |   @Bar() a11 = 5;
-  212 |   private static a12;
-
-
 error: Member a10 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:210:3:
   208 |   private static a8 = 5;
   209 |   @Foo() a9: string;
@@ -779,16 +709,6 @@ error: Member a10 should be declared before all protected instance field definit
   211 |   @Bar() a11 = 5;
   212 |   private static a12;
   213 |   get some12() {
-
-
-error: Member a11 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:211:3:
-  209 |   @Foo() a9: string;
-  210 |   private static a10: string;
-> 211 |   @Bar() a11 = 5;
-      |   ^
-  212 |   private static a12;
-  213 |   get some12() {
-  214 |     return 1;
 
 
 error: Member a12 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:212:3:
@@ -991,16 +911,6 @@ error: Member a8 should be declared before all protected instance field definiti
   274 |   @Bar() a11 = 5;
 
 
-error: Member a9 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:272:3:
-  270 |   static a7: string;
-  271 |   private static a8 = 5;
-> 272 |   @Foo() a9;
-      |   ^
-  273 |   private static a10 = 'someString';
-  274 |   @Bar() a11 = 5;
-  275 |   private static a12;
-
-
 error: Member a10 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:273:3:
   271 |   private static a8 = 5;
   272 |   @Foo() a9;
@@ -1009,16 +919,6 @@ error: Member a10 should be declared before all protected instance field definit
   274 |   @Bar() a11 = 5;
   275 |   private static a12;
   276 |   get some13() {
-
-
-error: Member a11 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:274:3:
-  272 |   @Foo() a9;
-  273 |   private static a10 = 'someString';
-> 274 |   @Bar() a11 = 5;
-      |   ^
-  275 |   private static a12;
-  276 |   get some13() {
-  277 |     return 1;
 
 
 error: Member a12 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:275:3:
@@ -1221,16 +1121,6 @@ error: Member a8 should be declared before all protected instance field definiti
   337 |   @Bar() a11: string;
 
 
-error: Member a9 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:335:3:
-  333 |   public static a7 = 5;
-  334 |   private static a8 = 'someString';
-> 335 |   @Foo() a9: string;
-      |   ^
-  336 |   private static a10 = 5;
-  337 |   @Bar() a11: string;
-  338 |   private static a12 = 5;
-
-
 error: Member a10 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:336:3:
   334 |   private static a8 = 'someString';
   335 |   @Foo() a9: string;
@@ -1239,16 +1129,6 @@ error: Member a10 should be declared before all protected instance field definit
   337 |   @Bar() a11: string;
   338 |   private static a12 = 5;
   339 |   public get some13() {
-
-
-error: Member a11 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:337:3:
-  335 |   @Foo() a9: string;
-  336 |   private static a10 = 5;
-> 337 |   @Bar() a11: string;
-      |   ^
-  338 |   private static a12 = 5;
-  339 |   public get some13() {
-  340 |     return 1;
 
 
 error: Member a12 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:338:3:
@@ -1451,16 +1331,6 @@ error: Member a6 should be declared before all protected instance field definiti
   399 |   @Bar() a9 = 'someString';
 
 
-error: Member a7 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:397:3:
-  395 |   public static a5;
-  396 |   protected static a6 = 5;
-> 397 |   @Foo() a7 = 5;
-      |   ^
-  398 |   protected static a8 = 5;
-  399 |   @Bar() a9 = 'someString';
-  400 |   protected static a10 = 5;
-
-
 error: Member a8 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:398:3:
   396 |   protected static a6 = 5;
   397 |   @Foo() a7 = 5;
@@ -1469,16 +1339,6 @@ error: Member a8 should be declared before all protected instance field definiti
   399 |   @Bar() a9 = 'someString';
   400 |   protected static a10 = 5;
   401 |   public get some11() {
-
-
-error: Member a9 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:399:3:
-  397 |   @Foo() a7 = 5;
-  398 |   protected static a8 = 5;
-> 399 |   @Bar() a9 = 'someString';
-      |   ^
-  400 |   protected static a10 = 5;
-  401 |   public get some11() {
-  402 |     return 1;
 
 
 error: Member a10 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:400:3:
@@ -1681,16 +1541,6 @@ error: Member a6 should be declared before all protected instance field definiti
   460 |   @Bar() a9 = 'someString';
 
 
-error: Member a7 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:458:3:
-  456 |   static a5: string;
-  457 |   protected static a6 = 5;
-> 458 |   @Foo() a7 = 5;
-      |   ^
-  459 |   protected static a8;
-  460 |   @Bar() a9 = 'someString';
-  461 |   protected static a10 = 5;
-
-
 error: Member a8 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:459:3:
   457 |   protected static a6 = 5;
   458 |   @Foo() a7 = 5;
@@ -1699,16 +1549,6 @@ error: Member a8 should be declared before all protected instance field definiti
   460 |   @Bar() a9 = 'someString';
   461 |   protected static a10 = 5;
   462 |   get some11() {
-
-
-error: Member a9 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:460:3:
-  458 |   @Foo() a7 = 5;
-  459 |   protected static a8;
-> 460 |   @Bar() a9 = 'someString';
-      |   ^
-  461 |   protected static a10 = 5;
-  462 |   get some11() {
-  463 |     return 1;
 
 
 error: Member a10 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:461:3:
@@ -1911,16 +1751,6 @@ error: Member a6 should be declared before all protected instance field definiti
   521 |   @Bar() a9;
 
 
-error: Member a7 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:519:3:
-  517 |   public static a5 = 5;
-  518 |   protected static a6: string;
-> 519 |   @Foo() a7: string;
-      |   ^
-  520 |   protected static a8: string;
-  521 |   @Bar() a9;
-  522 |   protected static a10: string;
-
-
 error: Member a8 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:520:3:
   518 |   protected static a6: string;
   519 |   @Foo() a7: string;
@@ -1929,16 +1759,6 @@ error: Member a8 should be declared before all protected instance field definiti
   521 |   @Bar() a9;
   522 |   protected static a10: string;
   523 |   get some11() {
-
-
-error: Member a9 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:521:3:
-  519 |   @Foo() a7: string;
-  520 |   protected static a8: string;
-> 521 |   @Bar() a9;
-      |   ^
-  522 |   protected static a10: string;
-  523 |   get some11() {
-  524 |     return 1;
 
 
 error: Member a10 should be declared before all protected instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:522:3:
@@ -2131,16 +1951,6 @@ error: Member a4 should be declared before all public instance field definitions
   581 |   @Bar() a7 = 'someString';
 
 
-error: Member a5 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:579:3:
-  577 |   public static a3 = 5;
-  578 |   protected a4 = 5;
-> 579 |   @Foo() a5 = 'someString';
-      |   ^
-  580 |   protected a6 = 'someString';
-  581 |   @Bar() a7 = 'someString';
-  582 |   protected a8 = 5;
-
-
 error: Member a6 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:580:3:
   578 |   protected a4 = 5;
   579 |   @Foo() a5 = 'someString';
@@ -2149,16 +1959,6 @@ error: Member a6 should be declared before all public instance field definitions
   581 |   @Bar() a7 = 'someString';
   582 |   protected a8 = 5;
   583 |   get some9() {
-
-
-error: Member a7 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:581:3:
-  579 |   @Foo() a5 = 'someString';
-  580 |   protected a6 = 'someString';
-> 581 |   @Bar() a7 = 'someString';
-      |   ^
-  582 |   protected a8 = 5;
-  583 |   get some9() {
-  584 |     return 1;
 
 
 error: Member a8 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:582:3:
@@ -2351,16 +2151,6 @@ error: Member a4 should be declared before all public instance field definitions
   640 |   @Bar() a7 = 5;
 
 
-error: Member a5 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:638:3:
-  636 |   static a3;
-  637 |   protected a4 = 5;
-> 638 |   @Foo() a5: string;
-      |   ^
-  639 |   protected a6 = 'someString';
-  640 |   @Bar() a7 = 5;
-  641 |   protected a8 = 5;
-
-
 error: Member a6 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:639:3:
   637 |   protected a4 = 5;
   638 |   @Foo() a5: string;
@@ -2369,16 +2159,6 @@ error: Member a6 should be declared before all public instance field definitions
   640 |   @Bar() a7 = 5;
   641 |   protected a8 = 5;
   642 |   public get some9() {
-
-
-error: Member a7 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:640:3:
-  638 |   @Foo() a5: string;
-  639 |   protected a6 = 'someString';
-> 640 |   @Bar() a7 = 5;
-      |   ^
-  641 |   protected a8 = 5;
-  642 |   public get some9() {
-  643 |     return 1;
 
 
 error: Member a8 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:641:3:
@@ -2571,16 +2351,6 @@ error: Member a4 should be declared before all public instance field definitions
   699 |   @Bar() a7 = 5;
 
 
-error: Member a5 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:697:3:
-  695 |   public static a3;
-  696 |   protected a4 = 'someString';
-> 697 |   @Foo() a5 = 5;
-      |   ^
-  698 |   protected a6;
-  699 |   @Bar() a7 = 5;
-  700 |   protected a8 = 5;
-
-
 error: Member a6 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:698:3:
   696 |   protected a4 = 'someString';
   697 |   @Foo() a5 = 5;
@@ -2589,16 +2359,6 @@ error: Member a6 should be declared before all public instance field definitions
   699 |   @Bar() a7 = 5;
   700 |   protected a8 = 5;
   701 |   get some9() {
-
-
-error: Member a7 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:699:3:
-  697 |   @Foo() a5 = 5;
-  698 |   protected a6;
-> 699 |   @Bar() a7 = 5;
-      |   ^
-  700 |   protected a8 = 5;
-  701 |   get some9() {
-  702 |     return 1;
 
 
 error: Member a8 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:700:3:
@@ -2761,26 +2521,6 @@ error: Member a31 should be declared before all public instance field definition
   751 | // Wrong cases for public-instance-field-fields
 
 
-error: Member a3 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:755:3:
-  753 |   public static a1 = 'someString';
-  754 |   a2: string;
-> 755 |   @Foo() a3 = 'someString';
-      |   ^
-  756 |   public a4: string;
-  757 |   @Bar() a5: string;
-  758 |   a6;
-
-
-error: Member a5 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:757:3:
-  755 |   @Foo() a3 = 'someString';
-  756 |   public a4: string;
-> 757 |   @Bar() a5: string;
-      |   ^
-  758 |   a6;
-  759 |   public get some7() {
-  760 |     return 1;
-
-
 error: Member a20 should be declared before all public instance method definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:786:3:
   784 |     return a;
   785 |   }
@@ -2869,26 +2609,6 @@ error: Member a30 should be declared before all public instance method definitio
   807 | }
   808 | 
   809 | class InvalidFixture14 {
-
-
-error: Member a3 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:812:3:
-  810 |   static a1 = 5;
-  811 |   public a2 = 5;
-> 812 |   @Foo() a3;
-      |   ^
-  813 |   a4 = 5;
-  814 |   @Bar() a5;
-  815 |   public a6 = 5;
-
-
-error: Member a5 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:814:3:
-  812 |   @Foo() a3;
-  813 |   a4 = 5;
-> 814 |   @Bar() a5;
-      |   ^
-  815 |   public a6 = 5;
-  816 |   get some7() {
-  817 |     return 1;
 
 
 error: Member a20 should be declared before all public instance method definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:843:3:
@@ -2981,26 +2701,6 @@ error: Member a30 should be declared before all public instance method definitio
   866 | class InvalidFixture15 {
 
 
-error: Member a3 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:869:3:
-  867 |   static a1: string;
-  868 |   a2: string;
-> 869 |   @Foo() a3 = 'someString';
-      |   ^
-  870 |   a4 = 5;
-  871 |   @Bar() a5: string;
-  872 |   a6 = 5;
-
-
-error: Member a5 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:871:3:
-  869 |   @Foo() a3 = 'someString';
-  870 |   a4 = 5;
-> 871 |   @Bar() a5: string;
-      |   ^
-  872 |   a6 = 5;
-  873 |   public get some7() {
-  874 |     return 1;
-
-
 error: Member a20 should be declared before all public instance method definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:900:3:
   898 |     return 5;
   899 |   }
@@ -3091,7 +2791,7 @@ error: Member a30 should be declared before all public instance method definitio
   923 | // Wrong cases for public-static-field-fields
 
 
-error: Member a2 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:926:3:
+error: Member a2 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:926:3:
   924 | class InvalidFixture16 {
   925 |   @Foo() a1 = 'someString';
 > 926 |   public static a2 = 5;
@@ -3101,7 +2801,7 @@ error: Member a2 should be declared before all public decorated field definition
   929 |   get some4() {
 
 
-error: Member a3 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:928:3:
+error: Member a3 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:928:3:
   926 |   public static a2 = 5;
   927 |   @Bar() a2 = 5;
 > 928 |   static a3 = 5;
@@ -3111,7 +2811,7 @@ error: Member a3 should be declared before all public decorated field definition
   931 |   }
 
 
-error: Member a5 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:932:3:
+error: Member a5 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:932:3:
   930 |     return 1;
   931 |   }
 > 932 |   static a5 = 5;
@@ -3121,7 +2821,7 @@ error: Member a5 should be declared before all public decorated field definition
   935 |   }
 
 
-error: Member a7 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:936:3:
+error: Member a7 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:936:3:
   934 |     // noop
   935 |   }
 > 936 |   public static a7;
@@ -3131,7 +2831,7 @@ error: Member a7 should be declared before all public decorated field definition
   939 |   }
 
 
-error: Member a9 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:940:3:
+error: Member a9 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:940:3:
   938 |     return 1;
   939 |   }
 > 940 |   static a9 = 5;
@@ -3141,7 +2841,7 @@ error: Member a9 should be declared before all public decorated field definition
   943 |   }
 
 
-error: Member a11 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:944:3:
+error: Member a11 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:944:3:
   942 |     // noop
   943 |   }
 > 944 |   static a11;
@@ -3151,7 +2851,7 @@ error: Member a11 should be declared before all public decorated field definitio
   947 |   }
 
 
-error: Member a13 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:948:3:
+error: Member a13 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:948:3:
   946 |     return 1;
   947 |   }
 > 948 |   static a13 = 'someString';
@@ -3161,7 +2861,7 @@ error: Member a13 should be declared before all public decorated field definitio
   951 |   }
 
 
-error: Member a15 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:952:3:
+error: Member a15 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:952:3:
   950 |     // noop
   951 |   }
 > 952 |   static a15 = 'someString';
@@ -3171,7 +2871,7 @@ error: Member a15 should be declared before all public decorated field definitio
   955 |   }
 
 
-error: Member a17 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:956:3:
+error: Member a17 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:956:3:
   954 |     return a;
   955 |   }
 > 956 |   public static a17: string;
@@ -3191,7 +2891,7 @@ error: Member b18 should be declared before all public instance method definitio
   960 |   static a19: string;
 
 
-error: Member a19 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:960:3:
+error: Member a19 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:960:3:
   958 |     return 5;
   959 |   }
 > 960 |   static a19: string;
@@ -3201,7 +2901,7 @@ error: Member a19 should be declared before all public decorated field definitio
   963 |   }
 
 
-error: Member a21 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:964:3:
+error: Member a21 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:964:3:
   962 |     return 5;
   963 |   }
 > 964 |   public static a21: string;
@@ -3221,7 +2921,7 @@ error: Member b22 should be declared before all public instance method definitio
   968 |   static a23: string;
 
 
-error: Member a23 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:968:3:
+error: Member a23 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:968:3:
   966 |     return 5;
   967 |   }
 > 968 |   static a23: string;
@@ -3231,7 +2931,7 @@ error: Member a23 should be declared before all public decorated field definitio
   971 |   }
 
 
-error: Member a25 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:972:3:
+error: Member a25 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:972:3:
   970 |     return 5;
   971 |   }
 > 972 |   public static a25: string;
@@ -3251,7 +2951,7 @@ error: Member a26 should be declared before all public instance method definitio
   976 |   public static a27 = 5;
 
 
-error: Member a27 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:976:3:
+error: Member a27 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:976:3:
   974 |     return 5;
   975 |   }
 > 976 |   public static a27 = 5;
@@ -3261,7 +2961,7 @@ error: Member a27 should be declared before all public decorated field definitio
   979 | class InvalidFixture17 {
 
 
-error: Member a2 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:981:3:
+error: Member a2 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:981:3:
   979 | class InvalidFixture17 {
   980 |   @Foo() a1 = 'someString';
 > 981 |   static a2 = 5;
@@ -3271,7 +2971,7 @@ error: Member a2 should be declared before all public decorated field definition
   984 |   get some5() {
 
 
-error: Member a4 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:983:3:
+error: Member a4 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:983:3:
   981 |   static a2 = 5;
   982 |   @Bar() a3 = 5;
 > 983 |   public static a4: string;
@@ -3281,7 +2981,7 @@ error: Member a4 should be declared before all public decorated field definition
   986 |   }
 
 
-error: Member a6 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:987:3:
+error: Member a6 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:987:3:
   985 |     return 1;
   986 |   }
 > 987 |   static a6 = 5;
@@ -3291,7 +2991,7 @@ error: Member a6 should be declared before all public decorated field definition
   990 |   }
 
 
-error: Member a8 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:991:3:
+error: Member a8 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:991:3:
   989 |     // noop
   990 |   }
 > 991 |   public static a8: string;
@@ -3301,7 +3001,7 @@ error: Member a8 should be declared before all public decorated field definition
   994 |   }
 
 
-error: Member a10 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:995:3:
+error: Member a10 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:995:3:
   993 |     return 1;
   994 |   }
 > 995 |   public static a10 = 5;
@@ -3311,7 +3011,7 @@ error: Member a10 should be declared before all public decorated field definitio
   998 |   }
 
 
-error: Member a12 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:999:3:
+error: Member a12 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:999:3:
    997 |     // noop
    998 |   }
 >  999 |   static a12 = 5;
@@ -3321,7 +3021,7 @@ error: Member a12 should be declared before all public decorated field definitio
   1002 |   }
 
 
-error: Member a14 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1003:3:
+error: Member a14 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1003:3:
   1001 |     return 1;
   1002 |   }
 > 1003 |   static a14 = 5;
@@ -3331,7 +3031,7 @@ error: Member a14 should be declared before all public decorated field definitio
   1006 |   }
 
 
-error: Member a16 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1007:3:
+error: Member a16 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1007:3:
   1005 |     // noop
   1006 |   }
 > 1007 |   static a16 = 5;
@@ -3341,7 +3041,7 @@ error: Member a16 should be declared before all public decorated field definitio
   1010 |   }
 
 
-error: Member a18 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1011:3:
+error: Member a18 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1011:3:
   1009 |     return 5;
   1010 |   }
 > 1011 |   public static a18 = 'someString';
@@ -3361,7 +3061,7 @@ error: Member b19 should be declared before all public instance method definitio
   1015 |   public static a20: string;
 
 
-error: Member a20 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1015:3:
+error: Member a20 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1015:3:
   1013 |     return 5;
   1014 |   }
 > 1015 |   public static a20: string;
@@ -3371,7 +3071,7 @@ error: Member a20 should be declared before all public decorated field definitio
   1018 |   }
 
 
-error: Member a22 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1019:3:
+error: Member a22 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1019:3:
   1017 |     return 5;
   1018 |   }
 > 1019 |   static a22;
@@ -3391,7 +3091,7 @@ error: Member a23 should be declared before all public instance method definitio
   1023 |   static a24 = 5;
 
 
-error: Member a24 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1023:3:
+error: Member a24 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1023:3:
   1021 |     return 5;
   1022 |   }
 > 1023 |   static a24 = 5;
@@ -3401,7 +3101,7 @@ error: Member a24 should be declared before all public decorated field definitio
   1026 |   }
 
 
-error: Member a26 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1027:3:
+error: Member a26 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1027:3:
   1025 |     return 5;
   1026 |   }
 > 1027 |   static a26 = 5;
@@ -3421,7 +3121,7 @@ error: Member a27 should be declared before all public instance method definitio
   1031 |   static a28 = 5;
 
 
-error: Member a28 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1031:3:
+error: Member a28 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1031:3:
   1029 |     return 5;
   1030 |   }
 > 1031 |   static a28 = 5;
@@ -3431,7 +3131,7 @@ error: Member a28 should be declared before all public decorated field definitio
   1034 | class InvalidFixture18 {
 
 
-error: Member a2 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1036:3:
+error: Member a2 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1036:3:
   1034 | class InvalidFixture18 {
   1035 |   @Foo() a1: string;
 > 1036 |   public static a2 = 5;
@@ -3441,7 +3141,7 @@ error: Member a2 should be declared before all public decorated field definition
   1039 |   public get some5() {
 
 
-error: Member a4 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1038:3:
+error: Member a4 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1038:3:
   1036 |   public static a2 = 5;
   1037 |   @Bar() a3: string;
 > 1038 |   static a4;
@@ -3451,7 +3151,7 @@ error: Member a4 should be declared before all public decorated field definition
   1041 |   }
 
 
-error: Member a6 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1042:3:
+error: Member a6 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1042:3:
   1040 |     return 1;
   1041 |   }
 > 1042 |   static a6 = 5;
@@ -3461,7 +3161,7 @@ error: Member a6 should be declared before all public decorated field definition
   1045 |   }
 
 
-error: Member a8 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1046:3:
+error: Member a8 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1046:3:
   1044 |     // noop
   1045 |   }
 > 1046 |   public static a8 = 5;
@@ -3471,7 +3171,7 @@ error: Member a8 should be declared before all public decorated field definition
   1049 |   }
 
 
-error: Member a10 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1050:3:
+error: Member a10 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1050:3:
   1048 |     return 1;
   1049 |   }
 > 1050 |   static a10;
@@ -3481,7 +3181,7 @@ error: Member a10 should be declared before all public decorated field definitio
   1053 |   }
 
 
-error: Member a12 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1054:3:
+error: Member a12 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1054:3:
   1052 |     // noop
   1053 |   }
 > 1054 |   public static a12;
@@ -3491,7 +3191,7 @@ error: Member a12 should be declared before all public decorated field definitio
   1057 |   }
 
 
-error: Member a14 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1058:3:
+error: Member a14 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1058:3:
   1056 |     return 1;
   1057 |   }
 > 1058 |   public static a14 = 'someString';
@@ -3501,7 +3201,7 @@ error: Member a14 should be declared before all public decorated field definitio
   1061 |   }
 
 
-error: Member a16 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1062:3:
+error: Member a16 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1062:3:
   1060 |     // noop
   1061 |   }
 > 1062 |   static a16: string;
@@ -3511,7 +3211,7 @@ error: Member a16 should be declared before all public decorated field definitio
   1065 |   }
 
 
-error: Member a18 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1066:3:
+error: Member a18 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1066:3:
   1064 |     return 5;
   1065 |   }
 > 1066 |   static a18: string;
@@ -3531,7 +3231,7 @@ error: Member c19 should be declared before all public instance method definitio
   1070 |   public static a20: string;
 
 
-error: Member a20 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1070:3:
+error: Member a20 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1070:3:
   1068 |     return a;
   1069 |   }
 > 1070 |   public static a20: string;
@@ -3541,7 +3241,7 @@ error: Member a20 should be declared before all public decorated field definitio
   1073 |   }
 
 
-error: Member a22 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1074:3:
+error: Member a22 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1074:3:
   1072 |     return 5;
   1073 |   }
 > 1074 |   static a22 = 5;
@@ -3561,7 +3261,7 @@ error: Member b23 should be declared before all public instance method definitio
   1078 |   public static a24 = 5;
 
 
-error: Member a24 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1078:3:
+error: Member a24 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1078:3:
   1076 |     return 5;
   1077 |   }
 > 1078 |   public static a24 = 5;
@@ -3571,7 +3271,7 @@ error: Member a24 should be declared before all public decorated field definitio
   1081 |   }
 
 
-error: Member a26 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1082:3:
+error: Member a26 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1082:3:
   1080 |     return 5;
   1081 |   }
 > 1082 |   static a26;
@@ -3591,7 +3291,7 @@ error: Member b27 should be declared before all public instance method definitio
   1086 |   public static a28: string;
 
 
-error: Member a28 should be declared before all public decorated field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1086:3:
+error: Member a28 should be declared before all public instance field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:1086:3:
   1084 |     return 5;
   1085 |   }
 > 1086 |   public static a28: string;
@@ -5221,5 +4921,5 @@ error: Member a4 should be declared before all private instance method definitio
   2671 | }
 
 
-522 errors found."
+492 errors found."
 `;

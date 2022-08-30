@@ -3,6 +3,7 @@
   "description": "Linter configs and custom TSLint rules of Tinkoff",
   "license": "Apache-2.0",
   "scripts": {
+    "postinstall": "husky install",
     "********** Linters": "",
     "prettier": "prettier --write '**/*.{js,ts,md,json,html}'",
     "prettier:ci": "prettier --check '**/*.{js,ts,md,json,html}'",
@@ -10,8 +11,6 @@
     "lint:all": "eslint .",
     "prelint:ci": "lerna run build:prod --parallel",
     "lint:ci": "concurrently 'npm:prettier:ci' 'npm:lint:all'",
-    "*** Bootstrap": "",
-    "postinstall": "lerna bootstrap --hoist --ignore-prepublish && husky install",
     "********** Build": "",
     "build:prod": "lerna run build:prod --parallel",
     "********** Test": "",
@@ -31,6 +30,14 @@
     "type": "git",
     "url": "https://github.com/TinkoffCreditSystems/linters.git"
   },
+  "engines": {
+    "node": ">= 14",
+    "npm": ">= 7",
+    "yarn": "Please use npm instead of yarn to install dependencies"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
   "prettier": "./packages/prettier-config/index.js",
   "devDependencies": {
     "@babel/core": "^7.10.3",
