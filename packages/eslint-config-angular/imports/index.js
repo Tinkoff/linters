@@ -24,6 +24,7 @@ module.exports = {
     'import/exports-last': 'off',
     'import/no-default-export': 'off',
     'import/newline-after-import': ['error', { count: 1 }],
+    'import/no-cycle': 'error',
     'import/no-webpack-loader-syntax': 'off',
     /**
      * @note: note you must disable the base rule
