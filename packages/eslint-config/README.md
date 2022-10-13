@@ -74,3 +74,61 @@ configurations
 
 Try to remove `eslint`, `prettier`, and `@tinkoff/eslint-config` internal dependencies from your project `package.json`,
 then reinstall dependencies.
+
+## Usage tips for [Nx monorepo](https://nrwl.io/)
+
+### Connect to nx workspace
+
+#### In root config
+
+Add `"@tinkoff/eslint-config/app"` to extends section on config.
+Also, if you monorepo contains only buildable/publishable libs without apps, use `"@tinkoff/eslint-config/lib"` instead of `"@tinkoff/eslint-config/app"`
+
+```json
+{
+
+    "root": true,
+    "ignorePatterns": ["**/*"],
+    "extends": ["@tinkoff/eslint-config/app"]
+    ...optionally some other configs
+}
+```
+
+#### In apps and non-buildable/non-publishable libs
+
+In app/lib eslint configuration just extends root config
+
+```json
+{
+    "extends": ["../../.eslintrc.json"],
+    "ignorePatterns": ["!**/*"]
+    ...optionally some other configs
+}
+```
+
+#### Only in buildable/publishable libs (if repo contain apps or non-buildable/non-publishable libs)
+
+Add `"@tinkoff/eslint-config/lib"` in extends section after root config
+
+```json
+{
+    "extends": ["../../.eslintrc.json", "@tinkoff/eslint-config/lib"],
+    "ignorePatterns": ["!**/*"]
+    ...optionally some other configs
+}
+```
+
+### Non-JSON configs usage
+
+Nx means usage `.eslintrc.json` for configure ESLint. Just provide it! In `.eslintrc.json` add extension of actual root config file:
+
+```
+{
+  "extends": ["./.eslintrc.js"]
+}
+```
+
+After that:
+
+- Nx see what they need and don't re-initialize lint infrastructure
+- You can use [better config formats](https://eslint.org/docs/latest/user-guide/configuring/configuration-files#configuration-file-formats) and nx generators
