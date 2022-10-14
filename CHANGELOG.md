@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.37.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.2...v1.37.0) (2022-10-14)
+
+
+### Features
+
+* **eslint-config:** allow break convention for quoted names ([#207](https://github.com/TinkoffCreditSystems/linters/issues/207)) ([ffe15c4](https://github.com/TinkoffCreditSystems/linters/commit/ffe15c494bc08d401344ed3cab4fc9d6ef6d24a7))
+
+
+
 ### [1.36.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.1...v1.36.2) (2022-10-13)
 
 **Note:** Version bump only for package linters-monorepo
