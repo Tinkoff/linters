@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config-react",
-  "version": "1.37.0",
+  "version": "1.38.0",
   "description": "Tinkoff ESLint configs for React apps",
   "license": "Apache-2.0",
   "keywords": [
@@ -25,7 +25,7 @@
     "eslint-plugin-react-hooks": "^4.0.8"
   },
   "devDependencies": {
-    "@tinkoff/eslint-config": "^1.37.0"
+    "@tinkoff/eslint-config": "^1.38.0"
   },
   "peerDependencies": {
     "eslint": "^7.5.0",

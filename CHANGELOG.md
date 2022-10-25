@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.37.0...v1.38.0) (2022-10-25)
+
+
+### Features
+
+* **eslint-config:** set import/no-cycle to error ([#206](https://github.com/TinkoffCreditSystems/linters/issues/206)) ([afab74b](https://github.com/TinkoffCreditSystems/linters/commit/afab74b1ed5f3705d75a82135a1b9c95a8a56da6))
+
+
+
 ## [1.37.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.2...v1.37.0) (2022-10-14)
 
 
