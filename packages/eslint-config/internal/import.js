@@ -29,6 +29,6 @@ module.exports = {
     ],
     'import/order': ['warn', { groups: [['builtin', 'external', 'internal']] }],
     'import/no-extraneous-dependencies': 'off', // need fine tuning
-    'import/no-cycle': 'off',
+    'import/no-cycle': 'error',
   },
 };

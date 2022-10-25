@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`import / unhappy path unhappy 1`] = `
+"error: Dependency cycle detected (import/no-cycle) at packages/eslint-config/test/import/__fixtures__/import-unhappy.fixture.js:1:1:
+> 1 | import { b } from './dep-b';
+    | ^
+  2 | 
+  3 | b();
+  4 | 
+
+
+1 error found."
+`;
