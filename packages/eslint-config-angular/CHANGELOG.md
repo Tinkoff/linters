@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.40.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.39.0...v1.40.0) (2022-11-07)
+
+
+### Features
+
+* add file-progress plugin ([#210](https://github.com/TinkoffCreditSystems/linters/issues/210)) ([44b67d1](https://github.com/TinkoffCreditSystems/linters/commit/44b67d1a0c55beedd38f94a90bef1923b89b9e01))
+
+
+
 ### [1.36.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.0...v1.36.1) (2022-06-17)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
