@@ -80,32 +80,40 @@ then reinstall dependencies.
 
 #### In root config
 
-Add `"@tinkoff/eslint-config/app"` to extends section on config.
-Also, if you monorepo contains only buildable/publishable libs without apps, use `"@tinkoff/eslint-config/lib"` instead of `"@tinkoff/eslint-config/app"`
+1. Add `"@tinkoff/eslint-config"` to extends section on config.
+2. Set parserOptions.project for typescript files
 
-```json
+```json5
 {
 
     "root": true,
     "ignorePatterns": ["**/*"],
-    "extends": ["@tinkoff/eslint-config/app"]
-    ...optionally some other configs
+    "extends": ["@tinkoff/eslint-config"]
+    // ...optionally some other configs
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx"],
+            "parserOptions": {
+                "project": ["./tsconfig.base.json"]
+            }
+        }
+    ]
 }
 ```
 
 #### In apps and non-buildable/non-publishable libs
 
-In app/lib eslint configuration just extends root config
+Add `"@tinkoff/eslint-config/app"` in extends section after root config
 
 ```json
 {
-    "extends": ["../../.eslintrc.json"],
+    "extends": ["../../.eslintrc.json", "@tinkoff/eslint-config/app"],
     "ignorePatterns": ["!**/*"]
     ...optionally some other configs
 }
 ```
 
-#### Only in buildable/publishable libs (if repo contain apps or non-buildable/non-publishable libs)
+#### In buildable/publishable libs
 
 Add `"@tinkoff/eslint-config/lib"` in extends section after root config
 
@@ -131,3 +139,27 @@ After that:
 
 - Nx see what they need and don't re-initialize lint infrastructure
 - You can use [better config formats](https://eslint.org/docs/latest/user-guide/configuring/configuration-files#configuration-file-formats) and nx generators
+
+### Disable false-positive detections from `import/no-unresolved`
+
+override rule in `.eslintrc` of apps/libs that contains problem:
+
+```json5
+{
+  // ...some other configs...
+  // disable detection for packages starts with @tinkoff/
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
+      rules: {
+        'import/no-unresolved': [
+          'error',
+          {
+            ignore: ['^@tinkoff/'],
+          },
+        ],
+      },
+    },
+  ],
+}
+```
