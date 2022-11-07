@@ -11,8 +11,7 @@ npm i --save-dev @tinkoff/eslint-config
 ```
 
 Then, need to include necessary configurations sets to `.eslintrc`. Wee need to choose base configuration, and any
-necessary additional configs. Package include `eslint@7` and `prettier@2` dependencies, so you should remove `eslint`,
-`prettier`, and `@tinkoff/eslint-config` internal dependencies from your project `package.json`.
+necessary additional configs. Package include eslint and prettier dependencies, so you should remove eslint, prettier from your project package.json because those packages are transitive dependencies.
 
 ### Base configurations
 
