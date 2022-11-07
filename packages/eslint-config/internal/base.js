@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ['eslint-config-airbnb-base', 'plugin:eslint-comments/recommended'],
+  extends: [
+    'eslint-config-airbnb-base',
+    'plugin:eslint-comments/recommended',
+    '../errors/index.js',
+  ],
 
   parser: '@babel/eslint-parser',
 
@@ -64,7 +68,6 @@ module.exports = {
     'max-classes-per-file': ['error', 4],
     complexity: ['error', 25],
     'max-statements': ['error', 25],
-    'no-empty': ['error', { allowEmptyCatch: true }],
     'no-underscore-dangle': 'off',
     'no-return-assign': ['error', 'except-parens'],
     'lines-between-class-members': [
@@ -76,6 +79,5 @@ module.exports = {
     'max-nested-callbacks': ['error', 4],
     'no-bitwise': 'warn',
     'no-useless-escape': 'warn',
-    'no-await-in-loop': 'off',
   },
 };
