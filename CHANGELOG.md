@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.39.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.38.1...v1.39.0) (2022-11-07)
+
+
+### Features
+
+* **eslint-config:** move airbnb errors rules to separate config ([#211](https://github.com/TinkoffCreditSystems/linters/issues/211)) ([ae028c9](https://github.com/TinkoffCreditSystems/linters/commit/ae028c9003ba132352b9a2c464d6219ee2c38847))
+
+
+
 ### [1.38.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.38.0...v1.38.1) (2022-10-28)
 
 **Note:** Version bump only for package linters-monorepo
