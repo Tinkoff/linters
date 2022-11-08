@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ['eslint-config-airbnb-base', 'plugin:eslint-comments/recommended'],
+  extends: [
+    'eslint-config-airbnb-base',
+    'plugin:eslint-comments/recommended',
+    '../errors/index.js',
+  ],
 
   parser: '@babel/eslint-parser',
 
@@ -13,6 +17,7 @@ module.exports = {
     ecmaFeatures: {
       legacyDecorators: true,
     },
+    requireConfigFile: false,
   },
 
   rules: {
@@ -35,22 +40,11 @@ module.exports = {
     'global-require': 'off',
     'class-methods-use-this': 'off',
     'no-continue': 'off',
-    'no-restricted-syntax': [
-      'warn',
-      {
-        selector: 'LabeledStatement',
-        message:
-          'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
-      },
-      {
-        selector: 'WithStatement',
-        message:
-          '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
-      },
-    ],
+    'no-restricted-syntax': 'off',
     'guard-for-in': 'off',
-    'default-case': 'warn',
-    'no-plusplus': ['warn', { allowForLoopAfterthoughts: true }],
+    'default-case': 'off',
+    'no-plusplus': 'off',
+    'func-names': 'off',
     'consistent-return': 'warn',
     'vars-on-top': 'warn',
     'no-var': 'warn',
@@ -69,12 +63,11 @@ module.exports = {
         allowArrowFunctions: true,
       },
     ],
-    'max-depth': ['warn', 4],
-    'max-params': ['warn', 4],
+    'max-depth': 'off',
+    'max-params': 'off',
     'max-classes-per-file': ['error', 4],
     complexity: ['error', 25],
     'max-statements': ['error', 25],
-    'no-empty': ['error', { allowEmptyCatch: true }],
     'no-underscore-dangle': 'off',
     'no-return-assign': ['error', 'except-parens'],
     'lines-between-class-members': [
@@ -86,6 +79,5 @@ module.exports = {
     'max-nested-callbacks': ['error', 4],
     'no-bitwise': 'warn',
     'no-useless-escape': 'warn',
-    'no-await-in-loop': 'off',
   },
 };

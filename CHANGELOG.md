@@ -3,6 +3,325 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.40.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.39.0...v1.40.0) (2022-11-07)
+
+
+### Features
+
+* add file-progress plugin ([#210](https://github.com/TinkoffCreditSystems/linters/issues/210)) ([44b67d1](https://github.com/TinkoffCreditSystems/linters/commit/44b67d1a0c55beedd38f94a90bef1923b89b9e01))
+
+
+
+## [1.39.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.38.1...v1.39.0) (2022-11-07)
+
+
+### Features
+
+* **eslint-config:** move airbnb errors rules to separate config ([#211](https://github.com/TinkoffCreditSystems/linters/issues/211)) ([ae028c9](https://github.com/TinkoffCreditSystems/linters/commit/ae028c9003ba132352b9a2c464d6219ee2c38847))
+
+
+
+### [1.38.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.38.0...v1.38.1) (2022-10-28)
+
+**Note:** Version bump only for package linters-monorepo
+
+
+
+
+
+## [1.38.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.37.0...v1.38.0) (2022-10-25)
+
+
+### Features
+
+* **eslint-config:** set import/no-cycle to error ([#206](https://github.com/TinkoffCreditSystems/linters/issues/206)) ([afab74b](https://github.com/TinkoffCreditSystems/linters/commit/afab74b1ed5f3705d75a82135a1b9c95a8a56da6))
+
+
+
+## [1.37.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.2...v1.37.0) (2022-10-14)
+
+
+### Features
+
+* **eslint-config:** allow break convention for quoted names ([#207](https://github.com/TinkoffCreditSystems/linters/issues/207)) ([ffe15c4](https://github.com/TinkoffCreditSystems/linters/commit/ffe15c494bc08d401344ed3cab4fc9d6ef6d24a7))
+
+
+
+### [1.36.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.1...v1.36.2) (2022-10-13)
+
+**Note:** Version bump only for package linters-monorepo
+
+
+
+
+
+### [1.36.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.0...v1.36.1) (2022-06-17)
+
+**Note:** Version bump only for package linters-monorepo
+
+
+
+
+
+## [1.36.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.35.0...v1.36.0) (2022-06-15)
+
+
+### Features
+
+* **eslint-config-angular:** decomposition angular complex configs to optional configs ([#197](https://github.com/TinkoffCreditSystems/linters/issues/197)) ([df3c1a3](https://github.com/TinkoffCreditSystems/linters/commit/df3c1a395fcef1fd7df07e0e39472f9b7782b67c))
+
+
+
+## [1.35.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.34.1...v1.35.0) (2022-06-15)
+
+
+### Features
+
+* **eslint-config-angular:** support `eqeqeq` ([#199](https://github.com/TinkoffCreditSystems/linters/issues/199)) ([2be0ecb](https://github.com/TinkoffCreditSystems/linters/commit/2be0ecb2d8c4faf5067ffc63dd637c63d8efa71e))
+
+
+
+### [1.34.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.34.0...v1.34.1) (2022-04-25)
+
+**Note:** Version bump only for package linters-monorepo
+
+
+
+
+
+## [1.34.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.2...v1.34.0) (2022-04-21)
+
+
+### Features
+
+* **eslint-config-angular:** add most useful rules for async-await ([#195](https://github.com/TinkoffCreditSystems/linters/issues/195)) ([015e0d1](https://github.com/TinkoffCreditSystems/linters/commit/015e0d194827282ea6cc6f5b74146c3d1bd2fc37))
+
+
+
+### [1.33.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.1...v1.33.2) (2022-04-21)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** added recommended rules of best practices ([#194](https://github.com/TinkoffCreditSystems/linters/issues/194)) ([0324843](https://github.com/TinkoffCreditSystems/linters/commit/03248430bb14ebb3dad97434e70e067e94622f68))
+
+
+
+### [1.33.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.0...v1.33.1) (2022-04-21)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** use `array-simple` instead of `array` ([#193](https://github.com/TinkoffCreditSystems/linters/issues/193)) ([ba74fde](https://github.com/TinkoffCreditSystems/linters/commit/ba74fdef7ecec92506776bd83dbaf70a93d96f8f))
+
+
+
+## [1.33.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.32.1...v1.33.0) (2022-04-21)
+
+
+### Features
+
+* **eslint-config-angular:** support `@typescript-eslint/array-type` ([#192](https://github.com/TinkoffCreditSystems/linters/issues/192)) ([d8e0023](https://github.com/TinkoffCreditSystems/linters/commit/d8e0023d89ebbd5745f5f2ec17ae58b867d856a8))
+
+
+
+### [1.32.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.32.0...v1.32.1) (2022-04-15)
+
+
+### Bug Fixes
+
+* **prettier-config:** don't add scripts field if it's not provided ([#191](https://github.com/TinkoffCreditSystems/linters/issues/191)) ([4ec48b8](https://github.com/TinkoffCreditSystems/linters/commit/4ec48b8592ff8f0c0a49fe586dff07153f531c1f))
+
+
+
+## [1.32.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.1...v1.32.0) (2022-04-15)
+
+
+### Features
+
+* **prettier-config:** add plugin to sort the keys of a package.json ([#189](https://github.com/TinkoffCreditSystems/linters/issues/189)) ([685676a](https://github.com/TinkoffCreditSystems/linters/commit/685676aae9f3b543b572ba5204d4e1c8df6045a4))
+
+
+
+### [1.31.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.0...v1.31.1) (2022-04-13)
+
+**Note:** Version bump only for package linters-monorepo
+
+
+
+
+
+## [1.31.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.30.0...v1.31.0) (2022-04-06)
+
+
+### Features
+
+* **eslint-config-angular:** add rxjs plugin ([#188](https://github.com/TinkoffCreditSystems/linters/issues/188)) ([d90e4d6](https://github.com/TinkoffCreditSystems/linters/commit/d90e4d6daad360e4a18253ccd2e7e0e1963b708f))
+
+
+
+## [1.30.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.3...v1.30.0) (2022-04-05)
+
+
+### Features
+
+* **stylelint-config:** upgrade stylelint ([#187](https://github.com/TinkoffCreditSystems/linters/issues/187)) ([aec0f7b](https://github.com/TinkoffCreditSystems/linters/commit/aec0f7bb0333139be7e93c37fbe025155e0ffa6e))
+
+
+
+### [1.29.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.2...v1.29.3) (2022-04-05)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** expose html, ts configs ([#184](https://github.com/TinkoffCreditSystems/linters/issues/184)) ([da1fde4](https://github.com/TinkoffCreditSystems/linters/commit/da1fde47f0ce9599686c3568510142ca522de431))
+
+
+
+### [1.29.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.1...v1.29.2) (2022-04-04)
+
+
+### Bug Fixes
+
+* **prettier-config:** dedupe prettier 2.6.2 ([#186](https://github.com/TinkoffCreditSystems/linters/issues/186)) ([d6d1221](https://github.com/TinkoffCreditSystems/linters/commit/d6d1221b319d7d306e50d0638c9cafe72ca93eb6))
+
+
+
+### [1.29.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.0...v1.29.1) (2022-04-04)
+
+
+### Bug Fixes
+
+* **prettier-config:** fix problem with less parser ([#185](https://github.com/TinkoffCreditSystems/linters/issues/185)) ([5ba22a1](https://github.com/TinkoffCreditSystems/linters/commit/5ba22a143111ebc1933b6cf679d2bbe421359849))
+
+
+
+## [1.29.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.28.0...v1.29.0) (2022-04-01)
+
+
+### Features
+
+* separate html and typescript rules ([#183](https://github.com/TinkoffCreditSystems/linters/issues/183)) ([1abe9e7](https://github.com/TinkoffCreditSystems/linters/commit/1abe9e7d2f898fc5402e92f68f15d6ae05fd53f6))
+
+
+
+## [1.28.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.3...v1.28.0) (2022-04-01)
+
+
+### Features
+
+* upgrade prettier ([#181](https://github.com/TinkoffCreditSystems/linters/issues/181)) ([540ca60](https://github.com/TinkoffCreditSystems/linters/commit/540ca603fe309676d9d2372e93e8543b7ccd7c90))
+
+
+
+### [1.27.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.2...v1.27.3) (2022-03-03)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** support `no-useless-rename` ([#179](https://github.com/TinkoffCreditSystems/linters/issues/179)) ([89660d5](https://github.com/TinkoffCreditSystems/linters/commit/89660d544d07b844a8cd589c366dd0e55ffa7dc4))
+
+
+
+### [1.27.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.1...v1.27.2) (2022-02-23)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** support `no-implicit-coercion` ([#178](https://github.com/TinkoffCreditSystems/linters/issues/178)) ([1529ea2](https://github.com/TinkoffCreditSystems/linters/commit/1529ea2bddf3a9387668e3ea9418dbae187de8b8))
+
+
+
+### [1.27.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.0...v1.27.1) (2022-02-22)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** support `no-return-assign` ([#177](https://github.com/TinkoffCreditSystems/linters/issues/177)) ([fa278e7](https://github.com/TinkoffCreditSystems/linters/commit/fa278e7d401727645d3169984b061d670f9f6b3a))
+
+
+
+## [1.27.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.3...v1.27.0) (2022-02-17)
+
+
+### Features
+
+* **eslint-config-angular:** use recommendation rules from eslint/typescript ([#170](https://github.com/TinkoffCreditSystems/linters/issues/170)) ([3fc25f3](https://github.com/TinkoffCreditSystems/linters/commit/3fc25f3baa3b10af028fedd36ea48cfea2167433))
+
+
+
+### [1.26.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.2...v1.26.3) (2022-02-08)
+
+**Note:** Version bump only for package linters-monorepo
+
+
+
+
+
+### [1.26.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.1...v1.26.2) (2022-02-08)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** overwrite consistent-type-imports ([#175](https://github.com/TinkoffCreditSystems/linters/issues/175)) ([3018060](https://github.com/TinkoffCreditSystems/linters/commit/30180604046d6c28e66f490f1c3a112d2b9b028d))
+
+
+
+### [1.26.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.0...v1.26.1) (2022-02-08)
+
+
+### Bug Fixes
+
+* Disabled old rule thar did not allow the use for of ([89053d0](https://github.com/TinkoffCreditSystems/linters/commit/89053d0c6d1bcc05cab4fae5a8a30900ebe1dbfe))
+* Remove default-case rules because we usually use TS and sometimes dont need default ([b6747a0](https://github.com/TinkoffCreditSystems/linters/commit/b6747a08b3219764c4fbb0e262d0205be86e04d2))
+
+
+
+## [1.26.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.3...v1.26.0) (2022-02-08)
+
+
+### Features
+
+* **prettier-config:** use json-stringify parser for prettying package.json files ([#169](https://github.com/TinkoffCreditSystems/linters/issues/169)) ([174d1e6](https://github.com/TinkoffCreditSystems/linters/commit/174d1e6e1500ce836aa94c9ca6c9d112b166afc1))
+
+
+
+### [1.25.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.2...v1.25.3) (2022-02-07)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** correctly ensure typescript config for imports ([#173](https://github.com/TinkoffCreditSystems/linters/issues/173)) ([b2638e2](https://github.com/TinkoffCreditSystems/linters/commit/b2638e21a680b48215f295def650e8498185c1c0))
+
+
+
+### [1.25.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.1...v1.25.2) (2022-02-05)
+
+
+### Bug Fixes
+
+* Some rules was unused and don't help with development ([#172](https://github.com/TinkoffCreditSystems/linters/issues/172)) ([dca2c89](https://github.com/TinkoffCreditSystems/linters/commit/dca2c8998d6ebfc8b88bf90d812d0f3149854ce3))
+
+
+
+### [1.25.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.0...v1.25.1) (2022-01-31)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** always try to resolve types under `<root>[@types](https://github.com/types)` ([#166](https://github.com/TinkoffCreditSystems/linters/issues/166)) ([28e9aea](https://github.com/TinkoffCreditSystems/linters/commit/28e9aeacb4538bb1b0182cdda865077a1ec95c63))
+
+
+
+## [1.25.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.24.0...v1.25.0) (2022-01-31)
+
+
+### Features
+
+* **eslint-config-angular:** support no-inferrable-types, no-unused-vars ([#165](https://github.com/TinkoffCreditSystems/linters/issues/165)) ([475f2a2](https://github.com/TinkoffCreditSystems/linters/commit/475f2a26437c5246ae6a12c3dd5e98e911f163fb))
+
+
+
 ## [1.24.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.23.0...v1.24.0) (2022-01-18)
 
 

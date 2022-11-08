@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.38.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.38.0...v1.38.1) (2022-10-28)
+
+**Note:** Version bump only for package @tinkoff/linters
+
+
+
+
+
+### [1.36.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.0...v1.36.1) (2022-06-17)
+
+**Note:** Version bump only for package @tinkoff/linters
+
+
+
+
+
+### [1.29.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.0...v1.29.1) (2022-04-04)
+
+
+### Bug Fixes
+
+* **prettier-config:** fix problem with less parser ([#185](https://github.com/TinkoffCreditSystems/linters/issues/185)) ([5ba22a1](https://github.com/TinkoffCreditSystems/linters/commit/5ba22a143111ebc1933b6cf679d2bbe421359849))
+
+
+
+## [1.28.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.3...v1.28.0) (2022-04-01)
+
+
+### Features
+
+* upgrade prettier ([#181](https://github.com/TinkoffCreditSystems/linters/issues/181)) ([540ca60](https://github.com/TinkoffCreditSystems/linters/commit/540ca603fe309676d9d2372e93e8543b7ccd7c90))
+
+
+
 ## [1.22.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.21.0...v1.22.0) (2021-12-09)
 
 

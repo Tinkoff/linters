@@ -3,6 +3,192 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.40.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.39.0...v1.40.0) (2022-11-07)
+
+
+### Features
+
+* add file-progress plugin ([#210](https://github.com/TinkoffCreditSystems/linters/issues/210)) ([44b67d1](https://github.com/TinkoffCreditSystems/linters/commit/44b67d1a0c55beedd38f94a90bef1923b89b9e01))
+
+
+
+### [1.36.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.0...v1.36.1) (2022-06-17)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-angular
+
+
+
+
+
+## [1.36.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.35.0...v1.36.0) (2022-06-15)
+
+
+### Features
+
+* **eslint-config-angular:** decomposition angular complex configs to optional configs ([#197](https://github.com/TinkoffCreditSystems/linters/issues/197)) ([df3c1a3](https://github.com/TinkoffCreditSystems/linters/commit/df3c1a395fcef1fd7df07e0e39472f9b7782b67c))
+
+
+
+## [1.35.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.34.1...v1.35.0) (2022-06-15)
+
+
+### Features
+
+* **eslint-config-angular:** support `eqeqeq` ([#199](https://github.com/TinkoffCreditSystems/linters/issues/199)) ([2be0ecb](https://github.com/TinkoffCreditSystems/linters/commit/2be0ecb2d8c4faf5067ffc63dd637c63d8efa71e))
+
+
+
+### [1.34.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.34.0...v1.34.1) (2022-04-25)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-angular
+
+
+
+
+
+## [1.34.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.2...v1.34.0) (2022-04-21)
+
+
+### Features
+
+* **eslint-config-angular:** add most useful rules for async-await ([#195](https://github.com/TinkoffCreditSystems/linters/issues/195)) ([015e0d1](https://github.com/TinkoffCreditSystems/linters/commit/015e0d194827282ea6cc6f5b74146c3d1bd2fc37))
+
+
+
+### [1.33.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.1...v1.33.2) (2022-04-21)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** added recommended rules of best practices ([#194](https://github.com/TinkoffCreditSystems/linters/issues/194)) ([0324843](https://github.com/TinkoffCreditSystems/linters/commit/03248430bb14ebb3dad97434e70e067e94622f68))
+
+
+
+### [1.33.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.33.0...v1.33.1) (2022-04-21)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** use `array-simple` instead of `array` ([#193](https://github.com/TinkoffCreditSystems/linters/issues/193)) ([ba74fde](https://github.com/TinkoffCreditSystems/linters/commit/ba74fdef7ecec92506776bd83dbaf70a93d96f8f))
+
+
+
+## [1.33.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.32.1...v1.33.0) (2022-04-21)
+
+
+### Features
+
+* **eslint-config-angular:** support `@typescript-eslint/array-type` ([#192](https://github.com/TinkoffCreditSystems/linters/issues/192)) ([d8e0023](https://github.com/TinkoffCreditSystems/linters/commit/d8e0023d89ebbd5745f5f2ec17ae58b867d856a8))
+
+
+
+### [1.31.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.0...v1.31.1) (2022-04-13)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-angular
+
+
+
+
+
+## [1.31.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.30.0...v1.31.0) (2022-04-06)
+
+
+### Features
+
+* **eslint-config-angular:** add rxjs plugin ([#188](https://github.com/TinkoffCreditSystems/linters/issues/188)) ([d90e4d6](https://github.com/TinkoffCreditSystems/linters/commit/d90e4d6daad360e4a18253ccd2e7e0e1963b708f))
+
+
+
+### [1.29.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.2...v1.29.3) (2022-04-05)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** expose html, ts configs ([#184](https://github.com/TinkoffCreditSystems/linters/issues/184)) ([da1fde4](https://github.com/TinkoffCreditSystems/linters/commit/da1fde47f0ce9599686c3568510142ca522de431))
+
+
+
+## [1.29.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.28.0...v1.29.0) (2022-04-01)
+
+
+### Features
+
+* separate html and typescript rules ([#183](https://github.com/TinkoffCreditSystems/linters/issues/183)) ([1abe9e7](https://github.com/TinkoffCreditSystems/linters/commit/1abe9e7d2f898fc5402e92f68f15d6ae05fd53f6))
+
+
+
+### [1.27.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.2...v1.27.3) (2022-03-03)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** support `no-useless-rename` ([#179](https://github.com/TinkoffCreditSystems/linters/issues/179)) ([89660d5](https://github.com/TinkoffCreditSystems/linters/commit/89660d544d07b844a8cd589c366dd0e55ffa7dc4))
+
+
+
+### [1.27.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.1...v1.27.2) (2022-02-23)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** support `no-implicit-coercion` ([#178](https://github.com/TinkoffCreditSystems/linters/issues/178)) ([1529ea2](https://github.com/TinkoffCreditSystems/linters/commit/1529ea2bddf3a9387668e3ea9418dbae187de8b8))
+
+
+
+### [1.27.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.0...v1.27.1) (2022-02-22)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** support `no-return-assign` ([#177](https://github.com/TinkoffCreditSystems/linters/issues/177)) ([fa278e7](https://github.com/TinkoffCreditSystems/linters/commit/fa278e7d401727645d3169984b061d670f9f6b3a))
+
+
+
+## [1.27.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.3...v1.27.0) (2022-02-17)
+
+
+### Features
+
+* **eslint-config-angular:** use recommendation rules from eslint/typescript ([#170](https://github.com/TinkoffCreditSystems/linters/issues/170)) ([3fc25f3](https://github.com/TinkoffCreditSystems/linters/commit/3fc25f3baa3b10af028fedd36ea48cfea2167433))
+
+
+
+### [1.26.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.1...v1.26.2) (2022-02-08)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** overwrite consistent-type-imports ([#175](https://github.com/TinkoffCreditSystems/linters/issues/175)) ([3018060](https://github.com/TinkoffCreditSystems/linters/commit/30180604046d6c28e66f490f1c3a112d2b9b028d))
+
+
+
+### [1.25.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.2...v1.25.3) (2022-02-07)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** correctly ensure typescript config for imports ([#173](https://github.com/TinkoffCreditSystems/linters/issues/173)) ([b2638e2](https://github.com/TinkoffCreditSystems/linters/commit/b2638e21a680b48215f295def650e8498185c1c0))
+
+
+
+### [1.25.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.0...v1.25.1) (2022-01-31)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** always try to resolve types under `<root>[@types](https://github.com/types)` ([#166](https://github.com/TinkoffCreditSystems/linters/issues/166)) ([28e9aea](https://github.com/TinkoffCreditSystems/linters/commit/28e9aeacb4538bb1b0182cdda865077a1ec95c63))
+
+
+
+## [1.25.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.24.0...v1.25.0) (2022-01-31)
+
+
+### Features
+
+* **eslint-config-angular:** support no-inferrable-types, no-unused-vars ([#165](https://github.com/TinkoffCreditSystems/linters/issues/165)) ([475f2a2](https://github.com/TinkoffCreditSystems/linters/commit/475f2a26437c5246ae6a12c3dd5e98e911f163fb))
+
+
+
 ## [1.24.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.23.0...v1.24.0) (2022-01-18)
 
 

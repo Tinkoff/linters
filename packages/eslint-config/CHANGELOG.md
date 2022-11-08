@@ -3,6 +3,119 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.40.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.39.0...v1.40.0) (2022-11-07)
+
+**Note:** Version bump only for package @tinkoff/eslint-config
+
+
+
+
+
+## [1.39.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.38.1...v1.39.0) (2022-11-07)
+
+
+### Features
+
+* **eslint-config:** move airbnb errors rules to separate config ([#211](https://github.com/TinkoffCreditSystems/linters/issues/211)) ([ae028c9](https://github.com/TinkoffCreditSystems/linters/commit/ae028c9003ba132352b9a2c464d6219ee2c38847))
+
+
+
+## [1.38.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.37.0...v1.38.0) (2022-10-25)
+
+
+### Features
+
+* **eslint-config:** set import/no-cycle to error ([#206](https://github.com/TinkoffCreditSystems/linters/issues/206)) ([afab74b](https://github.com/TinkoffCreditSystems/linters/commit/afab74b1ed5f3705d75a82135a1b9c95a8a56da6))
+
+
+
+## [1.37.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.2...v1.37.0) (2022-10-14)
+
+
+### Features
+
+* **eslint-config:** allow break convention for quoted names ([#207](https://github.com/TinkoffCreditSystems/linters/issues/207)) ([ffe15c4](https://github.com/TinkoffCreditSystems/linters/commit/ffe15c494bc08d401344ed3cab4fc9d6ef6d24a7))
+
+
+
+### [1.36.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.1...v1.36.2) (2022-10-13)
+
+**Note:** Version bump only for package @tinkoff/eslint-config
+
+
+
+
+
+### [1.36.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.0...v1.36.1) (2022-06-17)
+
+**Note:** Version bump only for package @tinkoff/eslint-config
+
+
+
+
+
+### [1.31.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.0...v1.31.1) (2022-04-13)
+
+**Note:** Version bump only for package @tinkoff/eslint-config
+
+
+
+
+
+### [1.29.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.1...v1.29.2) (2022-04-04)
+
+
+### Bug Fixes
+
+* **prettier-config:** dedupe prettier 2.6.2 ([#186](https://github.com/TinkoffCreditSystems/linters/issues/186)) ([d6d1221](https://github.com/TinkoffCreditSystems/linters/commit/d6d1221b319d7d306e50d0638c9cafe72ca93eb6))
+
+
+
+## [1.28.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.3...v1.28.0) (2022-04-01)
+
+
+### Features
+
+* upgrade prettier ([#181](https://github.com/TinkoffCreditSystems/linters/issues/181)) ([540ca60](https://github.com/TinkoffCreditSystems/linters/commit/540ca603fe309676d9d2372e93e8543b7ccd7c90))
+
+
+
+### [1.26.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.2...v1.26.3) (2022-02-08)
+
+**Note:** Version bump only for package @tinkoff/eslint-config
+
+
+
+
+
+### [1.26.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.0...v1.26.1) (2022-02-08)
+
+
+### Bug Fixes
+
+* Disabled old rule thar did not allow the use for of ([89053d0](https://github.com/TinkoffCreditSystems/linters/commit/89053d0c6d1bcc05cab4fae5a8a30900ebe1dbfe))
+* Remove default-case rules because we usually use TS and sometimes dont need default ([b6747a0](https://github.com/TinkoffCreditSystems/linters/commit/b6747a08b3219764c4fbb0e262d0205be86e04d2))
+
+
+
+### [1.25.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.2...v1.25.3) (2022-02-07)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** correctly ensure typescript config for imports ([#173](https://github.com/TinkoffCreditSystems/linters/issues/173)) ([b2638e2](https://github.com/TinkoffCreditSystems/linters/commit/b2638e21a680b48215f295def650e8498185c1c0))
+
+
+
+### [1.25.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.1...v1.25.2) (2022-02-05)
+
+
+### Bug Fixes
+
+* Some rules was unused and don't help with development ([#172](https://github.com/TinkoffCreditSystems/linters/issues/172)) ([dca2c89](https://github.com/TinkoffCreditSystems/linters/commit/dca2c8998d6ebfc8b88bf90d812d0f3149854ce3))
+
+
+
 ## [1.22.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.21.0...v1.22.0) (2021-12-09)
 
 

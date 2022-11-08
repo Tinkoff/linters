@@ -11,6 +11,7 @@ module.exports = {
         'prefer-promise-reject-errors': 'warn',
         'import/no-unresolved': 'off',
         'import/extensions': 'off',
+        '@typescript-eslint/no-shadow': 'off',
       },
     },
   ],

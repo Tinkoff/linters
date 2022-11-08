@@ -3,6 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.32.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.32.0...v1.32.1) (2022-04-15)
+
+
+### Bug Fixes
+
+* **prettier-config:** don't add scripts field if it's not provided ([#191](https://github.com/TinkoffCreditSystems/linters/issues/191)) ([4ec48b8](https://github.com/TinkoffCreditSystems/linters/commit/4ec48b8592ff8f0c0a49fe586dff07153f531c1f))
+
+
+
+## [1.32.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.1...v1.32.0) (2022-04-15)
+
+
+### Features
+
+* **prettier-config:** add plugin to sort the keys of a package.json ([#189](https://github.com/TinkoffCreditSystems/linters/issues/189)) ([685676a](https://github.com/TinkoffCreditSystems/linters/commit/685676aae9f3b543b572ba5204d4e1c8df6045a4))
+
+
+
+### [1.31.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.0...v1.31.1) (2022-04-13)
+
+**Note:** Version bump only for package @tinkoff/prettier-config
+
+
+
+
+
+### [1.29.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.0...v1.29.1) (2022-04-04)
+
+
+### Bug Fixes
+
+* **prettier-config:** fix problem with less parser ([#185](https://github.com/TinkoffCreditSystems/linters/issues/185)) ([5ba22a1](https://github.com/TinkoffCreditSystems/linters/commit/5ba22a143111ebc1933b6cf679d2bbe421359849))
+
+
+
+## [1.28.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.3...v1.28.0) (2022-04-01)
+
+
+### Features
+
+* upgrade prettier ([#181](https://github.com/TinkoffCreditSystems/linters/issues/181)) ([540ca60](https://github.com/TinkoffCreditSystems/linters/commit/540ca603fe309676d9d2372e93e8543b7ccd7c90))
+
+
+
+## [1.26.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.3...v1.26.0) (2022-02-08)
+
+
+### Features
+
+* **prettier-config:** use json-stringify parser for prettying package.json files ([#169](https://github.com/TinkoffCreditSystems/linters/issues/169)) ([174d1e6](https://github.com/TinkoffCreditSystems/linters/commit/174d1e6e1500ce836aa94c9ca6c9d112b166afc1))
+
+
+
 ## [1.22.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.21.0...v1.22.0) (2021-12-09)
 
 

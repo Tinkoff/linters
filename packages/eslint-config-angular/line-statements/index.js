@@ -2,6 +2,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts'],
+      parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
         'lines-around-comment': [

@@ -1,6 +1,8 @@
-# Tinkoff Linter Configuration [![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters) [![npm version](https://img.shields.io/npm/v/@tinkoff/linters)](https://www.npmjs.com/package/@tinkoff/linters)
+# Tinkoff Linter Configuration [![code style: @tinkoff/linters](https://img.shields.io/badge/code%20style-%40tinkoff%2Flinters-blue)](https://github.com/TinkoffCreditSystems/linters) [![npm version](https://img.shields.io/npm/v/@tinkoff/linters)](https://www.npmjs.com/package/@tinkoff/linters) [![code style: @tinkoff/linters](https://img.shields.io/badge/status-deprecated-red)](https://github.com/TinkoffCreditSystems/linters)
 
-This repository contains configuration files for the linters we use in Tinkoff. It includes:
+This package now deprecated, see [main page of repository](https://github.com/TinkoffCreditSystems/linters) to choose better alternative.
+
+Contains configuration files for the linters we use in Tinkoff. It includes:
 
 - configs and rules for [ESLint](https://eslint.org/)
 - configs and rules for [TSLint](https://palantir.github.io/tslint/) <small>(deprecated)</small>

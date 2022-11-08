@@ -1,6 +1,6 @@
 # @tinkoff/prettier-config
 
-Common Prettier configuration for Tinkoff projects
+Common Prettier configuration for Tinkoff projects. Compatible with Tinkoff eslint configs.
 
 ## Usage
 

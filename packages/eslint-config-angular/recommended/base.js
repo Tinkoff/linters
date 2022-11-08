@@ -19,6 +19,7 @@ module.exports = {
     '.git/**',
     '.idea/**',
   ],
+  extends: ['eslint:recommended'],
   /**
    * @note: use @typescript-eslint/parser instead @babel/parser
    */
@@ -30,5 +31,16 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-case-declarations': 'error',
     'no-console': ['error', { allow: ['info', 'assert', 'warn', 'error'] }],
+    'no-implicit-coercion': ['error', { allow: ['!!'] }],
+    'no-return-assign': ['error', 'always'],
+    'no-useless-rename': [
+      'error',
+      {
+        ignoreDestructuring: true,
+        ignoreImport: false,
+        ignoreExport: false,
+      },
+    ],
+    eqeqeq: ['error', 'always'],
   },
 };

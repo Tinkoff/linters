@@ -6,7 +6,7 @@ describe('line statements / unhappy path', () => {
     cwd: path.join(__dirname, '..'),
     useEslintrc: false,
     baseConfig: {
-      extends: ['../internal/base', '../internal/line-statements'],
+      extends: ['../line-statements'],
     },
   });
 

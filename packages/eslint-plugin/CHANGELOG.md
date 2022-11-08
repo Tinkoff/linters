@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.36.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.0...v1.36.1) (2022-06-17)
+
+**Note:** Version bump only for package @tinkoff/eslint-plugin
+
+
+
+
+
 ## [1.14.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.13.2...v1.14.0) (2021-11-17)
 
 

@@ -3,6 +3,111 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.40.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.39.0...v1.40.0) (2022-11-07)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+## [1.39.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.38.1...v1.39.0) (2022-11-07)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+## [1.38.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.37.0...v1.38.0) (2022-10-25)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+## [1.37.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.2...v1.37.0) (2022-10-14)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+### [1.36.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.1...v1.36.2) (2022-10-13)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+### [1.36.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.36.0...v1.36.1) (2022-06-17)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+### [1.31.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.31.0...v1.31.1) (2022-04-13)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+### [1.29.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.1...v1.29.2) (2022-04-04)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+## [1.28.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.27.3...v1.28.0) (2022-04-01)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+### [1.26.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.2...v1.26.3) (2022-02-08)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+### [1.26.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.26.0...v1.26.1) (2022-02-08)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+### [1.25.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.2...v1.25.3) (2022-02-07)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
+### [1.25.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.25.1...v1.25.2) (2022-02-05)
+
+
+### Bug Fixes
+
+* Some rules was unused and don't help with development ([#172](https://github.com/TinkoffCreditSystems/linters/issues/172)) ([dca2c89](https://github.com/TinkoffCreditSystems/linters/commit/dca2c8998d6ebfc8b88bf90d812d0f3149854ce3))
+
+
+
 ## [1.22.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.21.0...v1.22.0) (2021-12-09)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react
