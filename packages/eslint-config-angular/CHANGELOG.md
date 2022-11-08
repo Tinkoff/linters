@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.41.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.39.0...v1.41.0) (2022-11-08)
+
+
+### Features
+
+* add file-progress plugin ([#210](https://github.com/TinkoffCreditSystems/linters/issues/210)) ([44b67d1](https://github.com/TinkoffCreditSystems/linters/commit/44b67d1a0c55beedd38f94a90bef1923b89b9e01))
+
+
+
 ## [1.40.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.39.0...v1.40.0) (2022-11-07)
 
 
