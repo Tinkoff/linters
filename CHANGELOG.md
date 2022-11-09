@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.41.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.41.0...v1.41.1) (2022-11-09)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** fix dir typo ([#214](https://github.com/TinkoffCreditSystems/linters/issues/214)) ([68a9b43](https://github.com/TinkoffCreditSystems/linters/commit/68a9b4340b684d04e5a7d77f5a32f261829c4e68))
+
+
+
 ## [1.41.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.39.0...v1.41.0) (2022-11-08)
 
 
