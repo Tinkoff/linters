@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.42.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.41.1...v1.42.0) (2022-11-10)
+
+
+### Features
+
+* **eslint-config-angular:** disable prefer-destructuring for *.js and *.ts ([#215](https://github.com/TinkoffCreditSystems/linters/issues/215)) ([d13bb83](https://github.com/TinkoffCreditSystems/linters/commit/d13bb83bd5eea0aa462401a9f661ce8492d2e907))
+
+
+
 ### [1.41.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.41.0...v1.41.1) (2022-11-09)
 
 
