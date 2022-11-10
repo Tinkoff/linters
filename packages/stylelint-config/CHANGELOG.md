@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.43.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.42.0...v1.43.0) (2022-11-10)
+
+
+### Features
+
+* **stylelint-config:** ignore less functions ([#213](https://github.com/TinkoffCreditSystems/linters/issues/213)) ([#216](https://github.com/TinkoffCreditSystems/linters/issues/216)) ([de648a4](https://github.com/TinkoffCreditSystems/linters/commit/de648a45fba6e972db79ba020f885659c53b14b7))
+
+
+
 ## [1.30.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.29.3...v1.30.0) (2022-04-05)
 
 
