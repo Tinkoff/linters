@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`decorator-position / unhappy path unhappy 1`] = `
+"error: Expected @Input to be on the line above (decorator-position/decorator-position) at packages/eslint-config-angular/test/decorator-position/__fixtures__/decorator-position-unhappy.fixture.ts:10:3:
+   8 | 
+   9 | class B {
+> 10 |   @Input() name: any;
+     |   ^
+  11 | 
+  12 |   @pure() foo() {}
+  13 | }
+
+
+error: Expected @pure to be on the line above (decorator-position/decorator-position) at packages/eslint-config-angular/test/decorator-position/__fixtures__/decorator-position-unhappy.fixture.ts:12:3:
+  10 |   @Input() name: any;
+  11 | 
+> 12 |   @pure() foo() {}
+     |   ^
+  13 | }
+  14 | 
+
+
+2 errors found.
+2 errors potentially fixable with the \`--fix\` option."
+`;

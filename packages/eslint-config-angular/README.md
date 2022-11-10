@@ -36,6 +36,7 @@ You can also include `optional` configurations, however, you are responsible for
     '@tinkoff/eslint-config-angular/file-progress',
     '@tinkoff/eslint-config-angular/line-statements',
     '@tinkoff/eslint-config-angular/member-ordering',
+    '@tinkoff/eslint-config-angular/decorator-position',
   ],
 }
 ```
