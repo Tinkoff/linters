@@ -18,6 +18,7 @@ module.exports = {
          * as it can report incorrect errors in @typescript-eslint
          */
         'no-useless-constructor': 'off',
+        'prefer-destructuring': 'off',
         '@typescript-eslint/no-useless-constructor': ['error'],
         '@typescript-eslint/no-inferrable-types': [
           'error',
