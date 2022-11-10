@@ -15,6 +15,7 @@
     "member-ordering",
     "promise",
     "file-progress",
+    "decorator-position",
     "recommended",
     "rxjs",
     "index.js",
@@ -35,7 +36,8 @@
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-rxjs": "^5.0.2",
     "eslint-plugin-rxjs-angular": "^2.0.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0"
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-decorator-position": "^5.0.1"
   },
   "peerDependencies": {
     "@tinkoff/eslint-config": "^1.31.1",
