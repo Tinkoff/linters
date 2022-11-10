@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.44.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.43.0...v1.44.0) (2022-11-10)
+
+
+### Features
+
+* **eslint-config-angular:** add decorator position package ([#217](https://github.com/TinkoffCreditSystems/linters/issues/217)) ([d3b9d1f](https://github.com/TinkoffCreditSystems/linters/commit/d3b9d1f95a39e499da4ec458d8d1cdb2fc14bd92))
+
+
+
 ## [1.43.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.42.0...v1.43.0) (2022-11-10)
 
 
