@@ -26,9 +26,10 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   rules: {
     /**
-     * @note: [*.js, *.ts]
+     * @note: [*.js, *.ts], exclude *.d.ts
      */
     'no-param-reassign': 'off',
+    'prefer-destructuring': 'off',
     'no-case-declarations': 'error',
     'no-console': ['error', { allow: ['info', 'assert', 'warn', 'error'] }],
     'no-implicit-coercion': ['error', { allow: ['!!'] }],
