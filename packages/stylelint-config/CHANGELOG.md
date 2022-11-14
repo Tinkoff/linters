@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.45.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.44.0...v1.45.0) (2022-11-14)
+
+
+### Features
+
+* **stylelint-config:** describe angular-less config ([#219](https://github.com/TinkoffCreditSystems/linters/issues/219)) ([87422e9](https://github.com/TinkoffCreditSystems/linters/commit/87422e9e7dd806daaede061b970d83d841b3d6dd))
+
+
+
 ## [1.43.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.42.0...v1.43.0) (2022-11-10)
 
 
