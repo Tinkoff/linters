@@ -46,3 +46,11 @@ More information about available at
   "extends": ["@tinkoff/stylelint-config/angular"]
 }
 ```
+
+- **angular-less**
+
+```json
+{
+  "extends": ["@tinkoff/stylelint-config/angular-less"]
+}
+```
