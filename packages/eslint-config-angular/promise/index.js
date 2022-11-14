@@ -22,6 +22,8 @@ module.exports = {
           'error',
           { ignoreVoid: true, ignoreIIFE: true },
         ],
+        // for compat with @typescript-eslint/no-floating-promises ignoreVoid
+        'no-void': ['error', { allowAsStatement: true }],
       },
     },
   ],
