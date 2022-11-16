@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.45.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.45.0...v1.45.1) (2022-11-16)
+
+
+### Bug Fixes
+
+* **prettier-config:** fix compat with node 12 ([#220](https://github.com/TinkoffCreditSystems/linters/issues/220)) ([24a4ccf](https://github.com/TinkoffCreditSystems/linters/commit/24a4ccfcef65f9f38d29a542932544f974ff6331))
+
+
+
 ## [1.45.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.44.0...v1.45.0) (2022-11-14)
 
 
