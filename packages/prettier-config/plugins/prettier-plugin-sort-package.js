@@ -17,7 +17,7 @@ exports.parsers = {
 
       if (isPackageJson) {
         const json = JSON.parse(processed);
-        const unsortedScripts = deepClone(json?.scripts ?? {});
+        const unsortedScripts = deepClone((json && json.scripts) || {});
         const sorted = sortPackageJson(json);
 
         /**
@@ -25,7 +25,7 @@ exports.parsers = {
          * the scripts must be unsorted
          */
         // eslint-disable-next-line no-prototype-builtins
-        if (json?.hasOwnProperty('scripts')) {
+        if (json && json.hasOwnProperty('scripts')) {
           sorted.scripts = unsortedScripts;
         }
 
