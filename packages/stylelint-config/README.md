@@ -31,7 +31,7 @@ More information about available at
 }
 ```
 
-- **less**
+- **less** - includes prettier config
 
 ```json
 {
@@ -39,7 +39,7 @@ More information about available at
 }
 ```
 
-- **angular**
+- **angular** - includes prettier config
 
 ```json
 {
@@ -47,7 +47,7 @@ More information about available at
 }
 ```
 
-- **angular-less**
+- **angular-less** - combine angular and less configs
 
 ```json
 {
