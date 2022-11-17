@@ -26,7 +26,7 @@ error: Expected 'undefined' and instead saw 'void' (no-void) at packages/eslint-
 > 6 |   return void 0;
     |          ^
   7 | }
-  8 | unhappyBaz()
+  8 | unhappyBaz();
   9 | 
 
 
