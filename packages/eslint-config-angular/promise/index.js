@@ -22,6 +22,7 @@ module.exports = {
           'error',
           { ignoreVoid: true, ignoreIIFE: true },
         ],
+        'no-void': ['error', { allowAsStatement: true }],
       },
     },
   ],

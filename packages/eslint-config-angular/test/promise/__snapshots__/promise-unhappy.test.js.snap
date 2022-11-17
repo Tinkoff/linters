@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`promise / unhappy unhappy 1`] = `
+"error: Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the \`void\` operator (@typescript-eslint/no-floating-promises) at packages/eslint-config-angular/test/promise/__fixtures__/promise-unhappy.fixture.ts:2:1:
+  1 | const unhappyBar = new Promise(() => {});
+> 2 | unhappyBar;
+    | ^
+  3 | const unhappyFoo = void unhappyBar;
+  4 | 
+  5 | function unhappyBaz() {
+
+
+error: Expected 'undefined' and instead saw 'void' (no-void) at packages/eslint-config-angular/test/promise/__fixtures__/promise-unhappy.fixture.ts:3:20:
+  1 | const unhappyBar = new Promise(() => {});
+  2 | unhappyBar;
+> 3 | const unhappyFoo = void unhappyBar;
+    |                    ^
+  4 | 
+  5 | function unhappyBaz() {
+  6 |   return void 0;
+
+
+error: Expected 'undefined' and instead saw 'void' (no-void) at packages/eslint-config-angular/test/promise/__fixtures__/promise-unhappy.fixture.ts:6:10:
+  4 | 
+  5 | function unhappyBaz() {
+> 6 |   return void 0;
+    |          ^
+  7 | }
+  8 | unhappyBaz();
+  9 | 
+
+
+3 errors found."
+`;
