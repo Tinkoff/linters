@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.46.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.46.0...v1.46.1) (2022-11-17)
+
+**Note:** Version bump only for package @tinkoff/stylelint-config
+
+
+
+
+
 ## [1.45.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.44.0...v1.45.0) (2022-11-14)
 
 
