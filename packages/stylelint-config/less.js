@@ -55,6 +55,7 @@ module.exports = {
           'unit',
           'get-unit',
           'svg-gradient',
+          'fade',
         ],
       },
     ],
