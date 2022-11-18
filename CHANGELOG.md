@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.46.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.46.1...v1.46.2) (2022-11-18)
+
+
+### Bug Fixes
+
+* **stylelint-config:** ignore `fade` ([#222](https://github.com/TinkoffCreditSystems/linters/issues/222)) ([c3959bf](https://github.com/TinkoffCreditSystems/linters/commit/c3959bf2f6fc2a534f8125728d733050be60904c))
+
+
+
 ### [1.46.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.46.0...v1.46.1) (2022-11-17)
 
 **Note:** Version bump only for package linters-monorepo
