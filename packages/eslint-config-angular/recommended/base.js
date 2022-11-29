@@ -8,7 +8,7 @@ module.exports = {
     'dist',
     'node_modules',
     '**/node_modules/**',
-    '**/schematics/*',
+    '**/*@dasherize__/**',
     '**/coverage/**',
     'eslintrc.js',
     '.eslintrc.js',
