@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.46.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.46.2...v1.46.3) (2022-11-29)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** exclude only dasherize files ([#224](https://github.com/TinkoffCreditSystems/linters/issues/224)) ([de3003f](https://github.com/TinkoffCreditSystems/linters/commit/de3003f99a4b88191567d8a876f8b2179a901ab9))
+
+
+
 ### [1.46.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.46.1...v1.46.2) (2022-11-18)
 
 
