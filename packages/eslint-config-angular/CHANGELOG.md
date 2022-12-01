@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.47.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.46.3...v1.47.0) (2022-12-01)
+
+
+### Features
+
+* **eslint-config-angular:** add strict rules as experimental sub-package ([#225](https://github.com/TinkoffCreditSystems/linters/issues/225)) ([cc5d609](https://github.com/TinkoffCreditSystems/linters/commit/cc5d609b48886d7c346aac0ef777b1e745e03eec))
+
+
+
 ### [1.46.3](https://github.com/TinkoffCreditSystems/linters/compare/v1.46.2...v1.46.3) (2022-11-29)
 
 
