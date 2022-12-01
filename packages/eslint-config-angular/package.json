@@ -8,19 +8,6 @@
     "eslintconfig",
     "eslint-config"
   ],
-  "files": [
-    "html",
-    "imports",
-    "line-statements",
-    "member-ordering",
-    "promise",
-    "file-progress",
-    "decorator-position",
-    "recommended",
-    "rxjs",
-    "index.js",
-    "README.md"
-  ],
   "scripts": {},
   "main": "index.js",
   "author": {
