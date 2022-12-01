@@ -43,5 +43,8 @@ module.exports = {
       },
     ],
     eqeqeq: ['error', 'always'],
+    'no-useless-concat': 'error',
+    'prefer-template': 'error',
+    curly: ['error', 'all'],
   },
 };
