@@ -8,6 +8,7 @@ module.exports = {
   semi: true,
   singleQuote: true,
   trailingComma: 'all',
+  endOfLine: 'lf',
   bracketSpacing: false,
   arrowParens: 'avoid',
   plugins: [
