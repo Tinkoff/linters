@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.47.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.47.0...v1.47.1) (2022-12-02)
+
+
+### Bug Fixes
+
+* **prettier-config:** add `endOfLine` for angular config ([#226](https://github.com/TinkoffCreditSystems/linters/issues/226)) ([0d9d79e](https://github.com/TinkoffCreditSystems/linters/commit/0d9d79e95b46770165cebb5ae895f0f7c7cd3474))
+
+
+
 ### [1.45.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.45.0...v1.45.1) (2022-11-16)
 
 
