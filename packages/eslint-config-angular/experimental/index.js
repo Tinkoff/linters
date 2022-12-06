@@ -23,6 +23,7 @@ module.exports = {
             typedefs: true,
           },
         ],
+        '@typescript-eslint/sort-type-constituents': 'error',
       },
     },
   ],
