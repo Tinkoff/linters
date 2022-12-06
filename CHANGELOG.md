@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.49.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.48.0...v1.49.0) (2022-12-06)
+
+
+### Features
+
+* **eslint-config-angular:** add `unicorn` plugin ([#228](https://github.com/TinkoffCreditSystems/linters/issues/228)) ([5da54e1](https://github.com/TinkoffCreditSystems/linters/commit/5da54e19b1fb84ceeeed6b352a3898701b541026))
+
+
+
 ## [1.48.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.47.1...v1.48.0) (2022-12-06)
 
 
