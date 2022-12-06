@@ -24,14 +24,16 @@
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-rxjs": "^5.0.2",
     "eslint-plugin-rxjs-angular": "^2.0.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0"
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unicorn": "^44.0.2"
   },
   "peerDependencies": {
     "@tinkoff/eslint-config": "^1.31.1",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "eslint": "^7.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-sort-class-members": "^1.14.1"
+    "eslint-plugin-sort-class-members": "^1.14.1",
+    "eslint-plugin-unicorn": "^44.0.2"
   },
   "publishConfig": {
     "access": "public"
