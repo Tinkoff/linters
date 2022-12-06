@@ -33,6 +33,7 @@ You can also include `optional` configurations, however, you are responsible for
     '@tinkoff/eslint-config-angular/rxjs',
     '@tinkoff/eslint-config-angular/promise',
     '@tinkoff/eslint-config-angular/imports',
+    '@tinkoff/eslint-config-angular/unicorn',
     '@tinkoff/eslint-config-angular/file-progress',
     '@tinkoff/eslint-config-angular/line-statements',
     '@tinkoff/eslint-config-angular/member-ordering',
