@@ -5,6 +5,15 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
+        'dot-notation': 'off',
+        '@typescript-eslint/dot-notation': [
+          'error',
+          {
+            allowPrivateClassPropertyAccess: true,
+            allowProtectedClassPropertyAccess: true,
+            allowIndexSignaturePropertyAccess: true,
+          },
+        ],
         '@typescript-eslint/ban-types': 'error',
         '@typescript-eslint/no-base-to-string': 'error',
         '@typescript-eslint/no-unnecessary-type-constraint': 'error',
