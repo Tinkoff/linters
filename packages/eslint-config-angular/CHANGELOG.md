@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.50.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.49.0...v1.50.0) (2022-12-06)
+
+
+### Features
+
+* **eslint-config-angular:** support `dot-notation` ([#229](https://github.com/TinkoffCreditSystems/linters/issues/229)) ([5d76da2](https://github.com/TinkoffCreditSystems/linters/commit/5d76da287f4a1878ea883112b0426e24307ff78d))
+
+
+
 ## [1.49.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.48.0...v1.49.0) (2022-12-06)
 
 
