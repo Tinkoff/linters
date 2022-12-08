@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.50.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.50.0...v1.50.1) (2022-12-08)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** remove deprecated properties ([#230](https://github.com/TinkoffCreditSystems/linters/issues/230)) ([eaf5e9a](https://github.com/TinkoffCreditSystems/linters/commit/eaf5e9ab45c910f4b35ecc5fb1dfd8a879f2d548))
+
+
+
 ### [1.38.1](https://github.com/TinkoffCreditSystems/linters/compare/v1.38.0...v1.38.1) (2022-10-28)
 
 **Note:** Version bump only for package @tinkoff/linters
