@@ -28,7 +28,7 @@
     "@tinkoff/eslint-config": "^1.50.1"
   },
   "peerDependencies": {
-    "eslint": "^7.5.0",
+    "eslint": ">=7",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^3.4.1"
   },
