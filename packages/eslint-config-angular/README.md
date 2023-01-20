@@ -29,11 +29,11 @@ You can also include `optional` configurations, however, you are responsible for
     '@tinkoff/eslint-config-angular',
 
     // optional
-    '@tinkoff/eslint-config-angular/html',
     '@tinkoff/eslint-config-angular/rxjs',
     '@tinkoff/eslint-config-angular/promise',
     '@tinkoff/eslint-config-angular/imports',
     '@tinkoff/eslint-config-angular/unicorn',
+    '@tinkoff/eslint-config-angular/html-eslint',
     '@tinkoff/eslint-config-angular/file-progress',
     '@tinkoff/eslint-config-angular/line-statements',
     '@tinkoff/eslint-config-angular/member-ordering',
@@ -46,8 +46,8 @@ You can also include `optional` configurations, however, you are responsible for
 }
 ```
 
-#### Warning
+#### Deprecated
 
-- There are some problems with `@tinkoff/eslint-config-angular/html` configuration, because under the hood uses
+- Do not use `@tinkoff/eslint-config-angular/html` instead of `@tinkoff/eslint-config-angular/html-eslint`. There are some problems with `@tinkoff/eslint-config-angular/html` configuration, because under the hood uses
   `eslint-plugin-html` plugin. When `eslint-plugin-html` is extended, rules from other plugins don't work. [See opened
   issue](https://github.com/BenoitZugmeyer/eslint-plugin-html/issues/176).
