@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.51.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.50.2...v1.51.0) (2023-01-20)
+
+
+### Features
+
+* **eslint-config-angular:** add `html-eslint` plugin ([#232](https://github.com/TinkoffCreditSystems/linters/issues/232)) ([79b8028](https://github.com/TinkoffCreditSystems/linters/commit/79b802845e105ed80f281b851d381d5bb0bbaf02))
+
+
+
 ### [1.50.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.50.1...v1.50.2) (2022-12-08)
 
 **Note:** Version bump only for package linters-monorepo

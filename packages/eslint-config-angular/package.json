@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config-angular",
-  "version": "1.50.2",
+  "version": "1.51.0",
   "description": "Tinkoff ESLint configs for Angular apps",
   "license": "Apache-2.0",
   "keywords": [
@@ -19,25 +19,25 @@
     "url": "https://github.com/TinkoffCreditSystems/linters.git"
   },
   "dependencies": {
+    "@html-eslint/eslint-plugin": "^0.15.0",
+    "@html-eslint/parser": "^0.15.0",
     "eslint-plugin-decorator-position": "^5.0.1",
     "eslint-plugin-file-progress": "^1.3.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-rxjs": "^5.0.2",
     "eslint-plugin-rxjs-angular": "^2.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unicorn": "^44.0.2",
-    "@html-eslint/eslint-plugin": "^0.15.0",
-    "@html-eslint/parser": "^0.15.0"
+    "eslint-plugin-unicorn": "^44.0.2"
   },
   "peerDependencies": {
+    "@html-eslint/eslint-plugin": "^0.15.0",
+    "@html-eslint/parser": "^0.15.0",
     "@tinkoff/eslint-config": "^1.31.1",
     "@typescript-eslint/eslint-plugin": "^5.45.1",
     "eslint": ">=7",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-sort-class-members": "^1.14.1",
-    "eslint-plugin-unicorn": "^44.0.2",
-    "@html-eslint/eslint-plugin": "^0.15.0",
-    "@html-eslint/parser": "^0.15.0"
+    "eslint-plugin-unicorn": "^44.0.2"
   },
   "publishConfig": {
     "access": "public"
