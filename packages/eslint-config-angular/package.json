@@ -25,7 +25,9 @@
     "eslint-plugin-rxjs": "^5.0.2",
     "eslint-plugin-rxjs-angular": "^2.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unicorn": "^44.0.2"
+    "eslint-plugin-unicorn": "^44.0.2",
+    "@html-eslint/eslint-plugin": "^0.15.0",
+    "@html-eslint/parser": "^0.15.0"
   },
   "peerDependencies": {
     "@tinkoff/eslint-config": "^1.31.1",
@@ -33,7 +35,9 @@
     "eslint": ">=7",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-sort-class-members": "^1.14.1",
-    "eslint-plugin-unicorn": "^44.0.2"
+    "eslint-plugin-unicorn": "^44.0.2",
+    "@html-eslint/eslint-plugin": "^0.15.0",
+    "@html-eslint/parser": "^0.15.0"
   },
   "publishConfig": {
     "access": "public"
