@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.52.0](https://github.com/TinkoffCreditSystems/linters/compare/v1.51.0...v1.52.0) (2023-03-27)
+
+
+### Features
+
+* **stylelint-config:** add `all` property to properties-order ([#234](https://github.com/TinkoffCreditSystems/linters/issues/234)) ([2d53a29](https://github.com/TinkoffCreditSystems/linters/commit/2d53a29ac9455e032f7cd39f848e2f87c71644a2))
+
+
+
 ### [1.46.2](https://github.com/TinkoffCreditSystems/linters/compare/v1.46.1...v1.46.2) (2022-11-18)
 
 
