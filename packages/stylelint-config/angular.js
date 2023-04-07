@@ -4,6 +4,7 @@ module.exports = {
   rules: {
     'order/properties-order': [
       [
+        'all',
         'content',
         'position',
         {
