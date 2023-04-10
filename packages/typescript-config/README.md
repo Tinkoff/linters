@@ -30,6 +30,9 @@ Create `tsconfig.json` at the project root
 
 ```json
 {
-  "extends": ["@tinkoff/typescript-config", "@tsconfig/node18/tsconfig"]
+  "extends": [
+    "@tinkoff/typescript-config/tsconfig.base",
+    "@tsconfig/node18/tsconfig"
+  ]
 }
 ```
