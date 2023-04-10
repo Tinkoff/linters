@@ -15,7 +15,7 @@
     "********** Build": "",
     "build:prod": "lerna run build:prod --parallel",
     "********** Test": "",
-    "test:ci": "jest --no-colors",
+    "test:ci": "jest --no-colors && lerna run test",
     "********** Version": "",
     "preversion": "lerna run build:prod --parallel",
     "version": "lerna version --no-private --conventional-commits --changelog-preset conventionalcommits --yes --ignore-changes '**/package-lock.json'",
