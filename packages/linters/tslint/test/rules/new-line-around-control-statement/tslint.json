@@ -1,6 +1,0 @@
-{
-  "rulesDirectory": ["../../../src"],
-  "rules": {
-    "tinkoff-new-line-around-control-statement": true
-  }
-}

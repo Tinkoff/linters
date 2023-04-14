@@ -15,6 +15,3 @@ node_modules
 .tmp
 debug-path
 
-# Packages sources
-packages/linters/tslint/rules
-packages/linters/tslint/src

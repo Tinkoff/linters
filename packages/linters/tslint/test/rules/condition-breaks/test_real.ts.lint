@@ -1,5 +1,0 @@
-.map(({code: key, name: value}: ICurrency) => key && value ? {key, value: 1} : null)
-voCode.payerResidency ? residentTypes.RESIDENT : residentTypes.NOT_RESIDENT
-type = selected.length === 0 ? OperationType.ALL : null;
-accountNumber: account ? account.accountNumber : ''
-return confirmationReference.number === WITHOUT_NUMBER ? title : `№ ${title}`;

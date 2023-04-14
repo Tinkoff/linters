@@ -1,6 +1,0 @@
-/* tslint:disable */
-const a = 1;
-let b;
-if(let i = 0) {
- _.noop();
-}
