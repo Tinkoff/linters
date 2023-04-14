@@ -1,8 +1,0 @@
-*
-.DS_Store
-!eslint/**/*
-!prettier/**/*
-!stylelint/**/*
-!tslint/**/*
-!README.md
-**/test/*

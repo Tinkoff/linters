@@ -15,9 +15,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Packages sources
-packages/linters/tslint/rules
-
 # Other
 .tmp
 debug-path

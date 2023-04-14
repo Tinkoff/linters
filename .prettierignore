@@ -10,7 +10,3 @@ __temp_packages__
 */__fixtures__/*
 */__snapshots__/*
 *.fixture.*
-
-# Packages sources
-packages/linters/tslint/rules
-packages/linters/tslint/src

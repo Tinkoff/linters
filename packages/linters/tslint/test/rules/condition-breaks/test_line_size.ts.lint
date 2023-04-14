@@ -1,4 +1,0 @@
-a ? someObject.subObject.data.value : someObject2.subObject2.data.value;
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [0]
-someObject.subObject.value ? someObject.subObject.value : someObject2.subObject2.value;
-[0]: Expected new line between parts of ternary expression
