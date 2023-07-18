@@ -1,6 +1,7 @@
 {
   "extends": "@tsconfig/strictest",
   "compilerOptions": {
-    "verbatimModuleSyntax": false
+    "verbatimModuleSyntax": false,
+    "declaration": true
   }
 }
